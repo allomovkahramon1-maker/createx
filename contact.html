@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Createx</title>
+</head>
+
+<body>
+  <header class="bg-[#ffddd5]">
+    <nav class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
+      <a class="shrink-0" href="#">
+        <img alt="Createx logo" class="w-32" src="image/logo1.png" />
+      </a>
+      <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
+        <a class="hover:text-[#ff3f22] transition" href="#">
+          About Us
+        </a>
+        <a class="hover:text-[#ff3f22] transition" href="#">
+          Courses
+        </a>
+        <a class="hover:text-[#ff3f22] transition" href="#">
+          Events
+        </a>
+        <a class="hover:text-[#ff3f22] transition" href="#">
+          Blog
+        </a>
+        <a class="hover:text-[#ff3f22] transition" href="#">
+          Contacts
+        </a>
+      </div>
+      <div class="flex items-center gap-5">
+        <button
+          class="hidden sm:block bg-[#ff3f22] text-white text-sm font-medium px-6 py-3 rounded-md hover:bg-[#e9371d] transition">
+          Get consultation
+        </button>
+        <button class="text-sm font-medium hover:text-[#ff3f22] transition">
+          Log in / Register
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 py-12 md:grid-cols-2">
+
+      <!-- Contact Info -->
+      <div>
+        <p class="mb-2 text-xs font-semibold tracking-wide text-gray-800">
+          CONTACT INFO
+        </p>
+
+        <h2 class="mb-7 text-3xl font-bold text-[#252833]">
+          Get in touch
+        </h2>
+
+        <!-- Email -->
+        <div class="mb-5 flex gap-3">
+          <div>
+            <p class="text-xs text-gray-500">Talk to us:</p>
+            <a href="mailto:hello@createx.com" class="text-sm text-gray-800 hover:text-red-500">
+              hello@createx.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="mb-5 flex gap-3">
+          <div>
+            <p class="text-xs text-gray-500">Call us:</p>
+            <a href="tel:+14055550128" class="text-sm text-gray-800 hover:text-red-500">
+              (405) 555-0128
+            </a>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="mb-8 flex gap-3">
+          <div>
+            <p class="text-xs text-gray-500">Address:</p>
+            <p class="text-sm leading-6 text-gray-800">
+              2464 Royal Ln. Mesa, New Jersey 45463, USA
+            </p>
+          </div>
+        </div>
+        <!-- Social Media -->
+        <p class="mb-4 text-xs font-semibold text-gray-800">
+          FOLLOW US:
+        </p>
+
+        <div class="flex items-center gap-6 text-lg font-bold text-gray-500">
+          <a href="#" aria-label="Facebook" class="hover:text-red-500">
+            <img class="h-5 w-5 transition hover:opacity-70" src="image/Facebook.svg" alt="Facebook">
+          </a>
+          <a href="#" aria-label="Twitter" class="hover:text-red-500">
+            <img class="h-5 w-5 transition hover:opacity-70" src="image/Twitter.svg" alt="Twitter">
+          </a>
+          <a href="#" aria-label="YouTube" class="hover:text-red-500">
+            <img class="h-5 w-5 transition hover:opacity-70" src="image/YouTube.svg" alt="YouTube">
+          </a>
+          <a href="#" aria-label="Telegram" class="hover:text-red-500">
+            <img class="h-5 w-5 transition hover:opacity-70" src="image/telegram.svg" alt="telegram">
+          </a>
+          <a href="#" aria-label="Instagram" class="hover:text-red-500">
+            <img class="h-5 w-5 transition hover:opacity-70" src="image/Instagram.svg" alt="Instagram">
+          </a>
+          <a href="#" aria-label="LinkedIn" class="hover:text-red-500">
+            <img class="h-5 w-5 transition hover:opacity-70" src="image/Linked-In.svg" alt="Linked-In">
+          </a>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="overflow-hidden rounded-md shadow-sm">
+        <iframe src="https://maps.google.com/maps?q=Lakewood%2C%20New%20Jersey&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          class="h-[350px] w-full md:h-[300px]" style="border: 0;" loading="lazy" allowfullscreen
+          title="Location map"></iframe>
+      </div>
+
+    </section>
+
+    <section class="mx-auto flex max-w-6xl items-center justify-between gap-12 px-6 py-16">
+
+      <!-- Image -->
+      <div class="w-full md:w-5/12">
+        <img src="image/illustration (2).png" alt="Contact illustration" class="w-full object-contain" />
+      </div>
+
+      <!-- Contact Form -->
+      <div class="w-full md:w-7/12">
+        <p class="mb-2 text-xs font-bold tracking-widest text-gray-600">
+          ANY QUESTIONS?
+        </p>
+
+        <h1 class="mb-8 text-3xl font-bold text-gray-900 md:text-4xl">
+          Drop us a line
+        </h1>
+
+        <form class="space-y-5">
+
+          <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+            <input required type="text" placeholder="Your first name"
+              class="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
+
+            <input required type="text" placeholder="Your last name"
+              class="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
+
+            <input required type="email" placeholder="Your working email"
+              class="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
+
+            <input type="tel" placeholder="Your phone number"
+              class="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
+          </div>
+
+          <textarea required rows="5" placeholder="Your message"
+            class="w-full resize-y rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100"></textarea>
+
+          <div class="flex flex-col items-start justify-between gap-5 sm:flex-row sm:items-center">
+            <label class="flex max-w-sm items-start gap-3 text-sm leading-6 text-gray-600">
+              <input required type="checkbox" class="mt-1 h-4 w-4 shrink-0 accent-red-500" />
+              <span>
+                I agree to receive communications from Createx Online School
+              </span>
+            </label>
+
+            <button type="submit"
+              class="w-full rounded-lg bg-gradient-to-r from-red-500 to-orange-500 px-8 py-3.5 font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg sm:w-auto">
+              Send message →
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </section>
+  </main>
+  <!-- footer qismi -->
+  <footer class="bg-[#1f2230] text-white">
+    <div class="mx-auto max-w-[1200px] px-6 py-14">
+      <div class="grid grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-6">
+        <div>
+          <a class="text-2xl font-bold tracking-tight" href="#">
+            <img alt="Createx" src="image/logo.png" />
+          </a>
+          <p class="mt-6 max-w-[230px] text-sm leading-6 text-gray-400">
+            Createx Online School is a leader in online studying. We have lots of courses from different programs and
+            experienced teachers.
+          </p>
+          <div class="mt-7 flex items-center gap-4">
+            <a class="transition hover:scale-110" href="#">
+              <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70" src="image/Facebook.svg" />
+            </a>
+            <a class="transition hover:scale-110" href="#">
+              <img alt="Twitter" class="h-5 w-5 transition hover:opacity-70" src="image/Twitter.svg" />
+            </a>
+            <a class="transition hover:scale-110" href="#">
+              <img alt="YouTube" class="h-5 w-5 transition hover:opacity-70" src="image/YouTube.svg" />
+            </a>
+            <a class="transition hover:scale-110" href="#">
+              <img alt="Telegram" class="h-5 w-5 transition hover:opacity-70" src="image/telegram.svg" />
+            </a>
+            <a class="transition hover:scale-110" href="#">
+              <img alt="Instagram" class="h-5 w-5 transition hover:opacity-70" src="image/Instagram.svg" />
+            </a>
+            <a class="transition hover:scale-110" href="#">
+              <img alt="LinkedIn" class="h-5 w-5 transition hover:opacity-70" src="image/Linked-In.svg" />
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wide">
+            Site Map
+          </h3>
+          <ul class="mt-6 space-y-3 text-sm text-gray-400">
+            <li>
+              <a class="transition hover:text-orange-500" href="#">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a class="transition hover:text-orange-500" href="#">
+                Courses
+              </a>
+            </li>
+            <li>
+              <a class="transition hover:text-orange-500" href="#">
+                Events
+              </a>
+            </li>
+            <li>
+              <a class="transition hover:text-orange-500" href="#">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a class="transition hover:text-orange-500" href="#">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wide">
+            Courses
+          </h3>
+          <ul class="mt-6 space-y-3 text-sm text-gray-400">
+            <li>
+              <a class="transition hover:text-orange-500" href="#">
+                Marketing
+              </a>
+            </li>
+            <li>
+              <a class="transition hover:text-orange-500" href="#">
+                Management
+              </a>
+            </li>
+            <li>
+              <a class="transition hover:text-orange-500" href="#">
+                HR &; Recruiting
+              </a>
+            </li>
+            <li>
+              <a class="transition hover:text-orange-500" href="#">
+                Design
+              </a>
+            </li>
+            <li>
+              <a class="transition hover:text-orange-500" href="#">
+                Development
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wide">
+            Contact Us
+          </h3>
+          <div class="mt-6 space-y-4 text-sm text-gray-400">
+            <a class="flex items-center transition hover:text-white" href="tel:+14055550128">
+              <span>
+                (405) 555-0128
+              </span>
+            </a>
+            <a class="flex items-center transition hover:text-white" href="mailto:hello@createx.com">
+              <span>
+                hello@createx.com
+              </span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wide">
+            Sign up to our newsletter
+          </h3>
+          <form class="mt-6">
+            <div
+              class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
+              <input
+                class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
+                placeholder="Email address" type="email" />
+              <button class="px-3 text-lg text-gray-400 transition hover:bg-orange-500 hover:text-white" type="submit">
+                →
+              </button>
+            </div>
+            <p class="mt-4 text-[10px] leading-4 text-gray-500">
+              *Subscribe to our newsletter to receive communications and upcoming events from Createx School.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 bg-[#292c3a]">
+      <div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
+        <p>
+          © All rights reserved. Made with by Createx Studio
+        </p>
+        <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
+          Go to top
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
