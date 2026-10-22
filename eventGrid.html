@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Createx</title>
 </head>
+
 <body>
     <!-- Header -->
     <header class="bg-[#ffddd5]">
         <nav class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
             <a class="shrink-0" href="#">
-                <img alt="Createx logo" class="w-32" src="image/logo1.png">
+                <img alt="Createx logo" class="w-32" src="/pages/pages/image/logo (1).png">
             </a>
 
             <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
-                <a class="hover:text-[#ff3f22] transition" href="#">About Us</a>
-                <a class="hover:text-[#ff3f22] transition" href="#">Courses</a>
-                <a class="hover:text-[#ff3f22] transition" href="#">Events</a>
-                <a class="hover:text-[#ff3f22] transition" href="#">Blog</a>
-                <a class="hover:text-[#ff3f22] transition" href="#">Contacts</a>
+                <a class="hover:text-[#ff3f22] transition" href="about.html">About Us</a>
+                <a class="hover:text-[#ff3f22] transition" href="courses.html">Courses</a>
+                <a class="hover:text-[#ff3f22] transition" href="eventList.html">Events</a>
+                <a class="hover:text-[#ff3f22] transition" href="blog.html">Blog</a>
+                <a class="hover:text-[#ff3f22] transition" href="contact.html">Contacts</a>
             </div>
 
             <div class="flex items-center gap-5">
-                <button class="hidden sm:block bg-[#ff3f22] text-white text-sm font-medium px-6 py-3 rounded-md hover:bg-[#e9371d] transition">
+                <button
+                    class="hidden sm:block bg-[#ff3f22] text-white text-sm font-medium px-6 py-3 rounded-md hover:bg-[#e9371d] transition">
                     Get consultation
                 </button>
                 <button class="text-sm font-medium hover:text-[#ff3f22] transition">
-                     Log in / Register
+                    Log in / Register
                 </button>
             </div>
         </nav>
@@ -53,7 +56,8 @@
                 <div class="flex flex-wrap items-center gap-6">
                     <div class="flex items-center gap-2">
                         <label class="text-[18px] font-semibold px-4">Event category</label>
-                        <select class="h-7 w-[103px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
+                        <select
+                            class="h-7 w-[103px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
                             <option>all themes</option>
                             <option>Lectures</option>
                             <option>Workshops</option>
@@ -63,7 +67,8 @@
 
                     <div class="flex items-center gap-2">
                         <label class="text-[18px] font-semibold px-4">Sort by</label>
-                        <select class="h-7 w-[103px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
+                        <select
+                            class="h-7 w-[103px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
                             <option>newest</option>
                             <option>oldest</option>
                         </select>
@@ -71,7 +76,8 @@
 
                     <div class="flex items-center gap-2">
                         <label class="text-[18px] font-semibold px-4">Show</label>
-                        <select class="h-7 w-[46px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
+                        <select
+                            class="h-7 w-[46px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
                             <option>9</option>
                             <option>12</option>
                             <option>18</option>
@@ -83,32 +89,30 @@
                 <div class="flex items-center gap-6">
                     <!-- Search -->
                     <div class="flex h-7 w-[180px] items-center justify-between rounded-sm border border-gray-200 px-2">
-                        <input
-                            type="text"
-                            placeholder="Search event..."
-                            class="w-full bg-transparent text-[10px] outline-none placeholder:text-gray-400"
-                        >
-                        <svg class="h-3 w-3 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
-                            <circle cx="11" cy="11" r="7"/>
-                            <path d="m20 20-4-4"/>
+                        <input type="text" placeholder="Search event..."
+                            class="w-full bg-transparent text-[10px] outline-none placeholder:text-gray-400">
+                        <svg class="h-3 w-3 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.7">
+                            <circle cx="11" cy="11" r="7" />
+                            <path d="m20 20-4-4" />
                         </svg>
                     </div>
 
                     <!-- List icon -->
                     <button class="text-red-500" aria-label="List view">
                         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
-                            <rect x="4" y="4" width="16" height="5" rx="0.5"/>
-                            <rect x="4" y="15" width="16" height="5" rx="0.5"/>
+                            <rect x="4" y="4" width="16" height="5" rx="0.5" />
+                            <rect x="4" y="15" width="16" height="5" rx="0.5" />
                         </svg>
                     </button>
 
                     <!-- Grid icon -->
                     <button class="text-gray-600" aria-label="Grid view">
                         <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
-                            <rect x="4" y="4" width="6" height="6" rx="0.5"/>
-                            <rect x="14" y="4" width="6" height="6" rx="0.5"/>
-                            <rect x="4" y="14" width="6" height="6" rx="0.5"/>
-                            <rect x="14" y="14" width="6" height="6" rx="0.5"/>
+                            <rect x="4" y="4" width="6" height="6" rx="0.5" />
+                            <rect x="14" y="4" width="6" height="6" rx="0.5" />
+                            <rect x="4" y="14" width="6" height="6" rx="0.5" />
+                            <rect x="14" y="14" width="6" height="6" rx="0.5" />
                         </svg>
                     </button>
                 </div>
@@ -120,7 +124,8 @@
             <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
                 <!-- Event 1 -->
-                <div class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                     <div class="flex items-center gap-3">
                         <strong class="text-4xl text-[#ff3f22]">05</strong>
                         <div>
@@ -134,13 +139,15 @@
                         </h3>
                         <p class="text-sm text-gray-500 mt-3">Online master-class</p>
                     </div>
-                    <button class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
                         View more
                     </button>
                 </div>
 
                 <!-- Event 2 -->
-                <div class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                     <div class="flex items-center gap-3">
                         <strong class="text-4xl text-[#ff3f22]">24</strong>
                         <div>
@@ -154,13 +161,15 @@
                         </h3>
                         <p class="text-sm text-gray-500 mt-3">Online lecture</p>
                     </div>
-                    <button class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
                         View more
                     </button>
                 </div>
 
                 <!-- Event 3 -->
-                <div class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                     <div class="flex items-center gap-3">
                         <strong class="text-4xl text-[#ff3f22]">16</strong>
                         <div>
@@ -174,13 +183,15 @@
                         </h3>
                         <p class="text-sm text-gray-500 mt-3">Online workshop</p>
                     </div>
-                    <button class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
                         View more
                     </button>
                 </div>
 
                 <!-- Event 4 -->
-                <div class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                     <div class="flex items-center gap-3">
                         <strong class="text-4xl text-[#ff3f22]">10</strong>
                         <div>
@@ -194,13 +205,15 @@
                         </h3>
                         <p class="text-sm text-gray-500 mt-3">Online workshop</p>
                     </div>
-                    <button class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
                         View more
                     </button>
                 </div>
 
                 <!-- Event 5 -->
-                <div class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                     <div class="flex items-center gap-3">
                         <strong class="text-4xl text-[#ff3f22]">27</strong>
                         <div>
@@ -214,13 +227,15 @@
                         </h3>
                         <p class="text-sm text-gray-500 mt-3">Online master-class</p>
                     </div>
-                    <button class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
                         View more
                     </button>
                 </div>
 
                 <!-- Event 6 -->
-                <div class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                     <div class="flex items-center gap-3">
                         <strong class="text-4xl text-[#ff3f22]">15</strong>
                         <div>
@@ -234,13 +249,15 @@
                         </h3>
                         <p class="text-sm text-gray-500 mt-3">Online lecture</p>
                     </div>
-                    <button class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
                         View more
                     </button>
                 </div>
 
                 <!-- Event 7 -->
-                <div class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                     <div class="flex items-center gap-3">
                         <strong class="text-4xl text-[#ff3f22]">02</strong>
                         <div>
@@ -254,13 +271,15 @@
                         </h3>
                         <p class="text-sm text-gray-500 mt-3">Online lecture</p>
                     </div>
-                    <button class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
                         View more
                     </button>
                 </div>
 
                 <!-- Event 8 -->
-                <div class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                     <div class="flex items-center gap-3">
                         <strong class="text-4xl text-[#ff3f22]">29</strong>
                         <div>
@@ -274,13 +293,15 @@
                         </h3>
                         <p class="text-sm text-gray-500 mt-3">Online lecture</p>
                     </div>
-                    <button class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
                         View more
                     </button>
                 </div>
 
                 <!-- Event 9 -->
-                <div class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                     <div class="flex items-center gap-3">
                         <strong class="text-4xl text-[#ff3f22]">18</strong>
                         <div>
@@ -294,7 +315,8 @@
                         </h3>
                         <p class="text-sm text-gray-500 mt-3">Online lecture</p>
                     </div>
-                    <button class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition">
                         View more
                     </button>
                 </div>
@@ -318,10 +340,9 @@
                 <form class="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row">
                     <input
                         class="h-12 flex-1 rounded-sm border border-gray-200 px-4 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-orange-500"
-                        placeholder="Your working email"
-                        type="email"
-                    >
-                    <button class="h-12 rounded-sm bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600">
+                        placeholder="Your working email" type="email">
+                    <button
+                        class="h-12 rounded-sm bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600">
                         Subscribe
                     </button>
                 </form>
@@ -337,31 +358,38 @@
                 <!-- Logo and social links -->
                 <div>
                     <a class="text-2xl font-bold tracking-tight" href="#">
-                        <img alt="Createx" src="image/logo.png">
+                        <img alt="Createx" src="/pages/pages/image/logo.png">
                     </a>
 
                     <p class="mt-6 max-w-[230px] text-sm leading-6 text-gray-400">
-                        Createx Online School is a leader in online studying. We have lots of courses from different programs and experienced teachers.
+                        Createx Online School is a leader in online studying. We have lots of courses from different
+                        programs and experienced teachers.
                     </p>
 
                     <div class="mt-7 flex items-center gap-4">
                         <a class="transition hover:scale-110" href="#">
-                            <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70" src="image/Facebook.svg">
+                            <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/Facebook.svg">
                         </a>
                         <a class="transition hover:scale-110" href="#">
-                            <img alt="Twitter" class="h-5 w-5 transition hover:opacity-70" src="image/Twitter.svg">
+                            <img alt="Twitter" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/Twitter.svg">
                         </a>
                         <a class="transition hover:scale-110" href="#">
-                            <img alt="YouTube" class="h-5 w-5 transition hover:opacity-70" src="image/YouTube.svg">
+                            <img alt="YouTube" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/YouTube.svg">
                         </a>
                         <a class="transition hover:scale-110" href="#">
-                            <img alt="Telegram" class="h-5 w-5 transition hover:opacity-70" src="image/telegram.svg">
+                            <img alt="Telegram" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/telegram.svg">
                         </a>
                         <a class="transition hover:scale-110" href="#">
-                            <img alt="Instagram" class="h-5 w-5 transition hover:opacity-70" src="image/Instagram.svg">
+                            <img alt="Instagram" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/Instagram.svg">
                         </a>
                         <a class="transition hover:scale-110" href="#">
-                            <img alt="LinkedIn" class="h-5 w-5 transition hover:opacity-70" src="image/Linked-In.svg">
+                            <img alt="LinkedIn" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/Linked-In.svg">
                         </a>
                     </div>
                 </div>
@@ -410,19 +438,20 @@
                     </h3>
 
                     <form class="mt-6">
-                        <div class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
+                        <div
+                            class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
                             <input
                                 class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
-                                placeholder="Email address"
-                                type="email"
-                            >
-                            <button class="px-3 text-lg text-gray-400 transition hover:bg-orange-500 hover:text-white" type="submit">
+                                placeholder="Email address" type="email">
+                            <button class="px-3 text-lg text-gray-400 transition hover:bg-orange-500 hover:text-white"
+                                type="submit">
                                 →
                             </button>
                         </div>
 
                         <p class="mt-4 text-[10px] leading-4 text-gray-500">
-                            *Subscribe to our newsletter to receive communications and upcoming events from Createx School.
+                            *Subscribe to our newsletter to receive communications and upcoming events from Createx
+                            School.
                         </p>
                     </form>
                 </div>
@@ -432,7 +461,8 @@
 
         <!-- Copyright -->
         <div class="border-t border-white/10 bg-[#292c3a]">
-            <div class="mx-auto flex max-w-[1200px] flex-col sm:flex-row items-center justify-between gap-4 px-6 py-5 text-xs text-gray-400">
+            <div
+                class="mx-auto flex max-w-[1200px] flex-col sm:flex-row items-center justify-between gap-4 px-6 py-5 text-xs text-gray-400">
                 <p>© All rights reserved. Made with by Createx Studio</p>
                 <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
                     Go to top
@@ -441,4 +471,5 @@
         </div>
     </footer>
 </body>
+
 </html>
