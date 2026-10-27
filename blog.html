@@ -9,29 +9,20 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="bg-[#ffddd5]">
         <nav class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
             <a class="shrink-0" href="index.html">
-                <img alt="Createx logo" class="w-32" src="/pages/pages/image/logo1.png" />
+                <img alt="Createx logo" class="w-28 sm:w-32" src="/pages/pages/image/logo1.png" />
             </a>
             <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
-                <a class="hover:text-[#ff3f22] transition" href="about.html">
-                    About Us
-                </a>
-                <a class="hover:text-[#ff3f22] transition" href="courses.html">
-                    Courses
-                </a>
-                <a class="hover:text-[#ff3f22] transition" href="eventList.html">
-                    Events
-                </a>
-                <a class="hover:text-[#ff3f22] transition" href="blog.html">
-                    Blog
-                </a>
-                <a class="hover:text-[#ff3f22] transition" href="contact.html">
-                    Contacts
-                </a>
+                <a class="hover:text-[#ff3f22] transition" href="about.html">About Us</a>
+                <a class="hover:text-[#ff3f22] transition" href="courses.html">Courses</a>
+                <a class="hover:text-[#ff3f22] transition" href="eventList.html">Events</a>
+                <a class="hover:text-[#ff3f22] transition" href="blog.html">Blog</a>
+                <a class="hover:text-[#ff3f22] transition" href="contact.html">Contacts</a>
             </div>
-            <div class="flex items-center gap-5">
+            <div class="flex items-center gap-4 sm:gap-5">
                 <button
                     class="hidden sm:block bg-[#ff3f22] text-white text-sm font-medium px-6 py-3 rounded-md hover:bg-[#e9371d] transition">
                     Get consultation
@@ -39,47 +30,60 @@
                 <button id="btn" class="text-sm font-medium hover:text-[#ff3f22] transition">
                     Log in / Register
                 </button>
+                <button class="lg:hidden text-2xl font-bold text-gray-800 hover:text-[#ff3f22]">
+                    ☰
+                </button>
             </div>
         </nav>
     </header>
-    <!-- sectionlar  -->
+
+    <!-- MAIN SECTION -->
     <main>
         <section class="bg-[#F4F5F6]">
-            <div class="flex max-w-6xl mx-auto justify-between py-[50px]">
+            <div
+                class="flex flex-col lg:flex-row items-center max-w-6xl mx-auto justify-between px-5 py-10 lg:py-[50px] gap-10">
                 <div>
-                    <img class="w-[400px]" src="/pages/pages/image/illustration.png" alt="illustration">
+                    <img class="w-full max-w-[280px] sm:max-w-[350px] lg:max-w-[400px]"
+                        src="/pages/pages/image/illustration.png" alt="illustration">
                 </div>
-                <div class="flex flex-col gap-5">
-                    <h1 class="font-bold text-[46px] max-w-[600px]">Want to get the best articles weekly?
-                        Subscribe to our newsletter!</h1>
-                    <div class="flex gap-6 items-center">
-                        <input class="py-3 outline-none rounded-[5px] px-[20px] pr-lg" type="email"
-                            placeholder="Your working email">
+                <div class="flex flex-col gap-5 w-full lg:w-auto">
+                    <h1
+                        class="font-bold text-2xl sm:text-4xl lg:text-[46px] lg:leading-[1.2] max-w-[600px] text-center lg:text-left">
+                        Want to get the best articles weekly? Subscribe to our newsletter!
+                    </h1>
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-stretch sm:items-center w-full">
+                        <input
+                            class="w-full sm:flex-1 py-3 outline-none rounded-[5px] px-[20px] border border-gray-300 focus:border-[#FA5418]"
+                            type="email" placeholder="Your working email">
                         <button
-                            class="text-white bg-[#FA5418] px-14 py-[10px] rounded-[10px] hover:bg-[#e9371d] transition">Subscribe</button>
+                            class="w-full sm:w-auto text-white bg-[#FA5418] px-10 lg:px-14 py-3 rounded-[10px] hover:bg-[#e9371d] transition font-medium">
+                            Subscribe
+                        </button>
                     </div>
-                    <div class="flex gap-5">
-                        <input type="checkbox">
-                        <p>I agree to receive communications from Createx Online School</p>
-                    </div>
+                    <label
+                        class="flex items-start sm:items-center gap-3 cursor-pointer text-sm sm:text-base text-gray-700">
+                        <input type="checkbox" class="mt-1 sm:mt-0 w-4 h-4 accent-[#FA5418]">
+                        <span>I agree to receive communications from Createx Online School</span>
+                    </label>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="bg-[#1f2230] text-white">
-        <div class="mx-auto max-w-[1200px] px-6 py-14">
-            <div class="grid grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-6">
-                <div>
-                    <a class="text-2xl font-bold tracking-tight" href="#">
+        <div class="mx-auto max-w-[1200px] px-6 py-10 lg:py-14">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-8 lg:gap-6">
+
+                <div class="sm:col-span-2 md:col-span-1">
+                    <a class="text-2xl font-bold tracking-tight inline-block" href="#">
                         <img alt="Createx" src="/pages/pages/image/logo.png" />
                     </a>
-                    <p class="mt-6 max-w-[230px] text-sm leading-6 text-gray-400">
+                    <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400">
                         Createx Online School is a leader in online studying. We have lots of courses from different
-                        programs and
-                        experienced teachers.
+                        programs and experienced teachers.
                     </p>
-                    <div class="mt-7 flex items-center gap-4">
+                    <div class="mt-6 lg:mt-7 flex items-center gap-4">
                         <a class="transition hover:scale-110" href="#">
                             <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70"
                                 src="/pages/pages/image/Facebook.svg" />
@@ -106,114 +110,67 @@
                         </a>
                     </div>
                 </div>
+
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Site Map
-                    </h3>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-400">
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Courses
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Events
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Contacts
-                            </a>
-                        </li>
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Site Map</h3>
+                    <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
+                        <li><a class="transition hover:text-orange-500" href="#">About Us</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Courses</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Events</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Blog</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Contacts</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Courses
-                    </h3>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-400">
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Marketing
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Management
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                HR &; Recruiting
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Design
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Development
-                            </a>
-                        </li>
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Courses</h3>
+                    <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
+                        <li><a class="transition hover:text-orange-500" href="#">Marketing</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Management</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">HR &amp; Recruiting</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Design</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Development</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Contact Us
-                    </h3>
-                    <div class="mt-6 space-y-4 text-sm text-gray-400">
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Contact Us</h3>
+                    <div class="mt-4 lg:mt-6 space-y-3 lg:space-y-4 text-sm text-gray-400">
                         <a class="flex items-center transition hover:text-white" href="tel:+14055550128">
-                            <span>
-                                (405) 555-0128
-                            </span>
+                            <span>(405) 555-0128</span>
                         </a>
                         <a class="flex items-center transition hover:text-white" href="mailto:hello@createx.com">
-                            <span>
-                                hello@createx.com
-                            </span>
+                            <span>hello@createx.com</span>
                         </a>
                     </div>
                 </div>
-                <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Sign up to our newsletter
-                    </h3>
-                    <form class="mt-6">
+
+                <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Sign up to our newsletter</h3>
+                    <form class="mt-4 lg:mt-6 max-w-md lg:max-w-none">
                         <div
                             class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
                             <input
                                 class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
                                 placeholder="Email address" type="email" />
-                            <button class="px-3 text-lg text-gray-400 transition hover: hover:text-white" type="submit">
+                            <button class="px-3 text-lg text-gray-400 transition hover:text-white" type="submit">
                                 →
                             </button>
                         </div>
-                        <p class="mt-4 text-[10px] leading-4 text-gray-500">
+                        <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500">
                             *Subscribe to our newsletter to receive communications and upcoming events from Createx
                             School.
                         </p>
                     </form>
                 </div>
+
             </div>
         </div>
+
         <div class="border-t border-white/10 bg-[#292c3a]">
-            <div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
-                <p>
-                    © All rights reserved. Made with by Createx Studio
-                </p>
+            <div
+                class="mx-auto flex flex-col sm:flex-row gap-3 text-center sm:text-left max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
+                <p>© All rights reserved. Made with by Createx Studio</p>
                 <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
                     Go to top
                 </a>
