@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!-- main ning iconka linki -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+  <!-- main ning iconka linki -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back,arrow_forward" />
 
@@ -13,66 +17,89 @@
 </head>
 
 <body class="text-[#1e2532]">
-  <header class="bg-[#ffddd5] fixed top-0 left-0 w-full z-50">
-    <nav class="max-w-6xl mx-auto px-4 sm:px-5 py-4 flex items-center justify-between gap-4">
-      <a href="index.html" class="shrink-0">
+  <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
+
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="index.html">
         <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
       </a>
 
+      <!-- Desktop links -->
       <div class="hidden lg:flex items-center gap-6 font-medium">
-        <a class="hover:text-[#ff3f22]" href="about.html">About Us</a>
-        <a class="hover:text-[#ff3f22]" href="courses.html">Courses</a>
-        <a class="hover:text-[#ff3f22]" href="eventList.html">Events</a>
-        <a class="hover:text-[#ff3f22]" href="blog.html">Blog</a>
-        <a class="hover:text-[#ff3f22]" href="contact.html">Contacts</a>
+        <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
+        <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
+        <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
+        <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
+        <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
       </div>
 
-      <div class="hidden sm:flex items-center gap-4">
-        <a href="contact.html"
-          class="bg-[#ff3f22] text-white text-sm font-medium px-4 lg:px-6 py-3 rounded-md hover:bg-[#e9371d]">
+      <!-- Desktop buttons -->
+      <div class="hidden lg:flex items-center gap-4">
+
+        <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
           Get consultation
         </a>
-        <button id="btn" class="text-sm font-medium hover:text-[#ff3f22]">
+
+        <button id="btn" class="hover:text-[#ff3f22] font-bold">
           Log in / Register
         </button>
+
       </div>
 
-      <button id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
-        class="lg:hidden p-2 text-2xl">
-        ☰
+      <!-- Menu button -->
+      <button id="menuBtn" class="lg:hidden text-3xl">
+        <span class="material-symbols-outlined hover:text-[#ff3f22]">menu</span>
       </button>
+
+      <!-- Close button -->
+      <button id="closeBtn" class="hidden lg:hidden text-3xl">
+        <span class="font-bold hover:text-[#ff3f22]">x</span>
+      </button>
+
     </nav>
 
-    <div id="mobileMenu" class="hidden lg:hidden bg-[#ffddd5] border-t border-[#f4c7bd] px-5 py-5">
-      <div class="flex flex-col gap-4 font-medium">
-        <a href="about.html">About Us</a>
-        <a href="courses.html">Courses</a>
-        <a href="eventList.html">Events</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contacts</a>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
 
-        <a href="contact.html" class="sm:hidden bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md">
+      <div class="flex flex-col gap-5 font-medium">
+
+        <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
+
+        <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
+
+        <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
+
+        <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
+
+        <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+
+        <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
           Get consultation
         </a>
 
-        <button id="mobileLogin" class="sm:hidden text-left">
+        <button id="mobileLogin" class="text-left hover:text-[#ff3f22]">
           Log in / Register
         </button>
+
       </div>
     </div>
-  </header>
 
+  </header>
 
   <section class="bg-[#ffddd5]">
     <div class="max-w-6xl mx-auto px-5 py-16 py-20 py-24 grid grid-cols-2 gap-12 gap-20 items-center">
       <div>
         <div class="flex items-center gap-3 mb-7">
 
-          <button
-            class="group flex h-12 w-12 items-center justify-center rounded-full bg-[#ff3f22] text-white transition-all duration-300 hover:scale-110 hover:shadow-[0_0_0_14px_rgba(255,63,34,0.15)]">
-            <img src="/pages/pages/image/small.png" alt="Play"
-              class="h-10 w-10 transition-transform duration-300 group-hover:scale-110" />
-          </button>
+          <a href="https://www.youtube.com/watch?v=p6HbrlSwong&list=RDlUG-FsKPF8c&index=8">
+            <button
+              class="group flex h-12 w-12 items-center justify-center rounded-full bg-[#ff3f22] text-white transition-all duration-300 hover:scale-110 hover:shadow-[0_0_0_14px_rgba(255,63,34,0.15)]">
+              <img src="/pages/pages/image/small.png" alt="Play"
+                class="h-10 w-10 transition-transform duration-300 group-hover:scale-110" />
+            </button>
+          </a>
 
           <span class="text-sm font-medium text-[#1e212c]">
             Play showreel
@@ -978,7 +1005,7 @@
               <a class="transition hover:text-orange-500" href="#">
                 Design
               </a>
-           </li>
+            </li>
             <li>
               <a class="transition hover:text-orange-500" href="#">
                 Development
@@ -1027,9 +1054,11 @@
         <p>
           © All rights reserved. Made with by Createx Studio
         </p>
-        <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
-          Go to top
-        </a>
+        <div class="flex gap-3 items-center font-medium uppercase tracking-wide transition hover:text-white">
+          <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
+            Go to top
+          </a>
+        </div>
       </div>
     </div>
   </footer>
