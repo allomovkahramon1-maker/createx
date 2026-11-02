@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main ning iconka linki -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <!-- main ning iconka linki -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
 
@@ -12,224 +16,305 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Createx</title>
 </head>
-<!--  -->
+
 <body>
-    <header class="bg-[#ffddd5] fixed w-full z-50">
-        <nav class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
-            <a class="" href="index.html">
-                <img alt="Createx logo" class="w-32" src="/pages/pages/image/Navbar/logo.svg" />
+    <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
+
+        <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
             </a>
-            <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
-                <a class="hover:text-[#ff3f22] transition" href="about.html">
-                    About Us
-                </a>
-                <a class="hover:text-[#ff3f22] transition" href="courses.html">
-                    Courses
-                </a>
-                <a class="hover:text-[#ff3f22] transition" href="eventList.html">
-                    Events
-                </a>
-                <a class="hover:text-[#ff3f22] transition" href="blog.html">
-                    Blog
-                </a>
-                <a class="hover:text-[#ff3f22] transition" href="contact.html">
-                    Contacts
-                </a>
+
+            <!-- Desktop links -->
+            <div class="hidden lg:flex items-center gap-6 font-medium">
+                <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
+                <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
+                <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
+                <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
+                <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
             </div>
-            <div class="flex items-center gap-5">
-                <a href="contact.html">
-                    <button
-                        class="hidden sm:block bg-[#ff3f22] text-white text-sm font-medium px-6 py-3 rounded-md hover:bg-[#e9371d] transition">
-                        Get consultation
-                    </button>
+
+            <!-- Desktop buttons -->
+            <div class="hidden lg:flex items-center gap-4">
+
+                <a href="contact.html"
+                    class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
+                    Get consultation
                 </a>
-                <button id="btn" class="text-sm font-medium hover:text-[#ff3f22] transition">
+
+                <button id="btn" class="hover:text-[#ff3f22] font-bold">
                     Log in / Register
                 </button>
+
             </div>
+
+            <!-- Menu button -->
+            <button id="menuBtn" class="lg:hidden text-3xl">
+                <span class="material-symbols-outlined hover:text-[#ff3f22]">menu</span>
+            </button>
+
+            <!-- Close button -->
+            <button id="closeBtn" class="hidden lg:hidden text-3xl">
+                <span class="font-bold hover:text-[#ff3f22]">x</span>
+            </button>
+
         </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
+
+            <div class="flex flex-col gap-5 font-medium">
+
+                <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
+
+                <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
+
+                <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
+
+                <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
+
+                <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+
+                <a href="contact.html"
+                    class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
+                    Get consultation
+                </a>
+
+                <button id="mobileLogin" class="text-left hover:text-[#ff3f22]">
+                    Log in / Register
+                </button>
+
+            </div>
+        </div>
+
     </header>
     <main>
         <!-- section 1 -->
         <section class="bg-[#FFDAD5]">
-            <div class="max-w-6xl mx-auto">
-                <div class="flex flex-col items-center py-[90px] gap-4">
-                    <h6 class="text-[red] text-[30px]">course</h6>
-                    <h1 class="max-w-[900px] font-bold text-[35px]">
+            <div class="max-w-6xl mx-auto px-5 mt-10">
+                <div class="flex flex-col items-center text-center py-14 sm:py-20 lg:py-[90px] gap-4">
+                    <h6 class="text-red-500 text-xl sm:text-2xl lg:text-[30px]">
+                        course
+                    </h6>
+                    <h1 class="max-w-[900px] font-bold text-2xl sm:text-3xl lg:text-[35px] leading-tight">
                         User Experience. Principles of Human-Centered Design
                     </h1>
                 </div>
             </div>
         </section>
         <!-- section 2 -->
-        <section class="flex justify-between items-center">
-            <div class="max-w-6xl mx-auto">
-                <div class="flex flex-col gap-10 py-10">
-                    <h1 class="text-[46px] font-bold">About the course</h1>
-                    <p class="text-[16px] max-w-[500px]">Bibendum vulputate adipiscing venenatis at est, a eu tincidunt.
-                        Leo aenean congue in sagittis, felis maecenas amet
-                        varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit
-                        cras at malesuada diam.
-                        Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna
-                        aliquet ornare nibh vel
-                        lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque</p>
+        <section class="max-w-6xl mx-auto px-5 py-10 sm:py-14">
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-16">
 
-                    <h1 class="text-[46px] font-bold">You will learn:</h1>
-                    <ul class="space-y-4 text-sm text-gray-600">
-                        <li class="flex gap-3">
-                            <span class="text-[#ff3f22] font-bold">
-                                <img alt="check" src="/pages/pages/image/check.png" />
-                            </span>
-                            <span>
-                                A fermentum in morbi pretium aliquam adipiscing donec tempus.
-                            </span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-[#ff3f22] font-bold">
-                                <img alt="check" src="/pages/pages/image/check.png" />
-                            </span>
-                            <span>
-                                Vulputate placerat amet pulvinar lorem nisl.
-                            </span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-[#ff3f22] font-bold">
-                                <img alt="check" src="/pages/pages/image/check.png" />
-                            </span>
-                            <span>
-                                Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
-                            </span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-[#ff3f22] font-bold">
-                                <img alt="check" src="/pages/pages/image/check.png" />
-                            </span>
-                            <span>
-                                Etiam duis lobortis in fames ultrices commodo nibh.
-                            </span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-[#ff3f22] font-bold">
-                                <img alt="check" src="/pages/pages/image/check.png" />
-                            </span>
-                            <span>
-                                Tincidunt sagittis neque sem ac eget.
-                            </span>
-                        </li>
-                        <li class="flex gap-3">
-                            <span class="text-[#ff3f22] font-bold">
-                                <img alt="check" src="/pages/pages/image/check.png" />
-                            </span>
-                            <span>
-                                Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
-                            </span>
-                        </li>
-                    </ul>
+                <div class="w-full lg:flex-1">
+                    <div class="flex flex-col gap-7 sm:gap-10">
+
+                        <h1 class="text-3xl sm:text-4xl lg:text-[46px] font-bold">
+                            About the course
+                        </h1>
+
+                        <p class="text-sm sm:text-base max-w-[500px] leading-relaxed">
+                            Bibendum vulputate adipiscing venenatis at est, a eu tincidunt.
+                            Leo aenean congue in sagittis, felis maecenas amet
+                            varius at. Pellentesque euismod in faucibus at elementum.
+                            Tellus maecenas libero est tempus sit cras at malesuada diam.
+                            Consequat senectus dictumst non hac dignissim montes, pretium,
+                            egestas molestie. Sed magna aliquet ornare nibh vel
+                            lectus diam eget pretium. Lorem risus nunc tincidunt tortor,
+                            mi nulla pellentesque
+                        </p>
+
+                        <h1 class="text-3xl sm:text-4xl lg:text-[46px] font-bold">
+                            You will learn:
+                        </h1>
+
+                        <ul class="space-y-4 text-sm text-gray-600">
+
+                            <li class="flex items-start gap-3">
+                                <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                                <span>
+                                    A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                                </span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                                <span>
+                                    Vulputate placerat amet pulvinar lorem nisl.
+                                </span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                                <span>
+                                    Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
+                                </span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                                <span>
+                                    Etiam duis lobortis in fames ultrices commodo nibh.
+                                </span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                                <span>
+                                    Tincidunt sagittis neque sem ac eget.
+                                </span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                                <span>
+                                    Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
+                                </span>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="max-w-6xl mx-auto">
-                <div class="w-full max-w-[360px] border border-gray-200 rounded-sm shadow-xl p-[22px] bg-white">
 
-                    <!-- DATES -->
-                    <div class="mb-6">
-                        <h6 class="text-[11px] font-bold text-[#1E212C] mb-1">
-                            DATES
-                        </h6>
+                <div class="w-full lg:w-[360px] shrink-0">
 
-                        <h2 class="text-[17px] font-medium text-[#FF3F3A] mb-1">
-                            Sept 7 – Nov 2
-                        </h2>
+                    <div class="w-full border border-gray-200 rounded-sm shadow-xl p-5 sm:p-[22px] bg-white">
 
-                        <p class="text-[12px] leading-5 text-gray-500">
-                            Metus turpis sit lorem lacus, in elit tellus lacus.
-                        </p>
+                        <div class="mb-6">
+
+                            <h6 class="text-[11px] font-bold text-[#1E212C] mb-1">
+                                DATES
+                            </h6>
+
+                            <h2 class="text-[17px] font-medium text-[#FF3F3A] mb-1">
+                                Sept 7 – Nov 2
+                            </h2>
+
+                            <p class="text-[12px] leading-5 text-gray-500">
+                                Metus turpis sit lorem lacus, in elit tellus lacus.
+                            </p>
+
+                        </div>
+
+                        <div class="mb-6">
+
+                            <h6 class="text-[11px] font-bold text-[#1E212C] mb-1">
+                                DURATION
+                            </h6>
+
+                            <h2 class="text-[17px] font-medium text-[#FF3F3A] mb-1">
+                                2 months – 8 lessons
+                            </h2>
+
+                            <p class="text-[12px] leading-5 text-gray-500">
+                                Rhoncus pellentesque auctor auctor orci vulputate faucibus quis ut.
+                            </p>
+
+                        </div>
+
+                        <div class="mb-7">
+
+                            <h6 class="text-[11px] font-bold text-[#1E212C] mb-1">
+                                PRICE
+                            </h6>
+
+                            <h2 class="text-[17px] font-medium text-[#FF3F3A] mb-1">
+                                $120 per month
+                            </h2>
+
+                            <p class="text-[12px] leading-5 text-gray-500">
+                                Nulla sem adipiscing adipiscing felis fringilla.
+                                Adipiscing mauris quam ac elit tristique dis.
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="w-full h-10 sm:h-8 rounded-sm bg-gradient-to-r from-[#FF3F3A] to-[#F75E05] text-white text-[10px] font-bold transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+
+                            Join the course
+
+                        </button>
+
                     </div>
-
-                    <!-- DURATION -->
-                    <div class="mb-6">
-                        <h6 class="text-[11px] font-bold text-[#1E212C] mb-1">
-                            DURATION
-                        </h6>
-
-                        <h2 class="text-[17px] font-medium text-[#FF3F3A] mb-1">
-                            2 months – 8 lessons
-                        </h2>
-
-                        <p class="text-[12px] leading-5 text-gray-500">
-                            Rhoncus pellentesque auctor auctor orci vulputate faucibus quis ut.
-                        </p>
-                    </div>
-
-                    <!-- PRICE -->
-                    <div class="mb-7">
-                        <h6 class="text-[11px] font-bold text-[#1E212C] mb-1">
-                            PRICE
-                        </h6>
-
-                        <h2 class="text-[17px] font-medium text-[#FF3F3A] mb-1">
-                            $120 per month
-                        </h2>
-
-                        <p class="text-[12px] leading-5 text-gray-500">
-                            Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique
-                            dis.
-                        </p>
-                    </div>
-
-                    <!-- BUTTON -->
-                    <button
-                        class="w-full h-8 rounded-sm bg-gradient-to-r from-[#FF3F3A] to-[#F75E05] text-white text-[10px] font-bold transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                        Join the course
-                    </button>
-
                 </div>
 
             </div>
         </section>
         <!-- section 3 -->
-        <section class="flex max-w-6xl mx-auto justify-between items-center my-[50px]">
-            <div>
-                <div class="w-[400px]">
-                    <img src="/pages/pages/image/curator-image.png" alt="curator-image">
+        <section class="max-w-6xl mx-auto px-5 my-10 sm:my-[50px]">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 lg:gap-14">
+
+                <div class="w-full md:w-5/12 flex justify-center">
+                    <div class="w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[400px]">
+                        <img src="/pages/pages/image/curator-image.png" alt="curator-image"
+                            class="w-full object-contain">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="flex flex-col gap-3">
-                    <h6>Course curator</h6>
-                    <h1 class="font-bold text-[46px]">Cody Fisher</h1>
-                    <p class="text-[#787A80]">Senior UX designer in IT Product Company</p>
-                    <span class="flex items-center gap-5">
-                        <img src="/pages/pages/image/Star.svg" alt="Star">
-                        4.9 rate
-                    </span>
-                    <span class="flex items-center gap-5">
-                        <img src="/pages/pages/image/Play.svg" alt="Play">
-                        4 courses
-                    </span>
-                    <span class="flex items-center gap-5">
-                        <img src="/pages/pages/image/Profile.svg" alt="Profile">
-                        350 students
-                    </span>
-                    <p class="max-w-[600px]">Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus
-                        curabitur venenatis, vulputate venenatis fermentum
-                        ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit
-                        maecenas nibh consectetur
-                        vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse
-                        proin. Nullam sit nec
-                        ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.</p>
-                    <div class="flex gap-5">
-                        <a href="#">
-                            <img src="/pages/pages/image/Facebook.svg" alt="Facebook">
-                        </a>
-                        <a href="#">
-                            <img src="/pages/pages/image/Facebook.svg" alt="Facebook">
-                        </a>
-                        <a href="#">
-                            <img src="/pages/pages/image/Facebook.svg" alt="Facebook">
-                        </a>
-                        <a href="#">
-                            <img src="/pages/pages/image/Facebook.svg" alt="Facebook">
-                        </a>
+
+                <div class="w-full md:w-7/12">
+
+                    <div class="flex flex-col gap-4">
+
+                        <h6 class="text-sm sm:text-base">
+                            Course curator
+                        </h6>
+
+                        <h1 class="font-bold text-3xl sm:text-4xl lg:text-[46px]">
+                            Cody Fisher
+                        </h1>
+
+                        <p class="text-[#787A80] text-sm sm:text-base">
+                            Senior UX designer in IT Product Company
+                        </p>
+
+                        <div class="flex items-center gap-4">
+                            <img src="/pages/pages/image/Star.svg" alt="Star" class="w-5 h-5">
+                            <span>4.9 rate</span>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <img src="/pages/pages/image/Play.svg" alt="Play" class="w-5 h-5">
+                            <span>4 courses</span>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <img src="/pages/pages/image/Profile.svg" alt="Profile" class="w-5 h-5">
+                            <span>350 students</span>
+                        </div>
+
+                        <p class="max-w-[600px] text-sm sm:text-base leading-relaxed text-gray-700">
+                            Mattis adipiscing aliquam eu proin metus a iaculis faucibus.
+                            Tempus curabitur venenatis, vulputate venenatis fermentum
+                            ante. Nisl, amet id semper semper quis commodo, consequat.
+                            Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur
+                            vel diam. Sem vulputate molestie laoreet at massa sed pharetra.
+                            Ac commodo platea id habitasse proin. Nullam sit nec
+                            ipsum posuere non. Nam vel aliquam tristique sollicitudin
+                            interdum quam.
+                        </p>
+
+                        <div class="flex items-center gap-5 mt-2">
+
+                            <a href="#">
+                                <img src="/pages/pages/image/Facebook.svg" alt="Facebook" class="w-5 h-5">
+                            </a>
+
+                            <a href="#">
+                                <img src="/pages/pages/image/Facebook.svg" alt="Facebook" class="w-5 h-5">
+                            </a>
+
+                            <a href="#">
+                                <img src="/pages/pages/image/Facebook.svg" alt="Facebook" class="w-5 h-5">
+                            </a>
+
+                            <a href="#">
+                                <img src="/pages/pages/image/Facebook.svg" alt="Facebook" class="w-5 h-5">
+                            </a>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -390,65 +475,76 @@
             </div>
         </section>
         <!-- section 6 -->
-        <section class="flex max-w-6xl mx-auto justify-between my-[50px]">
-            <div>
-                <h6 class="font-lato text-[20px] mb-6">For whom?</h6>
-                <h1 class="font-bold text-[46px]">Who will benefit from the course:</h1>
+        <section class="max-w-6xl mx-auto px-5 my-10 sm:my-[50px]">
+            <div class="flex flex-col md:flex-row justify-between gap-8 lg:gap-12">
+
+                <div class="w-full md:w-5/12">
+                    <h6 class="font-lato text-base sm:text-[20px] mb-4 sm:mb-6">
+                        For whom?
+                    </h6>
+
+                    <h1 class="font-bold text-3xl sm:text-4xl lg:text-[46px] leading-tight">
+                        Who will benefit from the course:
+                    </h1>
+                </div>
+
+                <!-- ong tarafdagi list -->
+                <div class="w-full md:w-7/12">
+
+                    <ul class="space-y-4 text-sm text-gray-600">
+
+                        <li class="flex items-start gap-3">
+                            <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                            <span>
+                                A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                            <span>
+                                Vulputate placerat amet pulvinar lorem nisl.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                            <span>
+                                Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                            <span>
+                                Etiam duis lobortis in fames ultrices commodo nibh.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                            <span>
+                                Tincidunt sagittis neque sem ac eget.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                            <span>
+                                Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
             </div>
-            <div>
-                <ul class="space-y-4 text-sm text-gray-600">
-                    <li class="flex gap-3">
-                        <span class="text-[#ff3f22] font-bold">
-                            <img alt="check" src="/pages/pages/image/check.png" />
-                        </span>
-                        <span>
-                            A fermentum in morbi pretium aliquam adipiscing donec tempus.
-                        </span>
-                    </li>
-                    <li class="flex gap-3">
-                        <span class="text-[#ff3f22] font-bold">
-                            <img alt="check" src="/pages/pages/image/check.png" />
-                        </span>
-                        <span>
-                            Vulputate placerat amet pulvinar lorem nisl.
-                        </span>
-                    </li>
-                    <li class="flex gap-3">
-                        <span class="text-[#ff3f22] font-bold">
-                            <img alt="check" src="/pages/pages/image/check.png" />
-                        </span>
-                        <span>
-                            Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
-                        </span>
-                    </li>
-                    <li class="flex gap-3">
-                        <span class="text-[#ff3f22] font-bold">
-                            <img alt="check" src="/pages/pages/image/check.png" />
-                        </span>
-                        <span>
-                            Etiam duis lobortis in fames ultrices commodo nibh.
-                        </span>
-                    </li>
-                    <li class="flex gap-3">
-                        <span class="text-[#ff3f22] font-bold">
-                            <img alt="check" src="/pages/pages/image/check.png" />
-                        </span>
-                        <span>
-                            Tincidunt sagittis neque sem ac eget.
-                        </span>
-                    </li>
-                    <li class="flex gap-3">
-                        <span class="text-[#ff3f22] font-bold">
-                            <img alt="check" src="/pages/pages/image/check.png" />
-                        </span>
-                        <span>
-                            Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
-                        </span>
-                    </li>
-                </ul>
-            </div>
+
         </section>
         <!-- section 7 -->
+        <!--  -->
+        
+        <!--  -->
         <section class="max-w-6xl mx-auto px-5 py-16">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- LEFT CONTENT -->
@@ -589,6 +685,137 @@
             </div>
         </section>
         <!-- section 8 -->
+        <section class="bg-[#F0F1F3] py-10 sm:py-[50px]">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="flex flex-col items-center gap-4 sm:gap-8 pb-8 sm:pb-[50px] text-center">
+                    <h6 class="font-bold text-[16px] sm:text-[20px]">
+                        TESTIMONIALS
+                    </h6>
+                    <h1 class="font-bold text-[28px] sm:text-[36px] lg:text-[46px]">
+                        What our students say
+                    </h1>
+                </div>
+                <div class="bg-white py-8 sm:py-12 lg:py-20">
+                    <swiper-container class="mySwiper" pagination="false" pagination-clickable="true" navigation="true"
+                        space-between="30" centered-slides="true" loop="true">
+                        <!-- Swiper 1 -->
+                        <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
+                            <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
+                                <div class="w-full sm:w-auto flex justify-center sm:block">
+                                    <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg"
+                                        alt="braces image">
+                                </div>
+        
+                                <div class="flex flex-col gap-6">
+                                    <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                                        amet lectus quam viverra mus lobortis fermentum amet,
+                                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
+                                        ornare turpis quis non. Congue tortor in euismod vulputate
+                                        etiam eros. Pulvinar neque pharetra arcu diam maecenas
+                                        diam integer in.
+                                    </p>
+        
+                                    <div class="flex items-center gap-4">
+                                        <img class="w-[45px] sm:w-[50px] rounded-full" src="/pages/pages/image/image (38).png"
+                                            alt="student image">
+        
+                                        <div>
+                                            <h1 class="font-bold text-[16px] sm:text-[20px]">
+                                                Eleanor Pena
+                                            </h1>
+        
+                                            <p class="text-sm sm:text-base">
+                                                Position, Course
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <!-- Swiper 2 -->
+                        <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
+        
+                            <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
+        
+                                <div class="w-full sm:w-auto flex justify-center sm:block">
+                                    <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg"
+                                        alt="braces image">
+                                </div>
+        
+                                <div class="flex flex-col gap-6">
+        
+                                    <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                                        amet lectus quam viverra mus lobortis fermentum amet,
+                                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
+                                        ornare turpis quis non. Congue tortor in euismod vulputate
+                                        etiam eros. Pulvinar neque pharetra arcu diam maecenas
+                                        diam integer in.
+                                    </p>
+        
+                                    <div class="flex items-center gap-4">
+                                        <img class="w-[45px] sm:w-[50px] rounded-full" src="/pages/pages/image/image (38).png"
+                                            alt="student image">
+        
+                                        <div>
+                                            <h1 class="font-bold text-[16px] sm:text-[20px]">
+                                                Eleanor Pena
+                                            </h1>
+        
+                                            <p class="text-sm sm:text-base">
+                                                Position, Course
+                                            </p>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <!-- Swiper 3 -->
+                        <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
+        
+                            <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
+        
+                                <div class="w-full sm:w-auto flex justify-center sm:block">
+                                    <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg"
+                                        alt="braces image">
+                                </div>
+        
+                                <div class="flex flex-col gap-6">
+        
+                                    <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                                        amet lectus quam viverra mus lobortis fermentum amet,
+                                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
+                                        ornare turpis quis non. Congue tortor in euismod vulputate
+                                        etiam eros. Pulvinar neque pharetra arcu diam maecenas
+                                        diam integer in.
+                                    </p>
+        
+                                    <div class="flex items-center gap-4">
+                                        <img class="w-[45px] sm:w-[50px] rounded-full" src="/pages/pages/image/image (38).png"
+                                            alt="student image">
+        
+                                        <div>
+                                            <h1 class="font-bold text-[16px] sm:text-[20px]">
+                                                Eleanor Pena
+                                            </h1>
+        
+                                            <p class="text-sm sm:text-base">
+                                                Position, Course
+                                            </p>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </swiper-slide>
+                    </swiper-container>
+                </div>
+            </div>
+        </section>
+
         <section class="bg-[#F4F5F6] py-16">
             <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
@@ -755,18 +982,19 @@
     </main>
     <!-- footer -->
     <footer class="bg-[#1f2230] text-white">
-        <div class="mx-auto max-w-[1200px] px-6 py-14">
-            <div class="grid grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-6">
-                <div>
-                    <a class="text-2xl font-bold tracking-tight" href="#">
+        <div class="mx-auto max-w-[1200px] px-6 py-10 lg:py-14">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-8 lg:gap-6">
+
+                <div class="sm:col-span-2 md:col-span-1">
+                    <a class="text-2xl font-bold tracking-tight inline-block" href="#">
                         <img alt="Createx" src="/pages/pages/image/logo.png" />
                     </a>
-                    <p class="mt-6 max-w-[230px] text-sm leading-6 text-gray-400">
+                    <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400">
                         Createx Online School is a leader in online studying. We have lots of courses from different
-                        programs and
-                        experienced teachers.
+                        programs and experienced teachers.
                     </p>
-                    <div class="mt-7 flex items-center gap-4">
+                    <div class="mt-6 lg:mt-7 flex items-center gap-4">
                         <a class="transition hover:scale-110" href="#">
                             <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70"
                                 src="/pages/pages/image/Facebook.svg" />
@@ -793,92 +1021,44 @@
                         </a>
                     </div>
                 </div>
+
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Site Map
-                    </h3>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-400">
-                        <li>
-                            <a class="transition hover:text-orange-500" href="about.html">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="courses.html">
-                                Courses
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="eventList.html">
-                                Events
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="blog.html">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="contact.html">
-                                Contacts
-                            </a>
-                        </li>
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Site Map</h3>
+                    <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
+                        <li><a class="transition hover:text-orange-500" href="about.html">About Us</a></li>
+                        <li><a class="transition hover:text-orange-500" href="courses.html">Courses</a></li>
+                        <li><a class="transition hover:text-orange-500" href="event.html">Events</a></li>
+                        <li><a class="transition hover:text-orange-500" href="blog.html">Blog</a></li>
+                        <li><a class="transition hover:text-orange-500" href="contact.html">Contacts</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Courses
-                    </h3>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-400">
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Marketing
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Management
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                HR &; Recruiting
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Design
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Development
-                            </a>
-                        </li>
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Courses</h3>
+                    <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
+                        <li><a class="transition hover:text-orange-500" href="#">Marketing</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Management</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">HR Recruiting</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Design</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Development</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Contact Us
-                    </h3>
-                    <div class="mt-6 space-y-4 text-sm text-gray-400">
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Contact Us</h3>
+                    <div class="mt-4 lg:mt-6 space-y-3 lg:space-y-4 text-sm text-gray-400">
                         <a class="flex items-center transition hover:text-white" href="tel:+14055550128">
-                            <span>
-                                (405) 555-0128
-                            </span>
+                            <span>(405) 555-0128</span>
                         </a>
                         <a class="flex items-center transition hover:text-white" href="mailto:hello@createx.com">
-                            <span>
-                                hello@createx.com
-                            </span>
+                            <span>hello@createx.com</span>
                         </a>
                     </div>
                 </div>
-                <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Sign up to our newsletter
-                    </h3>
-                    <form class="mt-6">
+
+                <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Sign up to our newsletter</h3>
+                    <form class="mt-4 lg:mt-6 max-w-md lg:max-w-none">
                         <div
                             class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
                             <input
@@ -888,19 +1068,20 @@
                                 <span class="material-symbols-outlined">arrow_forward</span>
                             </button>
                         </div>
-                        <p class="mt-4 text-[10px] leading-4 text-gray-500">
+                        <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500">
                             *Subscribe to our newsletter to receive communications and upcoming events from Createx
                             School.
                         </p>
                     </form>
                 </div>
+
             </div>
         </div>
+
         <div class="border-t border-white/10 bg-[#292c3a]">
-            <div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
-                <p>
-                    © All rights reserved. Made with by Createx Studio
-                </p>
+            <div
+                class="mx-auto flex flex-col sm:flex-row gap-3 text-center sm:text-left max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
+                <p>© All rights reserved. Made with by Createx Studio</p>
                 <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
                     Go to top
                 </a>
@@ -910,10 +1091,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js">
     </script>
+
     <script>
         const teamSwiper = document.querySelector(".teamSwiper");
         document.querySelector("#teamNext").onclick = () => { teamSwiper.swiper.slideNext(); }; document.querySelector("#teamPrev").onclick = () => { teamSwiper.swiper.slidePrev(); };
     </script>
+
+    <script src="pages/js/course.js"></script>
 </body>
 
 </html>
