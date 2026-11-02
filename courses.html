@@ -3,6 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- main ning iconka linki -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <!-- main ning iconka linki -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
 
@@ -14,228 +18,251 @@
 </head>
 
 <body>
-<header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
+    <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
 
-    <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
 
-        <!-- Logo -->
-        <a href="index.html">
-            <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
-        </a>
-
-        <!-- Desktop links -->
-        <div class="hidden lg:flex items-center gap-6 font-medium">
-            <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
-            <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
-            <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
-            <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
-            <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
-        </div>
-
-        <!-- Desktop buttons -->
-        <div class="hidden lg:flex items-center gap-4">
-
-            <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
-                Get consultation
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
             </a>
 
-            <button id="btn" class="hover:text-[#ff3f22] font-bold">
-                Log in / Register
+            <!-- Desktop links -->
+            <div class="hidden lg:flex items-center gap-6 font-medium">
+                <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
+                <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
+                <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
+                <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
+                <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+            </div>
+
+            <!-- Desktop buttons -->
+            <div class="hidden lg:flex items-center gap-4">
+
+                <a href="contact.html"
+                    class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
+                    Get consultation
+                </a>
+
+                <button id="btn" class="hover:text-[#ff3f22] font-bold">
+                    Log in / Register
+                </button>
+
+            </div>
+
+            <!-- Menu button -->
+            <button id="menuBtn" class="lg:hidden text-3xl">
+                <span class="material-symbols-outlined hover:text-[#ff3f22]">menu</span>
             </button>
 
-        </div>
-
-        <!-- Menu button -->
-        <button id="menuBtn" class="lg:hidden text-3xl">
-            <span class="material-symbols-outlined hover:text-[#ff3f22]">menu</span>
-        </button>
-
-        <!-- Close button -->
-        <button id="closeBtn" class="hidden lg:hidden text-3xl">
-            <span class="font-bold hover:text-[#ff3f22]">x</span>
-        </button>
-
-    </nav>
-
-    <!-- Mobile menu -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
-
-        <div class="flex flex-col gap-5 font-medium">
-
-            <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
-
-            <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
-
-            <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
-
-            <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
-
-            <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
-
-            <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
-                Get consultation
-            </a>
-
-            <button id="mobileLogin" class="text-left hover:text-[#ff3f22]">
-                Log in / Register
+            <!-- Close button -->
+            <button id="closeBtn" class="hidden lg:hidden text-3xl">
+                <span class="font-bold hover:text-[#ff3f22]">x</span>
             </button>
 
-        </div>
-    </div>
+        </nav>
 
-</header>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
+
+            <div class="flex flex-col gap-5 font-medium">
+
+                <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
+
+                <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
+
+                <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
+
+                <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
+
+                <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+
+                <a href="contact.html"
+                    class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
+                    Get consultation
+                </a>
+
+                <button id="mobileLogin" class="text-left hover:text-[#ff3f22]">
+                    Log in / Register
+                </button>
+
+            </div>
+        </div>
+
+    </header>
     <main>
-        <section class="py-20 bg-white mt-16">
-            <div class="max-w-6xl mx-auto px-4 sm:px-5 flex justify-between">
-                <div>
-                    <p class="text-xs font-bold tracking-wide mb-4">
-                        CREATEХ CERTIFICATE
+        <section class="mt-8 bg-white py-12 sm:mt-12 sm:py-16 lg:mt-16 lg:py-20">
+            <div
+                class="mx-auto flex max-w-6xl flex-col justify-between gap-10 px-4 sm:px-5 lg:flex-row lg:items-center lg:gap-8">
+
+                <!-- Left content -->
+                <div class="w-full lg:max-w-md">
+                    <p class="mb-4 text-xs font-bold tracking-wide">
+                        CREATEX CERTIFICATE
                     </p>
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold max-w-md">
+
+                    <h2 class="max-w-md text-3xl font-bold sm:text-4xl lg:text-5xl">
                         Your expertise will
-                        <br />
+                        <br class="hidden sm:block" />
                         be confirmed
                     </h2>
-                    <p class="text-sm text-gray-600 leading-6 max-w-md mt-8">
+
+                    <p class="mt-6 max-w-md text-sm leading-6 text-gray-600 sm:mt-8">
                         We are accredited by international professional organizations and institutes:
                     </p>
-                    <div class="flex flex-wrap items-center gap-6 mt-8">
-                        <img alt="Del Mar Strategy" class="w-24 sm:w-28" src="/pages/pages/image/logo2.png" />
-                        <img alt="Sentinal Consulting" class="w-24 sm:w-28" src="/pages/pages/image/logo3.png" />
-                        <img alt="National" class="w-20 sm:w-24" src="/pages/pages/image/logo4.png" />
+
+                    <div class="mt-6 flex flex-wrap items-center gap-5 sm:mt-8 sm:gap-6">
+                        <img alt="Del Mar Strategy" class="w-20 sm:w-28" src="/pages/pages/image/logo2.png" />
+
+                        <img alt="Sentinal Consulting" class="w-20 sm:w-28" src="/pages/pages/image/logo3.png" />
+
+                        <img alt="National" class="w-16 sm:w-24" src="/pages/pages/image/logo4.png" />
                     </div>
                 </div>
-                <div class="flex justify-center">
+
+                <!-- Right image -->
+                <div class="flex w-full justify-center lg:w-1/2 lg:justify-end">
                     <img alt="Createx Certificate"
-                        class="w-full h-[500px] max-w-xl hover:scale-[1.05] transition-all duration-300"
+                        class="h-auto w-full max-w-md object-contain transition-all duration-300 hover:scale-[1.05] sm:max-w-xl lg:max-h-[500px]"
                         src="/pages/pages/image/image (31).png" />
                 </div>
+
             </div>
         </section>
 
-        <section class="bg-[#F0F1F3] py-[50px]">
-            <div class="max-w-5xl mx-auto">
-                <div class="flex flex-col items-center gap-8 pb-[50px]">
-                    <h6 class="font-bold text-[20px]">TESTIMONIALS</h6>
-                    <h1 class="font-bold text-[46px]">What our students say</h1>
+        <section class="bg-[#F0F1F3] py-10 sm:py-[50px]">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="flex flex-col items-center gap-4 sm:gap-8 pb-8 sm:pb-[50px] text-center">
+                    <h6 class="font-bold text-[16px] sm:text-[20px]">
+                        TESTIMONIALS
+                    </h6>
+                    <h1 class="font-bold text-[28px] sm:text-[36px] lg:text-[46px]">
+                        What our students say
+                    </h1>
                 </div>
-                <div class="bg-[white] py-20">
-                    <swiper-container class="mySwiper bg-[bg-white]" pagination="false" pagination-clickable="true"
-                        navigation="true" space-between="30" centered-slides="true" loop="true">
-                        <!-- swiper 1 -->
-                        <swiper-slide class="flex flex-col items-start gap-10 px-[100px]">
-                            <div class="flex items-start gap-6">
-                                <div>
-                                    <img class="w-[200px]" src="/pages/pages/image/braces.svg" alt="braces image">
+                <div class="bg-white py-8 sm:py-12 lg:py-20">
+                    <swiper-container class="mySwiper" pagination="false" pagination-clickable="true" navigation="true"
+                        space-between="30" centered-slides="true" loop="true">
+                        <!-- Swiper 1 -->
+                        <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
+                            <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
+                                <div class="w-full sm:w-auto flex justify-center sm:block">
+                                    <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg"
+                                        alt="braces image">
                                 </div>
-                                <div class="flex flex-col gap-6">
-                                    <div>
-                                        <div>
-                                            <p class="font-bold text-[20px]">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing
-                                                elit. Justo,
-                                                amet lectus quam
-                                                viverra mus lobortis fermentum
-                                                amet,
-                                                eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis
-                                                quis
-                                                non. Congue tortor
-                                                in euismod
-                                                vulputate
-                                                etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-5">
-                                        <img class="w-[50px]" src="/pages/pages/image/image (38).png"
-                                            alt="swiper image">
-                                        <div>
-                                            <h1 class="font-bold text-[20px]">Eleanor Pena</h1>
-                                            <p>Position, Course</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </swiper-slide>
-                        <!-- swiper 2 -->
-                        <swiper-slide class="flex flex-col items-start gap-10 px-[100px]">
-                            <div class="flex items-start gap-6">
-                                <div>
-                                    <img class="w-[200px]" src="/pages/pages/image/braces.svg" alt="braces image">
-                                </div>
-                                <div class="flex flex-col gap-6">
-                                    <div>
-                                        <div>
-                                            <p class="font-bold text-[20px]">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing
-                                                elit. Justo,
-                                                amet lectus quam
-                                                viverra mus lobortis fermentum
-                                                amet,
-                                                eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis
-                                                quis
-                                                non. Congue tortor
-                                                in euismod
-                                                vulputate
-                                                etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-5">
-                                        <img class="w-[50px]" src="/pages/pages/image/image (38).png"
-                                            alt="swiper image">
-                                        <div>
-                                            <h1 class="font-bold text-[20px]">Eleanor Pena</h1>
-                                            <p>Position, Course</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </swiper-slide>
-                        <!-- swiper 3 -->
-                        <swiper-slide class="flex flex-col items-start gap-10 px-[100px]">
-                            <div class="flex items-start gap-6">
-                                <div>
-                                    <img class="w-[200px]" src="/pages/pages/image/braces.svg" alt="braces image">
-                                </div>
-                                <div class="flex flex-col gap-6">
-                                    <div>
-                                        <div>
-                                            <p class="font-bold text-[20px]">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing
-                                                elit. Justo,
-                                                amet lectus quam
-                                                viverra mus lobortis fermentum
-                                                amet,
-                                                eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis
-                                                quis
-                                                non. Congue tortor
-                                                in euismod
-                                                vulputate
-                                                etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-5">
-                                        <img class="w-[50px]" src="/pages/pages/image/image (38).png"
-                                            alt="swiper image">
-                                        <div>
-                                            <h1 class="font-bold text-[20px]">Eleanor Pena</h1>
-                                            <p>Position, Course</p>
-                                        </div>
-                                        <!--  -->
-                                    </div>
-                                </div>
-                            </div>
-                        </swiper-slide>
 
+                                <div class="flex flex-col gap-6">
+                                    <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                                        amet lectus quam viverra mus lobortis fermentum amet,
+                                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
+                                        ornare turpis quis non. Congue tortor in euismod vulputate
+                                        etiam eros. Pulvinar neque pharetra arcu diam maecenas
+                                        diam integer in.
+                                    </p>
+
+                                    <div class="flex items-center gap-4">
+                                        <img class="w-[45px] sm:w-[50px] rounded-full"
+                                            src="/pages/pages/image/image (38).png" alt="student image">
+
+                                        <div>
+                                            <h1 class="font-bold text-[16px] sm:text-[20px]">
+                                                Eleanor Pena
+                                            </h1>
+
+                                            <p class="text-sm sm:text-base">
+                                                Position, Course
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <!-- Swiper 2 -->
+                        <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
+
+                            <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
+
+                                <div class="w-full sm:w-auto flex justify-center sm:block">
+                                    <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg"
+                                        alt="braces image">
+                                </div>
+
+                                <div class="flex flex-col gap-6">
+
+                                    <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                                        amet lectus quam viverra mus lobortis fermentum amet,
+                                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
+                                        ornare turpis quis non. Congue tortor in euismod vulputate
+                                        etiam eros. Pulvinar neque pharetra arcu diam maecenas
+                                        diam integer in.
+                                    </p>
+
+                                    <div class="flex items-center gap-4">
+                                        <img class="w-[45px] sm:w-[50px] rounded-full"
+                                            src="/pages/pages/image/image (38).png" alt="student image">
+
+                                        <div>
+                                            <h1 class="font-bold text-[16px] sm:text-[20px]">
+                                                Eleanor Pena
+                                            </h1>
+
+                                            <p class="text-sm sm:text-base">
+                                                Position, Course
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <!-- Swiper 3 -->
+                        <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
+
+                            <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
+
+                                <div class="w-full sm:w-auto flex justify-center sm:block">
+                                    <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg"
+                                        alt="braces image">
+                                </div>
+
+                                <div class="flex flex-col gap-6">
+
+                                    <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                                        amet lectus quam viverra mus lobortis fermentum amet,
+                                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
+                                        ornare turpis quis non. Congue tortor in euismod vulputate
+                                        etiam eros. Pulvinar neque pharetra arcu diam maecenas
+                                        diam integer in.
+                                    </p>
+
+                                    <div class="flex items-center gap-4">
+                                        <img class="w-[45px] sm:w-[50px] rounded-full"
+                                            src="/pages/pages/image/image (38).png" alt="student image">
+
+                                        <div>
+                                            <h1 class="font-bold text-[16px] sm:text-[20px]">
+                                                Eleanor Pena
+                                            </h1>
+
+                                            <p class="text-sm sm:text-base">
+                                                Position, Course
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </swiper-slide>
                     </swiper-container>
                 </div>
             </div>
         </section>
 
         <section class="w-full py-20 bg-[#FEDBD3]">
-            <div class="mx-auto flex max-w-3xl flex-col items-center px-4 text-center">
+            <div class="mx-auto flex max-w-6xl flex-col items-center px-4 text-center">
                 <p class="mb-3 text-[18px] font-semibold uppercase tracking-wide text-gray-700">
                     DON'T MISS ANYTHING
                 </p>
@@ -247,7 +274,7 @@
                 </h2>
                 <form class="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row">
                     <input
-                        class="h-12 flex-1 rounded-sm border border-gray-200 px-4 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-orange-500"
+                        class="w-full sm:flex-1 h-12 rounded-sm border border-gray-200 px-4 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-orange-500 transition"
                         placeholder="Your working email" type="email" />
                     <button
                         class="h-12 rounded-sm bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600">
@@ -260,18 +287,19 @@
     </main>
 
     <footer class="bg-[#1f2230] text-white">
-        <div class="mx-auto max-w-[1200px] px-6 py-14">
-            <div class="grid grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-6">
-                <div>
-                    <a class="text-2xl font-bold tracking-tight" href="#">
+        <div class="mx-auto max-w-[1200px] px-6 py-10 lg:py-14">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-8 lg:gap-6">
+
+                <div class="sm:col-span-2 md:col-span-1">
+                    <a class="text-2xl font-bold tracking-tight inline-block" href="#">
                         <img alt="Createx" src="/pages/pages/image/logo.png" />
                     </a>
-                    <p class="mt-6 max-w-[230px] text-sm leading-6 text-gray-400">
+                    <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400">
                         Createx Online School is a leader in online studying. We have lots of courses from different
-                        programs and
-                        experienced teachers.
+                        programs and experienced teachers.
                     </p>
-                    <div class="mt-7 flex items-center gap-4">
+                    <div class="mt-6 lg:mt-7 flex items-center gap-4">
                         <a class="transition hover:scale-110" href="#">
                             <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70"
                                 src="/pages/pages/image/Facebook.svg" />
@@ -298,92 +326,44 @@
                         </a>
                     </div>
                 </div>
+
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Site Map
-                    </h3>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-400">
-                        <li>
-                            <a class="transition hover:text-orange-500" href="about.html">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="courses.html">
-                                Courses
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="eventList.html">
-                                Events
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="blog.html">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="contact.html">
-                                Contacts
-                            </a>
-                        </li>
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Site Map</h3>
+                    <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
+                        <li><a class="transition hover:text-orange-500" href="about.html">About Us</a></li>
+                        <li><a class="transition hover:text-orange-500" href="courses.html">Courses</a></li>
+                        <li><a class="transition hover:text-orange-500" href="event.html">Events</a></li>
+                        <li><a class="transition hover:text-orange-500" href="blog.html">Blog</a></li>
+                        <li><a class="transition hover:text-orange-500" href="contact.html">Contacts</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Courses
-                    </h3>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-400">
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Marketing
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Management
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                HR &; Recruiting
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Design
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Development
-                            </a>
-                        </li>
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Courses</h3>
+                    <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
+                        <li><a class="transition hover:text-orange-500" href="#">Marketing</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Management</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">HR Recruiting</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Design</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Development</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Contact Us
-                    </h3>
-                    <div class="mt-6 space-y-4 text-sm text-gray-400">
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Contact Us</h3>
+                    <div class="mt-4 lg:mt-6 space-y-3 lg:space-y-4 text-sm text-gray-400">
                         <a class="flex items-center transition hover:text-white" href="tel:+14055550128">
-                            <span>
-                                (405) 555-0128
-                            </span>
+                            <span>(405) 555-0128</span>
                         </a>
                         <a class="flex items-center transition hover:text-white" href="mailto:hello@createx.com">
-                            <span>
-                                hello@createx.com
-                            </span>
+                            <span>hello@createx.com</span>
                         </a>
                     </div>
                 </div>
-                <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Sign up to our newsletter
-                    </h3>
-                    <form class="mt-6">
+
+                <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Sign up to our newsletter</h3>
+                    <form class="mt-4 lg:mt-6 max-w-md lg:max-w-none">
                         <div
                             class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
                             <input
@@ -393,19 +373,20 @@
                                 <span class="material-symbols-outlined">arrow_forward</span>
                             </button>
                         </div>
-                        <p class="mt-4 text-[10px] leading-4 text-gray-500">
+                        <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500">
                             *Subscribe to our newsletter to receive communications and upcoming events from Createx
                             School.
                         </p>
                     </form>
                 </div>
+
             </div>
         </div>
+
         <div class="border-t border-white/10 bg-[#292c3a]">
-            <div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
-                <p>
-                    © All rights reserved. Made with by Createx Studio
-                </p>
+            <div
+                class="mx-auto flex flex-col sm:flex-row gap-3 text-center sm:text-left max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
+                <p>© All rights reserved. Made with by Createx Studio</p>
                 <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
                     Go to top
                 </a>
@@ -416,6 +397,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js">
     </script>
 
+    <script src="pages/js/courses.js"></script>
 </body>
 
 </html>
