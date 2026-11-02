@@ -4,39 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main ning iconka linki -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <!-- main ning iconka linki -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back,arrow_forward" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Createx</title>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header class="bg-[#ffddd5]">
-        <nav class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
-            <a class="shrink-0" href="index.html">
-                <img alt="Createx logo" class="w-28 sm:w-32" src="/pages/pages/image/logo1.png" />
+    <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
+
+        <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
             </a>
-            <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
-                <a class="hover:text-[#ff3f22] transition" href="about.html">About Us</a>
-                <a class="hover:text-[#ff3f22] transition" href="courses.html">Courses</a>
-                <a class="hover:text-[#ff3f22] transition" href="eventList.html">Events</a>
-                <a class="hover:text-[#ff3f22] transition" href="blog.html">Blog</a>
-                <a class="hover:text-[#ff3f22] transition" href="contact.html">Contacts</a>
+
+            <!-- Desktop links -->
+            <div class="hidden lg:flex items-center gap-6 font-medium">
+                <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
+                <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
+                <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
+                <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
+                <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
             </div>
-            <div class="flex items-center gap-4 sm:gap-5">
-                <button
-                    class="hidden sm:block bg-[#ff3f22] text-white text-sm font-medium px-6 py-3 rounded-md hover:bg-[#e9371d] transition">
+
+            <!-- Desktop buttons -->
+            <div class="hidden lg:flex items-center gap-4">
+
+                <a href="contact.html"
+                    class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
                     Get consultation
-                </button>
-                <button id="btn" class="text-sm font-medium hover:text-[#ff3f22] transition">
+                </a>
+
+                <button id="btn" class="hover:text-[#ff3f22] font-bold">
                     Log in / Register
                 </button>
-                <button class="lg:hidden text-2xl font-bold text-gray-800 hover:text-[#ff3f22]">
-                    ☰
-                </button>
+
             </div>
+
+            <!-- Menu button -->
+            <button id="menuBtn" class="lg:hidden text-3xl">
+                <span class="material-symbols-outlined hover:text-[#ff3f22]">menu</span>
+            </button>
+
+            <!-- Close button -->
+            <button id="closeBtn" class="hidden lg:hidden text-3xl">
+                <span class="font-bold hover:text-[#ff3f22]">x</span>
+            </button>
+
         </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
+
+            <div class="flex flex-col gap-5 font-medium">
+
+                <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
+
+                <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
+
+                <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
+
+                <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
+
+                <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+
+                <a href="contact.html"
+                    class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
+                    Get consultation
+                </a>
+
+                <button id="mobileLogin" class="text-left hover:text-[#ff3f22]">
+                    Log in / Register
+                </button>
+
+            </div>
+        </div>
+
     </header>
-    <main>
+    <main class="mt-10">
         <section class="py-16 md:py-24 px-4">
             <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
                 <div class="flex flex-col gap-5 w-full md:w-1/2">
@@ -61,14 +113,18 @@
                     </p>
                     <!-- BUTTONS -->
                     <div class="flex flex-wrap gap-4 mt-3">
-                        <button
-                            class="border-2 border-[#FF4242] text-[#FF4242] px-7 py-3 rounded-md font-bold transition duration-300 hover:bg-[#FF4242] hover:text-white">
-                            Explore events
-                        </button>
-                        <button
-                            class="bg-[#FF4242] border-2 border-[#FF4242] text-white px-7 py-3 rounded-md font-bold transition duration-300 hover:bg-[#e63939] hover:border-[#e63939]">
-                            Browse courses
-                        </button>
+                        <a href="event.html">
+                            <button
+                                class="border-2 border-[#FF4242] text-[#FF4242] px-7 py-3 rounded-md font-bold transition duration-300 hover:bg-[#FF4242] hover:text-white">
+                                Explore events
+                            </button>
+                        </a>
+                        <a href="courses.html">
+                            <button
+                                class="bg-[#FF4242] border-2 border-[#FF4242] text-white px-7 py-3 rounded-md font-bold transition duration-300 hover:bg-[#e63939] hover:border-[#e63939]">
+                                Browse courses
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <!-- RIGHT IMAGE -->
@@ -79,74 +135,115 @@
             </div>
         </section>
         <!-- section 2 -->
-        <section class="max-w-6xl mx-auto flex items-center justify-between my-[50px]">
-            <div>
+        <section class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 my-[50px] px-4">
+            <!-- Chap tomon -->
+            <div class="w-full lg:w-[65%]">
                 <div>
-                    <div class="flex items-center gap-3 mb-7">
+                    <a href="https://www.youtube.com/watch?v=p6HbrlSwong&list=RDlUG-FsKPF8c&index=8">
+                        <div class="flex items-center gap-3 mb-7">
+                            <button
+                                class="group flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#ff3f22] text-white transition-all duration-300 hover:scale-110 hover:shadow-[0_0_0_14px_rgba(255,63,34,0.15)]">
+                                <img src="/pages/pages/image/small.png" alt="Play"
+                                    class="h-10 w-10 transition-transform duration-300 group-hover:scale-110" />
+                            </button>
+                        
+                            <span class="text-sm font-medium text-[#1e212c]">
+                                Watch video
+                            </span>
+                        </div>
+                    </a>
 
-                        <button
-                            class="group flex h-12 w-12 items-center justify-center rounded-full bg-[#ff3f22] text-white transition-all duration-300 hover:scale-110 hover:shadow-[0_0_0_14px_rgba(255,63,34,0.15)]">
-                            <img src="/pages/pages/image/small.png" alt="Play"
-                                class="h-10 w-10 transition-transform duration-300 group-hover:scale-110" />
-                        </button>
-
-                        <span class="text-sm font-medium text-[#1e212c]">
-                            Watch video
-                        </span>
-
-                    </div>
                     <div class="w-full flex justify-center">
-                        <img class="w-[700px]" src="/pages/pages/image/image (32).png" alt="">
+                        <img class="w-full max-w-[700px] object-contain" src="/pages/pages/image/image (32).png"
+                            alt="" />
                     </div>
                 </div>
             </div>
-            <div>
+
+            <!-- O'ng tomon -->
+            <div class="w-full lg:w-auto flex flex-col gap-5">
                 <div class="flex items-center gap-5">
-                    <span class="text-[48px] text-[red]">1200</span>
-                    <p class="font-bold">students graduated</p>
+                    <span class="text-[36px] sm:text-[42px] lg:text-[48px] text-[red]">
+                        1200
+                    </span>
+                    <p class="font-bold text-sm sm:text-base">
+                        students graduated
+                    </p>
                 </div>
+
                 <div class="flex items-center gap-5">
-                    <span class="text-[48px] text-[red]">84</span>
-                    <p class="font-bold">completed courses</p>
+                    <span class="text-[36px] sm:text-[42px] lg:text-[48px] text-[red]">
+                        84
+                    </span>
+                    <p class="font-bold text-sm sm:text-base">
+                        completed courses
+                    </p>
                 </div>
+
                 <div class="flex items-center gap-5">
-                    <span class="text-[48px] text-[red]">16</span>
-                    <p class="font-bold">qualified tutors</p>
+                    <span class="text-[36px] sm:text-[42px] lg:text-[48px] text-[red]">
+                        16
+                    </span>
+                    <p class="font-bold text-sm sm:text-base">
+                        qualified tutors
+                    </p>
                 </div>
+
                 <div class="flex items-center gap-5">
-                    <span class="text-[48px] text-[red]">5</span>
-                    <p class="font-bold">years of experience</p>
+                    <span class="text-[36px] sm:text-[42px] lg:text-[48px] text-[red]">
+                        5
+                    </span>
+                    <p class="font-bold text-sm sm:text-base">
+                        years of experience
+                    </p>
                 </div>
             </div>
         </section>
         <!-- section 3 -->
         <section>
-            <div class="max-w-6xl mx-auto my-[100px]">
-                <div class="flex flex-col items-center">
+            <div class="max-w-6xl mx-auto my-[100px] px-4">
+                <div class="flex flex-col items-center text-center">
                     <h6 class="font-lato">We always stand for</h6>
-                    <h1 class="text-[46px] font-bold">Our core values</h1>
+                    <h1 class="text-[32px] sm:text-[40px] lg:text-[46px] font-bold">
+                        Our core values
+                    </h1>
                 </div>
-                <div class="flex justify-between my-[50px]">
-                    <div class="flex flex-col items-center gap-3">
-                        <img src="/pages/pages/image/ic-structure.svg" alt="ic-structure img">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6 my-[50px]">
+                    <div class="flex flex-col items-center gap-3 text-center">
+                        <img src="/pages/pages/image/ic-structure.svg" alt="ic-structure img"
+                            class="w-16 h-16 object-contain" />
                         <h5 class="font-bold">Structured Approach</h5>
-                        <p class="max-w-[240px]">Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.</p>
+                        <p class="max-w-[240px]">
+                            Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.
+                        </p>
                     </div>
-                    <div class="flex flex-col items-center gap-3">
-                        <img src="/pages/pages/image/Group.svg" alt="group img">
+
+                    <div class="flex flex-col items-center gap-3 text-center">
+                        <img src="/pages/pages/image/Group.svg" alt="group img" class="w-16 h-16 object-contain" />
                         <h5 class="font-bold">Professional Feedbacks</h5>
-                        <p class="max-w-[240px]">Culpa nostrud commodo ea consequat reprehenderit aliquip.</p>
+                        <p class="max-w-[240px]">
+                            Culpa nostrud commodo ea consequat reprehenderit aliquip.
+                        </p>
                     </div>
-                    <div class="flex flex-col items-center gap-3">
-                        <img src="/pages/pages/image/ic-target.svg" alt="ic-target img">
+
+                    <div class="flex flex-col items-center gap-3 text-center">
+                        <img src="/pages/pages/image/ic-target.svg" alt="ic-target img"
+                            class="w-16 h-16 object-contain" />
                         <h5 class="font-bold">Efficiency</h5>
-                        <p class="max-w-[240px]">Viverra scelerisque consequat net. Adipisicing esse consequat.</p>
+                        <p class="max-w-[240px]">
+                            Viverra scelerisque consequat net. Adipisicing esse consequat.
+                        </p>
                     </div>
-                    <div class="flex flex-col items-center gap-3">
-                        <img src="/pages/pages/image/ic-calendar.svg" alt="ic-calendar img">
+
+                    <div class="flex flex-col items-center gap-3 text-center">
+                        <img src="/pages/pages/image/ic-calendar.svg" alt="ic-calendar img"
+                            class="w-16 h-16 object-contain" />
                         <h5 class="font-bold">Flexible Shedule</h5>
-                        <p class="max-w-[240px]">Aute eiusmod dolore dolore deserunt veniam ad deserunt.</p>
+                        <p class="max-w-[240px]">
+                            Aute eiusmod dolore dolore deserunt veniam ad deserunt.
+                        </p>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -313,7 +410,7 @@
         <!-- section 5 -->
         <section class="max-w-6xl mx-auto px-6 py-16 lg:py-20">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <!-- LEFT CONTENT -->
+
                 <div>
                     <p class="text-[12px] font-semibold tracking-wide uppercase mb-2">
                         Studying Process
@@ -321,9 +418,9 @@
                     <h1 class="text-3xl md:text-[34px] font-bold mb-10">
                         That’s how we do it
                     </h1>
-                    <!-- STEPS -->
+
                     <div class="relative ml-1">
-                        <!-- Vertical line -->
+                      
                         <div class="absolute left-[3px] top-2 bottom-2 w-px bg-[#D9D9D9]"></div>
                         <!-- STEP 1 -->
                         <div class="relative pl-8 pb-6">
@@ -385,7 +482,7 @@
                 </div>
                 <!-- RIGHT ILLUSTRATION -->
                 <div class="flex justify-center items-center">
-                    <img src="/pages/pages/image/4" alt="Studying process illustration"
+                    <img src="pages/pages/image/illustration (1).png" alt="Studying process illustration"
                         class="w-full max-w-[430px] h-auto object-contain">
                 </div>
             </div>
@@ -732,11 +829,12 @@
                         Latest posts
                     </h2>
                 </div>
-                <button
-                    class="bg-red-500 hover:bg-orange-700 text-white text-[8px] font-medium px-8 py-2.5 rounded-sm transition"
-                    href="#">
-                    Go to blog
-                </button>
+                <a href="blog.html">
+                    <button class="bg-red-500 hover:bg-orange-700 text-white text-[14px] font-medium px-8 py-2.5 rounded-sm transition"
+                        href="#">
+                        Go to blog
+                    </button>
+                </a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <article>
@@ -746,24 +844,24 @@
                             src="/pages/pages/image/image.svg" />
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mt-3 text-[7px] text-gray-500">
-                        <span>
+                        <span class="text-[14px]">
                             Marketing
                         </span>
-                        <span>
+                        <span class="text-[14px]">
                             September 4, 2020
                         </span>
                     </div>
-                    <h3 class="mt-2 text-sm font-semibold leading-[1.4]">
+                    <h3 class="mt-2 text-[20px] font-semibold leading-[1.4]">
                         What is traffic arbitrage and does it really make money?
                     </h3>
-                    <p class="mt-2 text-[9px] leading-[1.6] text-gray-500">
+                    <p class="mt-2 text-[14px] leading-[1.6] text-gray-500">
                         Praeterea, multo ante reliqua, scribens haec a consectetur adipiscing elit. Convallis.
                     </p>
-                    <a class="inline-flex items-center gap-1 mt-3 text-[9px] font-medium hover:text-orange-500 transition"
+                    <a class="inline-flex items-center gap-1 mt-3 text-[16px] font-medium hover:text-orange-500 transition"
                         href="#">
                         Listen
-                        <span class="text-orange-500 text-sm">
-                            →
+                        <span class="material-symbols-outlined text-[20px]">
+                            arrow_forward
                         </span>
                     </a>
                 </article>
@@ -774,24 +872,24 @@
                             src="/pages/pages/image/image.jpg" />
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mt-3 text-[7px] text-gray-500">
-                        <span>
+                        <span class="text-[14px]">
                             Management
                         </span>
-                        <span>
+                        <span class="text-[14px]">
                             August 25, 2020
                         </span>
                     </div>
-                    <h3 class="mt-2 text-sm font-semibold leading-[1.4]">
+                    <h3 class="mt-2 text-[20px] font-semibold leading-[1.4]">
                         What to do and who to talk to if you want to get feedback on the product
                     </h3>
-                    <p class="mt-2 text-[9px] leading-[1.6] text-gray-500">
+                    <p class="mt-2 text-[14px] leading-[1.6] text-gray-500">
                         Neque a, sem lectus consectetur odio in aliquet nec. Ultricies ac nibh urna.
                     </p>
-                    <a class="inline-flex items-center gap-1 mt-3 text-[9px] font-medium hover:text-orange-500 transition"
+                    <a class="inline-flex items-center gap-1 mt-3 text-[16px] font-medium hover:text-orange-500 transition"
                         href="#">
                         Watch
-                        <span class="text-orange-500 text-sm">
-                            →
+                        <span class="material-symbols-outlined text-[20px]">
+                            arrow_forward
                         </span>
                     </a>
                 </article>
@@ -802,25 +900,25 @@
                             src="/pages/pages/image/image.png" />
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mt-3 text-[7px] text-gray-500">
-                        <span>
+                        <span class="text-[14px]">
                             Design
                         </span>
-                        <span>
+                        <span class="text-[14px]">
                             August 8, 2020
                         </span>
                     </div>
-                    <h3 class="mt-2 text-sm font-semibold leading-[1.4]">
+                    <h3 class="mt-2 text-[20px] font-semibold leading-[1.4]">
                         Should you choose a creative profession if you are attracted to creativity?
                     </h3>
-                    <p class="mt-2 text-[9px] leading-[1.6] text-gray-500">
+                    <p class="mt-2 text-[14px] leading-[1.6] text-gray-500">
                         Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate
                         ultrices.
                     </p>
-                    <a class="inline-flex items-center gap-1 mt-3 text-[9px] font-medium hover:text-orange-500 transition"
+                    <a class="inline-flex items-center gap-1 mt-3 text-[16px] font-medium hover:text-orange-500 transition"
                         href="#">
                         Read
-                        <span class="text-orange-500 text-sm">
-                            →
+                        <span class="material-symbols-outlined text-[20px]">
+                            arrow_forward
                         </span>
                     </a>
                 </article>
@@ -828,7 +926,7 @@
         </section>
         <!-- section -->
         <section class="w-full py-20 bg-[#FEDBD3]">
-            <div class="mx-auto flex max-w-3xl flex-col items-center px-4 text-center">
+            <div class="mx-auto flex max-w-6xl flex-col items-center px-4 text-center">
                 <p class="mb-3 text-[18px] font-semibold uppercase tracking-wide text-gray-700">
                     DON'T MISS ANYTHING
                 </p>
@@ -840,7 +938,7 @@
                 </h2>
                 <form class="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row">
                     <input
-                        class="h-12 flex-1 rounded-sm border border-gray-200 px-4 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-orange-500"
+                        class="w-full sm:flex-1 h-12 rounded-sm border border-gray-200 px-4 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-orange-500 transition"
                         placeholder="Your working email" type="email" />
                     <button
                         class="h-12 rounded-sm bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600">
@@ -851,18 +949,19 @@
         </section>
     </main>
     <footer class="bg-[#1f2230] text-white">
-        <div class="mx-auto max-w-[1200px] px-6 py-14">
-            <div class="grid grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-6">
-                <div>
-                    <a class="text-2xl font-bold tracking-tight" href="#">
+        <div class="mx-auto max-w-[1200px] px-6 py-10 lg:py-14">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-8 lg:gap-6">
+
+                <div class="sm:col-span-2 md:col-span-1">
+                    <a class="text-2xl font-bold tracking-tight inline-block" href="#">
                         <img alt="Createx" src="/pages/pages/image/logo.png" />
                     </a>
-                    <p class="mt-6 max-w-[230px] text-sm leading-6 text-gray-400">
+                    <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400">
                         Createx Online School is a leader in online studying. We have lots of courses from different
-                        programs and
-                        experienced teachers.
+                        programs and experienced teachers.
                     </p>
-                    <div class="mt-7 flex items-center gap-4">
+                    <div class="mt-6 lg:mt-7 flex items-center gap-4">
                         <a class="transition hover:scale-110" href="#">
                             <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70"
                                 src="/pages/pages/image/Facebook.svg" />
@@ -889,121 +988,75 @@
                         </a>
                     </div>
                 </div>
+
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Site Map
-                    </h3>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-400">
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Courses
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Events
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Contacts
-                            </a>
-                        </li>
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Site Map</h3>
+                    <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
+                        <li><a class="transition hover:text-orange-500" href="about.html">About Us</a></li>
+                        <li><a class="transition hover:text-orange-500" href="courses.html">Courses</a></li>
+                        <li><a class="transition hover:text-orange-500" href="event.html">Events</a></li>
+                        <li><a class="transition hover:text-orange-500" href="blog.html">Blog</a></li>
+                        <li><a class="transition hover:text-orange-500" href="contact.html">Contacts</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Courses
-                    </h3>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-400">
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Marketing
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Management
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                HR &; Recruiting
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Design
-                            </a>
-                        </li>
-                        <li>
-                            <a class="transition hover:text-orange-500" href="#">
-                                Development
-                            </a>
-                        </li>
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Courses</h3>
+                    <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
+                        <li><a class="transition hover:text-orange-500" href="#">Marketing</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Management</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">HR Recruiting</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Design</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">Development</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Contact Us
-                    </h3>
-                    <div class="mt-6 space-y-4 text-sm text-gray-400">
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Contact Us</h3>
+                    <div class="mt-4 lg:mt-6 space-y-3 lg:space-y-4 text-sm text-gray-400">
                         <a class="flex items-center transition hover:text-white" href="tel:+14055550128">
-                            <span>
-                                (405) 555-0128
-                            </span>
+                            <span>(405) 555-0128</span>
                         </a>
                         <a class="flex items-center transition hover:text-white" href="mailto:hello@createx.com">
-                            <span>
-                                hello@createx.com
-                            </span>
+                            <span>hello@createx.com</span>
                         </a>
                     </div>
                 </div>
-                <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">
-                        Sign up to our newsletter
-                    </h3>
-                    <form class="mt-6">
+
+                <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
+                    <h3 class="text-sm font-bold uppercase tracking-wide">Sign up to our newsletter</h3>
+                    <form class="mt-4 lg:mt-6 max-w-md lg:max-w-none">
                         <div
                             class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
                             <input
                                 class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
                                 placeholder="Email address" type="email" />
-                            <button class="px-3 text-lg text-gray-400 transition hover:bg-orange-500 hover:text-white"
-                                type="submit">
-                                →
+                            <button class="px-3 text-lg text-gray-400 transition  hover:text-white" type="submit">
+                                <span class="material-symbols-outlined">arrow_forward</span>
                             </button>
                         </div>
-                        <p class="mt-4 text-[10px] leading-4 text-gray-500">
+                        <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500">
                             *Subscribe to our newsletter to receive communications and upcoming events from Createx
                             School.
                         </p>
                     </form>
                 </div>
+
             </div>
         </div>
+
         <div class="border-t border-white/10 bg-[#292c3a]">
-            <div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
-                <p>
-                    © All rights reserved. Made with by Createx Studio
-                </p>
+            <div
+                class="mx-auto flex flex-col sm:flex-row gap-3 text-center sm:text-left max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
+                <p>© All rights reserved. Made with by Createx Studio</p>
                 <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
                     Go to top
                 </a>
             </div>
         </div>
     </footer>
+
+    <script src="pages/js/about.js"></script>
 </body>
 
 </html>
