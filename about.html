@@ -16,6 +16,36 @@
 
 <body>
     <!-- HEADER -->
+    <header class="bg-[#ffddd5] sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <a class="shrink-0" href="index.html">
+                <img alt="Createx logo" class="w-28 sm:w-32" src="/pages/pages/image/logo1.png" />
+            </a>
+
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-[#1E212C]">
+                <a class="hover:text-[#ff3f22] transition" href="about.html">About Us</a>
+                <a class="hover:text-[#ff3f22] transition" href="courses.html">Courses</a>
+                <a class="hover:text-[#ff3f22] transition" href="eventList.html">Events</a>
+                <a class="hover:text-[#ff3f22] transition" href="blog.html">Blog</a>
+                <a class="hover:text-[#ff3f22] transition" href="contact.html">Contacts</a>
+            </div>
+
+            <div class="flex items-center gap-3 sm:gap-5">
+                <button
+                    class="hidden md:block bg-[#ff3f22] text-white text-sm font-medium px-5 py-2.5 rounded-md hover:bg-[#e9371d] transition">
+                    Get consultation
+                </button>
+
+                <button class="text-xs sm:text-sm font-medium hover:text-[#ff3f22] transition whitespace-nowrap">
+                    Log in / Register
+                </button>
+
+                <button id="menu-btn"
+                    class="lg:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 focus:outline-none">
+                    <span class="block w-6 h-0.5 bg-[#1E212C] rounded-full"></span>
+                    <span class="block w-6 h-0.5 bg-[#1E212C] rounded-full"></span>
+                    <span class="block w-6 h-0.5 bg-[#1E212C] rounded-full"></span>
+                </button>
     <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
 
         <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -60,6 +90,27 @@
 
         </nav>
 
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-200 px-6 py-5 shadow-lg">
+            <div class="flex flex-col gap-4 text-base font-medium text-[#1E212C]">
+                <a class="hover:text-[#ff3f22] transition py-1" href="about.html">About Us</a>
+                <a class="hover:text-[#ff3f22] transition py-1" href="courses.html">Courses</a>
+                <a class="hover:text-[#ff3f22] transition py-1" href="eventList.html">Events</a>
+                <a class="hover:text-[#ff3f22] transition py-1" href="blog.html">Blog</a>
+                <a class="hover:text-[#ff3f22] transition py-1" href="contact.html">Contacts</a>
+
+                <div class="pt-3 border-t border-gray-100 flex flex-col gap-3">
+                    <button
+                        class="w-full bg-[#ff3f22] text-white text-sm font-medium py-3 rounded-md hover:bg-[#e9371d] transition">
+                        Get consultation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="py-16 md:py-24 px-4 sm:px-6">
+            <div
+                class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12">
         <!-- Mobile menu -->
         <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
 
@@ -93,18 +144,18 @@
             <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12">
                 <div class="flex flex-col gap-5 w-full md:w-1/2">
                     <div>
-                        <h6 class="text-[#1E212C] text-base font-bold uppercase tracking-widest mb-3">
+                        <h6 class="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#1E212C] mb-2">
                             About us
                         </h6>
-                        <h1 class="text-[#1E212C] text-3xl sm:text-4xl lg:text-[46px] font-bold leading-tight">
+                        <h1 class="text-2xl sm:text-3xl lg:text-[46px] font-bold leading-tight text-[#1E212C]">
                             Createx Online School
                         </h1>
                     </div>
-                    <p class="text-[#FF4242] text-lg md:text-xl font-medium leading-relaxed">
+                    <p class="text-base sm:text-lg md:text-xl font-medium leading-relaxed text-[#FF4242]">
                         Createx Online School is a leader in online studying.
                         We have lots of courses and programs from the main market experts.
                     </p>
-                    <p class="text-[#424551] text-base leading-7">
+                    <p class="text-sm sm:text-base leading-6 sm:leading-7 text-[#424551]">
                         We provide relevant approaches to online learning, internships
                         and employment in the largest companies in the country.
                         Our educational programs help you get a new specialty from scratch.
@@ -112,6 +163,15 @@
                         Check the courses and online events that we organise.
                     </p>
                     <!-- BUTTONS -->
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2">
+                        <button
+                            class="w-full sm:w-auto border-2 border-[#FF4242] text-[#FF4242] px-6 py-3 rounded-md font-bold transition hover:bg-[#FF4242] hover:text-white">
+                            Explore events
+                        </button>
+                        <button
+                            class="w-full sm:w-auto bg-[#FF4242] border-2 border-[#FF4242] text-white px-6 py-3 rounded-md font-bold transition hover:bg-[#e63939]">
+                            Browse courses
+                        </button>
                     <div class="flex flex-wrap gap-4 mt-3">
                         <a href="event.html">
                             <button
@@ -130,11 +190,47 @@
                 <!-- RIGHT IMAGE -->
                 <div class="w-full md:w-1/2 flex justify-center">
                     <img src="/pages/pages/image/illustration (3).png" alt="Createx Online School illustration"
-                        class="w-full max-w-[500px] h-auto object-contain hover:scale-105 transition duration-500">
+                        class="w-full max-w-[340px] sm:max-w-[420px] md:max-w-[500px] h-auto object-contain">
                 </div>
             </div>
         </section>
         <!-- section 2 -->
+        <section
+            class="max-w-6xl mx-auto px-4 sm:px-6 my-12 md:my-20 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-14">
+
+            <div class="w-full lg:w-3/5">
+                <div class="flex items-center gap-3 mb-5">
+                    <button
+                        class="group flex h-12 w-12 items-center justify-center rounded-full bg-[#ff3f22] text-white transition-all duration-300 hover:scale-110">
+                        <img src="/pages/pages/image/small.png" alt="Play" class="h-6 w-6" />
+                    </button>
+                    <span class="text-sm font-medium text-[#1e212c]">
+                        Watch video
+                    </span>
+                </div>
+
+                <div class="w-full flex justify-center lg:justify-start">
+                    <img class="w-full max-w-[650px] h-auto object-contain rounded-lg"
+                        src="/pages/pages/image/image (32).png" alt="Video thumbnail">
+                </div>
+            </div>
+
+            <div class="w-full lg:w-2/5 grid grid-cols-2 lg:grid-cols-1 gap-6 sm:gap-8">
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl sm:text-4xl lg:text-[46px] font-bold text-[#FF4242]">1200</span>
+                    <p class="text-xs sm:text-sm font-bold text-[#1E212C] leading-tight">students<br>graduated</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl sm:text-4xl lg:text-[46px] font-bold text-[#FF4242]">84</span>
+                    <p class="text-xs sm:text-sm font-bold text-[#1E212C] leading-tight">completed<br>courses</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl sm:text-4xl lg:text-[46px] font-bold text-[#FF4242]">16</span>
+                    <p class="text-xs sm:text-sm font-bold text-[#1E212C] leading-tight">qualified<br>tutors</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-3xl sm:text-4xl lg:text-[46px] font-bold text-[#FF4242]">5</span>
+                    <p class="text-xs sm:text-sm font-bold text-[#1E212C] leading-tight">years of<br>experience</p>
         <section class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 my-[50px] px-4">
             <!-- Chap tomon -->
             <div class="w-full lg:w-[65%]">
@@ -198,6 +294,7 @@
                     </p>
                 </div>
             </div>
+
         </section>
         <!-- section 3 -->
         <section>
@@ -1055,6 +1152,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        const menuBtn = document.getElementById('menu-btn')
+        const mobileMenu = document.getElementById('mobile-menu')
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden')
+        });
+    </script>
 
     <script src="pages/js/about.js"></script>
 </body>
