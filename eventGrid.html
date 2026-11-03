@@ -87,22 +87,30 @@
     <!-- Main -->
     <main>
         <!-- Events title and filters -->
-        <section class="max-w-6xl mx-auto bg-white px-6 py-10 font-sans text-[#252733]">
+        <section class="max-w-6xl mx-auto bg-white px-4 sm:px-6 py-8 sm:py-10 font-sans text-[#252733] mt-16">
+
+            <!-- Title -->
             <div class="text-center">
-                <p class="text-[20px] font-semibold uppercase tracking-wide">
+                <p class="text-base sm:text-[20px] font-semibold uppercase tracking-wide">
                     OUR EVENTS
                 </p>
 
-                <h1 class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
-                    Lectures, workshops &; master-classes
+                <h1 class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight">
+                    Lectures, workshops & master-classes
                 </h1>
             </div>
 
             <!-- Filters -->
-            <div class="mt-10 flex flex-wrap items-center justify-evenly gap-10">
-                <div class="flex flex-wrap items-center gap-6">
-                    <div class="flex items-center gap-2">
-                        <label class="text-[18px] font-semibold px-4">Event category</label>
+            <div class="mt-10 flex flex-col lg:flex-row items-center justify-between gap-6">
+
+                <div class="w-full flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 sm:gap-6">
+
+                    <!-- Event category -->
+                    <div class="w-full sm:w-auto flex items-center justify-between gap-2">
+                        <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4">
+                            Event category
+                        </label>
+
                         <select
                             class="h-7 w-[103px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
                             <option>all themes</option>
@@ -112,8 +120,12 @@
                         </select>
                     </div>
 
-                    <div class="flex items-center gap-2">
-                        <label class="text-[18px] font-semibold px-4">Sort by</label>
+                    <!-- Sort by -->
+                    <div class="w-full sm:w-auto flex items-center justify-between gap-2">
+                        <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4">
+                            Sort by
+                        </label>
+
                         <select
                             class="h-7 w-[103px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
                             <option>newest</option>
@@ -121,47 +133,57 @@
                         </select>
                     </div>
 
-                    <div class="flex items-center gap-2">
-                        <label class="text-[18px] font-semibold px-4">Show</label>
+                    <!-- Show -->
+                    <div class="w-full sm:w-auto flex items-center justify-between gap-2">
+                        <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4">
+                            Show
+                        </label>
+
                         <select
                             class="h-7 w-[46px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
                             <option>9</option>
                             <option>12</option>
                             <option>18</option>
                         </select>
-                        <span class="text-[18px] text-gray-400">events per page</span>
+
                     </div>
+
                 </div>
 
-                <div class="flex items-center gap-6">
+                <!-- Search and icons -->
+                <div class="w-full lg:w-auto flex items-center justify-between sm:justify-end gap-4">
+
                     <!-- Search -->
-                    <div class="flex h-7 w-[180px] items-center justify-between rounded-sm border border-gray-200 px-2">
+                    <div
+                        class="flex h-7 w-full sm:w-[180px] items-center justify-between rounded-sm border border-gray-200 px-2">
                         <input type="text" placeholder="Search event..."
-                            class="w-full bg-transparent text-[10px] outline-none placeholder:text-gray-400">
-                        <svg class="h-3 w-3 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" stroke-width="1.7">
-                            <circle cx="11" cy="11" r="7" />
-                            <path d="m20 20-4-4" />
-                        </svg>
+                            class="w-full min-w-0 bg-transparent text-[10px] outline-none placeholder:text-gray-400" />
+
+                        <!-- Search icon -->
                     </div>
 
                     <!-- List icon -->
-                    <button class="text-red-500" aria-label="List view">
-                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
-                            <rect x="4" y="4" width="16" height="5" rx="0.5" />
-                            <rect x="4" y="15" width="16" height="5" rx="0.5" />
-                        </svg>
-                    </button>
+                    <a href="eventList.html">
+                        <button class="text-red-500" aria-label="List view">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
+                                fill="#1f1f1f">
+                                <path
+                                    d="M7,9V7H21V9H7Zm0,4V11H21v2H7Zm0,4V15H21v2H7ZM4,9Q3.58,9 3.29,8.71T3,8Q3,7.57 3.29,7.29T4,7T4.71,7.29T5,8Q5,8.42 4.71,8.71T4,9Zm0,4q-0.42,0-0.71-0.29Q3,12.43 3,12t0.29-0.71T4,11t0.71,0.29T5,12T4.71,12.71T4,13Zm0,4q-0.42,0-0.71-0.29Q3,16.43 3,16t0.29-0.71T4,15t0.71,0.29T5,16T4.71,16.71T4,17Z" />
+                            </svg>
+                        </button>
+                    </a>
 
                     <!-- Grid icon -->
-                    <button class="text-gray-600" aria-label="Grid view">
-                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
-                            <rect x="4" y="4" width="6" height="6" rx="0.5" />
-                            <rect x="14" y="4" width="6" height="6" rx="0.5" />
-                            <rect x="4" y="14" width="6" height="6" rx="0.5" />
-                            <rect x="14" y="14" width="6" height="6" rx="0.5" />
-                        </svg>
-                    </button>
+                    <a href="eventGrid.html">
+                        <button class="text-gray-600" aria-label="Grid view">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
+                                fill="#1f1f1f">
+                                <path
+                                    d="M3,11V3h8v8H3ZM3,21V13h8v8H3ZM13,11V3h8v8H13Zm0,10V13h8v8H13ZM5,9H9V5H5V9ZM15,9h4V5H15V9Zm0,10h4V15H15v4ZM5,19H9V15H5v4ZM15,9Zm0,6ZM9,15ZM9,9Z" />
+                            </svg>
+                        </button>
+
+                    </a>
                 </div>
             </div>
         </section>
