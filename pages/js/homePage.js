@@ -27,8 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             'contacts': 'contact.html',
             'get consultation': 'contact.html',
-
-            'log in / register': 'contact.html'
         };
 
         // Tugma matni bo'yicha sahifani topish
@@ -42,25 +40,33 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
-    // 2. Go to top tugmasi
-    const footerLinks = document.querySelectorAll('footer a');
-
-    footerLinks.forEach(function (link) {
-        if (link.textContent.trim().toLowerCase() === 'go to top') {
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
-        }
-    });
 });
 
 // login qlish uchun yozgilgan js
 
-
+const btns = document.querySelector('btn');
+ 
 
 // login qlish uchun yozgilgan js
+
+// menu js
+
+const menuBtn = document.querySelector('#menuBtn');
+const closeBtn = document.querySelector('#closeBtn');
+const mobileMenu = document.querySelector('#mobileMenu');
+
+// Menu ochish
+menuBtn.addEventListener('click', function () {
+    mobileMenu.classList.remove('hidden');
+
+    menuBtn.classList.add('hidden');
+    closeBtn.classList.remove('hidden');
+});
+
+// Menu yopish
+closeBtn.addEventListener('click', function () {
+    mobileMenu.classList.add('hidden');
+
+    closeBtn.classList.add('hidden');
+    menuBtn.classList.remove('hidden');
+});

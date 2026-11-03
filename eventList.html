@@ -4,68 +4,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- main ning iconka linki -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+  <!-- main ning iconka linki -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back,arrow_forward" />
   <link rel="stylesheet" href="">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Createx</title>
 </head>
 
 <body>
-  <header class="bg-[#ffddd5]">
-    <nav class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
-      <a class="shrink-0" href="index.html">
-        <img alt="Createx logo" class="w-32" src="/pages/pages/image/logo (1).png" />
+  <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
+
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
       </a>
-      <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
-        <a class="hover:text-[#ff3f22] transition" href="about.html">
-          About Us
-        </a>
-        <a class="hover:text-[#ff3f22] transition" href="courses.html">
-          Courses
-        </a>
-        <a class="hover:text-[#ff3f22] transition" href="eventList.html">
-          Events
-        </a>
-        <a class="hover:text-[#ff3f22] transition" href="blog.html">
-          Blog
-        </a>
-        <a class="hover:text-[#ff3f22] transition" href="contact.html">
-          Contacts
-        </a>
+
+      <!-- Desktop links -->
+      <div class="hidden lg:flex items-center gap-6 font-medium">
+        <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
+        <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
+        <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
+        <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
+        <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
       </div>
-      <div class="flex items-center gap-5">
-        <button
-          class="hidden sm:block bg-[#ff3f22] text-white text-sm font-medium px-6 py-3 rounded-md hover:bg-[#e9371d] transition">
+
+      <!-- Desktop buttons -->
+      <div class="hidden lg:flex items-center gap-4">
+
+        <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
           Get consultation
-        </button>
-        <button class="text-sm font-medium hover:text-[#ff3f22] transition">
+        </a>
+
+        <button id="btn" class="hover:text-[#ff3f22] font-bold">
           Log in / Register
         </button>
+
       </div>
+
+      <!-- Menu button -->
+      <button id="menuBtn" class="lg:hidden text-3xl">
+        <span class="material-symbols-outlined hover:text-[#ff3f22]">menu</span>
+      </button>
+
+      <!-- Close button -->
+      <button id="closeBtn" class="hidden lg:hidden text-3xl">
+        <span class="font-bold hover:text-[#ff3f22]">x</span>
+      </button>
+
     </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
+
+      <div class="flex flex-col gap-5 font-medium">
+
+        <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
+
+        <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
+
+        <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
+
+        <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
+
+        <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+
+        <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
+          Get consultation
+        </a>
+
+        <button id="mobileLogin" class="text-left hover:text-[#ff3f22]">
+          Log in / Register
+        </button>
+
+      </div>
+    </div>
+
   </header>
   <!-- main qismi section lari -->
   <main>
 
-    <section class=" max-w-6xl mx-auto bg-white px-6 py-10 font-sans text-[#252733] ">
+    <section class="max-w-6xl mx-auto bg-white px-4 sm:px-6 py-8 sm:py-10 font-sans text-[#252733] mt-16">
 
       <!-- Title -->
       <div class="text-center">
-        <p class="text-[20px] font-semibold uppercase tracking-wide">
+        <p class="text-base sm:text-[20px] font-semibold uppercase tracking-wide">
           OUR EVENTS
         </p>
 
-        <h1 class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
-          Lectures, workshops &; master-classes
+        <h1 class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight">
+          Lectures, workshops & master-classes
         </h1>
       </div>
 
       <!-- Filters -->
-      <div class="mt-10 flex flex-wrap items-center justify-evenly gap-10">
+      <div class="mt-10 flex flex-col lg:flex-row items-center justify-between gap-6">
 
-        <div class="flex items-center gap-6">
+        <div class="w-full flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 sm:gap-6">
 
-          <div class="flex items-center gap-2">
-            <label class="text-[18px] font-semibold px-4">Event category</label>
+          <!-- Event category -->
+          <div class="w-full sm:w-auto flex items-center justify-between gap-2">
+            <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4">
+              Event category
+            </label>
+
             <select
               class="h-7 w-[103px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
               <option>all themes</option>
@@ -75,8 +122,12 @@
             </select>
           </div>
 
-          <div class="flex items-center gap-2">
-            <label class="text-[18px] font-semibold px-4">Sort by</label>
+          <!-- Sort by -->
+          <div class="w-full sm:w-auto flex items-center justify-between gap-2">
+            <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4">
+              Sort by
+            </label>
+
             <select
               class="h-7 w-[103px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
               <option>newest</option>
@@ -84,49 +135,54 @@
             </select>
           </div>
 
-          <div class="flex items-center gap-2">
-            <label class="text-[18px] font-semibold px-4">Show</label>
+          <!-- Show -->
+          <div class="w-full sm:w-auto flex items-center justify-between gap-2">
+            <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4">
+              Show
+            </label>
+
             <select
               class="h-7 w-[46px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
               <option>9</option>
               <option>12</option>
               <option>18</option>
             </select>
-            <span class="text-[18px] text-gray-400">events per page</span>
+
           </div>
 
         </div>
 
-        <div class="flex items-center gap-6">
+        <!-- Search and icons -->
+        <div class="w-full lg:w-auto flex items-center justify-between sm:justify-end gap-4">
 
           <!-- Search -->
-          <div class="flex h-7 w-[180px] items-center justify-between rounded-sm border border-gray-200 px-2">
+          <div class="flex h-7 w-full sm:w-[180px] items-center justify-between rounded-sm border border-gray-200 px-2">
             <input type="text" placeholder="Search event..."
-              class="w-full bg-transparent text-[10px] outline-none placeholder:text-gray-400" />
-            <svg class="h-3 w-3 shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-              stroke-width="1.7">
-              <circle cx="11" cy="11" r="7" />
-              <path d="m20 20-4-4" />
-            </svg>
+              class="w-full min-w-0 bg-transparent text-[10px] outline-none placeholder:text-gray-400" />
+
+            <!-- Search icon -->
           </div>
 
           <!-- List icon -->
-          <button class="text-red-500" aria-label="List view">
-            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
-              <rect x="4" y="4" width="16" height="5" rx="0.5" />
-              <rect x="4" y="15" width="16" height="5" rx="0.5" />
-            </svg>
-          </button>
+          <a href="eventList.html">
+            <button class="text-red-500 shrink-0" aria-label="List view">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+                <path
+                  d="M7,9V7H21V9H7Zm0,4V11H21v2H7Zm0,4V15H21v2H7ZM4,9Q3.58,9 3.29,8.71T3,8Q3,7.57 3.29,7.29T4,7T4.71,7.29T5,8Q5,8.42 4.71,8.71T4,9Zm0,4q-0.42,0-0.71-0.29Q3,12.43 3,12t0.29-0.71T4,11t0.71,0.29T5,12T4.71,12.71T4,13Zm0,4q-0.42,0-0.71-0.29Q3,16.43 3,16t0.29-0.71T4,15t0.71,0.29T5,16T4.71,16.71T4,17Z" />
+              </svg>
+            </button>
+          </a>
 
           <!-- Grid icon -->
-          <button class="text-gray-600" aria-label="Grid view">
-            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
-              <rect x="4" y="4" width="6" height="6" rx="0.5" />
-              <rect x="14" y="4" width="6" height="6" rx="0.5" />
-              <rect x="4" y="14" width="6" height="6" rx="0.5" />
-              <rect x="14" y="14" width="6" height="6" rx="0.5" />
-            </svg>
-          </button>
+          <a href="eventGrid.html">
+            <button class="text-gray-600 shrink-0" aria-label="Grid view">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+                <path
+                  d="M3,11V3h8v8H3ZM3,21V13h8v8H3ZM13,11V3h8v8H13Zm0,10V13h8v8H13ZM5,9H9V5H5V9ZM15,9h4V5H15V9Zm0,10h4V15H15v4ZM5,19H9V15H5v4ZM15,9Zm0,6ZM9,15ZM9,9Z" />
+              </svg>
+            </button>
+
+          </a>
         </div>
       </div>
     </section>
@@ -395,8 +451,8 @@
       </div>
     </section>
 
-    <section class="w-full py-20 bg-[#FEDDCF]">
-      <div class="mx-auto flex max-w-3xl flex-col items-center px-4 text-center">
+    <section class="w-full py-20 bg-[#FEDBD3]">
+      <div class="mx-auto flex max-w-6xl flex-col items-center px-4 text-center">
         <p class="mb-3 text-[18px] font-semibold uppercase tracking-wide text-gray-700">
           DON'T MISS ANYTHING
         </p>
@@ -408,7 +464,7 @@
         </h2>
         <form class="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row">
           <input
-            class="h-12 flex-1 rounded-sm border border-gray-200 px-4 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-orange-500"
+            class="w-full sm:flex-1 h-12 rounded-sm border border-gray-200 px-4 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-orange-500 transition"
             placeholder="Your working email" type="email" />
           <button
             class="h-12 rounded-sm bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600">
@@ -420,19 +476,20 @@
   </main>
 
   <!-- footer qismi -->
-
   <footer class="bg-[#1f2230] text-white">
-    <div class="mx-auto max-w-[1200px] px-6 py-14">
-      <div class="grid grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-6">
-        <div>
-          <a class="text-2xl font-bold tracking-tight" href="#">
+    <div class="mx-auto max-w-[1200px] px-6 py-10 lg:py-14">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-8 lg:gap-6">
+  
+        <div class="sm:col-span-2 md:col-span-1">
+          <a class="text-2xl font-bold tracking-tight inline-block" href="#">
             <img alt="Createx" src="/pages/pages/image/logo.png" />
           </a>
-          <p class="mt-6 max-w-[230px] text-sm leading-6 text-gray-400">
-            Createx Online School is a leader in online studying. We have lots of courses from different programs and
-            experienced teachers.
+          <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400">
+            Createx Online School is a leader in online studying. We have lots of courses from different
+            programs and experienced teachers.
           </p>
-          <div class="mt-7 flex items-center gap-4">
+          <div class="mt-6 lg:mt-7 flex items-center gap-4">
             <a class="transition hover:scale-110" href="#">
               <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Facebook.svg" />
             </a>
@@ -453,119 +510,74 @@
             </a>
           </div>
         </div>
+  
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">
-            Site Map
-          </h3>
-          <ul class="mt-6 space-y-3 text-sm text-gray-400">
-            <li>
-              <a class="transition hover:text-orange-500" href="#">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a class="transition hover:text-orange-500" href="#">
-                Courses
-              </a>
-            </li>
-            <li>
-              <a class="transition hover:text-orange-500" href="#">
-                Events
-              </a>
-            </li>
-            <li>
-              <a class="transition hover:text-orange-500" href="#">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a class="transition hover:text-orange-500" href="#">
-                Contacts
-              </a>
-            </li>
+          <h3 class="text-sm font-bold uppercase tracking-wide">Site Map</h3>
+          <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
+            <li><a class="transition hover:text-orange-500" href="about.html">About Us</a></li>
+            <li><a class="transition hover:text-orange-500" href="courses.html">Courses</a></li>
+            <li><a class="transition hover:text-orange-500" href="event.html">Events</a></li>
+            <li><a class="transition hover:text-orange-500" href="blog.html">Blog</a></li>
+            <li><a class="transition hover:text-orange-500" href="contact.html">Contacts</a></li>
           </ul>
         </div>
+  
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">
-            Courses
-          </h3>
-          <ul class="mt-6 space-y-3 text-sm text-gray-400">
-            <li>
-              <a class="transition hover:text-orange-500" href="#">
-                Marketing
-              </a>
-            </li>
-            <li>
-              <a class="transition hover:text-orange-500" href="#">
-                Management
-              </a>
-            </li>
-            <li>
-              <a class="transition hover:text-orange-500" href="#">
-                HR &; Recruiting
-              </a>
-            </li>
-            <li>
-              <a class="transition hover:text-orange-500" href="#">
-                Design
-              </a>
-            </li>
-            <li>
-              <a class="transition hover:text-orange-500" href="#">
-                Development
-              </a>
-            </li>
+          <h3 class="text-sm font-bold uppercase tracking-wide">Courses</h3>
+          <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
+            <li><a class="transition hover:text-orange-500" href="#">Marketing</a></li>
+            <li><a class="transition hover:text-orange-500" href="#">Management</a></li>
+            <li><a class="transition hover:text-orange-500" href="#">HR Recruiting</a></li>
+            <li><a class="transition hover:text-orange-500" href="#">Design</a></li>
+            <li><a class="transition hover:text-orange-500" href="#">Development</a></li>
           </ul>
         </div>
+  
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">
-            Contact Us
-          </h3>
-          <div class="mt-6 space-y-4 text-sm text-gray-400">
+          <h3 class="text-sm font-bold uppercase tracking-wide">Contact Us</h3>
+          <div class="mt-4 lg:mt-6 space-y-3 lg:space-y-4 text-sm text-gray-400">
             <a class="flex items-center transition hover:text-white" href="tel:+14055550128">
-              <span>
-                (405) 555-0128
-              </span>
+              <span>(405) 555-0128</span>
             </a>
             <a class="flex items-center transition hover:text-white" href="mailto:hello@createx.com">
-              <span>
-                hello@createx.com
-              </span>
+              <span>hello@createx.com</span>
             </a>
           </div>
         </div>
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">
-            Sign up to our newsletter
-          </h3>
-          <form class="mt-6">
+  
+        <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
+          <h3 class="text-sm font-bold uppercase tracking-wide">Sign up to our newsletter</h3>
+          <form class="mt-4 lg:mt-6 max-w-md lg:max-w-none">
             <div
               class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
-              <input
-                class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
+              <input class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
                 placeholder="Email address" type="email" />
-              <button class="px-3 text-lg text-gray-400 transition hover:bg-orange-500 hover:text-white" type="submit">
-                →
+              <button class="px-3 text-lg text-gray-400 transition  hover:text-white" type="submit">
+                <span class="material-symbols-outlined">arrow_forward</span>
               </button>
             </div>
-            <p class="mt-4 text-[10px] leading-4 text-gray-500">
-              *Subscribe to our newsletter to receive communications and upcoming events from Createx School.
+            <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500">
+              *Subscribe to our newsletter to receive communications and upcoming events from Createx
+              School.
             </p>
           </form>
         </div>
+  
       </div>
     </div>
+  
     <div class="border-t border-white/10 bg-[#292c3a]">
-      <div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
-        <p>
-          © All rights reserved. Made with by Createx Studio
-        </p>
+      <div
+        class="mx-auto flex flex-col sm:flex-row gap-3 text-center sm:text-left max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
+        <p>© All rights reserved. Made with by Createx Studio</p>
         <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
           Go to top
         </a>
       </div>
     </div>
   </footer>
+
+  <script src="pages/js/eventList.js"></script>
 
 </body>
 
