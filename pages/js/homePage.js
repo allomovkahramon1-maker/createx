@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
 // login qlish uchun yozgilgan js
 
 const btns = document.querySelector('btn');
- 
 
 // login qlish uchun yozgilgan js
 
@@ -70,3 +69,4 @@ closeBtn.addEventListener('click', function () {
     closeBtn.classList.add('hidden');
     menuBtn.classList.remove('hidden');
 });
+
