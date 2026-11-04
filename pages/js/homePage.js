@@ -42,7 +42,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// registratsiya js
 
+
+
+// registratsiya js
 
 // menu js
 
