@@ -42,11 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// login qlish uchun yozgilgan js
 
-const btns = document.querySelector('btn');
-
-// login qlish uchun yozgilgan js
 
 // menu js
 

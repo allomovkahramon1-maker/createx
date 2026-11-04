@@ -8,6 +8,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <!-- main ning iconka linki -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back,arrow_forward" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Createx</title>
 </head>
@@ -15,76 +17,54 @@
 <body>
     <!-- HEADER -->
     <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
-
+    
         <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-
-            <!-- Logo -->
+            <!-- sayt logotipi -->
             <a href="index.html">
                 <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
             </a>
-
-            <!-- Desktop links -->
-            <div class="hidden lg:flex items-center gap-6 font-medium">
+    
+            <!-- navbar qism -->
+            <nav class="hidden lg:flex items-center gap-6 font-medium">
                 <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
                 <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
                 <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
                 <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
                 <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
-            </div>
-
-            <!-- Desktop buttons -->
+            </nav>
+    
             <div class="hidden lg:flex items-center gap-4">
-
-                <a href="contact.html"
-                    class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
+                <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
                     Get consultation
                 </a>
-
                 <button id="btn" class="hover:text-[#ff3f22] font-bold">
                     Log in / Register
                 </button>
-
             </div>
-
-            <!-- Menu button -->
             <button id="menuBtn" class="lg:hidden text-3xl">
                 <span class="material-symbols-outlined hover:text-[#ff3f22]">menu</span>
             </button>
-
-            <!-- Close button -->
+    
             <button id="closeBtn" class="hidden lg:hidden text-3xl">
                 <span class="font-bold hover:text-[#ff3f22]">x</span>
             </button>
-
         </nav>
-
-        <!-- Mobile menu -->
+        <!-- telefonlar uchun menu -->
         <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
-
             <div class="flex flex-col gap-5 font-medium">
-
                 <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
-
                 <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
-
                 <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
-
                 <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
-
                 <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
-
-                <a href="contact.html"
-                    class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
+                <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
                     Get consultation
                 </a>
-
                 <button id="mobileLogin" class="text-left hover:text-[#ff3f22]">
                     Log in / Register
                 </button>
-
             </div>
         </div>
-
     </header>
     <!-- MAIN SECTION -->
     <main>
@@ -163,11 +143,11 @@
                 <div>
                     <h3 class="text-sm font-bold uppercase tracking-wide">Site Map</h3>
                     <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
-                        <li><a class="transition hover:text-orange-500" href="#">About Us</a></li>
-                        <li><a class="transition hover:text-orange-500" href="#">Courses</a></li>
-                        <li><a class="transition hover:text-orange-500" href="#">Events</a></li>
-                        <li><a class="transition hover:text-orange-500" href="#">Blog</a></li>
-                        <li><a class="transition hover:text-orange-500" href="#">Contacts</a></li>
+                        <li><a class="transition hover:text-orange-500" href="about.html">About Us</a></li>
+                        <li><a class="transition hover:text-orange-500" href="courses.html">Courses</a></li>
+                        <li><a class="transition hover:text-orange-500" href="event.html">Events</a></li>
+                        <li><a class="transition hover:text-orange-500" href="blog.html">Blog</a></li>
+                        <li><a class="transition hover:text-orange-500" href="contact.html">Contacts</a></li>
                     </ul>
                 </div>
 
@@ -176,7 +156,7 @@
                     <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
                         <li><a class="transition hover:text-orange-500" href="#">Marketing</a></li>
                         <li><a class="transition hover:text-orange-500" href="#">Management</a></li>
-                        <li><a class="transition hover:text-orange-500" href="#">HR &amp; Recruiting</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#">HR Recruiting</a></li>
                         <li><a class="transition hover:text-orange-500" href="#">Design</a></li>
                         <li><a class="transition hover:text-orange-500" href="#">Development</a></li>
                     </ul>
@@ -202,8 +182,8 @@
                             <input
                                 class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
                                 placeholder="Email address" type="email" />
-                            <button class="px-3 text-lg text-gray-400 transition hover:text-white" type="submit">
-                                →
+                            <button class="px-3 text-lg text-gray-400 transition  hover:text-white" type="submit">
+                                <span class="material-symbols-outlined">arrow_forward</span>
                             </button>
                         </div>
                         <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500">
@@ -226,14 +206,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        const menuBtn = document.getElementById('menu-btn')
-        const mobileMenu = document.getElementById('mobile-menu')
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden')
-        });
-    </script>
     <script src="pages/js/blog.js"></script>
 </body>
 
