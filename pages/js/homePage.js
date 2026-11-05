@@ -42,12 +42,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// login qlish uchun yozgilgan js
+// registratsiya js
 
-const btns = document.querySelector('btn');
- 
 
-// login qlish uchun yozgilgan js
+
+// registratsiya js
 
 // menu js
 
@@ -70,3 +69,4 @@ closeBtn.addEventListener('click', function () {
     closeBtn.classList.add('hidden');
     menuBtn.classList.remove('hidden');
 });
+
