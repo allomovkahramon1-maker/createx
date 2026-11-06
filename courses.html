@@ -16,7 +16,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Createx</title>
 </head>
-
+<!--  -->
 <body>
     <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
     
@@ -87,6 +87,32 @@
     
     </header>
     <main>
+        <section class="py-[110px] bg-white">
+            <div class="max-w-[1100px] mx-auto px-4">
+        
+                <div class="text-center mb-8">
+                    <p class="text-[18px] font-medium mb-2">
+                        ENJOY YOUR STUDYING!
+                    </p>
+        
+                    <h2 class="text-[50px] font-bold text-[#1e212c]">
+                        Our online courses
+                    </h2>
+                </div>
+
+                <div class="flex flex-col lg:flex-row justify-between items-center gap-5 mb-8">
+        
+                    <div id="filterButtons" class="flex flex-wrap items-center gap-2"></div>
+        
+                    <input type="text" id="search" placeholder="Search course..."
+                        class="w-full lg:w-[200px] border border-gray-200 px-3 py-2 text-xs outline-none focus:border-[#ff4242]">
+        
+                </div>
+                <!-- Courses -->
+                <div id="box" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>   
+            </div>
+        </section>
+
         <section class="mt-8 bg-white py-12 sm:mt-12 sm:py-16 lg:mt-16 lg:py-20">
             <div
                 class="mx-auto flex max-w-6xl flex-col justify-between gap-10 px-4 sm:px-5 lg:flex-row lg:items-center lg:gap-8">
