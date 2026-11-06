@@ -102,7 +102,6 @@ modal.innerHTML = `
                     <input id="email"
                         type="email"
                         placeholder="Your working email"
-                        required
                         class="w-full border border-gray-300
                         px-3 py-3 mt-2 text-xs outline-none
                         focus:border-orange-500">
@@ -117,8 +116,6 @@ modal.innerHTML = `
                         <input id="password"
                             type="password"
                             placeholder="Password"
-                            required
-                            minlength="6"
                             class="w-full border border-gray-300
                             px-3 py-3 text-xs outline-none
                             focus:border-orange-500 pr-10">
