@@ -15,7 +15,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Createx</title>
 </head>
-
 <body class="text-[#1e2532]">
   <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
 
@@ -33,12 +32,19 @@
         <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
         <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
       </nav>
+      <button>
+        <select name="select" id="" class="outline-none cursor-pointer bg-[#FFDAD5] border-2">
+          <option value="uz">Uzb</option>
+          <option value="en">Eng</option>
+          <option value="ru">Rus</option>
+        </select>
+      </button>
 
       <div class="hidden lg:flex items-center gap-4">
         <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
           Get consultation
         </a>
-        <button id="btn" class="hover:text-[#ff3f22] font-bold">
+        <button class="loginBtn hover:text-[#ff3f22] font-bold">
           Log in / Register
         </button>
       </div>
@@ -69,7 +75,7 @@
         <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
           Get consultation
         </a>
-        <button id="mobileLogin" id="btn" class="text-left hover:text-[#ff3f22]">
+        <button class="loginBtn text-left hover:text-[#ff3f22]">
           Log in / Register
         </button>
       </div>

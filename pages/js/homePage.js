@@ -61,7 +61,7 @@ modal.innerHTML = `
         <button id="closeModal"
             class="absolute top-4 right-5 text-2xl
             text-gray-500 hover:text-red-500">
-            x
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f"><path d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z"/></svg>
         </button>
 
         <!-- matn -->
@@ -225,10 +225,20 @@ document.body.appendChild(modal);
 
 
 
-// Modal ochish
-btn.addEventListener('click', function () {
-    modal.classList.remove('hidden');
-    modal.classList.add('flex');
+
+// Modal ochilishi
+const loginBtns = document.querySelectorAll('.loginBtn');
+
+loginBtns.forEach(function (button) {
+    button.addEventListener('click', function () {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+
+    //  yopish
+        mobileMenu.classList.add('hidden');
+        menuBtn.classList.remove('hidden');
+        closeBtn.classList.add('hidden');
+    });
 });
 
 
