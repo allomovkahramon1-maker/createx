@@ -67,22 +67,22 @@
       </div>
     </div>
   </header>
-<!-- registrantsiya -->
+  <!-- registrantsiya -->
   <div id="signUpModal" class="fixed inset-0 z-100 flex items-center justify-center px-4 hidden">
     <div id="modalOverlay" class="modal-overlay absolute inset-0 bg-gray-900/60"></div>
-  
+
     <div class="relative bg-white shadow-2xl w-full max-w-md p-8 sm:p-10">
       <button id="closeSignUp" class="absolute top-5 right-5 text-gray-400 hover:text-gray-700">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
-  
+
       <h2 class="text-[28px] font-[700] text-[#1E212C] text-center mb-2">Sign up</h2>
       <p class="text-[14px] font-[400] text-[#787A80] text-center mb-8 leading-relaxed max-w-[390px] mx-auto">
         Registration takes less than a minute but gives you full control over your studying.
       </p>
-  
+
       <form id="signUpForm" class="space-y-5">
         <div>
           <label for="fullName" class="block text-[14px] font-[400] text-[#424551] mb-1.5">Full Name</label>
@@ -94,7 +94,7 @@
           <input id="email" type="email" placeholder="Your working email"
             class="w-full border border-[#D7DADD] rounded-[4px] px-4 py-2.5 text-[14px] text-gray-700 placeholder-gray-400" />
         </div>
-  
+
         <div>
           <label for="password" class="block text-[14px] font-[400] text-[#424551] mb-1.5">Password</label>
           <div class="relative">
@@ -110,7 +110,7 @@
             </button>
           </div>
         </div>
-  
+
         <div>
           <label class="block text-[14px] font-[400] text-[#424551] mb-1.5">Confirm Password</label>
           <div class="relative">
@@ -126,28 +126,28 @@
             </button>
           </div>
         </div>
-  
+
         <label class="flex items-center gap-2 text-sm text-gray-600 cursor-pointer">
           <input type="checkbox" checked class="w-4 h-4 rounded border-gray-300 text-red-500 focus:ring-red-400" />
           Remember me
         </label>
-  
+
         <button type="submit"
           class="w-full bg-[#ff3f3a] to-orange-500 text-white font-semibold py-3 shadow-sm hover:bg-[#E63A35] hover:shadow-lg">
           Sign up
         </button>
-  
+
         <p class="text-sm text-gray-500">
           Already have an account? <button type="button" class="signIn-btn text-primary font-bold">Sign in</button>
         </p>
       </form>
-  
+
       <div class="flex items-center gap-3 my-6">
         <span class="flex-1 h-px bg-gray-200"></span>
         <span class="text-xs text-gray-400">Or sign in with</span>
         <span class="flex-1 h-px bg-gray-200"></span>
       </div>
-  
+
       <div class="flex items-center justify-center gap-6">
         <a href="#" class="text-gray-400 hover:text-red-600"><svg class="w-[20px] h-[20px]" fill="currentColor"
             viewBox="0 0 24 24">
@@ -640,8 +640,8 @@
   </section>
 
   <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-5 flex justify-between">
-      <div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 flex flex-col lg:flex-row items-center justify-between gap-10">
+      <div class="w-full lg:w-1/2">
         <p class="text-xs font-bold tracking-wide mb-4">
           CREATEХ CERTIFICATE
         </p>
@@ -659,13 +659,14 @@
           <img alt="National" class="w-20 sm:w-24" src="/pages/pages/image/logo4.png" />
         </div>
       </div>
-      <div class="flex justify-center">
-        <img alt="Createx Certificate" class="w-full h-[500px] max-w-xl hover:scale-[1.05] transition-all duration-300"
+
+      <div class="w-full lg:w-1/2 flex justify-center">
+        <img alt="Createx Certificate"
+          class="w-full max-w-lg lg:max-w-xl h-auto object-contain hover:scale-[1.05] transition-all duration-300 rounded-lg"
           src="/pages/pages/image/image (31).png" />
       </div>
     </div>
   </section>
-
   <!-- swiper 1-chisi -->
 
   <section class="bg-[#F4F5F6] py-[70px] px-5">
@@ -783,8 +784,8 @@
         </h1>
       </div>
       <div class="bg-white py-8 sm:py-12 lg:py-20">
-        <swiper-container class="mySwiper" pagination="false" autoplay-delay="2000" pagination-clickable="true" navigation="true"
-          space-between="30" centered-slides="true" loop="true" 
+        <swiper-container class="mySwiper" pagination="false" autoplay-delay="2000" pagination-clickable="true"
+          navigation="true" space-between="30" centered-slides="true" loop="true"
           breakpoints='{ "0":{ "slidesPerView":1 }, "600":{ "slidesPerView":1 }, "900":{ "slidesPerView":1 }, "1200":{ "slidesPerView":1 } }'>
           <!-- Swiper 1 -->
           <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
