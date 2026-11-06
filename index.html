@@ -1,38 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <!-- main ning iconka linki -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-  <!-- main ning iconka linki -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back,arrow_forward" />
-
   <link rel="stylesheet" href="/pages/css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Createx</title>
 </head>
+
 <body class="text-[#1e2532]">
   <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
-
     <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <!-- sayt logotipi -->
       <a href="index.html">
         <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
       </a>
-      <!-- navbar qism -->
+
       <nav class="hidden lg:flex items-center gap-6 font-medium">
-        <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
-        <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
-        <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
-        <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
-        <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+        <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
+        <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
+        <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
+        <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
+        <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
       </nav>
+
       <button>
-        <select name="select" id="" class="outline-none cursor-pointer bg-[#FFDAD5] border-2">
+        <select name="select" id="languageSelect" class="outline-none cursor-pointer bg-[#FFDAD5] border-2">
           <option value="uz">Uzb</option>
           <option value="en">Eng</option>
           <option value="ru">Rus</option>
@@ -40,16 +38,16 @@
       </button>
 
       <div class="hidden lg:flex items-center gap-4">
-        <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
+        <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]"
+          data-key="getConsultation">
           Get consultation
         </a>
-        <button class="loginBtn hover:text-[#ff3f22] font-bold">
+        <button class="loginBtn hover:text-[#ff3f22] font-bold" data-key="loginRegister">
           Log in / Register
         </button>
       </div>
 
       <button id="menuBtn" class="lg:hidden text-3xl">
-        <!-- <span class="material-symbols-outlined hover:text-[#ff3f22]">menu</span> -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
           <path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z" />
         </svg>
@@ -58,23 +56,25 @@
       <button id="closeBtn" class="hidden lg:hidden text-3xl">
         <span class="font-medium hover:text-[#ff3f22]">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
-            <path d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z" />
+            <path
+              d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z" />
           </svg>
         </span>
       </button>
     </nav>
-    
+
     <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
       <div class="flex flex-col gap-5 font-medium">
-        <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
-        <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
-        <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
-        <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
-        <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
-        <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
+        <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
+        <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
+        <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
+        <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
+        <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
+        <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]"
+          data-key="getConsultation">
           Get consultation
         </a>
-        <button class="loginBtn text-left hover:text-[#ff3f22]">
+        <button class="loginBtn text-left hover:text-[#ff3f22]" data-key="loginRegister">
           Log in / Register
         </button>
       </div>
@@ -92,75 +92,61 @@
                 class="h-10 w-10 transition-transform duration-300 group-hover:scale-110" />
             </button>
           </a>
-          <span class="text-sm font-medium text-[#1e212c]">
+          <span class="text-sm font-medium text-[#1e212c]" data-key="playShowreel">
             Play showreel
           </span>
         </div>
+
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-          Enjoy studying
+          <span data-key="heroLine1">Enjoy studying</span>
           <br />
-          with Createx
+          <span data-key="heroLine2">with Createx</span>
           <br />
-          Online Courses
+          <span data-key="heroLine3">Online Courses</span>
         </h1>
+
         <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-9">
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 sm:px-7 py-3 rounded-md text-sm font-semibold hover:bg-[#ff3f22] hover:text-white transition">
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 sm:px-7 py-3 rounded-md text-sm font-semibold hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="aboutUs">
             About us
           </button>
           <button
-            class="bg-[#ff3f22] text-white px-6 sm:px-7 py-3 rounded-md text-sm font-semibold hover:bg-[#e9371d] transition">
+            class="bg-[#ff3f22] text-white px-6 sm:px-7 py-3 rounded-md text-sm font-semibold hover:bg-[#e9371d] transition"
+            data-key="exploreCourses">
             Explore courses
           </button>
         </div>
       </div>
+
       <div class="flex justify-center">
         <img alt="Online course illustration" class="w-full max-w-[350px] sm:max-w-md lg:max-w-xl"
           src="/pages/pages/image/illustration (1).png" />
       </div>
     </div>
+
     <div class="max-w-6xl mx-auto px-5 pb-14">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8 text-center">
         <div class="flex items-center justify-center gap-3">
-          <strong class="text-2xl lg:text-3xl font-bold">
-            1200
-          </strong>
-          <span class="text-xs sm:text-sm text-gray-700">
-            Students graduated
-          </span>
+          <strong class="text-2xl lg:text-3xl font-bold">1200</strong>
+          <span class="text-xs sm:text-sm text-gray-700" data-key="studentsGraduated">Students graduated</span>
           <span class="bg-red-500 rounded w-2 h-2 shrink-0"></span>
         </div>
-
         <div class="flex items-center justify-center gap-3">
-          <strong class="text-2xl lg:text-3xl font-bold">
-            84
-          </strong>
-          <span class="text-xs sm:text-sm text-gray-700">
-            Completed courses
-          </span>
+          <strong class="text-2xl lg:text-3xl font-bold">84</strong>
+          <span class="text-xs sm:text-sm text-gray-700" data-key="completedCourses">Completed courses</span>
           <span class="bg-red-500 rounded w-2 h-2 shrink-0"></span>
         </div>
-
         <div class="flex items-center justify-center gap-3">
-          <strong class="text-2xl lg:text-3xl font-bold">
-            16
-          </strong>
-          <span class="text-xs sm:text-sm text-gray-700">
-            Qualified tutors
-          </span>
+          <strong class="text-2xl lg:text-3xl font-bold">16</strong>
+          <span class="text-xs sm:text-sm text-gray-700" data-key="qualifiedTutors">Qualified tutors</span>
           <span class="bg-red-500 rounded w-2 h-2 shrink-0"></span>
         </div>
-
         <div class="flex items-center justify-center gap-3">
-          <strong class="text-2xl lg:text-3xl font-bold">
-            5
-          </strong>
-          <span class="text-xs sm:text-sm text-gray-700">
-            Years of experience
-          </span>
+          <strong class="text-2xl lg:text-3xl font-bold">5</strong>
+          <span class="text-xs sm:text-sm text-gray-700" data-key="yearsExperience">Years of experience</span>
           <span class="bg-red-500 rounded w-2 h-2 shrink-0"></span>
         </div>
-
       </div>
     </div>
   </section>
@@ -171,64 +157,37 @@
         <img alt="Student studying" class="w-full rounded-lg" src="/pages/pages/image/image (30).png" />
       </div>
       <div>
-        <p class="text-xs font-bold tracking-wider text-gray-700 mb-3">
-          WHO WE ARE
-        </p>
-        <h2 class="text-3xl sm:text-4xl font-bold mb-7">
-          Why Createx?
-        </h2>
+        <p class="text-xs font-bold tracking-wider text-gray-700 mb-3" data-key="whoWeAre">WHO WE ARE</p>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-7" data-key="whyCreatex">Why Createx?</h2>
         <ul class="space-y-4 text-sm text-gray-600">
           <li class="flex gap-3">
-            <span class="text-[#ff3f22] font-bold">
-              <img alt="check" src="/pages/pages/image/check.png" />
-            </span>
-            <span>
-              A fermentum in morbi pretium aliquam adipiscing donec tempus.
-            </span>
+            <span class="text-[#ff3f22] font-bold"><img alt="check" src="/pages/pages/image/check.png" /></span>
+            <span data-key="whyText1">A fermentum in morbi pretium aliquam adipiscing donec tempus.</span>
           </li>
           <li class="flex gap-3">
-            <span class="text-[#ff3f22] font-bold">
-              <img alt="check" src="/pages/pages/image/check.png" />
-            </span>
-            <span>
-              Vulputate placerat amet pulvinar lorem nisl.
-            </span>
+            <span class="text-[#ff3f22] font-bold"><img alt="check" src="/pages/pages/image/check.png" /></span>
+            <span data-key="whyText2">Vulputate placerat amet pulvinar lorem nisl.</span>
           </li>
           <li class="flex gap-3">
-            <span class="text-[#ff3f22] font-bold">
-              <img alt="check" src="/pages/pages/image/check.png" />
-            </span>
-            <span>
-              Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
-            </span>
+            <span class="text-[#ff3f22] font-bold"><img alt="check" src="/pages/pages/image/check.png" /></span>
+            <span data-key="whyText3">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</span>
           </li>
           <li class="flex gap-3">
-            <span class="text-[#ff3f22] font-bold">
-              <img alt="check" src="/pages/pages/image/check.png" />
-            </span>
-            <span>
-              Etiam duis lobortis in fames ultrices commodo nibh.
-            </span>
+            <span class="text-[#ff3f22] font-bold"><img alt="check" src="/pages/pages/image/check.png" /></span>
+            <span data-key="whyText4">Etiam duis lobortis in fames ultrices commodo nibh.</span>
           </li>
           <li class="flex gap-3">
-            <span class="text-[#ff3f22] font-bold">
-              <img alt="check" src="/pages/pages/image/check.png" />
-            </span>
-            <span>
-              Tincidunt sagittis neque sem ac eget.
-            </span>
+            <span class="text-[#ff3f22] font-bold"><img alt="check" src="/pages/pages/image/check.png" /></span>
+            <span data-key="whyText5">Tincidunt sagittis neque sem ac eget.</span>
           </li>
           <li class="flex gap-3">
-            <span class="text-[#ff3f22] font-bold">
-              <img alt="check" src="/pages/pages/image/check.png" />
-            </span>
-            <span>
-              Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
-            </span>
+            <span class="text-[#ff3f22] font-bold"><img alt="check" src="/pages/pages/image/check.png" /></span>
+            <span data-key="whyText6">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</span>
           </li>
         </ul>
         <button
-          class="mt-8 bg-[#ff3f22] text-white px-7 py-3 rounded-md text-sm font-semibold hover:bg-[#e9371d] transition">
+          class="mt-8 bg-[#ff3f22] text-white px-7 py-3 rounded-md text-sm font-semibold hover:bg-[#e9371d] transition"
+          data-key="moreAboutUs">
           More about us
         </button>
       </div>
@@ -239,149 +198,81 @@
     <div class="max-w-6xl mx-auto px-5">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8">
         <div>
-          <p class="text-xs font-bold mb-2">
-            READY TO LEARN?
-          </p>
-          <h2 class="text-3xl font-bold">
-            Featured Courses
-          </h2>
+          <p class="text-xs font-bold mb-2" data-key="readyToLearn">READY TO LEARN?</p>
+          <h2 class="text-3xl font-bold" data-key="featuredCourses">Featured Courses</h2>
         </div>
         <button
-          class="border border-[#ff3f22] text-[#ff3f22] px-7 py-3 text-xs font-semibold mt-5 sm:mt-0 hover:bg-[#ff3f22] hover:text-white transition">
+          class="border border-[#ff3f22] text-[#ff3f22] px-7 py-3 text-xs font-semibold mt-5 sm:mt-0 hover:bg-[#ff3f22] hover:text-white transition"
+          data-key="viewAllCourses">
           View all courses
         </button>
       </div>
+
       <div class="grid md:grid-cols-2 gap-4">
         <div class="flex bg-white shadow-sm border hover:shadow-lg transition">
-          <div class="bg-[#ffd43b] w-28 sm:w-32">
-            <img alt="" class="w-full h-full object-cover" src="/pages/pages/image/image1.png" />
-          </div>
+          <div class="bg-[#ffd43b] w-28 sm:w-32"><img alt="" class="w-full h-full object-cover"
+              src="/pages/pages/image/image1.png" /></div>
           <div class="p-5">
-            <span class="bg-emerald-400 text-white text-[10px] px-2 py-1">
-              Marketing
-            </span>
-            <h3 class="font-semibold text-sm mt-3">
-              The Ultimate Google Ads Training Course
-            </h3>
-            <p class="text-xs text-gray-500 mt-4">
-              <b class="text-red-500">
-                $100
-              </b>
-              <span class="mx-1">
-                |
-              </span>
-              by Jerome Bell
-            </p>
+            <span class="bg-emerald-400 text-white text-[10px] px-2 py-1" data-key="marketing">Marketing</span>
+            <h3 class="font-semibold text-sm mt-3" data-key="course1">The Ultimate Google Ads Training Course</h3>
+            <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$100</b><span class="mx-1">|</span>by Jerome
+              Bell</p>
           </div>
         </div>
+
         <div class="flex bg-white shadow-sm border hover:shadow-lg transition">
-          <div class="bg-[#ffd43b] w-28 sm:w-32">
-            <img alt="" class="w-full h-full object-cover" src="/pages/pages/image/image2.png" />
-          </div>
+          <div class="bg-[#ffd43b] w-28 sm:w-32"><img alt="" class="w-full h-full object-cover"
+              src="/pages/pages/image/image2.png" /></div>
           <div class="p-5">
-            <span class="bg-blue-500 text-white text-[10px] px-2 py-1">
-              Management
-            </span>
-            <h3 class="font-semibold text-sm mt-3">
-              Product Management Fundamentals
-            </h3>
-            <p class="text-xs text-gray-500 mt-4">
-              <b class="text-red-500">
-                $480
-              </b>
-              <span class="mx-1">
-                |
-              </span>
-              by Marvin McKinney
-            </p>
+            <span class="bg-blue-500 text-white text-[10px] px-2 py-1" data-key="management">Management</span>
+            <h3 class="font-semibold text-sm mt-3" data-key="course2">Product Management Fundamentals</h3>
+            <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$480</b><span class="mx-1">|</span>by Marvin
+              McKinney</p>
           </div>
         </div>
+
         <div class="flex bg-white shadow-sm border hover:shadow-lg transition">
-          <div class="bg-[#ffd43b] w-28 sm:w-32">
-            <img alt="" class="w-full h-full object-cover" src="/pages/pages/image/image3.png" />
-          </div>
+          <div class="bg-[#ffd43b] w-28 sm:w-32"><img alt="" class="w-full h-full object-cover"
+              src="/pages/pages/image/image3.png" /></div>
           <div class="p-5">
-            <span class="bg-orange-400 text-white text-[10px] px-2 py-1">
-              HR &; Recruiting
-            </span>
-            <h3 class="font-semibold text-sm mt-3">
-              HR Management and Analytics
-            </h3>
-            <p class="text-xs text-gray-500 mt-4">
-              <b class="text-red-500">
-                $200
-              </b>
-              <span class="mx-1">
-                |
-              </span>
-              by Leslie Alexander Li
-            </p>
+            <span class="bg-orange-400 text-white text-[10px] px-2 py-1" data-key="hrRecruiting">HR &amp;
+              Recruiting</span>
+            <h3 class="font-semibold text-sm mt-3" data-key="course3">HR Management and Analytics</h3>
+            <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$200</b><span class="mx-1">|</span>by Leslie
+              Alexander Li</p>
           </div>
         </div>
+
         <div class="flex bg-white shadow-sm border hover:shadow-lg transition">
-          <div class="bg-[#ffd43b] w-28 sm:w-32">
-            <img alt="" class="w-full h-full object-cover" src="/pages/pages/image/image4.png" />
-          </div>
+          <div class="bg-[#ffd43b] w-28 sm:w-32"><img alt="" class="w-full h-full object-cover"
+              src="/pages/pages/image/image4.png" /></div>
           <div class="p-5">
-            <span class="bg-emerald-400 text-white text-[10px] px-2 py-1">
-              Marketing
-            </span>
-            <h3 class="font-semibold text-sm mt-3">
-              Brand Management &; PR Communications
-            </h3>
-            <p class="text-xs text-gray-500 mt-4">
-              <b class="text-red-500">
-                $530
-              </b>
-              <span class="mx-1">
-                |
-              </span>
-              by Kristin Watson
-            </p>
+            <span class="bg-emerald-400 text-white text-[10px] px-2 py-1" data-key="marketing">Marketing</span>
+            <h3 class="font-semibold text-sm mt-3" data-key="course4">Brand Management &amp; PR Communications</h3>
+            <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$530</b><span class="mx-1">|</span>by Kristin
+              Watson</p>
           </div>
         </div>
+
         <div class="flex bg-white shadow-sm border hover:shadow-lg transition">
-          <div class="bg-[#ffd43b] w-28 sm:w-32">
-            <img alt="" class="w-full h-full object-cover" src="/pages/pages/image/image5.png" />
-          </div>
+          <div class="bg-[#ffd43b] w-28 sm:w-32"><img alt="" class="w-full h-full object-cover"
+              src="/pages/pages/image/image5.png" /></div>
           <div class="p-5">
-            <span class="bg-blue-500 text-white text-[10px] px-2 py-1">
-              Management
-            </span>
-            <h3 class="font-semibold text-sm mt-3">
-              Business Development Management
-            </h3>
-            <p class="text-xs text-gray-500 mt-4">
-              <b class="text-red-500">
-                $400
-              </b>
-              <span class="mx-1">
-                |
-              </span>
-              by Dianne Russell
-            </p>
+            <span class="bg-blue-500 text-white text-[10px] px-2 py-1" data-key="management">Management</span>
+            <h3 class="font-semibold text-sm mt-3" data-key="course5">Business Development Management</h3>
+            <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$400</b><span class="mx-1">|</span>by Dianne
+              Russell</p>
           </div>
         </div>
+
         <div class="flex bg-white shadow-sm border hover:shadow-lg transition">
-          <div class="bg-[#ffd43b] w-28 sm:w-32">
-            <img alt="" class="w-full h-full object-cover" src="/pages/pages/image/image6.png" />
-          </div>
+          <div class="bg-[#ffd43b] w-28 sm:w-32"><img alt="" class="w-full h-full object-cover"
+              src="/pages/pages/image/image6.png" /></div>
           <div class="p-5">
-            <span class="bg-pink-500 text-white text-[10px] px-2 py-1">
-              Design
-            </span>
-            <h3 class="font-semibold text-sm mt-3">
-              Graphic Design Basic
-            </h3>
-            <p class="text-xs text-gray-500 mt-4">
-              <b class="text-red-500">
-                $500
-              </b>
-              <span class="mx-1">
-                |
-              </span>
-              by Guy Hawkins
-            </p>
+            <span class="bg-pink-500 text-white text-[10px] px-2 py-1" data-key="design">Design</span>
+            <h3 class="font-semibold text-sm mt-3" data-key="course6">Graphic Design Basic</h3>
+            <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$500</b><span class="mx-1">|</span>by Guy
+              Hawkins</p>
           </div>
         </div>
       </div>
@@ -391,44 +282,33 @@
   <section class="py-20 sm:py-24">
     <div class="max-w-6xl mx-auto px-4 sm:px-5">
       <div class="text-center">
-        <p class="text-xs font-bold tracking-wide mb-3">
-          OUR BENEFITS
-        </p>
-        <h2 class="text-3xl sm:text-4xl font-bold">
-          That’s how we do it
-        </h2>
+        <p class="text-xs font-bold tracking-wide mb-3" data-key="ourBenefits">OUR BENEFITS</p>
+        <h2 class="text-3xl sm:text-4xl font-bold" data-key="thatsHowWeDoIt">That’s how we do it</h2>
       </div>
+
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-10 flex items-center">
-        <a href="blog.html" class="border border-[#ff3f22] text-[#ff3f22] py-3 px-4 text-sm font-medium rounded hover:bg-[#ff3f22] hover:text-white transition">
-          <button>
-            Experienced Tutors
-          </button>
+        <a href="blog.html"
+          class="border border-[#ff3f22] text-[#ff3f22] py-3 px-4 text-sm font-medium rounded hover:bg-[#ff3f22] hover:text-white transition">
+          <button data-key="experiencedTutors">Experienced Tutors</button>
         </a>
         <button class="text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
           <img alt="like img" src="/pages/pages/image/like.svg" />
-          <p>
-            Feedback &; Support
-          </p>
+          <p data-key="feedbackSupport">Feedback &amp; Support</p>
         </button>
         <button class="text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
           <img alt="Layouts" src="/pages/pages/image/Layouts.png" />
-          <p>
-            2
-          </p>
+          <p data-key="benefitTwo">2</p>
         </button>
         <button class="text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
           <img alt="Chat" src="/pages/pages/image/Chat.png" />
-          <p>
-            Community
-          </p>
+          <p data-key="community">Community</p>
         </button>
       </div>
+
       <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center mt-16">
         <div>
-          <h3 class="text-2xl sm:text-3xl font-bold mb-5">
-            Only practicing tutors
-          </h3>
-          <p class="text-sm leading-7 text-#424551 max-w-lg">
+          <h3 class="text-2xl sm:text-3xl font-bold mb-5" data-key="onlyPracticingTutors">Only practicing tutors</h3>
+          <p class="text-sm leading-7 text-#424551 max-w-lg" data-key="practicingTutorsText">
             Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa
             ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis
             vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.
@@ -444,106 +324,73 @@
   <section class="bg-[#ffddd5] py-16 sm:py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-5">
       <div class="text-center mb-8 sm:mb-10">
-        <p class="text-[10px] font-bold mb-2">
-          OUR EVENTS
-        </p>
-        <h2 class="text-2xl sm:text-3xl font-bold">
-          Lectures & workshops
-        </h2>
+        <p class="text-[10px] font-bold mb-2" data-key="ourEvents">OUR EVENTS</p>
+        <h2 class="text-2xl sm:text-3xl font-bold" data-key="lecturesWorkshops">Lectures &amp; workshops</h2>
       </div>
+
       <div class="space-y-3">
         <div
           class="bg-white p-5 sm:px-6 flex flex-col lg:flex-row lg:items-center gap-5 hover:scale-[1.01] hover:shadow-xl transition-all duration-300">
           <div class="flex items-center gap-3 lg:w-28">
-            <strong class="text-2xl sm:text-3xl text-[#ff3f22]">
-              05
-            </strong>
+            <strong class="text-2xl sm:text-3xl text-[#ff3f22]">05</strong>
             <div>
-              <p class="text-xs font-medium">
-                August
-              </p>
-              <p class="text-[10px] text-gray-500">
-                11:00 – 14:00
-              </p>
+              <p class="text-xs font-medium" data-key="august">August</p>
+              <p class="text-[10px] text-gray-500">11:00 – 14:00</p>
             </div>
           </div>
           <div class="flex-1">
-            <h3 class="text-sm font-semibold">
-              Formation of the organizational structure of the company in the face of uncertainty.
-            </h3>
-            <p class="text-[10px] text-gray-500 mt-2">
-              Online master-class
-            </p>
+            <h3 class="text-sm font-semibold" data-key="event1">Formation of the organizational structure of the company
+              in the face of uncertainty.</h3>
+            <p class="text-[10px] text-gray-500 mt-2" data-key="onlineMasterclass">Online master-class</p>
           </div>
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition">
-            View more
-          </button>
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="viewMore">View more</button>
         </div>
+
         <div
           class="bg-white p-5 sm:px-6 flex flex-col lg:flex-row lg:items-center gap-5 shadow-sm hover:scale-[1.01] hover:shadow-xl transition-all duration-300">
           <div class="flex items-center gap-3 lg:w-28">
-            <strong class="text-2xl sm:text-3xl text-[#ff3f22]">
-              24
-            </strong>
+            <strong class="text-2xl sm:text-3xl text-[#ff3f22]">24</strong>
             <div>
-              <p class="text-xs font-medium">
-                July
-              </p>
-              <p class="text-[10px] text-gray-500">
-                11:00 – 12:30
-              </p>
+              <p class="text-xs font-medium" data-key="july">July</p>
+              <p class="text-[10px] text-gray-500">11:00 – 12:30</p>
             </div>
           </div>
           <div class="flex-1">
-            <h3 class="text-sm font-semibold">
-              Building a customer service department. Best Practices.
+            <h3 class="text-sm font-semibold" data-key="event2">Building a customer service department. Best Practices.
             </h3>
-            <p class="text-[10px] text-gray-500 mt-2">
-              Online lecture
-            </p>
+            <p class="text-[10px] text-gray-500 mt-2" data-key="onlineLecture">Online lecture</p>
           </div>
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition">
-            View more
-          </button>
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="viewMore">View more</button>
         </div>
+
         <div
           class="bg-white p-5 sm:px-6 flex flex-col lg:flex-row lg:items-center gap-5 hover:scale-[1.01] hover:shadow-xl transition-all duration-300">
           <div class="flex items-center gap-3 lg:w-28">
-            <strong class="text-2xl sm:text-3xl text-[#ff3f22]">
-              16
-            </strong>
+            <strong class="text-2xl sm:text-3xl text-[#ff3f22]">16</strong>
             <div>
-              <p class="text-xs font-medium">
-                July
-              </p>
-              <p class="text-[10px] text-gray-500">
-                10:00 – 13:00
-              </p>
+              <p class="text-xs font-medium" data-key="july">July</p>
+              <p class="text-[10px] text-gray-500">10:00 – 13:00</p>
             </div>
           </div>
           <div class="flex-1">
-            <h3 class="text-sm font-semibold">
-              How to apply methods of speculative design in practice. Worldbuilding prototyping.
-            </h3>
-            <p class="text-[10px] text-gray-500 mt-2">
-              Online workshop
-            </p>
+            <h3 class="text-sm font-semibold" data-key="event3">How to apply methods of speculative design in practice.
+              Worldbuilding prototyping.</h3>
+            <p class="text-[10px] text-gray-500 mt-2" data-key="onlineWorkshop">Online workshop</p>
           </div>
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition">
-            View more
-          </button>
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="viewMore">View more</button>
         </div>
       </div>
+
       <div class="flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-7 mt-8">
-        <h3 class="text-base sm:text-lg font-semibold">
-          Do you want more?
-        </h3>
-        <button class="bg-[#ff3f22] text-white px-7 py-3 text-xs font-semibold hover:bg-[#e9371d] transition">
-          Explore all events
-        </button>
+        <h3 class="text-base sm:text-lg font-semibold" data-key="wantMore">Do you want more?</h3>
+        <button class="bg-[#ff3f22] text-white px-7 py-3 text-xs font-semibold hover:bg-[#e9371d] transition"
+          data-key="exploreAllEvents">Explore all events</button>
       </div>
     </div>
   </section>
@@ -551,15 +398,13 @@
   <section class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-5 flex flex-col lg:flex-row items-center justify-between gap-10">
       <div class="w-full lg:w-1/2">
-        <p class="text-xs font-bold tracking-wide mb-4">
-          CREATEХ CERTIFICATE
-        </p>
+        <p class="text-xs font-bold tracking-wide mb-4" data-key="createxCertificate">CREATEX CERTIFICATE</p>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold max-w-md">
-          Your expertise will
+          <span data-key="expertiseConfirmed1">Your expertise will</span>
           <br />
-          be confirmed
+          <span data-key="expertiseConfirmed2">be confirmed</span>
         </h2>
-        <p class="text-sm text-gray-600 leading-6 max-w-md mt-8">
+        <p class="text-sm text-gray-600 leading-6 max-w-md mt-8" data-key="accreditedText">
           We are accredited by international professional organizations and institutes:
         </p>
         <div class="flex flex-wrap items-center gap-6 mt-8">
@@ -568,7 +413,6 @@
           <img alt="National" class="w-20 sm:w-24" src="/pages/pages/image/logo4.png" />
         </div>
       </div>
-
       <div class="w-full lg:w-1/2 flex justify-center">
         <img alt="Createx Certificate"
           class="w-full max-w-lg lg:max-w-xl h-auto object-contain hover:scale-[1.05] transition-all duration-300 rounded-lg"
@@ -576,77 +420,54 @@
       </div>
     </div>
   </section>
-  <!-- swiper 1-chisi -->
 
   <section class="bg-[#F4F5F6] py-[70px] px-5">
     <div class="max-w-6xl mx-auto">
       <div class="flex items-center justify-between mb-10">
         <div>
-          <p class="text-[13px] uppercase text-[#1e212c] mb-2">
-            Best tutors are all here
-          </p>
-          <h2 class="text-[46px] font-bold text-[#1e212c]">
-            Meet our team
-          </h2>
+          <p class="text-[13px] uppercase text-[#1e212c] mb-2" data-key="bestTutorsHere">Best tutors are all here</p>
+          <h2 class="text-[46px] font-bold text-[#1e212c]" data-key="meetOurTeam">Meet our team</h2>
         </div>
-        <!-- ewisydvg -->
         <div class="flex gap-3">
           <button id="teamPrev" type="button"
             class="w-[42px] h-[42px] rounded-full flex items-center justify-center text-[#424551] hover:bg-[#ff4242] hover:text-white transition duration-300">
             <span class="material-symbols-outlined">arrow_back</span>
           </button>
-
           <button id="teamNext" type="button"
             class="w-[42px] h-[42px] rounded-full flex items-center justify-center text-[#424551] hover:bg-[#ff4242] hover:text-white transition duration-300">
             <span class="material-symbols-outlined">arrow_forward</span>
           </button>
         </div>
-        <!-- qwewhsvbdwjs -->
       </div>
-      <!--   -->
+
       <swiper-container
         breakpoints='{ "0":{ "slidesPerView":1 }, "600":{ "slidesPerView":2 }, "900":{ "slidesPerView":3 }, "1200":{ "slidesPerView":4 } }'
         class="teamSwiper w-full" loop="true" slides-per-view="4" space-between="20" speed="700" autoplay-delay="2000">
         <swiper-slide>
-          <!-- swiper  -->
           <div class="text-center group">
             <div class="relative h-[215px] overflow-hidden rounded-[4px] bg-[#ffd43b]">
               <img alt="Dianne Russell" class="w-full h-full object-contain" src="/pages/pages/image/team/image.png" />
             </div>
-            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">
-              Dianne Russell
-            </h3>
-            <p class="text-[13px] text-[#787a80]">
-              Founder and CEO
-            </p>
+            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">Dianne Russell</h3>
+            <p class="text-[13px] text-[#787a80]" data-key="founderCEO">Founder and CEO</p>
           </div>
         </swiper-slide>
         <swiper-slide>
           <div class="text-center group">
             <div class="relative h-[215px] overflow-hidden rounded-[4px] bg-[#ffd43b]">
               <img alt="Jerome Bell" class="w-full h-full object-contain" src="/pages/pages/image/team/image.png" />
-
             </div>
-            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">
-              Jerome Bell
-            </h3>
-            <p class="text-[13px] text-[#787a80]">
-              Founder and Program Director
-            </p>
+            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">Jerome Bell</h3>
+            <p class="text-[13px] text-[#787a80]" data-key="founderProgramDirector">Founder and Program Director</p>
           </div>
         </swiper-slide>
         <swiper-slide>
           <div class="text-center group">
             <div class="relative h-[215px] overflow-hidden rounded-[4px] bg-[#ffd43b]">
               <img alt="Kristin Watson" class="w-full h-full object-contain" src="/pages/pages/image/team1/image.png" />
-
             </div>
-            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">
-              Kristin Watson
-            </h3>
-            <p class="text-[13px] text-[#787a80]">
-              Marketer, Curator of Marketing Course
-            </p>
+            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">Kristin Watson</h3>
+            <p class="text-[13px] text-[#787a80]" data-key="marketerCurator">Marketer, Curator of Marketing Course</p>
           </div>
         </swiper-slide>
         <swiper-slide>
@@ -654,57 +475,44 @@
             <div class="relative h-[215px] overflow-hidden rounded-[4px] bg-[#ffd43b]">
               <img alt="Marvin McKinney" class="w-full h-full object-contain"
                 src="/pages/pages/image/team2/image.png" />
-
             </div>
-            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">
-              Marvin McKinney
-            </h3>
-            <p class="text-[13px] text-[#787a80]">
-              PM, Curator of Management Course
-            </p>
+            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">Marvin McKinney</h3>
+            <p class="text-[13px] text-[#787a80]" data-key="pmCurator">PM, Curator of Management Course</p>
           </div>
         </swiper-slide>
         <swiper-slide>
           <div class="text-center group">
             <div class="relative h-[215px] overflow-hidden rounded-[4px] bg-[#ffd43b]">
               <img alt="Dianne Russell" class="w-full h-full object-contain" src="/pages/pages/image/team1/image.png" />
-
             </div>
-            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">
-              Dianne Russell
-            </h3>
-            <p class="text-[13px] text-[#787a80]">
-              Founder and CEO
-            </p>
+            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">Dianne Russell</h3>
+            <p class="text-[13px] text-[#787a80]" data-key="founderCEO">Founder and CEO</p>
           </div>
         </swiper-slide>
       </swiper-container>
     </div>
   </section>
-  <!-- swiper section 2-chisi -->
+
   <section class="bg-[#F0F1F3] py-10 sm:py-[50px]">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="flex flex-col items-center gap-4 sm:gap-8 pb-8 sm:pb-[50px] text-center">
-        <h6 class="font-bold text-[16px] sm:text-[20px]">
-          TESTIMONIALS
-        </h6>
-        <h1 class="font-bold text-[28px] sm:text-[36px] lg:text-[46px]">
-          What our students say
+        <h6 class="font-bold text-[16px] sm:text-[20px]" data-key="testimonials">TESTIMONIALS</h6>
+        <h1 class="font-bold text-[28px] sm:text-[36px] lg:text-[46px]" data-key="whatStudentsSay">What our students say
         </h1>
       </div>
+
       <div class="bg-white py-8 sm:py-12 lg:py-20">
         <swiper-container class="mySwiper" pagination="false" autoplay-delay="2000" pagination-clickable="true"
           navigation="true" space-between="30" centered-slides="true" loop="true"
           breakpoints='{ "0":{ "slidesPerView":1 }, "600":{ "slidesPerView":1 }, "900":{ "slidesPerView":1 }, "1200":{ "slidesPerView":1 } }'>
-          <!-- Swiper 1 -->
           <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
             <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
               <div class="w-full sm:w-auto flex justify-center sm:block">
                 <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg" alt="braces image">
               </div>
-
               <div class="flex flex-col gap-6">
-                <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed">
+                <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed"
+                  data-key="testimonialText">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
                   amet lectus quam viverra mus lobortis fermentum amet,
                   eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
@@ -712,36 +520,26 @@
                   etiam eros. Pulvinar neque pharetra arcu diam maecenas
                   diam integer in.
                 </p>
-
                 <div class="flex items-center gap-4">
                   <img class="w-[45px] sm:w-[50px] rounded-full" src="/pages/pages/image/image (38).png"
                     alt="student image">
-
                   <div>
-                    <h1 class="font-bold text-[16px] sm:text-[20px]">
-                      Eleanor Pena
-                    </h1>
-
-                    <p class="text-sm sm:text-base">
-                      Position, Course
-                    </p>
+                    <h1 class="font-bold text-[16px] sm:text-[20px]">Eleanor Pena</h1>
+                    <p class="text-sm sm:text-base" data-key="positionCourse">Position, Course</p>
                   </div>
                 </div>
               </div>
             </div>
           </swiper-slide>
-          <!-- Swiper 2 -->
+
           <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
-
             <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
-
               <div class="w-full sm:w-auto flex justify-center sm:block">
                 <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg" alt="braces image">
               </div>
-
               <div class="flex flex-col gap-6">
-
-                <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed">
+                <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed"
+                  data-key="testimonialText">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
                   amet lectus quam viverra mus lobortis fermentum amet,
                   eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
@@ -749,37 +547,26 @@
                   etiam eros. Pulvinar neque pharetra arcu diam maecenas
                   diam integer in.
                 </p>
-
                 <div class="flex items-center gap-4">
                   <img class="w-[45px] sm:w-[50px] rounded-full" src="/pages/pages/image/image (38).png"
                     alt="student image">
-
                   <div>
-                    <h1 class="font-bold text-[16px] sm:text-[20px]">
-                      Eleanor Pena
-                    </h1>
-
-                    <p class="text-sm sm:text-base">
-                      Position, Course
-                    </p>
+                    <h1 class="font-bold text-[16px] sm:text-[20px]">Eleanor Pena</h1>
+                    <p class="text-sm sm:text-base" data-key="positionCourse">Position, Course</p>
                   </div>
                 </div>
-
               </div>
             </div>
           </swiper-slide>
-          <!-- Swiper 3 -->
+
           <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
-
             <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
-
               <div class="w-full sm:w-auto flex justify-center sm:block">
                 <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg" alt="braces image">
               </div>
-
               <div class="flex flex-col gap-6">
-
-                <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed">
+                <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed"
+                  data-key="testimonialText">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
                   amet lectus quam viverra mus lobortis fermentum amet,
                   eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
@@ -787,22 +574,14 @@
                   etiam eros. Pulvinar neque pharetra arcu diam maecenas
                   diam integer in.
                 </p>
-
                 <div class="flex items-center gap-4">
                   <img class="w-[45px] sm:w-[50px] rounded-full" src="/pages/pages/image/image (38).png"
                     alt="student image">
-
                   <div>
-                    <h1 class="font-bold text-[16px] sm:text-[20px]">
-                      Eleanor Pena
-                    </h1>
-
-                    <p class="text-sm sm:text-base">
-                      Position, Course
-                    </p>
+                    <h1 class="font-bold text-[16px] sm:text-[20px]">Eleanor Pena</h1>
+                    <p class="text-sm sm:text-base" data-key="positionCourse">Position, Course</p>
                   </div>
                 </div>
-
               </div>
             </div>
           </swiper-slide>
@@ -814,19 +593,17 @@
   <section class="max-w-6xl mx-auto px-6 py-12">
     <div class="flex items-end justify-between mb-7">
       <div>
-        <h4 class="text-[12px] font-semibold tracking-wide uppercase text-gray-700 mb-2">
-          Our Blog
+        <h4 class="text-[12px] font-semibold tracking-wide uppercase text-gray-700 mb-2" data-key="ourBlog">Our Blog
         </h4>
-        <h2 class="text-3xl font-bold leading-none">
-          Latest posts
-        </h2>
+        <h2 class="text-3xl font-bold leading-none" data-key="latestPosts">Latest posts</h2>
       </div>
       <button
         class="bg-red-500 hover:bg-orange-700 text-white text-[14px] font-medium px-8 py-2.5 rounded-sm transition"
-        href="#">
+        href="#" data-key="goToBlog">
         Go to blog
       </button>
     </div>
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <article>
         <div class="h-[180px] overflow-hidden rounded-sm bg-blue-200">
@@ -834,79 +611,57 @@
             src="/pages/pages/image/image.svg" />
         </div>
         <div class="flex flex-wrap items-center gap-1.5 mt-3 text-[7px] text-gray-500">
-          <span class="text-[14px]">
-            Marketing
-          </span>
-          <span class="text-[14px]">
-            September 4, 2020
-          </span>
+          <span class="text-[14px]" data-key="marketing">Marketing</span>
+          <span class="text-[14px]">September 4, 2020</span>
         </div>
-        <h3 class="mt-2 text-[20px] font-semibold leading-[1.4]">
-          What is traffic arbitrage and does it really make money?
-        </h3>
-        <p class="mt-2 text-[14px] leading-[1.6] text-gray-500">
-          Praeterea, multo ante reliqua, scribens haec a consectetur adipiscing elit. Convallis.
-        </p>
+        <h3 class="mt-2 text-[20px] font-semibold leading-[1.4]" data-key="blogTitle1">What is traffic arbitrage and
+          does it really make money?</h3>
+        <p class="mt-2 text-[14px] leading-[1.6] text-gray-500" data-key="blogText1">Praeterea, multo ante reliqua,
+          scribens haec a consectetur adipiscing elit. Convallis.</p>
         <a class="inline-flex items-center gap-1 mt-3 text-[16px] font-medium hover:text-orange-500 transition"
           href="#">
-          Listen
-          <span class="material-symbols-outlined text-[20px]">
-            arrow_forward
-          </span>
+          <span data-key="listen">Listen</span>
+          <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
         </a>
       </article>
+
       <article>
         <div class="h-[180px] overflow-hidden rounded-sm bg-green-100">
           <img alt="Blog post image" class="w-full h-full object-cover hover:scale-105 transition duration-300"
             src="/pages/pages/image/image.jpg" />
         </div>
         <div class="flex flex-wrap items-center gap-1.5 mt-3 text-[7px] text-gray-500">
-          <span class="text-[14px]">
-            Management
-          </span>
-          <span class="text-[14px]">
-            August 25, 2020
-          </span>
+          <span class="text-[14px]" data-key="management">Management</span>
+          <span class="text-[14px]">August 25, 2020</span>
         </div>
-        <h3 class="mt-2 text-[20px] font-semibold leading-[1.4]">
-          What to do and who to talk to if you want to get feedback on the product
-        </h3>
-        <p class="mt-2 text-[14px] leading-[1.6] text-gray-500">
-          Neque a, sem lectus consectetur odio in aliquet nec. Ultricies ac nibh urna.
-        </p>
+        <h3 class="mt-2 text-[20px] font-semibold leading-[1.4]" data-key="blogTitle2">What to do and who to talk to if
+          you want to get feedback on the product</h3>
+        <p class="mt-2 text-[14px] leading-[1.6] text-gray-500" data-key="blogText2">Neque a, sem lectus consectetur
+          odio in aliquet nec. Ultricies ac nibh urna.</p>
         <a class="inline-flex items-center gap-1 mt-3 text-[16px] font-medium hover:text-orange-500 transition"
           href="#">
-          Watch
-          <span class="material-symbols-outlined text-[20px]">
-            arrow_forward
-          </span>
+          <span data-key="watch">Watch</span>
+          <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
         </a>
       </article>
+
       <article>
         <div class="h-[180px] overflow-hidden rounded-sm bg-yellow-100">
           <img alt="Blog post image" class="w-full h-full object-cover hover:scale-105 transition duration-300"
             src="/pages/pages/image/image.png" />
         </div>
         <div class="flex flex-wrap items-center gap-1.5 mt-3 text-[7px] text-gray-500">
-          <span class="text-[14px]">
-            Design
-          </span>
-          <span class="text-[14px]">
-            August 8, 2020
-          </span>
+          <span class="text-[14px]" data-key="design">Design</span>
+          <span class="text-[14px]">August 8, 2020</span>
         </div>
-        <h3 class="mt-2 text-[20px] font-semibold leading-[1.4]">
-          Should you choose a creative profession if you are attracted to creativity?
-        </h3>
-        <p class="mt-2 text-[14px] leading-[1.6] text-gray-500">
-          Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices.
-        </p>
+        <h3 class="mt-2 text-[20px] font-semibold leading-[1.4]" data-key="blogTitle3">Should you choose a creative
+          profession if you are attracted to creativity?</h3>
+        <p class="mt-2 text-[14px] leading-[1.6] text-gray-500" data-key="blogText3">Curabitur nisl tincidunt eros
+          venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices.</p>
         <a class="inline-flex items-center gap-1 mt-3 text-[16px] font-medium hover:text-orange-500 transition"
           href="#">
-          Read
-          <span class="material-symbols-outlined text-[20px]">
-            arrow_forward
-          </span>
+          <span data-key="read">Read</span>
+          <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
         </a>
       </article>
     </div>
@@ -914,21 +669,20 @@
 
   <section class="w-full py-20 bg-[#FEDBD3]">
     <div class="mx-auto flex max-w-6xl flex-col items-center px-4 text-center">
-      <p class="mb-3 text-[18px] font-semibold uppercase tracking-wide text-gray-700">
-        DON'T MISS ANYTHING
-      </p>
+      <p class="mb-3 text-[18px] font-semibold uppercase tracking-wide text-gray-700" data-key="dontMissAnything">DON'T
+        MISS ANYTHING</p>
       <h2 class="max-w-2xl text-2xl font-bold leading-tight text-gray-900 md:text-3xl">
-        Subscribe to the Createx School
+        <span data-key="subscribeTitle1">Subscribe to the Createx School</span>
         <br>
-        announcements
-        </br>
+        <span data-key="subscribeTitle2">announcements</span>
       </h2>
       <form class="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row">
         <input
           class="w-full sm:flex-1 h-12 rounded-sm border border-gray-200 px-4 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-orange-500 transition"
-          placeholder="Your working email" type="email" />
+          placeholder="Your working email" data-key-placeholder="workingEmail" type="email" />
         <button
-          class="h-12 rounded-sm bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600">
+          class="h-12 rounded-sm bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600"
+          data-key="subscribe">
           Subscribe
         </button>
       </form>
@@ -939,113 +693,109 @@
     <div class="mx-auto max-w-[1200px] px-6 py-10 lg:py-14">
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-8 lg:gap-6">
-
         <div class="sm:col-span-2 md:col-span-1">
           <a class="text-2xl font-bold tracking-tight inline-block" href="#">
             <img alt="Createx" src="/pages/pages/image/logo.png" />
           </a>
-          <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400">
+          <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400"
+            data-key="footerDescription">
             Createx Online School is a leader in online studying. We have lots of courses from different
             programs and experienced teachers.
           </p>
           <div class="mt-6 lg:mt-7 flex items-center gap-4">
-            <a class="transition hover:scale-110" href="#">
-              <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Facebook.svg" />
-            </a>
-            <a class="transition hover:scale-110" href="#">
-              <img alt="Twitter" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Twitter.svg" />
-            </a>
-            <a class="transition hover:scale-110" href="#">
-              <img alt="YouTube" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/YouTube.svg" />
-            </a>
-            <a class="transition hover:scale-110" href="#">
-              <img alt="Telegram" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/telegram.svg" />
-            </a>
-            <a class="transition hover:scale-110" href="#">
-              <img alt="Instagram" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Instagram.svg" />
-            </a>
-            <a class="transition hover:scale-110" href="#">
-              <img alt="LinkedIn" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Linked-In.svg" />
-            </a>
+            <a class="transition hover:scale-110" href="#"><img alt="Facebook"
+                class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Facebook.svg" /></a>
+            <a class="transition hover:scale-110" href="#"><img alt="Twitter"
+                class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Twitter.svg" /></a>
+            <a class="transition hover:scale-110" href="#"><img alt="YouTube"
+                class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/YouTube.svg" /></a>
+            <a class="transition hover:scale-110" href="#"><img alt="Telegram"
+                class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/telegram.svg" /></a>
+            <a class="transition hover:scale-110" href="#"><img alt="Instagram"
+                class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Instagram.svg" /></a>
+            <a class="transition hover:scale-110" href="#"><img alt="LinkedIn"
+                class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Linked-In.svg" /></a>
           </div>
         </div>
 
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">Site Map</h3>
+          <h3 class="text-sm font-bold uppercase tracking-wide" data-key="siteMap">Site Map</h3>
           <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
-            <li><a class="transition hover:text-orange-500" href="about.html">About Us</a></li>
-            <li><a class="transition hover:text-orange-500" href="courses.html">Courses</a></li>
-            <li><a class="transition hover:text-orange-500" href="event.html">Events</a></li>
-            <li><a class="transition hover:text-orange-500" href="blog.html">Blog</a></li>
-            <li><a class="transition hover:text-orange-500" href="contact.html">Contacts</a></li>
+            <li><a class="transition hover:text-orange-500" href="about.html" data-key="about">About Us</a></li>
+            <li><a class="transition hover:text-orange-500" href="courses.html" data-key="courses">Courses</a></li>
+            <li><a class="transition hover:text-orange-500" href="event.html" data-key="events">Events</a></li>
+            <li><a class="transition hover:text-orange-500" href="blog.html" data-key="blog">Blog</a></li>
+            <li><a class="transition hover:text-orange-500" href="contact.html" data-key="contacts">Contacts</a></li>
           </ul>
         </div>
 
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">Courses</h3>
+          <h3 class="text-sm font-bold uppercase tracking-wide" data-key="courses">Courses</h3>
           <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
-            <li><a class="transition hover:text-orange-500" href="#">Marketing</a></li>
-            <li><a class="transition hover:text-orange-500" href="#">Management</a></li>
-            <li><a class="transition hover:text-orange-500" href="#">HR Recruiting</a></li>
-            <li><a class="transition hover:text-orange-500" href="#">Design</a></li>
-            <li><a class="transition hover:text-orange-500" href="#">Development</a></li>
+            <li><a class="transition hover:text-orange-500" href="#" data-key="marketing">Marketing</a></li>
+            <li><a class="transition hover:text-orange-500" href="#" data-key="management">Management</a></li>
+            <li><a class="transition hover:text-orange-500" href="#" data-key="hrRecruiting">HR Recruiting</a></li>
+            <li><a class="transition hover:text-orange-500" href="#" data-key="design">Design</a></li>
+            <li><a class="transition hover:text-orange-500" href="#" data-key="development">Development</a></li>
           </ul>
         </div>
 
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">Contact Us</h3>
+          <h3 class="text-sm font-bold uppercase tracking-wide" data-key="contactUs">Contact Us</h3>
           <div class="mt-4 lg:mt-6 space-y-3 lg:space-y-4 text-sm text-gray-400">
-            <a class="flex items-center transition hover:text-white" href="tel:+14055550128">
-              <span>(405) 555-0128</span>
-            </a>
-            <a class="flex items-center transition hover:text-white" href="mailto:hello@createx.com">
-              <span>hello@createx.com</span>
-            </a>
+            <a class="flex items-center transition hover:text-white" href="tel:+14055550128"><span>(405)
+                555-0128</span></a>
+            <a class="flex items-center transition hover:text-white"
+              href="mailto:hello@createx.com"><span>hello@createx.com</span></a>
           </div>
         </div>
 
         <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
-          <h3 class="text-sm font-bold uppercase tracking-wide">Sign up to our newsletter</h3>
+          <h3 class="text-sm font-bold uppercase tracking-wide" data-key="newsletterTitle">Sign up to our newsletter
+          </h3>
           <form class="mt-4 lg:mt-6 max-w-md lg:max-w-none">
             <div
               class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
               <input
                 class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
-                placeholder="Email address" type="email" />
-              <button class="px-3 text-lg text-gray-400 transition  hover:text-white" type="submit">
+                placeholder="Email address" data-key-placeholder="emailAddress" type="email" />
+              <button class="px-3 text-lg text-gray-400 transition hover:text-white" type="submit">
                 <span class="material-symbols-outlined">arrow_forward</span>
               </button>
             </div>
-            <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500">
+            <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500" data-key="newsletterDescription">
               *Subscribe to our newsletter to receive communications and upcoming events from Createx
               School.
             </p>
           </form>
         </div>
-
       </div>
     </div>
 
     <div class="border-t border-white/10 bg-[#292c3a]">
       <div
         class="mx-auto flex flex-col sm:flex-row gap-3 text-center sm:text-left max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
-        <p>© All rights reserved. Made with by Createx Studio</p>
-        <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
-          Go to top
-        </a>
+        <p data-key="copyright">© All rights reserved. Made with by Createx Studio</p>
+        <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#" data-key="goToTop">Go to
+          top</a>
       </div>
     </div>
   </footer>
 
   <script src="/pages/js/homePage.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
 
   <script>
-    const teamSwiper = document.querySelector(".teamSwiper")
-    document.querySelector("#teamNext").onclick = () => { teamSwiper.swiper.slideNext() }; document.querySelector("#teamPrev").onclick = () => { teamSwiper.swiper.slidePrev() };
+    const teamSwiper = document.querySelector(".teamSwiper");
+    document.querySelector("#teamNext").onclick = () => {
+      teamSwiper.swiper.slideNext();
+    };
+    document.querySelector("#teamPrev").onclick = () => {
+      teamSwiper.swiper.slidePrev();
+    };
   </script>
+
+  <script src="/pages/js/i18n.js"></script>
 </body>
 
 </html>

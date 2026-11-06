@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,32 +18,41 @@
 
 <body>
   <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
-  
+
     <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-  
+
       <!-- Logo -->
       <a href="index.html">
         <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
       </a>
-  
+
       <!-- Desktop links -->
       <div class="hidden lg:flex items-center gap-6 font-medium">
-        <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
-        <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
-        <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
-        <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
-        <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+        <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
+        <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
+        <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
+        <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
+        <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
       </div>
-  
+
+      <button>
+        <select name="select" id="languageSelect" class="outline-none cursor-pointer bg-[#FFDAD5] border-2">
+          <option value="uz">Uzb</option>
+          <option value="en">Eng</option>
+          <option value="ru">Rus</option>
+        </select>
+      </button>
+
       <!-- Desktop buttons -->
       <div class="hidden lg:flex items-center gap-4">
-  
-        <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
+
+        <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]"
+          data-key="getConsultation">
           Get consultation
         </a>
-  
+
       </div>
-  
+
       <!-- Menu button -->
       <button id="menuBtn" class="lg:hidden text-3xl">
         <!-- <span class="material-symbols-outlined hover:text-[#ff3f22]">menu</span> -->
@@ -50,39 +60,41 @@
           <path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z" />
         </svg>
       </button>
-  
+
       <!-- Close button -->
       <button id="closeBtn" class="hidden lg:hidden text-3xl">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
           <path d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z" />
         </svg>
       </button>
-  
+
     </nav>
-  
+
     <!-- Mobile menu -->
     <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
-  
+
       <div class="flex flex-col gap-5 font-medium">
-  
-        <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
-  
-        <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
-  
-        <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
-  
-        <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
-  
-        <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
-  
-        <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
+
+        <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
+
+        <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
+
+        <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
+
+        <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
+
+        <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
+
+        <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]"
+          data-key="getConsultation">
           Get consultation
         </a>
-  
+
       </div>
     </div>
-  
+
   </header>
+
   <!-- main qismi section lari -->
   <main>
 
@@ -90,11 +102,11 @@
 
       <!-- Title -->
       <div class="text-center">
-        <p class="text-base sm:text-[20px] font-semibold uppercase tracking-wide">
+        <p class="text-base sm:text-[20px] font-semibold uppercase tracking-wide" data-key="ourEvents">
           OUR EVENTS
         </p>
 
-        <h1 class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight">
+        <h1 class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight" data-key="eventsPageTitle">
           Lectures, workshops & master-classes
         </h1>
       </div>
@@ -106,35 +118,35 @@
 
           <!-- Event category -->
           <div class="w-full sm:w-auto flex items-center justify-between gap-2">
-            <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4">
+            <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4" data-key="eventCategory">
               Event category
             </label>
 
             <select
               class="h-7 w-[103px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
-              <option>all themes</option>
-              <option>Lectures</option>
-              <option>Workshops</option>
-              <option>Master-classes</option>
+              <option data-key="allThemes">all themes</option>
+              <option data-key="lectures">Lectures</option>
+              <option data-key="workshops">Workshops</option>
+              <option data-key="masterClasses">Master-classes</option>
             </select>
           </div>
 
           <!-- Sort by -->
           <div class="w-full sm:w-auto flex items-center justify-between gap-2">
-            <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4">
+            <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4" data-key="sortBy">
               Sort by
             </label>
 
             <select
               class="h-7 w-[103px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
-              <option>newest</option>
-              <option>oldest</option>
+              <option data-key="newest">newest</option>
+              <option data-key="oldest">oldest</option>
             </select>
           </div>
 
           <!-- Show -->
           <div class="w-full sm:w-auto flex items-center justify-between gap-2">
-            <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4">
+            <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4" data-key="show">
               Show
             </label>
 
@@ -154,7 +166,7 @@
 
           <!-- Search -->
           <div class="flex h-7 w-full sm:w-[180px] items-center justify-between rounded-sm border border-gray-200 px-2">
-            <input type="text" placeholder="Search event..."
+            <input type="text" data-key-placeholder="searchEvent" placeholder="Search event..."
               class="w-full min-w-0 bg-transparent text-[10px] outline-none placeholder:text-gray-400" />
 
             <!-- Search icon -->
@@ -186,6 +198,7 @@
 
     <section class="bg-[white] py-16">
       <div class="space-y-3 max-w-6xl mx-auto">
+
         <div
           class="bg-white p-5 sm:px-6 flex flex-col lg:flex-row lg:items-center gap-5 hover:scale-[1.01] hover:shadow-xl transition-all duration-300">
           <div class="flex items-center gap-3 lg:w-28 shrink-0">
@@ -193,7 +206,7 @@
               05
             </strong>
             <div>
-              <p class="text-xs font-medium">
+              <p class="text-xs font-medium" data-key="august">
                 August
               </p>
               <p class="text-[10px] text-gray-500">
@@ -202,18 +215,20 @@
             </div>
           </div>
           <div class="flex-1">
-            <h3 class="text-sm font-semibold">
+            <h3 class="text-sm font-semibold" data-key="event1Title">
               Formation of the organizational structure of the company in the face of uncertainty.
             </h3>
-            <p class="text-[10px] text-gray-500 mt-2">
+            <p class="text-[10px] text-gray-500 mt-2" data-key="onlineMasterclass">
               Online master-class
             </p>
           </div>
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition">
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="viewMore">
             View more
           </button>
         </div>
+
         <div
           class="bg-white p-5 sm:px-6 flex flex-col lg:flex-row lg:items-center gap-5 shadow-sm hover:scale-[1.01] hover:shadow-xl transition-all duration-300">
           <div class="flex items-center gap-3 lg:w-28 shrink-0">
@@ -221,7 +236,7 @@
               24
             </strong>
             <div>
-              <p class="text-xs font-medium">
+              <p class="text-xs font-medium" data-key="july">
                 July
               </p>
               <p class="text-[10px] text-gray-500">
@@ -230,18 +245,20 @@
             </div>
           </div>
           <div class="flex-1">
-            <h3 class="text-sm font-semibold">
+            <h3 class="text-sm font-semibold" data-key="event2Title">
               Building a customer service department. Best Practices.
             </h3>
-            <p class="text-[10px] text-gray-500 mt-2">
+            <p class="text-[10px] text-gray-500 mt-2" data-key="onlineLecture">
               Online lecture
             </p>
           </div>
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition">
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="viewMore">
             View more
           </button>
         </div>
+
         <div
           class="bg-white p-5 sm:px-6 flex flex-col lg:flex-row lg:items-center gap-5 hover:scale-[1.01] hover:shadow-xl transition-all duration-300">
           <div class="flex items-center gap-3 lg:w-28 shrink-0">
@@ -249,7 +266,7 @@
               16
             </strong>
             <div>
-              <p class="text-xs font-medium">
+              <p class="text-xs font-medium" data-key="july">
                 July
               </p>
               <p class="text-[10px] text-gray-500">
@@ -258,15 +275,16 @@
             </div>
           </div>
           <div class="flex-1">
-            <h3 class="text-sm font-semibold">
+            <h3 class="text-sm font-semibold" data-key="event3Title">
               How to apply methods of speculative design in practice. Worldbuilding prototyping.
             </h3>
-            <p class="text-[10px] text-gray-500 mt-2">
+            <p class="text-[10px] text-gray-500 mt-2" data-key="onlineWorkshop">
               Online workshop
             </p>
           </div>
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition">
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="viewMore">
             View more
           </button>
         </div>
@@ -278,7 +296,7 @@
               10
             </strong>
             <div>
-              <p class="text-xs font-medium">
+              <p class="text-xs font-medium" data-key="july">
                 July
               </p>
               <p class="text-[10px] text-gray-500">
@@ -287,15 +305,16 @@
             </div>
           </div>
           <div class="flex-1">
-            <h3 class="text-sm font-semibold">
+            <h3 class="text-sm font-semibold" data-key="event4Title">
               Find and evaluate: search and assessment tools for candidates.
             </h3>
-            <p class="text-[10px] text-gray-500 mt-2">
+            <p class="text-[10px] text-gray-500 mt-2" data-key="onlineWorkshop">
               Online workshop
             </p>
           </div>
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition">
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="viewMore">
             View more
           </button>
         </div>
@@ -307,7 +326,7 @@
               27
             </strong>
             <div>
-              <p class="text-xs font-medium">
+              <p class="text-xs font-medium" data-key="june">
                 June
               </p>
               <p class="text-[10px] text-gray-500">
@@ -316,15 +335,16 @@
             </div>
           </div>
           <div class="flex-1">
-            <h3 class="text-sm font-semibold">
+            <h3 class="text-sm font-semibold" data-key="event5Title">
               Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.
             </h3>
-            <p class="text-[10px] text-gray-500 mt-2">
+            <p class="text-[10px] text-gray-500 mt-2" data-key="onlineMasterclass">
               Online master-class
             </p>
           </div>
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition">
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="viewMore">
             View more
           </button>
         </div>
@@ -336,7 +356,7 @@
               15
             </strong>
             <div>
-              <p class="text-xs font-medium">
+              <p class="text-xs font-medium" data-key="june">
                 June
               </p>
               <p class="text-[10px] text-gray-500">
@@ -345,15 +365,16 @@
             </div>
           </div>
           <div class="flex-1">
-            <h3 class="text-sm font-semibold">
+            <h3 class="text-sm font-semibold" data-key="event6Title">
               Marketing or growth hacking: main differences and what business needs.
             </h3>
-            <p class="text-[10px] text-gray-500 mt-2">
+            <p class="text-[10px] text-gray-500 mt-2" data-key="onlineLecture">
               Online lecture
             </p>
           </div>
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition">
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="viewMore">
             View more
           </button>
         </div>
@@ -365,7 +386,7 @@
               02
             </strong>
             <div>
-              <p class="text-xs font-medium">
+              <p class="text-xs font-medium" data-key="june">
                 June
               </p>
               <p class="text-[10px] text-gray-500">
@@ -374,15 +395,16 @@
             </div>
           </div>
           <div class="flex-1">
-            <h3 class="text-sm font-semibold">
+            <h3 class="text-sm font-semibold" data-key="event7Title">
               How to brief a client and present your design to approve it from the first show.
             </h3>
-            <p class="text-[10px] text-gray-500 mt-2">
+            <p class="text-[10px] text-gray-500 mt-2" data-key="onlineLecture">
               Online lecture
             </p>
           </div>
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition">
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="viewMore">
             View more
           </button>
         </div>
@@ -394,7 +416,7 @@
               29
             </strong>
             <div>
-              <p class="text-xs font-medium">
+              <p class="text-xs font-medium" data-key="may">
                 May
               </p>
               <p class="text-[10px] text-gray-500">
@@ -403,15 +425,16 @@
             </div>
           </div>
           <div class="flex-1">
-            <h3 class="text-sm font-semibold">
+            <h3 class="text-sm font-semibold" data-key="event8Title">
               Who is a project manager and do I want to be PM?
             </h3>
-            <p class="text-[10px] text-gray-500 mt-2">
+            <p class="text-[10px] text-gray-500 mt-2" data-key="onlineLecture">
               Online lecture
             </p>
           </div>
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition">
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="viewMore">
             View more
           </button>
         </div>
@@ -423,7 +446,7 @@
               18
             </strong>
             <div>
-              <p class="text-xs font-medium">
+              <p class="text-xs font-medium" data-key="may">
                 May
               </p>
               <p class="text-[10px] text-gray-500">
@@ -432,15 +455,16 @@
             </div>
           </div>
           <div class="flex-1">
-            <h3 class="text-sm font-semibold">
+            <h3 class="text-sm font-semibold" data-key="event9Title">
               The company's business page as an additional tool to support the announcement of vacancies.
             </h3>
-            <p class="text-[10px] text-gray-500 mt-2">
+            <p class="text-[10px] text-gray-500 mt-2" data-key="onlineLecture">
               Online lecture
             </p>
           </div>
           <button
-            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition">
+            class="border border-[#ff3f22] text-[#ff3f22] px-6 py-2 text-[10px] hover:bg-[#ff3f22] hover:text-white transition"
+            data-key="viewMore">
             View more
           </button>
         </div>
@@ -450,21 +474,21 @@
 
     <section class="w-full py-20 bg-[#FEDBD3]">
       <div class="mx-auto flex max-w-6xl flex-col items-center px-4 text-center">
-        <p class="mb-3 text-[18px] font-semibold uppercase tracking-wide text-gray-700">
+        <p class="mb-3 text-[18px] font-semibold uppercase tracking-wide text-gray-700" data-key="dontMissAnything">
           DON'T MISS ANYTHING
         </p>
         <h2 class="max-w-2xl text-2xl font-bold leading-tight text-gray-900 md:text-3xl">
-          Subscribe to the Createx School
+          <span data-key="subscribeTitle1">Subscribe to the Createx School</span>
           <br>
-          announcements
-          </br>
+          <span data-key="subscribeTitle2">announcements</span>
         </h2>
         <form class="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row">
           <input
             class="w-full sm:flex-1 h-12 rounded-sm border border-gray-200 px-4 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-orange-500 transition"
-            placeholder="Your working email" type="email" />
+            data-key-placeholder="workingEmail" placeholder="Your working email" type="email" />
           <button
-            class="h-12 rounded-sm bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600">
+            class="h-12 rounded-sm bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600"
+            data-key="subscribe">
             Subscribe
           </button>
         </form>
@@ -477,12 +501,13 @@
     <div class="mx-auto max-w-[1200px] px-6 py-10 lg:py-14">
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-8 lg:gap-6">
-  
+
         <div class="sm:col-span-2 md:col-span-1">
           <a class="text-2xl font-bold tracking-tight inline-block" href="#">
             <img alt="Createx" src="/pages/pages/image/logo.png" />
           </a>
-          <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400">
+          <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400"
+            data-key="footerDescription">
             Createx Online School is a leader in online studying. We have lots of courses from different
             programs and experienced teachers.
           </p>
@@ -507,31 +532,31 @@
             </a>
           </div>
         </div>
-  
+
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">Site Map</h3>
+          <h3 class="text-sm font-bold uppercase tracking-wide" data-key="siteMap">Site Map</h3>
           <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
-            <li><a class="transition hover:text-orange-500" href="about.html">About Us</a></li>
-            <li><a class="transition hover:text-orange-500" href="courses.html">Courses</a></li>
-            <li><a class="transition hover:text-orange-500" href="event.html">Events</a></li>
-            <li><a class="transition hover:text-orange-500" href="blog.html">Blog</a></li>
-            <li><a class="transition hover:text-orange-500" href="contact.html">Contacts</a></li>
+            <li><a class="transition hover:text-orange-500" href="about.html" data-key="about">About Us</a></li>
+            <li><a class="transition hover:text-orange-500" href="courses.html" data-key="courses">Courses</a></li>
+            <li><a class="transition hover:text-orange-500" href="event.html" data-key="events">Events</a></li>
+            <li><a class="transition hover:text-orange-500" href="blog.html" data-key="blog">Blog</a></li>
+            <li><a class="transition hover:text-orange-500" href="contact.html" data-key="contacts">Contacts</a></li>
           </ul>
         </div>
-  
+
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">Courses</h3>
+          <h3 class="text-sm font-bold uppercase tracking-wide" data-key="courses">Courses</h3>
           <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
-            <li><a class="transition hover:text-orange-500" href="#">Marketing</a></li>
-            <li><a class="transition hover:text-orange-500" href="#">Management</a></li>
-            <li><a class="transition hover:text-orange-500" href="#">HR Recruiting</a></li>
-            <li><a class="transition hover:text-orange-500" href="#">Design</a></li>
-            <li><a class="transition hover:text-orange-500" href="#">Development</a></li>
+            <li><a class="transition hover:text-orange-500" href="#" data-key="marketing">Marketing</a></li>
+            <li><a class="transition hover:text-orange-500" href="#" data-key="management">Management</a></li>
+            <li><a class="transition hover:text-orange-500" href="#" data-key="hrRecruiting">HR Recruiting</a></li>
+            <li><a class="transition hover:text-orange-500" href="#" data-key="design">Design</a></li>
+            <li><a class="transition hover:text-orange-500" href="#" data-key="development">Development</a></li>
           </ul>
         </div>
-  
+
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">Contact Us</h3>
+          <h3 class="text-sm font-bold uppercase tracking-wide" data-key="contactUs">Contact Us</h3>
           <div class="mt-4 lg:mt-6 space-y-3 lg:space-y-4 text-sm text-gray-400">
             <a class="flex items-center transition hover:text-white" href="tel:+14055550128">
               <span>(405) 555-0128</span>
@@ -541,33 +566,34 @@
             </a>
           </div>
         </div>
-  
+
         <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
-          <h3 class="text-sm font-bold uppercase tracking-wide">Sign up to our newsletter</h3>
+          <h3 class="text-sm font-bold tracking-wide" data-key="newsletterTitle">Sign up to our newsletter</h3>
           <form class="mt-4 lg:mt-6 max-w-md lg:max-w-none">
             <div
               class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
-              <input class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
-                placeholder="Email address" type="email" />
-              <button class="px-3 text-lg text-gray-400 transition  hover:text-white" type="submit">
+              <input
+                class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
+                data-key-placeholder="emailAddress" placeholder="Email address" type="email" />
+              <button class="px-3 text-lg text-gray-400 transition hover:text-white" type="submit">
                 <span class="material-symbols-outlined">arrow_forward</span>
               </button>
             </div>
-            <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500">
+            <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500" data-key="newsletterDescription">
               *Subscribe to our newsletter to receive communications and upcoming events from Createx
               School.
             </p>
           </form>
         </div>
-  
+
       </div>
     </div>
-  
+
     <div class="border-t border-white/10 bg-[#292c3a]">
       <div
         class="mx-auto flex flex-col sm:flex-row gap-3 text-center sm:text-left max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
-        <p>© All rights reserved. Made with by Createx Studio</p>
-        <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
+        <p data-key="copyright">© All rights reserved. Made with by Createx Studio</p>
+        <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#" data-key="goToTop">
           Go to top
         </a>
       </div>
@@ -575,7 +601,9 @@
   </footer>
 
   <script src="pages/js/eventList.js"></script>
+  <script src="pages/js/i18n.js"></script>
 
 </body>
 
 </html>
+```
