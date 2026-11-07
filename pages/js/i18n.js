@@ -1220,36 +1220,41 @@ const translations = {
 };
 
 function translate(language) {
-
-    document.querySelectorAll("[data-key]").forEach(el => {
-
-        const key = el.dataset.key;
+    document.querySelectorAll("[data-key]").forEach((element) => {
+        const key = element.dataset.key;
         const text = translations[language]?.[key];
 
         if (text !== undefined) {
-            el.textContent = text;
+            element.textContent = text;
         }
     });
-}
 
-/* ================= LANGUAGE ================= */
+    document.querySelectorAll("[data-key-placeholder]").forEach((element) => {
+        const key = element.dataset.keyPlaceholder;
+        const text = translations[language]?.[key];
+
+        if (text !== undefined) {
+            element.placeholder = text;
+        }
+    });
+
+    document.documentElement.lang = language;
+}
 
 const select = document.getElementById("languageSelect");
 
+const savedLanguage = localStorage.getItem("language") || "en";
+
 if (select) {
+    select.value = savedLanguage;
 
-    select.addEventListener("click", e => {
+    translate(savedLanguage);
 
-        const language = e.target.value;
+    select.addEventListener("change", (event) => {
+        const language = event.target.value;
 
-        localStorage.setItem(
-            "language",
-            language
-        );
-
+        localStorage.setItem("language", language);
         translate(language);
-
     });
 }
-
 
