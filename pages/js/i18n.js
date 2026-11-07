@@ -1220,41 +1220,36 @@ const translations = {
 };
 
 function translate(language) {
-    document.querySelectorAll("[data-key]").forEach((element) => {
-        const key = element.dataset.key;
+
+    document.querySelectorAll("[data-key]").forEach(el => {
+
+        const key = el.dataset.key;
         const text = translations[language]?.[key];
 
         if (text !== undefined) {
-            element.textContent = text;
+            el.textContent = text;
         }
     });
-
-    document.querySelectorAll("[data-key-placeholder]").forEach((element) => {
-        const key = element.dataset.keyPlaceholder;
-        const text = translations[language]?.[key];
-
-        if (text !== undefined) {
-            element.placeholder = text;
-        }
-    });
-
-    document.documentElement.lang = language;
 }
+
+/* ================= LANGUAGE ================= */
 
 const select = document.getElementById("languageSelect");
 
-const savedLanguage = localStorage.getItem("language") || "en";
-
 if (select) {
-    select.value = savedLanguage;
 
-    translate(savedLanguage);
+    select.addEventListener("click", e => {
 
-    select.addEventListener("change", (event) => {
-        const language = event.target.value;
+        const language = e.target.value;
 
-        localStorage.setItem("language", language);
+        localStorage.setItem(
+            "language",
+            language
+        );
+
         translate(language);
+
     });
 }
+
 
