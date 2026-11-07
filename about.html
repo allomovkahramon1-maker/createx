@@ -18,91 +18,128 @@
     <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
 
         <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <!-- sayt logotipi -->
+
+            <!-- Logo -->
             <a href="index.html">
                 <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
             </a>
 
-            <!-- navbar qism -->
-            <nav class="hidden lg:flex items-center gap-6 font-medium">
-                <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
-                <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
-                <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
-                <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
-                <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
-            </nav>
+            <!-- Desktop links -->
+            <div class="hidden lg:flex items-center gap-6 font-medium">
+                <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
+                <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
+                <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
+                <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
+                <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
+            </div>
 
+            <button>
+                <select name="select" id="languageSelect" class="outline-none cursor-pointer bg-[#FFDAD5] border-2">
+                    <option value="uz">Uzb</option>
+                    <option value="en">Eng</option>
+                    <option value="ru">Rus</option>
+                </select>
+            </button>
+
+            <!-- Desktop buttons -->
             <div class="hidden lg:flex items-center gap-4">
-                <a href="contact.html"
-                    class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
+                <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]"
+                    data-key="getConsultation">
                     Get consultation
                 </a>
                 <button id="btn" class="hover:text-[#ff3f22] font-bold">
                     Log in / Register
                 </button>
             </div>
+
+            <!-- Menu button -->
             <button id="menuBtn" class="lg:hidden text-3xl">
-                <span class="material-symbols-outlined hover:text-[#ff3f22]">menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+                    <path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z" />
+                </svg>
             </button>
 
+            <!-- Close button -->
             <button id="closeBtn" class="hidden lg:hidden text-3xl">
-                <span class="font-bold hover:text-[#ff3f22]">x</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+                    <path
+                        d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z" />
+                </svg>
             </button>
+
         </nav>
-        <!-- telefonlar uchun menu -->
+
+        <!-- Mobile menu -->
         <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
             <div class="flex flex-col gap-5 font-medium">
-                <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
-                <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
-                <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
-                <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
-                <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+                <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
+                <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
+                <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
+                <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
+                <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
+
                 <a href="contact.html"
-                    class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
+                    class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]"
+                    data-key="getConsultation">
                     Get consultation
                 </a>
-
             </div>
         </div>
+
     </header>
 
     <main class="pt-20">
+
         <!-- Hero -->
         <section class="px-4 py-16 md:py-24">
             <div class="mx-auto flex max-w-6xl flex-col-reverse items-center justify-between gap-10 md:flex-row">
+
                 <div class="w-full md:w-1/2">
-                    <p class="mb-2 text-xs font-bold uppercase tracking-widest sm:text-sm">About us</p>
-                    <h1 class="text-3xl font-bold leading-tight sm:text-4xl lg:text-[46px]">Createx Online School</h1>
-                    <p class="mt-5 text-base font-medium leading-relaxed text-[#FF4242] sm:text-lg">
+                    <p class="mb-2 text-xs font-bold uppercase tracking-widest sm:text-sm" data-key="about">About us</p>
+
+                    <h1 class="text-3xl font-bold leading-tight sm:text-4xl lg:text-[46px]"
+                        data-key="createxOnlineSchool">
+                        Createx Online School
+                    </h1>
+
+                    <p class="mt-5 text-base font-medium leading-relaxed text-[#FF4242] sm:text-lg"
+                        data-key="aboutIntro">
                         Createx Online School is a leader in online studying. We have lots of courses and programs from
                         the main market experts.
                     </p>
-                    <p class="mt-4 text-sm leading-7 text-[#424551] sm:text-base">
+
+                    <p class="mt-4 text-sm leading-7 text-[#424551] sm:text-base" data-key="aboutDescription">
                         We provide relevant approaches to online learning, internships and employment in the largest
                         companies in the country.
                         Our educational programs help you get a new specialty from scratch. During your studies, we will
                         help you find a job.
                         Check the courses and online events that we organise.
                     </p>
+
                     <div class="mt-7 flex flex-col gap-3 sm:flex-row">
                         <a href="event.html"
-                            class="rounded-md border-2 border-[#FF4242] px-6 py-3 text-center font-bold text-[#FF4242] transition hover:bg-[#FF4242] hover:text-white">
+                            class="rounded-md border-2 border-[#FF4242] px-6 py-3 text-center font-bold text-[#FF4242] transition hover:bg-[#FF4242] hover:text-white"
+                            data-key="exploreEvents">
                             Explore events
                         </a>
+
                         <a href="courses.html"
-                            class="rounded-md border-2 border-[#FF4242] bg-[#FF4242] px-6 py-3 text-center font-bold text-white transition hover:border-[#e63939] hover:bg-[#e63939]">
+                            class="rounded-md border-2 border-[#FF4242] bg-[#FF4242] px-6 py-3 text-center font-bold text-white transition hover:border-[#e63939] hover:bg-[#e63939]"
+                            data-key="browseCourses">
                             Browse courses
                         </a>
                     </div>
                 </div>
+
                 <div class="flex w-full justify-center md:w-1/2">
                     <img src="/pages/pages/image/illustration (3).png" alt="Createx Online School illustration"
                         class="h-auto w-full max-w-[500px] object-contain">
                 </div>
+
             </div>
         </section>
 
-        <!-- vido section -->
+        <!-- Video section -->
         <section class="mx-auto my-12 flex max-w-6xl flex-col items-center gap-10 px-4 lg:my-20 lg:flex-row lg:gap-16">
 
             <!-- Video preview -->
@@ -116,7 +153,7 @@
                             class="h-10 w-10 transition-transform duration-300 group-hover:scale-110">
                     </a>
 
-                    <span class="text-sm font-medium text-[#1e212c]">
+                    <span class="text-sm font-medium text-[#1e212c]" data-key="playShowreel">
                         Play showreel
                     </span>
                 </div>
@@ -131,189 +168,249 @@
                 <div class="flex items-center gap-4">
                     <span class="text-3xl font-bold text-[#FF4242] sm:text-4xl lg:text-[46px]">1200</span>
                     <p class="text-xs font-bold sm:text-sm">
-                        students<br>graduated
+                        <span data-key="studentsGraduated">students graduated</span>
                     </p>
                 </div>
 
                 <div class="flex items-center gap-4">
                     <span class="text-3xl font-bold text-[#FF4242] sm:text-4xl lg:text-[46px]">84</span>
                     <p class="text-xs font-bold sm:text-sm">
-                        completed<br>courses
+                        <span data-key="completedCourses">completed courses</span>
                     </p>
                 </div>
 
                 <div class="flex items-center gap-4">
                     <span class="text-3xl font-bold text-[#FF4242] sm:text-4xl lg:text-[46px]">16</span>
                     <p class="text-xs font-bold sm:text-sm">
-                        qualified<br>tutors
+                        <span data-key="qualifiedTutors">qualified tutors</span>
                     </p>
                 </div>
 
                 <div class="flex items-center gap-4">
                     <span class="text-3xl font-bold text-[#FF4242] sm:text-4xl lg:text-[46px]">5</span>
                     <p class="text-xs font-bold sm:text-sm">
-                        years of<br>experience
+                        <span data-key="yearsExperience">years of experience</span>
                     </p>
                 </div>
 
             </div>
         </section>
 
+        <!-- Core values -->
         <section class="mx-auto my-16 max-w-6xl px-4 py-10 lg:my-24">
             <div class="text-center">
-                <p class="font-medium">We always stand for</p>
-                <h2 class="mt-2 text-3xl font-bold sm:text-4xl lg:text-[46px]">Our core values</h2>
+                <p class="font-medium" data-key="weAlwaysStandFor">We always stand for</p>
+                <h2 class="mt-2 text-3xl font-bold sm:text-4xl lg:text-[46px]" data-key="ourCoreValues">
+                    Our core values
+                </h2>
             </div>
 
             <div class="my-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
                 <div class="flex flex-col items-center gap-3 text-center">
                     <img src="/pages/pages/image/ic-structure.svg" alt="" class="h-16 w-16 object-contain">
-                    <h3 class="font-bold">Structured Approach</h3>
-                    <p class="max-w-[240px] text-sm leading-6 text-gray-600">Aenean urna dictum adipiscing nec, cras
-                        quisque. Nunc in mauris.</p>
+                    <h3 class="font-bold" data-key="structuredApproach">Structured Approach</h3>
+                    <p class="max-w-[240px] text-sm leading-6 text-gray-600" data-key="structuredDescription">
+                        Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.
+                    </p>
                 </div>
+
                 <div class="flex flex-col items-center gap-3 text-center">
                     <img src="/pages/pages/image/Group.svg" alt="" class="h-16 w-16 object-contain">
-                    <h3 class="font-bold">Professional Feedbacks</h3>
-                    <p class="max-w-[240px] text-sm leading-6 text-gray-600">Culpa nostrud commodo ea consequat
-                        reprehenderit aliquip.</p>
+                    <h3 class="font-bold" data-key="professionalFeedbacks">Professional Feedbacks</h3>
+                    <p class="max-w-[240px] text-sm leading-6 text-gray-600" data-key="feedbackDescription">
+                        Culpa nostrud commodo ea consequat reprehenderit aliquip.
+                    </p>
                 </div>
+
                 <div class="flex flex-col items-center gap-3 text-center">
                     <img src="/pages/pages/image/ic-target.svg" alt="" class="h-16 w-16 object-contain">
-                    <h3 class="font-bold">Efficiency</h3>
-                    <p class="max-w-[240px] text-sm leading-6 text-gray-600">Viverra scelerisque consequat net.
-                        Adipisicing esse consequat.</p>
+                    <h3 class="font-bold" data-key="efficiency">Efficiency</h3>
+                    <p class="max-w-[240px] text-sm leading-6 text-gray-600" data-key="efficiencyDescription">
+                        Viverra scelerisque consequat net. Adipisicing esse consequat.
+                    </p>
                 </div>
+
                 <div class="flex flex-col items-center gap-3 text-center">
                     <img src="/pages/pages/image/ic-calendar.svg" alt="" class="h-16 w-16 object-contain">
-                    <h3 class="font-bold">Flexible Schedule</h3>
-                    <p class="max-w-[240px] text-sm leading-6 text-gray-600">Aute eiusmod dolore dolore deserunt veniam
-                        ad deserunt.</p>
+                    <h3 class="font-bold" data-key="flexibleSchedule">Flexible Schedule</h3>
+                    <p class="max-w-[240px] text-sm leading-6 text-gray-600" data-key="scheduleDescription">
+                        Aute eiusmod dolore dolore deserunt veniam ad deserunt.
+                    </p>
                 </div>
+
             </div>
         </section>
 
+        <!-- What do we teach -->
         <section class="mx-auto max-w-6xl px-4 py-12">
             <div class="mb-10 text-center">
-                <p class="text-xs font-semibold uppercase tracking-wide">Our main directions</p>
-                <h2 class="mt-2 text-3xl font-bold sm:text-4xl">What do we teach</h2>
+                <p class="text-xs font-semibold uppercase tracking-wide" data-key="ourMainDirections">
+                    Our main directions
+                </p>
+                <h2 class="mt-2 text-3xl font-bold sm:text-4xl" data-key="whatDoWeTeach">
+                    What do we teach
+                </h2>
             </div>
 
             <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
                 <div
                     class="overflow-hidden rounded border border-gray-200 transition hover:-translate-y-1 hover:shadow-xl">
-                    <div class="h-44 overflow-hidden"><img src="/pages/pages/image/image (33).png" alt="Marketing"
-                            class="h-full w-full object-cover transition hover:scale-105"></div>
+                    <div class="h-44 overflow-hidden">
+                        <img src="/pages/pages/image/image (33).png" alt="Marketing"
+                            class="h-full w-full object-cover transition hover:scale-105">
+                    </div>
                     <div class="p-5">
-                        <span class="rounded bg-[#03CEA4] px-2 py-1 text-xs text-white">Marketing</span>
-                        <p class="mt-4 text-sm leading-6 text-gray-500">Odio posuere netus quisque faucibus lectus arcu
-                            donec. Eget dictum eu viverra faucibus.</p>
+                        <span class="rounded bg-[#03CEA4] px-2 py-1 text-xs text-white"
+                            data-key="marketing">Marketing</span>
+                        <p class="mt-4 text-sm leading-6 text-gray-500" data-key="directionDescription">
+                            Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus.
+                        </p>
                         <a href="courses.html"
-                            class="mt-4 inline-flex items-center gap-2 text-sm font-semibold transition hover:text-red-500">Check
-                            courses <span class="material-symbols-outlined">arrow_forward</span></a>
+                            class="mt-4 inline-flex items-center gap-2 text-sm font-semibold transition hover:text-red-500">
+                            <span data-key="checkCourses">Check courses</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
                     </div>
                 </div>
 
                 <div
                     class="overflow-hidden rounded border border-gray-200 transition hover:-translate-y-1 hover:shadow-xl">
-                    <div class="h-44 overflow-hidden"><img src="/pages/pages/image/image (34).png" alt="Management"
-                            class="h-full w-full object-cover transition hover:scale-105"></div>
+                    <div class="h-44 overflow-hidden">
+                        <img src="/pages/pages/image/image (34).png" alt="Management"
+                            class="h-full w-full object-cover transition hover:scale-105">
+                    </div>
                     <div class="p-5">
-                        <span class="rounded bg-[#5A87FF] px-2 py-1 text-xs text-white">Management</span>
-                        <p class="mt-4 text-sm leading-6 text-gray-500">Odio posuere netus quisque faucibus lectus arcu
-                            donec. Eget dictum eu viverra faucibus.</p>
+                        <span class="rounded bg-[#5A87FF] px-2 py-1 text-xs text-white"
+                            data-key="management">Management</span>
+                        <p class="mt-4 text-sm leading-6 text-gray-500" data-key="directionDescription">
+                            Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus.
+                        </p>
                         <a href="courses.html"
-                            class="mt-4 inline-flex items-center gap-2 text-sm font-semibold transition hover:text-red-500">Check
-                            courses <span class="material-symbols-outlined">arrow_forward</span></a>
+                            class="mt-4 inline-flex items-center gap-2 text-sm font-semibold transition hover:text-red-500">
+                            <span data-key="checkCourses">Check courses</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
                     </div>
                 </div>
 
                 <div
                     class="overflow-hidden rounded border border-gray-200 transition hover:-translate-y-1 hover:shadow-xl">
-                    <div class="h-44 overflow-hidden"><img src="/pages/pages/image/image (35).png"
-                            alt="HR and Recruiting" class="h-full w-full object-cover transition hover:scale-105"></div>
+                    <div class="h-44 overflow-hidden">
+                        <img src="/pages/pages/image/image (35).png" alt="HR and Recruiting"
+                            class="h-full w-full object-cover transition hover:scale-105">
+                    </div>
                     <div class="p-5">
-                        <span class="rounded bg-[#FF9A35] px-2 py-1 text-xs text-white">HR &amp; Recruiting</span>
-                        <p class="mt-4 text-sm leading-6 text-gray-500">Odio posuere netus quisque faucibus lectus arcu
-                            donec. Eget dictum eu viverra faucibus.</p>
+                        <span class="rounded bg-[#FF9A35] px-2 py-1 text-xs text-white" data-key="hrRecruiting">HR &amp;
+                            Recruiting</span>
+                        <p class="mt-4 text-sm leading-6 text-gray-500" data-key="directionDescription">
+                            Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus.
+                        </p>
                         <a href="courses.html"
-                            class="mt-4 inline-flex items-center gap-2 text-sm font-semibold transition hover:text-red-500">Check
-                            courses <span class="material-symbols-outlined">arrow_forward</span></a>
+                            class="mt-4 inline-flex items-center gap-2 text-sm font-semibold transition hover:text-red-500">
+                            <span data-key="checkCourses">Check courses</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
                     </div>
                 </div>
 
                 <div
                     class="overflow-hidden rounded border border-gray-200 transition hover:-translate-y-1 hover:shadow-xl">
-                    <div class="h-44 overflow-hidden"><img src="/pages/pages/image/image (36).png" alt="Design"
-                            class="h-full w-full object-cover transition hover:scale-105"></div>
+                    <div class="h-44 overflow-hidden">
+                        <img src="/pages/pages/image/image (36).png" alt="Design"
+                            class="h-full w-full object-cover transition hover:scale-105">
+                    </div>
                     <div class="p-5">
-                        <span class="rounded bg-[#F52F6E] px-2 py-1 text-xs text-white">Design</span>
-                        <p class="mt-4 text-sm leading-6 text-gray-500">Odio posuere netus quisque faucibus lectus arcu
-                            donec. Eget dictum eu viverra faucibus.</p>
+                        <span class="rounded bg-[#F52F6E] px-2 py-1 text-xs text-white" data-key="design">Design</span>
+                        <p class="mt-4 text-sm leading-6 text-gray-500" data-key="directionDescription">
+                            Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus.
+                        </p>
                         <a href="courses.html"
-                            class="mt-4 inline-flex items-center gap-2 text-sm font-semibold transition hover:text-red-500">Check
-                            courses <span class="material-symbols-outlined">arrow_forward</span></a>
+                            class="mt-4 inline-flex items-center gap-2 text-sm font-semibold transition hover:text-red-500">
+                            <span data-key="checkCourses">Check courses</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
                     </div>
                 </div>
 
                 <div
                     class="overflow-hidden rounded border border-gray-200 transition hover:-translate-y-1 hover:shadow-xl">
-                    <div class="h-44 overflow-hidden"><img src="/pages/pages/image/image (37).png" alt="Development"
-                            class="h-full w-full object-cover transition hover:scale-105"></div>
+                    <div class="h-44 overflow-hidden">
+                        <img src="/pages/pages/image/image (37).png" alt="Development"
+                            class="h-full w-full object-cover transition hover:scale-105">
+                    </div>
                     <div class="p-5">
-                        <span class="rounded bg-[#7772F1] px-2 py-1 text-xs text-white">Development</span>
-                        <p class="mt-4 text-sm leading-6 text-gray-500">Odio posuere netus quisque faucibus lectus arcu
-                            donec. Eget dictum eu viverra faucibus.</p>
+                        <span class="rounded bg-[#7772F1] px-2 py-1 text-xs text-white"
+                            data-key="development">Development</span>
+                        <p class="mt-4 text-sm leading-6 text-gray-500" data-key="directionDescription">
+                            Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus.
+                        </p>
                         <a href="courses.html"
-                            class="mt-4 inline-flex items-center gap-2 text-sm font-semibold transition hover:text-red-500">Check
-                            courses <span class="material-symbols-outlined">arrow_forward</span></a>
+                            class="mt-4 inline-flex items-center gap-2 text-sm font-semibold transition hover:text-red-500">
+                            <span data-key="checkCourses">Check courses</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
                     </div>
                 </div>
 
                 <div class="flex min-h-[280px] items-center justify-center rounded bg-[#F4F5F6] p-6 text-center">
-                    <p class="font-semibold leading-6 text-[#424551]">New studying program<br>coming soon...</p>
+                    <p class="font-semibold leading-6 text-[#424551]" data-key="newProgramComingSoon">
+                        New studying program coming soon...
+                    </p>
                 </div>
+
             </div>
         </section>
 
+        <!-- Studying process -->
         <section class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-4 py-16 lg:grid-cols-2 lg:py-20">
+
             <div>
-                <p class="text-xs font-semibold">Studying process</p>
-                <h2 class="mb-10 mt-2 text-3xl font-bold sm:text-4xl">That’s how we do it</h2>
+                <p class="text-xs font-semibold" data-key="studyingProcess">Studying process</p>
+                <h2 class="mb-10 mt-2 text-3xl font-bold sm:text-4xl" data-key="thatsHowWeDoIt">
+                    That’s how we do it
+                </h2>
 
                 <div class="flex flex-col gap-7">
 
                     <div>
-
-                        <p class="mb-1 text-xs font-bold text-gray-500">STEP 1</p>
-                        <h3 class="mb-2 font-semibold">Watching online video lectures</h3>
-                        <p class="max-w-sm text-sm leading-6 text-[#787A80]">Aliquam turpis viverra quam sit interdum
-                            blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.</p>
+                        <p class="mb-1 text-xs font-bold text-gray-500" data-key="step1">STEP 1</p>
+                        <h3 class="mb-2 font-semibold" data-key="watchingLectures">
+                            Watching online video lectures
+                        </h3>
+                        <p class="max-w-sm text-sm leading-6 text-[#787A80]" data-key="step1Description">
+                            Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet
+                            gravida massa neque.
+                        </p>
                     </div>
 
                     <div>
-
-                        <p class="mb-1 text-xs font-bold text-gray-500">STEP 2</p>
-                        <h3 class="mb-2 font-semibold">Passing test</h3>
-                        <p class="max-w-sm text-sm leading-6 text-[#787A80]">Facilisis pellentesque quis accumsan
-                            ultricies. Eu egestas eget feugiat lacus, amet, sollicitudin egestas laoreet etiam.</p>
+                        <p class="mb-1 text-xs font-bold text-gray-500" data-key="step2">STEP 2</p>
+                        <h3 class="mb-2 font-semibold" data-key="passingTest">Passing test</h3>
+                        <p class="max-w-sm text-sm leading-6 text-[#787A80]" data-key="step2Description">
+                            Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet,
+                            sollicitudin egestas laoreet etiam.
+                        </p>
                     </div>
 
                     <div>
-
-                        <p class="mb-1 text-xs font-bold text-gray-500">STEP 3</p>
-                        <h3 class="mb-2 font-semibold">Curator’s feedback</h3>
-                        <p class="max-w-sm text-sm leading-6 text-[#787A80]">Eget amet, enim pharetra leo egestas nisi,
-                            odio imperdiet facilisis. Aliquet orci varius volutpat egestas facilisi lobortis.</p>
+                        <p class="mb-1 text-xs font-bold text-gray-500" data-key="step3">STEP 3</p>
+                        <h3 class="mb-2 font-semibold" data-key="curatorsFeedback">Curator’s feedback</h3>
+                        <p class="max-w-sm text-sm leading-6 text-[#787A80]" data-key="step3Description">
+                            Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius
+                            volutpat egestas facilisi lobortis.
+                        </p>
                     </div>
 
                     <div>
-
-                        <p class="mb-1 text-xs font-bold text-gray-500">STEP 4</p>
-                        <h3 class="mb-2 font-semibold">Corrections if needed</h3>
-                        <p class="max-w-sm text-sm leading-6 text-[#787A80]">Non tempor pulvinar tincidunt aliquam.
-                            Placerat ultricies malesuada dui auctor.</p>
+                        <p class="mb-1 text-xs font-bold text-gray-500" data-key="step4">STEP 4</p>
+                        <h3 class="mb-2 font-semibold" data-key="correctionsIfNeeded">Corrections if needed</h3>
+                        <p class="max-w-sm text-sm leading-6 text-[#787A80]" data-key="step4Description">
+                            Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor.
+                        </p>
                     </div>
+
                 </div>
             </div>
 
@@ -321,17 +418,22 @@
                 <img src="/pages/pages/image/illustration (1).png" alt="Studying process illustration"
                     class="h-auto w-full max-w-[430px] object-contain">
             </div>
+
         </section>
 
-        <!-- odamzodlar -->
+        <!-- Team -->
         <section class="bg-[#F4F5F6] px-4 py-16">
             <div class="mx-auto max-w-6xl">
+
                 <div class="mb-10 text-center">
-                    <p class="text-sm text-[#1e212c]">Best tutors are all here</p>
-                    <h2 class="mt-2 text-3xl font-bold sm:text-4xl lg:text-[46px]">Meet our team</h2>
+                    <p class="text-sm text-[#1e212c]" data-key="bestTutors">Best tutors are all here</p>
+                    <h2 class="mt-2 text-3xl font-bold sm:text-4xl lg:text-[46px]" data-key="meetOurTeam">
+                        Meet our team
+                    </h2>
                 </div>
 
                 <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
                     <div class="group text-center">
                         <div class="relative h-[260px] overflow-hidden rounded bg-[#ffd43b]">
                             <img src="/pages/pages/image/image5.png" alt="Dianne Russell"
@@ -344,7 +446,7 @@
                             </div>
                         </div>
                         <h3 class="mb-1 mt-3 font-bold text-[#424551]">Dianne Russell</h3>
-                        <p class="text-sm text-[#787a80]">Founder and CEO</p>
+                        <p class="text-sm text-[#787a80]" data-key="founderCEO">Founder and CEO</p>
                     </div>
 
                     <div class="group text-center">
@@ -359,7 +461,9 @@
                             </div>
                         </div>
                         <h3 class="mb-1 mt-3 font-bold text-[#424551]">Jerome Bell</h3>
-                        <p class="text-sm text-[#787a80]">Founder and Program Director</p>
+                        <p class="text-sm text-[#787a80]" data-key="founderProgramDirector">
+                            Founder and Program Director
+                        </p>
                     </div>
 
                     <div class="group text-center">
@@ -374,7 +478,9 @@
                             </div>
                         </div>
                         <h3 class="mb-1 mt-3 font-bold text-[#424551]">Kristin Watson</h3>
-                        <p class="text-sm text-[#787a80]">Marketer, Curator of Marketing Course</p>
+                        <p class="text-sm text-[#787a80]" data-key="marketerCurator">
+                            Marketer, Curator of Marketing Course
+                        </p>
                     </div>
 
                     <div class="group text-center">
@@ -389,7 +495,9 @@
                             </div>
                         </div>
                         <h3 class="mb-1 mt-3 font-bold text-[#424551]">Marvin McKinney</h3>
-                        <p class="text-sm text-[#787a80]">PM, Curator of Management Course</p>
+                        <p class="text-sm text-[#787a80]" data-key="pmCurator">
+                            PM, Curator of Management Course
+                        </p>
                     </div>
 
                     <div class="group text-center">
@@ -404,7 +512,7 @@
                             </div>
                         </div>
                         <h3 class="mb-1 mt-3 font-bold text-[#424551]">Dianne Russell</h3>
-                        <p class="text-sm text-[#787a80]">Founder and CEO</p>
+                        <p class="text-sm text-[#787a80]" data-key="founderCEO">Founder and CEO</p>
                     </div>
 
                     <div class="group text-center">
@@ -418,8 +526,8 @@
                                 <a href="#"><img src="/pages/pages/image/Linked-In.png" alt="" class="h-5 w-5"></a>
                             </div>
                         </div>
-                        <h3 class="mb-1 mt-3 font-bold text-[#424551]">Team member</h3>
-                        <p class="text-sm text-[#787a80]">Tutor</p>
+                        <h3 class="mb-1 mt-3 font-bold text-[#424551]" data-key="teamMember">Team member</h3>
+                        <p class="text-sm text-[#787a80]" data-key="tutor">Tutor</p>
                     </div>
 
                     <div class="group text-center">
@@ -433,8 +541,8 @@
                                 <a href="#"><img src="/pages/pages/image/Linked-In.png" alt="" class="h-5 w-5"></a>
                             </div>
                         </div>
-                        <h3 class="mb-1 mt-3 font-bold text-[#424551]">Team member</h3>
-                        <p class="text-sm text-[#787a80]">Tutor</p>
+                        <h3 class="mb-1 mt-3 font-bold text-[#424551]" data-key="teamMember">Team member</h3>
+                        <p class="text-sm text-[#787a80]" data-key="tutor">Tutor</p>
                     </div>
 
                     <div class="group text-center">
@@ -448,44 +556,61 @@
                                 <a href="#"><img src="/pages/pages/image/Linked-In.png" alt="" class="h-5 w-5"></a>
                             </div>
                         </div>
-                        <h3 class="mb-1 mt-3 font-bold text-[#424551]">Team member</h3>
-                        <p class="text-sm text-[#787a80]">Tutor</p>
+                        <h3 class="mb-1 mt-3 font-bold text-[#424551]" data-key="teamMember">Team member</h3>
+                        <p class="text-sm text-[#787a80]" data-key="tutor">Tutor</p>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- section end -->
+        <!-- Newsletter section -->
         <section class="w-full bg-[#FEDBD3] px-4 py-16 sm:py-20">
             <div class="mx-auto flex max-w-6xl flex-col items-center text-center">
-                <p class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-700 sm:text-lg">Don't miss
-                    anything</p>
-                <h2 class="max-w-2xl text-2xl font-bold leading-tight text-gray-900 sm:text-3xl">
+
+                <p class="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-700 sm:text-lg"
+                    data-key="dontMissAnything">
+                    Don't miss anything
+                </p>
+
+                <h2 class="max-w-2xl text-2xl font-bold leading-tight text-gray-900 sm:text-3xl"
+                    data-key="subscribeAnnouncements">
                     Subscribe to the Createx School announcements
                 </h2>
+
                 <form class="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row">
-                    <input type="email" required placeholder="Your working email"
+                    <input type="email" required placeholder="Your working email" data-key-placeholder="workingEmail"
                         class="h-12 w-full rounded border border-gray-200 px-4 text-sm text-gray-700 outline-none transition focus:border-orange-500 sm:flex-1">
+
                     <button type="submit"
-                        class="h-12 rounded bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600">Subscribe</button>
+                        class="h-12 rounded bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600"
+                        data-key="subscribe">
+                        Subscribe
+                    </button>
                 </form>
+
             </div>
         </section>
+
     </main>
 
     <!-- Footer qism -->
     <footer class="bg-[#1f2230] text-white">
         <div class="mx-auto max-w-[1200px] px-6 py-10 lg:py-14">
+
             <div
                 class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] lg:gap-6">
+
                 <div class="sm:col-span-2 md:col-span-1">
                     <a href="index.html" class="inline-block">
                         <img src="/pages/pages/image/logo.png" alt="Createx" class="max-w-[130px]">
                     </a>
-                    <p class="mt-5 max-w-[280px] text-sm leading-6 text-gray-400">
+
+                    <p class="mt-5 max-w-[280px] text-sm leading-6 text-gray-400" data-key="footerDescription">
                         Createx Online School is a leader in online studying. We have lots of courses from different
                         programs and experienced teachers.
                     </p>
+
                     <div class="mt-6 flex items-center gap-4">
                         <a href="#" aria-label="Facebook"><img src="/pages/pages/image/Facebook.svg" alt=""
                                 class="h-5 w-5 transition hover:opacity-70"></a>
@@ -503,29 +628,38 @@
                 </div>
 
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">Site Map</h3>
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="siteMap">Site Map</h3>
                     <ul class="mt-5 space-y-3 text-sm text-gray-400">
-                        <li><a href="about.html" class="transition hover:text-orange-500">About Us</a></li>
-                        <li><a href="courses.html" class="transition hover:text-orange-500">Courses</a></li>
-                        <li><a href="event.html" class="transition hover:text-orange-500">Events</a></li>
-                        <li><a href="blog.html" class="transition hover:text-orange-500">Blog</a></li>
-                        <li><a href="contact.html" class="transition hover:text-orange-500">Contacts</a></li>
+                        <li><a href="about.html" class="transition hover:text-orange-500" data-key="about">About Us</a>
+                        </li>
+                        <li><a href="courses.html" class="transition hover:text-orange-500"
+                                data-key="courses">Courses</a></li>
+                        <li><a href="event.html" class="transition hover:text-orange-500" data-key="events">Events</a>
+                        </li>
+                        <li><a href="blog.html" class="transition hover:text-orange-500" data-key="blog">Blog</a></li>
+                        <li><a href="contact.html" class="transition hover:text-orange-500"
+                                data-key="contacts">Contacts</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">Courses</h3>
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="courses">Courses</h3>
                     <ul class="mt-5 space-y-3 text-sm text-gray-400">
-                        <li><a href="courses.html" class="transition hover:text-orange-500">Marketing</a></li>
-                        <li><a href="courses.html" class="transition hover:text-orange-500">Management</a></li>
-                        <li><a href="courses.html" class="transition hover:text-orange-500">HR Recruiting</a></li>
-                        <li><a href="courses.html" class="transition hover:text-orange-500">Design</a></li>
-                        <li><a href="courses.html" class="transition hover:text-orange-500">Development</a></li>
+                        <li><a href="courses.html" class="transition hover:text-orange-500"
+                                data-key="marketing">Marketing</a></li>
+                        <li><a href="courses.html" class="transition hover:text-orange-500"
+                                data-key="management">Management</a></li>
+                        <li><a href="courses.html" class="transition hover:text-orange-500" data-key="hrRecruiting">HR
+                                Recruiting</a></li>
+                        <li><a href="courses.html" class="transition hover:text-orange-500" data-key="design">Design</a>
+                        </li>
+                        <li><a href="courses.html" class="transition hover:text-orange-500"
+                                data-key="development">Development</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">Contact Us</h3>
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="contactUs">Contact Us</h3>
                     <div class="mt-5 space-y-4 text-sm text-gray-400">
                         <a href="tel:+14055550128" class="block transition hover:text-white">(405) 555-0128</a>
                         <a href="mailto:hello@createx.com"
@@ -534,36 +668,50 @@
                 </div>
 
                 <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
-                    <h3 class="text-sm font-bold uppercase tracking-wide">Sign up to our newsletter</h3>
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="newsletterTitle">
+                        Sign up to our newsletter
+                    </h3>
+
                     <form class="mt-5">
                         <div
                             class="flex h-11 overflow-hidden rounded border border-gray-600 bg-white/5 focus-within:border-orange-500">
-                            <input type="email" required placeholder="Email address"
+
+                            <input type="email" required placeholder="Email address" data-key-placeholder="emailAddress"
                                 class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500">
+
                             <button type="submit" aria-label="Subscribe"
                                 class="px-3 text-lg text-gray-400 transition hover:text-white">
                                 <span class="material-symbols-outlined">arrow_forward</span>
                             </button>
+
                         </div>
-                        <p class="mt-3 text-[10px] leading-4 text-gray-500">
+
+                        <p class="mt-3 text-[10px] leading-4 text-gray-500" data-key="newsletterDescription">
                             Subscribe to our newsletter to receive communications and upcoming events from Createx
                             School.
                         </p>
                     </form>
                 </div>
+
             </div>
         </div>
 
         <div class="border-t border-white/10 bg-[#292c3a]">
             <div
                 class="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-3 px-6 py-5 text-center text-xs text-gray-400 sm:flex-row sm:text-left">
-                <p>© All rights reserved. Made with by Createx Studio</p>
-                <a href="#" class="font-medium uppercase tracking-wide transition hover:text-white">Go to top</a>
+
+                <p data-key="copyright">© All rights reserved. Made with by Createx Studio</p>
+
+                <a href="#" class="font-medium uppercase tracking-wide transition hover:text-white" data-key="goToTop">
+                    Go to top
+                </a>
+
             </div>
         </div>
     </footer>
 
     <script src="pages/js/about.js"></script>
+    <script src="pages/js/i18n.js"></script>
 </body>
 
 </html>

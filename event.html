@@ -4,17 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- main ning iconka linki -->
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-    <!-- main ning iconka linki -->
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back,arrow_forward" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Createx</title>
 </head>
 
 <body>
+
+    <!-- Header -->
     <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
 
         <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -26,34 +29,49 @@
 
             <!-- Desktop links -->
             <div class="hidden lg:flex items-center gap-6 font-medium">
-                <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
-                <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
-                <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
-                <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
-                <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+                <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
+                <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
+                <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
+                <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
+                <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
             </div>
+
+            <button>
+                <select name="select" id="languageSelect" class="outline-none cursor-pointer bg-[#FFDAD5] border-2">
+                    <option value="uz">Uzb</option>
+                    <option value="en">Eng</option>
+                    <option value="ru">Rus</option>
+                </select>
+            </button>
 
             <!-- Desktop buttons -->
             <div class="hidden lg:flex items-center gap-4">
-
-                <a href="contact.html"
-                    class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
+                <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]"
+                    data-key="getConsultation">
                     Get consultation
                 </a>
+<<<<<<< HEAD
                 <button id="btn" class="hover:text-[#ff3f22] font-bold">
                     Log in / Register
                 </button>
 
+=======
+>>>>>>> c48c3884d67da4312a3930a14215beb4034aabc4
             </div>
 
             <!-- Menu button -->
             <button id="menuBtn" class="lg:hidden text-3xl">
-                <span class="material-symbols-outlined hover:text-[#ff3f22]">menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+                    <path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z" />
+                </svg>
             </button>
 
             <!-- Close button -->
             <button id="closeBtn" class="hidden lg:hidden text-3xl">
-                <span class="font-bold hover:text-[#ff3f22]">x</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+                    <path
+                        d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z" />
+                </svg>
             </button>
 
         </nav>
@@ -63,18 +81,15 @@
 
             <div class="flex flex-col gap-5 font-medium">
 
-                <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
-
-                <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
-
-                <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
-
-                <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
-
-                <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+                <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
+                <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
+                <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
+                <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
+                <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
 
                 <a href="contact.html"
-                    class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
+                    class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]"
+                    data-key="getConsultation">
                     Get consultation
                 </a>
 
@@ -82,27 +97,37 @@
         </div>
 
     </header>
-    <!-- section lar qismi -->
+
+    <!-- Main -->
     <main>
+
+        <!-- Section 1 -->
         <section class="bg-[#ffddd5] mt-16">
             <div
                 class="max-w-6xl mx-auto flex flex-col items-center text-center px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-[50px]">
-                <h6 class="text-red-500 mb-6 sm:mb-8 lg:mb-10 text-base sm:text-lg lg:text-[20px]">
+
+                <h6 class="text-red-500 mb-6 sm:mb-8 lg:mb-10 text-base sm:text-lg lg:text-[20px]"
+                    data-key="onlineLecture">
                     Online lecture
                 </h6>
 
-                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] font-bold leading-tight">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[46px] font-bold leading-tight"
+                    data-key="eventDetailTitle">
                     Formation of the organizational structure of the company in the face of uncertainty
                 </h1>
+
             </div>
         </section>
-        <!-- section 2 -->
+
+        <!-- Section 2 -->
         <section class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10 lg:py-14">
+
             <div class="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-10 lg:gap-16 items-start">
 
                 <!-- LEFT CONTENT -->
                 <div class="md:col-span-3">
-                    <h1 class="text-xl sm:text-2xl font-bold text-[#1E212C] mb-6">
+
+                    <h1 class="text-xl sm:text-2xl font-bold text-[#1E212C] mb-6" data-key="weWillTalkAbout">
                         We will talk about:
                     </h1>
 
@@ -111,16 +136,20 @@
                         <!-- ITEM 1 -->
                         <div>
                             <div class="flex items-start gap-3 items-center">
+
                                 <span class="text-[#FF3F3A] text-lg">−</span>
+
                                 <p class="text-[#FF3F3A]">
-                                    Theme 1.
-                                    <span class="text-[#1E212C]">
+                                    <span data-key="theme1">Theme 1.</span>
+                                    <span class="text-[#1E212C]" data-key="theme1Title">
                                         Aliquet lectus urna viverra in odio.
                                     </span>
                                 </p>
+
                             </div>
 
-                            <p class="text-gray-500 leading-5 ml-[19px] mt-2 max-w-[420px]">
+                            <p class="text-gray-500 leading-5 ml-[19px] mt-2 max-w-[420px]"
+                                data-key="theme1Description">
                                 Nulla amet, sagittis potenti rhoncus sit. Elit lectus
                                 nec pulvinar aliquet donec enim, ornare. Lacus facilisi
                                 curabitur turpis varius mauris. Nisi, tempus risus,
@@ -132,35 +161,44 @@
 
                         <!-- ITEM 2 -->
                         <div class="flex items-start gap-3 items-center">
+
                             <span class="text-[#FF3F3A] text-lg">+</span>
+
                             <p class="text-[#FF3F3A]">
-                                Theme 2.
-                                <span class="text-[#1E212C]">
+                                <span data-key="theme2">Theme 2.</span>
+                                <span class="text-[#1E212C]" data-key="theme2Title">
                                     Orci commodo, viverra orci mollis ut euismod.
                                 </span>
                             </p>
+
                         </div>
 
                         <!-- ITEM 3 -->
                         <div class="flex items-start gap-3 items-center">
+
                             <span class="text-[#FF3F3A] text-lg">+</span>
+
                             <p class="text-[#FF3F3A]">
-                                Theme 3.
-                                <span class="text-[#1E212C]">
+                                <span data-key="theme3">Theme 3.</span>
+                                <span class="text-[#1E212C]" data-key="theme3Title">
                                     Sagittis vitae facilisi rutrum amet mauris quisque vel.
                                 </span>
                             </p>
+
                         </div>
 
                         <!-- ITEM 4 -->
                         <div class="flex items-start gap-3 items-center">
+
                             <span class="text-[#FF3F3A] text-lg">+</span>
+
                             <p class="text-[#FF3F3A]">
-                                Theme 4.
-                                <span class="text-[#1E212C]">
+                                <span data-key="theme4">Theme 4.</span>
+                                <span class="text-[#1E212C]" data-key="theme4Title">
                                     In id dolor quis nunc, urna hendrerit pharetra.
                                 </span>
                             </p>
+
                         </div>
 
                     </div>
@@ -168,50 +206,56 @@
 
                 <!-- RIGHT CARD -->
                 <div class="md:col-span-2">
+
                     <div
                         class="w-full max-w-[360px] mx-auto border border-gray-200 rounded-sm shadow-lg p-5 sm:p-[22px] bg-white">
 
                         <!-- TIME -->
                         <div class="mb-5">
-                            <h6 class="text-[10px] font-bold text-[#1E212C] mb-1">
+
+                            <h6 class="text-[10px] font-bold text-[#1E212C] mb-1" data-key="time">
                                 TIME
                             </h6>
 
-                            <h2 class="text-base font-medium text-[#FF3F3A] mb-1">
+                            <h2 class="text-base font-medium text-[#FF3F3A] mb-1" data-key="eventDateTime">
                                 August 5, 11:00 – 14:00
                             </h2>
 
-                            <p class="text-[11px] leading-4 text-gray-500">
+                            <p class="text-[11px] leading-4 text-gray-500" data-key="eventTimeDescription">
                                 Metus turpis sit lorem lacus, in elit tellus lacus.
                             </p>
+
                         </div>
 
                         <!-- PRICE -->
                         <div class="mb-5">
-                            <h6 class="text-[10px] font-bold text-[#1E212C] mb-1">
+
+                            <h6 class="text-[10px] font-bold text-[#1E212C] mb-1" data-key="price">
                                 PRICE
                             </h6>
 
-                            <h2 class="text-base font-medium text-[#FF3F3A] mb-1">
+                            <h2 class="text-base font-medium text-[#FF3F3A] mb-1" data-key="free">
                                 Free
                             </h2>
 
-                            <p class="text-[11px] text-gray-500">
+                            <p class="text-[11px] text-gray-500" data-key="eventPriceDescription">
                                 Nulla sem adipiscing adipiscing felis fringilla.
                                 Adipiscing mauris quam ac elit tristique dis.
                             </p>
+
                         </div>
 
                         <!-- EVENT -->
                         <div class="mb-5">
-                            <a href="#" class="text-[10px] text-[#FF3F3A] underline">
+                            <a href="#" class="text-[10px] text-[#FF3F3A] underline" data-key="eventOnFacebook">
                                 EVENT ON FACEBOOK
                             </a>
                         </div>
 
                         <!-- BUTTON -->
                         <button
-                            class="w-full min-h-[36px] rounded-sm text-white text-[10px] font-bold bg-[#FC4A28] hover:bg-[#FF5753]">
+                            class="w-full min-h-[36px] rounded-sm text-white text-[10px] font-bold bg-[#FC4A28] hover:bg-[#FF5753]"
+                            data-key="joinEvent">
                             Join the event
                         </button>
 
@@ -220,8 +264,10 @@
 
             </div>
         </section>
-        <!-- section 3 -->
+
+        <!-- Section 3 -->
         <section class="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12 lg:py-[50px]">
+
             <div class="flex flex-col md:flex-row justify-between items-center gap-8 lg:gap-14">
 
                 <!-- IMAGE -->
@@ -233,7 +279,7 @@
                 <!-- CONTENT -->
                 <div class="w-full md:w-1/2 flex flex-col gap-4 sm:gap-5">
 
-                    <h6 class="text-base sm:text-lg lg:text-[20px]">
+                    <h6 class="text-base sm:text-lg lg:text-[20px]" data-key="speaker">
                         Speaker
                     </h6>
 
@@ -241,11 +287,11 @@
                         Kathryn Murphy
                     </h1>
 
-                    <p class="text-sm sm:text-base">
+                    <p class="text-sm sm:text-base" data-key="speakerPosition">
                         Analyst and Marketing specialist in IT company
                     </p>
 
-                    <p class="text-sm sm:text-base leading-6 text-gray-600">
+                    <p class="text-sm sm:text-base leading-6 text-gray-600" data-key="speakerDescription">
                         Mattis adipiscing aliquam eu proin metus a iaculis faucibus.
                         Tempus curabitur venenatis, vulputate venenatis fermentum
                         ante. Nisl, amet id semper semper quis commodo, consequat.
@@ -264,6 +310,7 @@
 
                     <!-- SOCIAL ICONS -->
                     <div class="flex items-center gap-4 mt-2">
+
                         <a href="#" class="opacity-60 hover:opacity-100 transition-all duration-300">
                             <img src="pages/pages/image/Facebook.svg" alt="Facebook">
                         </a>
@@ -279,24 +326,29 @@
                         <a href="#" class="opacity-60 hover:opacity-100 transition-all duration-300">
                             <img src="pages/pages/image/YouTube.svg" alt="LinkedIn">
                         </a>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- section 4 -->
+
+        <!-- Section 4 -->
         <section class="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12 lg:py-[50px]">
+
             <div class="flex flex-col md:flex-row justify-between gap-8 lg:gap-12">
 
                 <!-- LEFT CONTENT -->
                 <div class="w-full md:max-w-[45%]">
-                    <h6 class="text-base sm:text-lg lg:text-[20px]">
+
+                    <h6 class="text-base sm:text-lg lg:text-[20px]" data-key="forWhom">
                         For whom?
                     </h6>
 
-                    <h1 class="text-3xl sm:text-4xl lg:text-[46px] font-bold max-w-[500px] leading-tight">
+                    <h1 class="text-3xl sm:text-4xl lg:text-[46px] font-bold max-w-[500px] leading-tight"
+                        data-key="whoWillBenefit">
                         Who will benefit from the event:
                     </h1>
+
                 </div>
 
                 <!-- RIGHT CONTENT -->
@@ -306,7 +358,8 @@
                         <span class="shrink-0">
                             <img src="pages/pages/image/check.png" alt="check">
                         </span>
-                        <p class="text-sm sm:text-base">
+
+                        <p class="text-sm sm:text-base" data-key="benefit1">
                             Specialists with more than 1 year of active work experience
                         </p>
                     </div>
@@ -315,7 +368,8 @@
                         <span class="shrink-0">
                             <img src="pages/pages/image/check.png" alt="check">
                         </span>
-                        <p class="max-w-[500px] text-sm sm:text-base">
+
+                        <p class="max-w-[500px] text-sm sm:text-base" data-key="benefit2">
                             Mobile app designers who want to improve their skills in solving business
                             problems, creating and testing human-centered interfaces
                         </p>
@@ -325,15 +379,19 @@
                         <span class="shrink-0">
                             <img src="pages/pages/image/check.png" alt="check">
                         </span>
-                        <p class="text-sm sm:text-base">
+
+                        <p class="text-sm sm:text-base" data-key="benefit3">
                             Professional designers who want to feel more confident in UX
                         </p>
                     </div>
+
                 </div>
             </div>
         </section>
-        <!-- section 5 -->
+
+        <!-- Section 5 -->
         <section class="my-10 sm:my-12 lg:my-[50px] px-4 sm:px-6">
+
             <div
                 class="max-w-6xl mx-auto bg-[#ffddd5] flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 p-5 sm:p-8 lg:p-[30px]">
 
@@ -346,202 +404,289 @@
                 <!-- CONTENT -->
                 <div class="w-full md:w-[65%] flex flex-col gap-5">
 
-                    <h1 class="text-2xl sm:text-3xl lg:text-[30px] font-bold max-w-[600px] leading-tight">
+                    <h1 class="text-2xl sm:text-3xl lg:text-[30px] font-bold max-w-[600px] leading-tight"
+                        data-key="eventNewsletterTitle">
                         Don’t want to miss the best events?
                         Subscribe to our newsletter!
                     </h1>
 
                     <!-- INPUT AND BUTTON -->
                     <div class="flex flex-col sm:flex-row gap-3 sm:gap-5">
+
                         <input class="w-full min-w-0 py-3 px-4 outline-none rounded-md" type="email"
-                            placeholder="Your working email">
+                            placeholder="Your working email" data-key-placeholder="workingEmail">
 
                         <button
-                            class="w-full sm:w-auto shrink-0 bg-[#FF3F3A] text-white px-8 py-3 rounded-md font-bold hover:bg-[#e63630] transition duration-300">
+                            class="w-full sm:w-auto shrink-0 bg-[#FF3F3A] text-white px-8 py-3 rounded-md font-bold hover:bg-[#e63630] transition duration-300"
+                            data-key="subscribe">
                             Subscribe
                         </button>
+
                     </div>
 
                     <!-- CHECKBOX -->
                     <label class="flex items-start gap-2 cursor-pointer">
+
                         <input type="checkbox" class="w-4 h-4 mt-1 shrink-0 accent-[#FF3F3A] cursor-pointer">
 
-                        <p class="text-xs sm:text-sm text-[#424551] leading-5">
+                        <p class="text-xs sm:text-sm text-[#424551] leading-5" data-key="agreeCommunications">
                             I agree to receive communications from Createx Online School
                         </p>
+
                     </label>
 
                 </div>
             </div>
         </section>
-        <!-- section 6 -->
+
+        <!-- Section 6 -->
         <section class="max-w-6xl mx-auto px-6 py-12">
+
             <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
 
-                <!-- Chap tomon: Forma -->
+                <!-- LEFT: FORM -->
                 <div class="max-w-md w-full">
-                    <p class="text-[10px] font-bold tracking-wide text-[#424551] mb-2">
+
+                    <p class="text-[10px] font-bold tracking-wide text-[#424551] mb-2" data-key="dontMissEvent">
                         DON'T MISS THE EVENT
                     </p>
 
-                    <h1 class="text-2xl font-bold text-[#1E212C] mb-6">
+                    <h1 class="text-2xl font-bold text-[#1E212C] mb-6" data-key="leaveRequest">
                         Leave a request
                     </h1>
 
                     <form class="flex flex-col gap-4">
 
                         <div class="flex flex-col gap-1.5">
-                            <label class="text-xs text-[#424551]">Full Name</label>
-                            <input type="text" placeholder="Your full name"
+                            <label class="text-xs text-[#424551]" data-key="fullName">
+                                Full Name
+                            </label>
+
+                            <input type="text" placeholder="Your full name" data-key-placeholder="yourFullName"
                                 class="w-full h-9 border border-[#D7DADD] rounded-sm px-3 text-xs outline-none focus:border-[#FF3F3A]"
                                 required>
                         </div>
 
                         <div class="flex flex-col gap-1.5">
-                            <label class="text-xs text-[#424551]">Email</label>
-                            <input type="email" placeholder="Your working email"
+                            <label class="text-xs text-[#424551]" data-key="email">
+                                Email
+                            </label>
+
+                            <input type="email" placeholder="Your working email" data-key-placeholder="workingEmail"
                                 class="w-full h-9 border border-[#D7DADD] rounded-sm px-3 text-xs outline-none focus:border-[#FF3F3A]"
                                 required>
                         </div>
 
                         <div class="flex flex-col gap-1.5">
-                            <label class="text-xs text-[#424551]">Phone</label>
-                            <input type="tel" placeholder="Your phone number"
+                            <label class="text-xs text-[#424551]" data-key="phone">
+                                Phone
+                            </label>
+
+                            <input type="tel" placeholder="Your phone number" data-key-placeholder="yourPhoneNumber"
                                 class="w-full h-9 border border-[#D7DADD] rounded-sm px-3 text-xs outline-none focus:border-[#FF3F3A]"
                                 required>
                         </div>
 
                         <button type="submit"
-                            class="w-full h-10 bg-gradient-to-r from-[#FF3F3A] to-[#FF6F3D] text-white text-xs font-bold rounded-sm hover:opacity-90 transition">
+                            class="w-full h-10 bg-gradient-to-r from-[#FF3F3A] to-[#FF6F3D] text-white text-xs font-bold rounded-sm hover:opacity-90 transition"
+                            data-key="joinEvent">
                             Join the event
                         </button>
 
-                        <p class="text-[10px] text-[#787A80] leading-4">
+                        <p class="text-[10px] text-[#787A80] leading-4" data-key="registrationInfo">
                             * You will receive a link to the online lecture in an email after registration.
                         </p>
+
                     </form>
                 </div>
-                <!-- O'ng tomon: Illyustratsiya -->
+
+                <!-- RIGHT: ILLUSTRATION -->
                 <div class="flex justify-center items-center">
                     <img src="pages/pages/image/illustration.png" alt="Online event illustration"
                         class="w-full max-w-[420px] object-contain">
                 </div>
+
             </div>
         </section>
-        <!-- section 7 -->
+
     </main>
-    <!-- footer qismi -->
+
+    <!-- Footer -->
     <footer class="bg-[#1f2230] text-white">
+
         <div class="mx-auto max-w-[1200px] px-6 py-10 lg:py-14">
+
             <div
                 class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-8 lg:gap-6">
 
+                <!-- Logo and social -->
                 <div class="sm:col-span-2 md:col-span-1">
+
                     <a class="text-2xl font-bold tracking-tight inline-block" href="#">
                         <img alt="Createx" src="/pages/pages/image/logo.png" />
                     </a>
-                    <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400">
+
+                    <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400"
+                        data-key="footerDescription">
                         Createx Online School is a leader in online studying. We have lots of courses from different
                         programs and experienced teachers.
                     </p>
+
                     <div class="mt-6 lg:mt-7 flex items-center gap-4">
+
                         <a class="transition hover:scale-110" href="#">
                             <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70"
                                 src="/pages/pages/image/Facebook.svg" />
                         </a>
+
                         <a class="transition hover:scale-110" href="#">
                             <img alt="Twitter" class="h-5 w-5 transition hover:opacity-70"
                                 src="/pages/pages/image/Twitter.svg" />
                         </a>
+
                         <a class="transition hover:scale-110" href="#">
                             <img alt="YouTube" class="h-5 w-5 transition hover:opacity-70"
                                 src="/pages/pages/image/YouTube.svg" />
                         </a>
+
                         <a class="transition hover:scale-110" href="#">
                             <img alt="Telegram" class="h-5 w-5 transition hover:opacity-70"
                                 src="/pages/pages/image/telegram.svg" />
                         </a>
+
                         <a class="transition hover:scale-110" href="#">
                             <img alt="Instagram" class="h-5 w-5 transition hover:opacity-70"
                                 src="/pages/pages/image/Instagram.svg" />
                         </a>
+
                         <a class="transition hover:scale-110" href="#">
                             <img alt="LinkedIn" class="h-5 w-5 transition hover:opacity-70"
                                 src="/pages/pages/image/Linked-In.svg" />
                         </a>
+
                     </div>
                 </div>
 
+                <!-- Site Map -->
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">Site Map</h3>
+
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="siteMap">
+                        Site Map
+                    </h3>
+
                     <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
-                        <li><a class="transition hover:text-orange-500" href="about.html">About Us</a></li>
-                        <li><a class="transition hover:text-orange-500" href="courses.html">Courses</a></li>
-                        <li><a class="transition hover:text-orange-500" href="event.html">Events</a></li>
-                        <li><a class="transition hover:text-orange-500" href="blog.html">Blog</a></li>
-                        <li><a class="transition hover:text-orange-500" href="contact.html">Contacts</a></li>
+
+                        <li><a class="transition hover:text-orange-500" href="about.html" data-key="about">About Us</a>
+                        </li>
+                        <li><a class="transition hover:text-orange-500" href="courses.html"
+                                data-key="courses">Courses</a></li>
+                        <li><a class="transition hover:text-orange-500" href="event.html" data-key="events">Events</a>
+                        </li>
+                        <li><a class="transition hover:text-orange-500" href="blog.html" data-key="blog">Blog</a></li>
+                        <li><a class="transition hover:text-orange-500" href="contact.html"
+                                data-key="contacts">Contacts</a></li>
+
                     </ul>
                 </div>
 
+                <!-- Courses -->
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">Courses</h3>
+
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="courses">
+                        Courses
+                    </h3>
+
                     <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
-                        <li><a class="transition hover:text-orange-500" href="#">Marketing</a></li>
-                        <li><a class="transition hover:text-orange-500" href="#">Management</a></li>
-                        <li><a class="transition hover:text-orange-500" href="#">HR Recruiting</a></li>
-                        <li><a class="transition hover:text-orange-500" href="#">Design</a></li>
-                        <li><a class="transition hover:text-orange-500" href="#">Development</a></li>
+
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="marketing">Marketing</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="management">Management</a>
+                        </li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="hrRecruiting">HR
+                                Recruiting</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="design">Design</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="development">Development</a>
+                        </li>
+
                     </ul>
                 </div>
 
+                <!-- Contact Us -->
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wide">Contact Us</h3>
+
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="contactUs">
+                        Contact Us
+                    </h3>
+
                     <div class="mt-4 lg:mt-6 space-y-3 lg:space-y-4 text-sm text-gray-400">
+
                         <a class="flex items-center transition hover:text-white" href="tel:+14055550128">
                             <span>(405) 555-0128</span>
                         </a>
+
                         <a class="flex items-center transition hover:text-white" href="mailto:hello@createx.com">
                             <span>hello@createx.com</span>
                         </a>
+
                     </div>
                 </div>
 
+                <!-- Footer newsletter -->
                 <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
-                    <h3 class="text-sm font-bold uppercase tracking-wide">Sign up to our newsletter</h3>
+
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="newsletterTitle">
+                        Sign up to our newsletter
+                    </h3>
+
                     <form class="mt-4 lg:mt-6 max-w-md lg:max-w-none">
+
                         <div
                             class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
+
                             <input
                                 class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
-                                placeholder="Email address" type="email" />
-                            <button class="px-3 text-lg text-gray-400 transition  hover:text-white" type="submit">
+                                placeholder="Email address" data-key-placeholder="emailAddress" type="email" />
+
+                            <button class="px-3 text-lg text-gray-400 transition hover:text-white" type="submit">
                                 <span class="material-symbols-outlined">arrow_forward</span>
                             </button>
+
                         </div>
-                        <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500">
+
+                        <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500" data-key="newsletterDescription">
                             *Subscribe to our newsletter to receive communications and upcoming events from Createx
                             School.
                         </p>
+
                     </form>
                 </div>
 
             </div>
         </div>
 
+        <!-- Copyright -->
         <div class="border-t border-white/10 bg-[#292c3a]">
+
             <div
                 class="mx-auto flex flex-col sm:flex-row gap-3 text-center sm:text-left max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
-                <p>© All rights reserved. Made with by Createx Studio</p>
-                <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
+
+                <p data-key="copyright">
+                    © All rights reserved. Made with by Createx Studio
+                </p>
+
+                <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#" data-key="goToTop">
                     Go to top
                 </a>
+
             </div>
         </div>
+
     </footer>
+
     <script src="../js/event.js"></script>
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="pages/js/event.js"></script>
+    <script src="pages/js/i18n.js"></script>
+
 </body>
 
 </html>

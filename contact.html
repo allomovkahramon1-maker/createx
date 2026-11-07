@@ -1,20 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- main ning iconka linki -->
+
+  <!-- Main icon links -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-  <!-- main ning iconka linki -->
+
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back,arrow_forward" />
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Createx</title>
+
+  <title data-key="contactPageTitle">Createx</title>
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
 
     <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -26,32 +32,76 @@
 
       <!-- Desktop links -->
       <div class="hidden lg:flex items-center gap-6 font-medium">
-        <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
-        <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
-        <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
-        <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
-        <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+
+        <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">
+          About Us
+        </a>
+
+        <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">
+          Courses
+        </a>
+
+        <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">
+          Events
+        </a>
+
+        <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">
+          Blog
+        </a>
+
+        <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">
+          Contacts
+        </a>
+
       </div>
+
+      <!-- Language select -->
+      <button>
+        <select name="select" id="languageSelect" class="outline-none cursor-pointer bg-[#FFDAD5] border-2">
+          <option value="uz">Uzb</option>
+          <option value="en">Eng</option>
+          <option value="ru">Rus</option>
+        </select>
+      </button>
 
       <!-- Desktop buttons -->
       <div class="hidden lg:flex items-center gap-4">
 
-        <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]">
+        <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]"
+          data-key="getConsultation">
+
           Get consultation
+
         </a>
+<<<<<<< HEAD
         <button id="btn" class="hover:text-[#ff3f22] font-bold">
           Log in / Register
         </button>
+=======
+
+>>>>>>> c48c3884d67da4312a3930a14215beb4034aabc4
       </div>
 
       <!-- Menu button -->
       <button id="menuBtn" class="lg:hidden text-3xl">
-        <span class="material-symbols-outlined hover:text-[#ff3f22]">menu</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+
+          <path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z" />
+
+        </svg>
+
       </button>
 
       <!-- Close button -->
       <button id="closeBtn" class="hidden lg:hidden text-3xl">
-        <span class="font-bold hover:text-[#ff3f22]">x</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+
+          <path d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z" />
+
+        </svg>
+
       </button>
 
     </nav>
@@ -61,122 +111,191 @@
 
       <div class="flex flex-col gap-5 font-medium">
 
-        <a href="about.html" class="hover:text-[#ff3f22]">About Us</a>
+        <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">
+          About Us
+        </a>
 
-        <a href="courses.html" class="hover:text-[#ff3f22]">Courses</a>
+        <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">
+          Courses
+        </a>
 
-        <a href="eventList.html" class="hover:text-[#ff3f22]">Events</a>
+        <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">
+          Events
+        </a>
 
-        <a href="blog.html" class="hover:text-[#ff3f22]">Blog</a>
+        <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">
+          Blog
+        </a>
 
-        <a href="contact.html" class="hover:text-[#ff3f22]">Contacts</a>
+        <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">
+          Contacts
+        </a>
 
-        <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]">
+        <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]"
+          data-key="getConsultation">
+
           Get consultation
+
         </a>
 
       </div>
+
     </div>
 
   </header>
+
+  <!-- MAIN -->
   <main>
 
+    <!-- CONTACT INFO SECTION -->
     <section class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 py-12 md:grid-cols-2 mt-16">
 
       <!-- Contact Info -->
       <div>
-        <p class="mb-2 text-xs font-semibold tracking-wide text-gray-800">
+
+        <p class="mb-2 text-xs font-semibold tracking-wide text-gray-800" data-key="contactInfo">
+
           CONTACT INFO
+
         </p>
 
-        <h2 class="mb-7 text-3xl font-bold text-[#252833]">
+        <h2 class="mb-7 text-3xl font-bold text-[#252833]" data-key="getInTouch">
+
           Get in touch
+
         </h2>
 
         <!-- Email -->
         <div class="mb-5 flex gap-3">
+
           <div>
-            <p class="text-xs text-gray-500">Talk to us:</p>
+
+            <p class="text-xs text-gray-500" data-key="talkToUs">
+              Talk to us:
+            </p>
+
             <a href="mailto:hello@createx.com" class="text-sm text-gray-800 hover:text-red-500">
+
               hello@createx.com
+
             </a>
+
           </div>
+
         </div>
 
         <!-- Phone -->
         <div class="mb-5 flex gap-3">
+
           <div>
-            <p class="text-xs text-gray-500">Call us:</p>
+
+            <p class="text-xs text-gray-500" data-key="callUs">
+              Call us:
+            </p>
+
             <a href="tel:+14055550128" class="text-sm text-gray-800 hover:text-red-500">
+
               (405) 555-0128
+
             </a>
+
           </div>
+
         </div>
 
         <!-- Address -->
         <div class="mb-8 flex gap-3">
+
           <div>
-            <p class="text-xs text-gray-500">Address:</p>
-            <p class="text-sm leading-6 text-gray-800">
-              2464 Royal Ln. Mesa, New Jersey 45463, USA
+
+            <p class="text-xs text-gray-500" data-key="address">
+              Address:
             </p>
+
+            <p class="text-sm leading-6 text-gray-800" data-key="contactAddress">
+
+              2464 Royal Ln. Mesa, New Jersey 45463, USA
+
+            </p>
+
           </div>
+
         </div>
+
         <!-- Social Media -->
-        <p class="mb-4 text-xs font-semibold text-gray-800">
+        <p class="mb-4 text-xs font-semibold text-gray-800" data-key="followUs">
+
           FOLLOW US:
+
         </p>
 
         <div class="flex items-center gap-6 text-lg font-bold text-gray-500">
+
           <a href="#" aria-label="Facebook" class="hover:text-red-500">
             <img class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Facebook.svg" alt="Facebook">
           </a>
+
           <a href="#" aria-label="Twitter" class="hover:text-red-500">
             <img class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Twitter.svg" alt="Twitter">
           </a>
+
           <a href="#" aria-label="YouTube" class="hover:text-red-500">
             <img class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/YouTube.svg" alt="YouTube">
           </a>
+
           <a href="#" aria-label="Telegram" class="hover:text-red-500">
-            <img class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/telegram.svg" alt="telegram">
+            <img class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/telegram.svg" alt="Telegram">
           </a>
+
           <a href="#" aria-label="Instagram" class="hover:text-red-500">
             <img class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Instagram.svg" alt="Instagram">
           </a>
+
           <a href="#" aria-label="LinkedIn" class="hover:text-red-500">
-            <img class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Linked-In.svg" alt="Linked-In">
+            <img class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Linked-In.svg" alt="LinkedIn">
           </a>
+
         </div>
+
       </div>
 
       <!-- Map -->
       <div class="overflow-hidden rounded-md shadow-sm">
+
         <iframe src="https://maps.google.com/maps?q=Lakewood%2C%20New%20Jersey&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          class="h-[350px] w-full md:h-[300px]" style="border: 0;" loading="lazy" allowfullscreen
-          title="Location map"></iframe>
+          class="h-[350px] w-full md:h-[300px]" style="border: 0;" loading="lazy" allowfullscreen title="Location map">
+        </iframe>
+
       </div>
 
     </section>
 
+    <!-- CONTACT FORM SECTION -->
     <section class="max-w-6xl mx-auto px-5 sm:px-6 py-10 sm:py-16">
 
       <div class="flex flex-col md:flex-row items-center justify-between gap-10 lg:gap-12">
 
         <!-- Image -->
         <div class="w-full md:w-5/12 flex justify-center">
+
           <img src="/pages/pages/image/illustration (2).png" alt="Contact illustration"
             class="w-full max-w-sm md:max-w-full object-contain" />
+
         </div>
 
         <!-- Contact Form -->
         <div class="w-full md:w-7/12">
 
-          <p class="mb-2 text-xs font-bold tracking-widest text-gray-600">
+          <p class="mb-2 text-xs font-bold tracking-widest text-gray-600" data-key="anyQuestions">
+
             ANY QUESTIONS?
+
           </p>
 
-          <h1 class="mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+          <h1 class="mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900" data-key="dropUsALine">
+
             Drop us a line
+
           </h1>
 
           <form class="space-y-5">
@@ -184,22 +303,22 @@
             <!-- Inputs -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
 
-              <input required type="text" placeholder="Your first name"
+              <input required type="text" placeholder="Your first name" data-key-placeholder="firstName"
                 class="w-full min-w-0 rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
 
-              <input required type="text" placeholder="Your last name"
+              <input required type="text" placeholder="Your last name" data-key-placeholder="lastName"
                 class="w-full min-w-0 rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
 
-              <input required type="email" placeholder="Your working email"
+              <input required type="email" placeholder="Your working email" data-key-placeholder="workingEmail"
                 class="w-full min-w-0 rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
 
-              <input type="tel" placeholder="Your phone number"
+              <input type="tel" placeholder="Your phone number" data-key-placeholder="phoneNumber"
                 class="w-full min-w-0 rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100" />
 
             </div>
 
             <!-- Textarea -->
-            <textarea required rows="5" placeholder="Your message"
+            <textarea required rows="5" placeholder="Your message" data-key-placeholder="yourMessage"
               class="w-full rounded-lg border border-gray-200 px-4 py-3 text-sm outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-100"></textarea>
 
             <!-- Checkbox and Button -->
@@ -209,130 +328,275 @@
 
                 <input required type="checkbox" class="mt-1 h-4 w-4 shrink-0 accent-red-500" />
 
-                <span>
+                <span data-key="newsletterAgreement">
+
                   I agree to receive communications from Createx Online School
+
                 </span>
 
               </label>
 
               <button type="submit"
-                class="w-full sm:w-auto h-12 rounded-lg bg-orange-500 px-10 sm:px-14 text-sm font-semibold text-white transition hover:bg-orange-600">
+                class="w-full sm:w-auto h-12 rounded-lg bg-orange-500 px-10 sm:px-14 text-sm font-semibold text-white transition hover:bg-orange-600"
+                data-key="sendMessage">
+
                 Subscribe
+
               </button>
 
             </div>
 
           </form>
+
         </div>
 
       </div>
 
     </section>
+
   </main>
-  <!-- footer qismi -->
+
+  <!-- FOOTER -->
   <footer class="bg-[#1f2230] text-white">
+
     <div class="mx-auto max-w-[1200px] px-6 py-10 lg:py-14">
+
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-8 lg:gap-6">
 
+        <!-- Footer logo and description -->
         <div class="sm:col-span-2 md:col-span-1">
+
           <a class="text-2xl font-bold tracking-tight inline-block" href="#">
+
             <img alt="Createx" src="/pages/pages/image/logo.png" />
+
           </a>
-          <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400">
+
+          <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400"
+            data-key="footerDescription">
+
             Createx Online School is a leader in online studying. We have lots of courses from different
             programs and experienced teachers.
+
           </p>
+
+          <!-- Social links -->
           <div class="mt-6 lg:mt-7 flex items-center gap-4">
+
             <a class="transition hover:scale-110" href="#">
               <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Facebook.svg" />
             </a>
+
             <a class="transition hover:scale-110" href="#">
               <img alt="Twitter" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Twitter.svg" />
             </a>
+
             <a class="transition hover:scale-110" href="#">
               <img alt="YouTube" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/YouTube.svg" />
             </a>
+
             <a class="transition hover:scale-110" href="#">
               <img alt="Telegram" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/telegram.svg" />
             </a>
+
             <a class="transition hover:scale-110" href="#">
               <img alt="Instagram" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Instagram.svg" />
             </a>
+
             <a class="transition hover:scale-110" href="#">
               <img alt="LinkedIn" class="h-5 w-5 transition hover:opacity-70" src="/pages/pages/image/Linked-In.svg" />
             </a>
+
           </div>
+
         </div>
 
+        <!-- Site Map -->
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">Site Map</h3>
+
+          <h3 class="text-sm font-bold uppercase tracking-wide" data-key="siteMap">
+
+            Site Map
+
+          </h3>
+
           <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
-            <li><a class="transition hover:text-orange-500" href="about.html">About Us</a></li>
-            <li><a class="transition hover:text-orange-500" href="courses.html">Courses</a></li>
-            <li><a class="transition hover:text-orange-500" href="event.html">Events</a></li>
-            <li><a class="transition hover:text-orange-500" href="blog.html">Blog</a></li>
-            <li><a class="transition hover:text-orange-500" href="contact.html">Contacts</a></li>
+
+            <li>
+              <a class="transition hover:text-orange-500" href="about.html" data-key="about">
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a class="transition hover:text-orange-500" href="courses.html" data-key="courses">
+                Courses
+              </a>
+            </li>
+
+            <li>
+              <a class="transition hover:text-orange-500" href="event.html" data-key="events">
+                Events
+              </a>
+            </li>
+
+            <li>
+              <a class="transition hover:text-orange-500" href="blog.html" data-key="blog">
+                Blog
+              </a>
+            </li>
+
+            <li>
+              <a class="transition hover:text-orange-500" href="contact.html" data-key="contacts">
+                Contacts
+              </a>
+            </li>
+
           </ul>
+
         </div>
 
+        <!-- Courses -->
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">Courses</h3>
+
+          <h3 class="text-sm font-bold uppercase tracking-wide" data-key="courses">
+
+            Courses
+
+          </h3>
+
           <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
-            <li><a class="transition hover:text-orange-500" href="#">Marketing</a></li>
-            <li><a class="transition hover:text-orange-500" href="#">Management</a></li>
-            <li><a class="transition hover:text-orange-500" href="#">HR Recruiting</a></li>
-            <li><a class="transition hover:text-orange-500" href="#">Design</a></li>
-            <li><a class="transition hover:text-orange-500" href="#">Development</a></li>
+
+            <li>
+              <a class="transition hover:text-orange-500" href="#" data-key="marketing">
+                Marketing
+              </a>
+            </li>
+
+            <li>
+              <a class="transition hover:text-orange-500" href="#" data-key="management">
+                Management
+              </a>
+            </li>
+
+            <li>
+              <a class="transition hover:text-orange-500" href="#" data-key="hrRecruiting">
+                HR Recruiting
+              </a>
+            </li>
+
+            <li>
+              <a class="transition hover:text-orange-500" href="#" data-key="design">
+                Design
+              </a>
+            </li>
+
+            <li>
+              <a class="transition hover:text-orange-500" href="#" data-key="development">
+                Development
+              </a>
+            </li>
+
           </ul>
+
         </div>
 
+        <!-- Contact Us -->
         <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">Contact Us</h3>
+
+          <h3 class="text-sm font-bold uppercase tracking-wide" data-key="contactUs">
+
+            Contact Us
+
+          </h3>
+
           <div class="mt-4 lg:mt-6 space-y-3 lg:space-y-4 text-sm text-gray-400">
+
             <a class="flex items-center transition hover:text-white" href="tel:+14055550128">
+
               <span>(405) 555-0128</span>
+
             </a>
+
             <a class="flex items-center transition hover:text-white" href="mailto:hello@createx.com">
+
               <span>hello@createx.com</span>
+
             </a>
+
           </div>
+
         </div>
 
+        <!-- Newsletter -->
         <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
-          <h3 class="text-sm font-bold uppercase tracking-wide">Sign up to our newsletter</h3>
+
+          <h3 class="text-sm font-bold uppercase tracking-wide" data-key="footerNewsletterTitle">
+
+            Sign up to our newsletter
+
+          </h3>
+
           <form class="mt-4 lg:mt-6 max-w-md lg:max-w-none">
+
             <div
               class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
+
               <input
                 class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
-                placeholder="Email address" type="email" />
-              <button class="px-3 text-lg text-gray-400 transition  hover:text-white" type="submit">
-                <span class="material-symbols-outlined">arrow_forward</span>
+                placeholder="Email address" data-key-placeholder="emailAddress" type="email" />
+
+              <button class="px-3 text-lg text-gray-400 transition hover:text-white" type="submit">
+
+                <span class="material-symbols-outlined">
+                  arrow_forward
+                </span>
+
               </button>
+
             </div>
-            <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500">
-              *Subscribe to our newsletter to receive communications and upcoming events from Createx
+
+            <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500" data-key="newsletterDescription">
+
+              Subscribe to our newsletter to receive communications and upcoming events from Createx
               School.
+
             </p>
+
           </form>
+
         </div>
 
       </div>
+
     </div>
 
+    <!-- Copyright -->
     <div class="border-t border-white/10 bg-[#292c3a]">
+
       <div
         class="mx-auto flex flex-col sm:flex-row gap-3 text-center sm:text-left max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
-        <p>© All rights reserved. Made with by Createx Studio</p>
-        <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#">
+
+        <p data-key="copyright">
+          © All rights reserved. Made with by Createx Studio
+        </p>
+
+        <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#" data-key="goToTop">
+
           Go to top
+
         </a>
+
       </div>
+
     </div>
+
   </footer>
 
   <script src="pages/js/contact.js"></script>
+  <script src="pages/js/i18n.js"></script>
+
 </body>
 
 </html>
