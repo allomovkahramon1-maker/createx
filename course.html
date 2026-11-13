@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back,arrow_forward" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Createx</title>
+</head>
+
+<body>
+
+    <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
+    
+        <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
+            </a>
+    
+            <!-- Desktop links -->
+            <div class="hidden lg:flex items-center gap-6 font-medium">
+                <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
+                <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
+                <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
+                <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
+                <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
+            </div>
+    
+            <button>
+                <select name="select" id="languageSelect" class="outline-none cursor-pointer bg-[#FFDAD5] border-2">
+                    <option value="uz">Uzb</option>
+                    <option value="en">Eng</option>
+                    <option value="ru">Rus</option>
+                </select>
+            </button>
+    
+            <!--  -->
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]"
+                    data-key="getConsultation">
+                    Get consultation
+                </a>
+            </div>
+    
+            <!-- Menu button -->
+            <button id="menuBtn" class="lg:hidden text-3xl">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+                    <path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z" />
+                </svg>
+            </button>
+    
+            <!-- Close button -->
+            <button id="closeBtn" class="hidden lg:hidden text-3xl">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+                    <path
+                        d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z" />
+                </svg>
+            </button>
+    
+        </nav>
+    
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
+            <div class="flex flex-col gap-5 font-medium">
+                <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
+                <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
+                <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
+                <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
+                <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
+    
+                <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]"
+                    data-key="getConsultation">
+                    Get consultation
+                </a>
+            </div>
+        </div>
+    
+    </header>
+
+    <main>
+
+        <!-- section 1 -->
+        <section class="bg-[#FFDAD5]">
+            <div class="max-w-6xl mx-auto px-5 mt-10">
+                <div class="flex flex-col items-center text-center py-14 sm:py-20 lg:py-[90px] gap-4">
+
+                    <h6 class="text-red-500 text-xl sm:text-2xl lg:text-[30px]" data-key="course">
+                        course
+                    </h6>
+
+                    <h1 class="max-w-[900px] font-bold text-2xl sm:text-3xl lg:text-[35px] leading-tight"
+                        data-key="courseTitle">
+                        User Experience. Principles of Human-Centered Design
+                    </h1>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- section 2 -->
+        <section class="max-w-6xl mx-auto px-5 py-10 sm:py-14">
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-10 lg:gap-16">
+
+                <div class="w-full lg:flex-1">
+                    <div class="flex flex-col gap-7 sm:gap-10">
+
+                        <h1 class="text-3xl sm:text-4xl lg:text-[46px] font-bold" data-key="aboutCourse">
+                            About the course
+                        </h1>
+
+                        <p class="text-sm sm:text-base max-w-[500px] leading-relaxed" data-key="aboutCourseDescription">
+                            Bibendum vulputate adipiscing venenatis at est, a eu tincidunt.
+                            Leo aenean congue in sagittis, felis maecenas amet
+                            varius at. Pellentesque euismod in faucibus at elementum.
+                            Tellus maecenas libero est tempus sit cras at malesuada diam.
+                            Consequat senectus dictumst non hac dignissim montes, pretium,
+                            egestas molestie. Sed magna aliquet ornare nibh vel
+                            lectus diam eget pretium. Lorem risus nunc tincidunt tortor,
+                            mi nulla pellentesque
+                        </p>
+
+                        <h1 class="text-3xl sm:text-4xl lg:text-[46px] font-bold" data-key="youWillLearn">
+                            You will learn:
+                        </h1>
+
+                        <ul class="space-y-4 text-sm text-gray-600">
+
+                            <li class="flex items-start gap-3">
+                                <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                                <span data-key="learnPoint1">
+                                    A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                                </span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                                <span data-key="learnPoint2">
+                                    Vulputate placerat amet pulvinar lorem nisl.
+                                </span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                                <span data-key="learnPoint3">
+                                    Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
+                                </span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                                <span data-key="learnPoint4">
+                                    Etiam duis lobortis in fames ultrices commodo nibh.
+                                </span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                                <span data-key="learnPoint5">
+                                    Tincidunt sagittis neque sem ac eget.
+                                </span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                                <span data-key="learnPoint6">
+                                    Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
+                                </span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-[360px] shrink-0">
+
+                    <div class="w-full border border-gray-200 rounded-sm shadow-xl p-5 sm:p-[22px] bg-white">
+
+                        <div class="mb-6">
+                            <h6 class="text-[11px] font-bold text-[#1E212C] mb-1" data-key="dates">
+                                DATES
+                            </h6>
+
+                            <h2 class="text-[17px] font-medium text-[#FF3F3A] mb-1" data-key="courseDates">
+                                Sept 7 – Nov 2
+                            </h2>
+
+                            <p class="text-[12px] leading-5 text-gray-500" data-key="datesDescription">
+                                Metus turpis sit lorem lacus, in elit tellus lacus.
+                            </p>
+                        </div>
+
+                        <div class="mb-6">
+                            <h6 class="text-[11px] font-bold text-[#1E212C] mb-1" data-key="duration">
+                                DURATION
+                            </h6>
+
+                            <h2 class="text-[17px] font-medium text-[#FF3F3A] mb-1" data-key="courseDuration">
+                                2 months – 8 lessons
+                            </h2>
+
+                            <p class="text-[12px] leading-5 text-gray-500" data-key="durationDescription">
+                                Rhoncus pellentesque auctor auctor orci vulputate faucibus quis ut.
+                            </p>
+                        </div>
+
+                        <div class="mb-7">
+                            <h6 class="text-[11px] font-bold text-[#1E212C] mb-1" data-key="price">
+                                PRICE
+                            </h6>
+
+                            <h2 class="text-[17px] font-medium text-[#FF3F3A] mb-1" data-key="coursePrice">
+                                $120 per month
+                            </h2>
+
+                            <p class="text-[12px] leading-5 text-gray-500" data-key="priceDescription">
+                                Nulla sem adipiscing adipiscing felis fringilla.
+                                Adipiscing mauris quam ac elit tristique dis.
+                            </p>
+                        </div>
+
+                        <button class="bg-[#ffc5b8] py-3 px-20 rounded-lg hover:bg-[#ff3f22] hover:text-white">
+                            Join the course
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section 3 -->
+        <section class="max-w-6xl mx-auto px-5 my-10 sm:my-[50px]">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 lg:gap-14">
+
+                <div class="w-full md:w-5/12 flex justify-center">
+                    <div class="w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[400px]">
+                        <img src="/pages/pages/image/curator-image.png" alt="curator-image"
+                            class="w-full object-contain">
+                    </div>
+                </div>
+
+                <div class="w-full md:w-7/12">
+                    <div class="flex flex-col gap-4">
+
+                        <h6 class="text-sm sm:text-base" data-key="courseCurator">
+                            Course curator
+                        </h6>
+
+                        <h1 class="font-bold text-3xl sm:text-4xl lg:text-[46px]">
+                            Cody Fisher
+                        </h1>
+
+                        <p class="text-[#787A80] text-sm sm:text-base" data-key="curatorJob">
+                            Senior UX designer in IT Product Company
+                        </p>
+
+                        <div class="flex items-center gap-4">
+                            <img src="/pages/pages/image/Star.svg" alt="Star" class="w-5 h-5">
+                            <span data-key="curatorRating">4.9 rate</span>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <img src="/pages/pages/image/Play.svg" alt="Play" class="w-5 h-5">
+                            <span data-key="curatorCourses">4 courses</span>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <img src="/pages/pages/image/Profile.svg" alt="Profile" class="w-5 h-5">
+                            <span data-key="curatorStudents">350 students</span>
+                        </div>
+
+                        <p class="max-w-[600px] text-sm sm:text-base leading-relaxed text-gray-700"
+                            data-key="curatorDescription">
+                            Mattis adipiscing aliquam eu proin metus a iaculis faucibus.
+                            Tempus curabitur venenatis, vulputate venenatis fermentum
+                            ante. Nisl, amet id semper semper quis commodo, consequat.
+                            Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur
+                            vel diam. Sem vulputate molestie laoreet at massa sed pharetra.
+                            Ac commodo platea id habitasse proin. Nullam sit nec
+                            ipsum posuere non. Nam vel aliquam tristique sollicitudin
+                            interdum quam.
+                        </p>
+
+                        <div class="flex items-center gap-5 mt-2">
+                            <a href="#">
+                                <img src="/pages/pages/image/Facebook.svg" alt="Facebook" class="w-5 h-5">
+                            </a>
+                            <a href="#">
+                                <img src="/pages/pages/image/Facebook.svg" alt="Facebook" class="w-5 h-5">
+                            </a>
+                            <a href="#">
+                                <img src="/pages/pages/image/Facebook.svg" alt="Facebook" class="w-5 h-5">
+                            </a>
+                            <a href="#">
+                                <img src="/pages/pages/image/Facebook.svg" alt="Facebook" class="w-5 h-5">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 4 -->
+        <section class="py-12 px-5 my-[50px]">
+            <div class="max-w-6xl mx-auto">
+
+                <div class="text-center mb-14">
+                    <h6 class="text-[16px] text-[#1E212C] mb-2" data-key="mainSteps">
+                        MAIN STEPS
+                    </h6>
+                    <h1 class="text-3xl md:text-[34px] font-bold text-[#1E212C]" data-key="onlineLearningProcess">
+                        Online learning process
+                    </h1>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <div class="group cursor-pointer">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="flex items-center justify-center">
+                                <span class="text-[34px] font-bold text-[#D7DADD] group-hover:text-[#FC4929]">
+                                    01
+                                </span>
+                            </span>
+                            <div class="h-px border-t border-dashed border-gray-300 flex-1"></div>
+                        </div>
+
+                        <h3 class="text-sm font-bold text-[#1E212C] mb-2" data-key="step1Title">
+                            Watching online video lectures
+                        </h3>
+                        <p class="text-xs leading-[19px] text-gray-500" data-key="step1Description">
+                            Culpa nostrud commodo ea consequat aliquam reprehenderit. Veniam velit nostrud aliquip sunt.
+                        </p>
+                    </div>
+
+                    <div class="group cursor-pointer">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="flex items-center justify-center">
+                                <span class="text-[34px] font-bold text-[#D7DADD] group-hover:text-[#FC4929]">
+                                    02
+                                </span>
+                            </span>
+                            <div class="h-px border-t border-dashed border-gray-300 flex-1"></div>
+                        </div>
+
+                        <h3 class="text-sm font-bold text-[#1E212C] mb-2" data-key="step2Title">
+                            Passing test
+                        </h3>
+                        <p class="text-xs leading-[19px] text-gray-500" data-key="step2Description">
+                            Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad
+                            tempor est ea.
+                        </p>
+                    </div>
+
+                    <div class="group cursor-pointer">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="flex items-center justify-center">
+                                <span class="text-[34px] font-bold text-[#D7DADD] group-hover:text-[#FC4929]">
+                                    03
+                                </span>
+                            </span>
+                            <div class="h-px border-t border-dashed border-gray-300 flex-1"></div>
+                        </div>
+
+                        <h3 class="text-sm font-bold text-[#1E212C] mb-2" data-key="step3Title">
+                            Curator’s feedback
+                        </h3>
+                        <p class="text-xs leading-[19px] text-gray-500" data-key="step3Description">
+                            Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad
+                            deserunt.
+                        </p>
+                    </div>
+
+                    <div class="group cursor-pointer">
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="flex items-center justify-center">
+                                <span class="text-[34px] font-bold text-[#D7DADD] group-hover:text-[#FC4929]">
+                                    04
+                                </span>
+                            </span>
+                        </div>
+
+                        <h3 class="text-sm font-bold text-[#1E212C] mb-2" data-key="step4Title">
+                            Corrections if needed
+                        </h3>
+                        <p class="text-xs leading-[19px] text-gray-500" data-key="step4Description">
+                            Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident
+                            ea ad.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- section 5 -->
+        <section class="max-w-6xl mx-auto px-5 py-10">
+            <div
+                class="relative overflow-hidden rounded-sm bg-gradient-to-r from-[#FFD9D8] to-[#FFDDD0] px-6 py-8 md:px-11 md:py-9">
+
+                <div class="relative z-10 mb-7 flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
+
+                    <h2 class="text-xl font-bold sm:text-2xl" data-key="earlyBirdDiscount">
+                        20% discount for early birds!
+                    </h2>
+
+                    <div class="flex gap-5 sm:gap-6">
+                        <div class="text-center">
+                            <p id="days" class="font-bold">06</p>
+                            <span class="text-[10px]" data-key="days">Days</span>
+                        </div>
+                        <div class="text-center">
+                            <p id="hours" class="font-bold">18</p>
+                            <span class="text-[10px]" data-key="hours">Hours</span>
+                        </div>
+                        <div class="text-center">
+                            <p id="minutes" class="font-bold">24</p>
+                            <span class="text-[10px]" data-key="minutes">Mins</span>
+                        </div>
+                        <div class="text-center">
+                            <p id="seconds" class="font-bold">12</p>
+                            <span class="text-[10px]" data-key="seconds">Sec</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="courseForm"
+                    class="relative z-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:items-end">
+
+                    <div>
+                        <label for="fullName" class="mb-1.5 block text-[11px]" data-key="fullName">
+                            Full name
+                        </label>
+                        <input id="fullName" type="text" placeholder="Your full name"
+                            data-key-placeholder="yourFullName" required
+                            class="h-8 w-full rounded-sm border border-[#D7DADD] bg-white px-3 text-[11px] outline-none focus:border-[#FF3F24]">
+                    </div>
+
+                    <div>
+                        <label for="email" class="mb-1.5 block text-[11px]" data-key="email">
+                            Email
+                        </label>
+                        <input id="email" type="email" placeholder="Your working email"
+                            data-key-placeholder="workingEmail" required
+                            class="h-8 w-full rounded-sm border border-[#D7DADD] bg-white px-3 text-[11px] outline-none focus:border-[#FF3F24]">
+                    </div>
+
+                    <div>
+                        <label for="phone" class="mb-1.5 block text-[11px]" data-key="phone">
+                            Phone
+                        </label>
+                        <input id="phone" type="tel" placeholder="Your phone number"
+                            data-key-placeholder="yourPhoneNumber" required
+                            class="h-8 w-full rounded-sm border border-[#D7DADD] bg-white px-3 text-[11px] outline-none focus:border-[#FF3F24]">
+                    </div>
+
+                    <button type="submit"
+                        class="h-8 rounded-sm bg-[#FF3F24] px-5 text-[11px] font-bold text-white transition hover:bg-[ffc5b8]"
+                        data-key="joinCourse">
+                        Join the course
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- section 6 -->
+        <section class="max-w-6xl mx-auto px-5 my-10 sm:my-[50px]">
+            <div class="flex flex-col md:flex-row justify-between gap-8 lg:gap-12">
+
+                <div class="w-full md:w-5/12">
+                    <h6 class="font-lato text-base sm:text-[20px] mb-4 sm:mb-6" data-key="forWhom">
+                        For whom?
+                    </h6>
+
+                    <h1 class="font-bold text-3xl sm:text-4xl lg:text-[46px] leading-tight" data-key="whoWillBenefit">
+                        Who will benefit from the course:
+                    </h1>
+                </div>
+
+                <div class="w-full md:w-7/12">
+                    <ul class="space-y-4 text-sm text-gray-600">
+
+                        <li class="flex items-start gap-3">
+                            <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                            <span data-key="learnPoint1">
+                                A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                            <span data-key="learnPoint2">
+                                Vulputate placerat amet pulvinar lorem nisl.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                            <span data-key="learnPoint3">
+                                Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                            <span data-key="learnPoint4">
+                                Etiam duis lobortis in fames ultrices commodo nibh.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                            <span data-key="learnPoint5">
+                                Tincidunt sagittis neque sem ac eget.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img alt="check" src="/pages/pages/image/check.png" class="w-5 h-5 shrink-0" />
+                            <span data-key="learnPoint6">
+                                Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section 7 -->
+        <!--  -->
+
+        <!--  -->
+        <section class="max-w-6xl mx-auto px-5 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <div>
+                    <h6 class="text-xs font-semibold tracking-wide mb-2" data-key="courseProgram">
+                        COURSE PROGRAM
+                    </h6>
+
+                    <h1 class="text-3xl md:text-[36px] font-bold text-[#1E212C] mb-10" data-key="whatWillYouLearn">
+                        What will you learn
+                    </h1>
+
+                    <div class="space-y-5" id="lessons">
+
+                        <!-- LESSON 1 -->
+                        <div class="lesson">
+                            <a href="#" class="lesson-btn flex items-center gap-4 text-left w-full">
+                                <span class="icon text-[#FF3F3A] text-2xl w-3">−</span>
+                                <span class="text-sm">
+                                    <span class="text-[#FF3F3A]" data-key="lesson1">Lesson 1.</span>
+                                    <span class="font-semibold text-[#1E212C] ml-1" data-key="lessonTitle1">
+                                        Aliquet lectus urna viverra in odio.
+                                    </span>
+                                </span>
+                            </a>
+                            <div class="lesson-content ml-7 mt-3 text-xs leading-[22px] text-[#424551]"
+                                data-key="lessonDescription1">
+                                Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim,
+                                ornare.
+                                Lacus facilisi curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed.
+                                Curabitur faucibus porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc orci
+                                vitae
+                                accumsan id.
+                            </div>
+                        </div>
+
+                        <!-- LESSON 2 -->
+                        <div class="lesson">
+                            <a href="#" class="lesson-btn flex items-center gap-4 text-left w-full">
+                                <span class="icon text-[#FF3F3A] text-2xl w-3">+</span>
+                                <span class="text-sm">
+                                    <span class="text-[#FF3F3A]" data-key="lesson2">Lesson 2.</span>
+                                    <span class="font-semibold text-[#1E212C] ml-1" data-key="lessonTitle2">
+                                        Orci commodo, viverra orci mollis ut euismod.
+                                    </span>
+                                </span>
+                            </a>
+                            <div class="lesson-content hidden ml-7 mt-3 text-xs leading-[22px] text-[#424551]"
+                                data-key="lessonDescription2">
+                                Learn the essential concepts and practical skills of this course.
+                            </div>
+                        </div>
+
+                        <!-- LESSON 3 -->
+                        <div class="lesson">
+                            <a href="#" class="lesson-btn flex items-center gap-4 text-left w-full">
+                                <span class="icon text-[#FF3F3A] text-2xl w-3">+</span>
+                                <span class="text-sm">
+                                    <span class="text-[#FF3F3A]" data-key="lesson3">Lesson 3.</span>
+                                    <span class="font-semibold text-[#1E212C] ml-1" data-key="lessonTitle3">
+                                        Sagittis vitae facilisi rutrum amet mauris quisque vel.
+                                    </span>
+                                </span>
+                            </a>
+                            <div class="lesson-content hidden ml-7 mt-3 text-xs leading-[22px] text-[#424551]"
+                                data-key="lessonDescription3">
+                                Explore important topics and develop your knowledge through practical examples.
+                            </div>
+                        </div>
+
+                        <!-- LESSON 4 -->
+                        <div class="lesson">
+                            <a href="#" class="lesson-btn flex items-center gap-4 text-left w-full">
+                                <span class="icon text-[#FF3F3A] text-2xl w-3">+</span>
+                                <span class="text-sm">
+                                    <span class="text-[#FF3F3A]" data-key="lesson4">Lesson 4.</span>
+                                    <span class="font-semibold text-[#1E212C] ml-1" data-key="lessonTitle4">
+                                        In id dolor quis nunc, urna hendrerit pharetra.
+                                    </span>
+                                </span>
+                            </a>
+                            <div class="lesson-content hidden ml-7 mt-3 text-xs leading-[22px] text-[#424551]"
+                                data-key="lessonDescription4">
+                                Practice what you learn and strengthen your understanding of the subject.
+                            </div>
+                        </div>
+
+                        <!-- LESSON 5 -->
+                        <div class="lesson">
+                            <a href="#" class="lesson-btn flex items-center gap-4 text-left w-full">
+                                <span class="icon text-[#FF3F3A] text-2xl w-3">+</span>
+                                <span class="text-sm">
+                                    <span class="text-[#FF3F3A]" data-key="lesson5">Lesson 5.</span>
+                                    <span class="font-semibold text-[#1E212C] ml-1" data-key="lessonTitle5">
+                                        Est, ut tempus id rutrum facilisi.
+                                    </span>
+                                </span>
+                            </a>
+                            <div class="lesson-content hidden ml-7 mt-3 text-xs leading-[22px] text-[#424551]"
+                                data-key="lessonDescription5">
+                                Discover useful methods and apply them to real-world tasks.
+                            </div>
+                        </div>
+
+                        <!-- LESSON 6 -->
+                        <div class="lesson">
+                            <a href="#" class="lesson-btn flex items-center gap-4 text-left w-full">
+                                <span class="icon text-[#FF3F3A] text-2xl w-3">+</span>
+                                <span class="text-sm">
+                                    <span class="text-[#FF3F3A]" data-key="lesson6">Lesson 6.</span>
+                                    <span class="font-semibold text-[#1E212C] ml-1" data-key="lessonTitle6">
+                                        Amet nec in pellentesque.
+                                    </span>
+                                </span>
+                            </a>
+                            <div class="lesson-content hidden ml-7 mt-3 text-xs leading-[22px] text-[#424551]"
+                                data-key="lessonDescription6">
+                                Improve your skills with additional course exercises and examples.
+                            </div>
+                        </div>
+
+                        <!-- LESSON 7 -->
+                        <div class="lesson">
+                            <a href="#" class="lesson-btn flex items-center gap-4 text-left w-full">
+                                <span class="icon text-[#FF3F3A] text-2xl w-3">+</span>
+                                <span class="text-sm">
+                                    <span class="text-[#FF3F3A]" data-key="lesson7">Lesson 7.</span>
+                                    <span class="font-semibold text-[#1E212C] ml-1" data-key="lessonTitle7">
+                                        Massa vel arcu mauris, vel lacinia mattis quis.
+                                    </span>
+                                </span>
+                            </a>
+                            <div class="lesson-content hidden ml-7 mt-3 text-xs leading-[22px] text-[#424551]"
+                                data-key="lessonDescription7">
+                                Learn how to use your new knowledge in practical situations.
+                            </div>
+                        </div>
+
+                        <!-- LESSON 8 -->
+                        <div class="lesson">
+                            <a href="#" class="lesson-btn flex items-center gap-4 text-left w-full">
+                                <span class="icon text-[#FF3F3A] text-2xl w-3">+</span>
+                                <span class="text-sm">
+                                    <span class="text-[#FF3F3A]" data-key="lesson8">Lesson 8.</span>
+                                    <span class="font-semibold text-[#1E212C] ml-1" data-key="lessonTitle8">
+                                        Neque, cursus sapien nullam id.
+                                    </span>
+                                </span>
+                            </a>
+                            <div class="lesson-content hidden ml-7 mt-3 text-xs leading-[22px] text-[#424551]"
+                                data-key="lessonDescription8">
+                                Review the course material and consolidate your new skills.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <img src="/pages/pages/image/illustration.png" alt="Course program illustration"
+                        class="w-full max-w-[450px] object-contain">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section 8 -->
+        <section class="bg-[#F0F1F3] py-10 sm:py-[50px]">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+                <div class="flex flex-col items-center gap-4 sm:gap-8 pb-8 sm:pb-[50px] text-center">
+                    <h6 class="font-bold text-[16px] sm:text-[20px]" data-key="testimonials">
+                        TESTIMONIALS
+                    </h6>
+                    <h1 class="font-bold text-[28px] sm:text-[36px] lg:text-[46px]" data-key="whatStudentsSay">
+                        What our students say
+                    </h1>
+                </div>
+
+                <div class="bg-white py-8 sm:py-12 lg:py-20">
+                    <swiper-container class="mySwiper" pagination="false" pagination-clickable="true" navigation="true"
+                        space-between="30" centered-slides="true" loop="true">
+
+                        <!-- Swiper 1 -->
+                        <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
+                            <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
+
+                                <div class="w-full sm:w-auto flex justify-center sm:block">
+                                    <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg"
+                                        alt="braces image">
+                                </div>
+
+                                <div class="flex flex-col gap-6">
+                                    <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed"
+                                        data-key="studentReview">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                                        amet lectus quam viverra mus lobortis fermentum amet,
+                                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
+                                        ornare turpis quis non. Congue tortor in euismod vulputate
+                                        etiam eros. Pulvinar neque pharetra arcu diam maecenas
+                                        diam integer in.
+                                    </p>
+
+                                    <div class="flex items-center gap-4">
+                                        <img class="w-[45px] sm:w-[50px] rounded-full"
+                                            src="/pages/pages/image/image (38).png" alt="student image">
+
+                                        <div>
+                                            <h1 class="font-bold text-[16px] sm:text-[20px]">
+                                                Eleanor Pena
+                                            </h1>
+
+                                            <p class="text-sm sm:text-base">
+                                                Position, Course
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+
+                        <!-- Swiper 2 -->
+                        <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
+                            <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
+
+                                <div class="w-full sm:w-auto flex justify-center sm:block">
+                                    <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg"
+                                        alt="braces image">
+                                </div>
+
+                                <div class="flex flex-col gap-6">
+
+                                    <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                                        amet lectus quam viverra mus lobortis fermentum amet,
+                                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
+                                        ornare turpis quis non. Congue tortor in euismod vulputate
+                                        etiam eros. Pulvinar neque pharetra arcu diam maecenas
+                                        diam integer in.
+                                    </p>
+
+                                    <div class="flex items-center gap-4">
+                                        <img class="w-[45px] sm:w-[50px] rounded-full"
+                                            src="/pages/pages/image/image (38).png" alt="student image">
+
+                                        <div>
+                                            <h1 class="font-bold text-[16px] sm:text-[20px]">
+                                                Eleanor Pena
+                                            </h1>
+
+                                            <p class="text-sm sm:text-base">
+                                                Position, Course
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </swiper-slide>
+
+                        <!-- Swiper 3 -->
+                        <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
+                            <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
+
+                                <div class="w-full sm:w-auto flex justify-center sm:block">
+                                    <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg"
+                                        alt="braces image">
+                                </div>
+
+                                <div class="flex flex-col gap-6">
+
+                                    <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
+                                        amet lectus quam viverra mus lobortis fermentum amet,
+                                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
+                                        ornare turpis quis non. Congue tortor in euismod vulputate
+                                        etiam eros. Pulvinar neque pharetra arcu diam maecenas
+                                        diam integer in.
+                                    </p>
+
+                                    <div class="flex items-center gap-4">
+                                        <img class="w-[45px] sm:w-[50px] rounded-full"
+                                            src="/pages/pages/image/image (38).png" alt="student image">
+
+                                        <div>
+                                            <h1 class="font-bold text-[16px] sm:text-[20px]">
+                                                Eleanor Pena
+                                            </h1>
+
+                                            <p class="text-sm sm:text-base">
+                                                Position, Course
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </swiper-slide>
+
+                    </swiper-container>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 9 -->
+        <section class="bg-[#F4F5F6] py-16">
+            <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                <div class="flex justify-center">
+                    <img src="/pages/pages/image/illustration.png" alt="Register for the course"
+                        class="w-full max-w-[400px] object-contain">
+                </div>
+
+                <div class="w-full max-w-[400px] mx-auto">
+
+                    <h6 class="text-xs font-semibold tracking-wide mb-3" data-key="leaveRequestDiscount">
+                        LEAVE A REQUEST NOW AND GET 20% OFF!
+                    </h6>
+
+                    <h1 class="text-3xl md:text-[36px] font-bold text-[#1E212C] leading-tight mb-8"
+                        data-key="registerForCourse">
+                        Register for the course
+                    </h1>
+
+                    <form id="registerForm" class="flex flex-col gap-5">
+
+                        <div>
+                            <label class="block text-xs text-[#424551] mb-2" data-key="fullName">
+                                Full Name
+                            </label>
+                            <input id="fullName" type="text" placeholder="Your full name"
+                                data-key-placeholder="yourFullName" required
+                                class="w-full h-[38px] bg-white border border-[#D7DADD] rounded-sm px-3 text-xs outline-none focus:border-[#FF3F3A] transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-[#424551] mb-2" data-key="email">
+                                Email
+                            </label>
+                            <input id="email" type="email" placeholder="Your working email"
+                                data-key-placeholder="workingEmail" required
+                                class="w-full h-[38px] bg-white border border-[#D7DADD] rounded-sm px-3 text-xs outline-none focus:border-[#FF3F3A] transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-[#424551] mb-2" data-key="phone">
+                                Phone
+                            </label>
+                            <input id="phone" type="tel" placeholder="Your phone number"
+                                data-key-placeholder="yourPhoneNumber" required
+                                class="w-full h-[38px] bg-white border border-[#D7DADD] rounded-sm px-3 text-xs outline-none focus:border-[#FF3F3A] transition">
+                        </div>
+
+                        <button type="submit"
+                            class="w-full h-[38px] mt-2 rounded-sm bg-[#ff3f22] text-white font-bold transition"
+                            data-key="joinCourse">
+                            Join the course
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section 10 -->
+        <section class="bg-[#F4F5F6] py-[70px] px-5">
+            <div class="max-w-5xl mx-auto">
+
+                <div class="flex items-center justify-between mb-10">
+                    <div>
+                        <p class="text-[13px] uppercase text-[#1e212c] mb-2" data-key="bestTutors">
+                            Best tutors are all here
+                        </p>
+                        <h2 class="text-[46px] font-bold text-[#1e212c]" data-key="meetOurTeam">
+                            Meet our team
+                        </h2>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <button id="teamPrev" type="button"
+                            class="w-[42px] h-[42px] rounded-full flex items-center justify-center text-[#424551] hover:bg-[#ff4242] hover:text-white transition duration-300">
+                            <span class="material-symbols-outlined">arrow_back</span>
+                        </button>
+
+                        <button id="teamNext" type="button"
+                            class="w-[42px] h-[42px] rounded-full flex items-center justify-center text-[#424551] hover:bg-[#ff4242] hover:text-white transition duration-300">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+
+                <swiper-container
+                    breakpoints='{ "0":{ "slidesPerView":1 }, "600":{ "slidesPerView":2 }, "900":{ "slidesPerView":2 }, "1200":{ "slidesPerView":2 } }'
+                    class="teamSwiper w-full" loop="true" slides-per-view="4" space-between="20" speed="700">
+
+                    <swiper-slide>
+                        <div class="text-center group">
+                            <div class="relative h-[215px] overflow-hidden rounded-[4px] bg-[#ffd43b]">
+                                <img alt="Dianne Russell" class="w-full h-full object-contain"
+                                    src="/pages/pages/image/team/image.png" />
+                            </div>
+                            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">
+                                Dianne Russell
+                            </h3>
+                            <p class="text-[13px] text-[#787a80]" data-key="founderCEO">
+                                Founder and CEO
+                            </p>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="text-center group">
+                            <div class="relative h-[215px] overflow-hidden rounded-[4px] bg-[#ffd43b]">
+                                <img alt="Jerome Bell" class="w-full h-full object-contain"
+                                    src="/pages/pages/image/team/image.png" />
+                            </div>
+                            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">
+                                Jerome Bell
+                            </h3>
+                            <p class="text-[13px] text-[#787a80]" data-key="founderProgramDirector">
+                                Founder and Program Director
+                            </p>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="text-center group">
+                            <div class="relative h-[215px] overflow-hidden rounded-[4px] bg-[#ffd43b]">
+                                <img alt="Kristin Watson" class="w-full h-full object-contain"
+                                    src="/pages/pages/image/team1/image.png" />
+                            </div>
+                            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">
+                                Kristin Watson
+                            </h3>
+                            <p class="text-[13px] text-[#787a80]" data-key="marketerCurator">
+                                Marketer, Curator of Marketing Course
+                            </p>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="text-center group">
+                            <div class="relative h-[215px] overflow-hidden rounded-[4px] bg-[#ffd43b]">
+                                <img alt="Marvin McKinney" class="w-full h-full object-contain"
+                                    src="/pages/pages/image/team2/image.png" />
+                            </div>
+                            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">
+                                Marvin McKinney
+                            </h3>
+                            <p class="text-[13px] text-[#787a80]" data-key="pmCurator">
+                                PM, Curator of Management Course
+                            </p>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="text-center group">
+                            <div class="relative h-[215px] overflow-hidden rounded-[4px] bg-[#ffd43b]">
+                                <img alt="Dianne Russell" class="w-full h-full object-contain"
+                                    src="/pages/pages/image/team1/image.png" />
+                            </div>
+                            <h3 class="mt-3 mb-1 text-[16px] font-bold text-[#424551]">
+                                Dianne Russell
+                            </h3>
+                            <p class="text-[13px] text-[#787a80]" data-key="founderCEO">
+                                Founder and CEO
+                            </p>
+                        </div>
+                    </swiper-slide>
+
+                </swiper-container>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-[#1f2230] text-white">
+        <div class="mx-auto max-w-[1200px] px-6 py-10 lg:py-14">
+
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-8 lg:gap-6">
+
+                <div class="sm:col-span-2 md:col-span-1">
+
+                    <a class="text-2xl font-bold tracking-tight inline-block" href="#">
+                        <img alt="Createx" src="/pages/pages/image/logo.png" />
+                    </a>
+
+                    <p class="mt-4 lg:mt-6 max-w-[280px] lg:max-w-[230px] text-sm leading-6 text-gray-400"
+                        data-key="footerDescription">
+                        Createx Online School is a leader in online studying. We have lots of courses from different
+                        programs and experienced teachers.
+                    </p>
+
+                    <div class="mt-6 lg:mt-7 flex items-center gap-4">
+                        <a class="transition hover:scale-110" href="#">
+                            <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/Facebook.svg" />
+                        </a>
+                        <a class="transition hover:scale-110" href="#">
+                            <img alt="Twitter" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/Twitter.svg" />
+                        </a>
+                        <a class="transition hover:scale-110" href="#">
+                            <img alt="YouTube" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/YouTube.svg" />
+                        </a>
+                        <a class="transition hover:scale-110" href="#">
+                            <img alt="Telegram" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/telegram.svg" />
+                        </a>
+                        <a class="transition hover:scale-110" href="#">
+                            <img alt="Instagram" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/Instagram.svg" />
+                        </a>
+                        <a class="transition hover:scale-110" href="#">
+                            <img alt="LinkedIn" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/Linked-In.svg" />
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="siteMap">
+                        Site Map
+                    </h3>
+
+                    <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
+                        <li><a class="transition hover:text-orange-500" href="about.html" data-key="about">About Us</a>
+                        </li>
+                        <li><a class="transition hover:text-orange-500" href="courses.html"
+                                data-key="courses">Courses</a></li>
+                        <li><a class="transition hover:text-orange-500" href="event.html" data-key="events">Events</a>
+                        </li>
+                        <li><a class="transition hover:text-orange-500" href="blog.html" data-key="blog">Blog</a></li>
+                        <li><a class="transition hover:text-orange-500" href="contact.html"
+                                data-key="contacts">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="courses">
+                        Courses
+                    </h3>
+
+                    <ul class="mt-4 lg:mt-6 space-y-2.5 lg:space-y-3 text-sm text-gray-400">
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="marketing">Marketing</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="management">Management</a>
+                        </li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="hrRecruiting">HR
+                                Recruiting</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="design">Design</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="development">Development</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="contactUs">
+                        Contact Us
+                    </h3>
+
+                    <div class="mt-4 lg:mt-6 space-y-3 lg:space-y-4 text-sm text-gray-400">
+                        <a class="flex items-center transition hover:text-white" href="tel:+14055550128">
+                            <span>(405) 555-0128</span>
+                        </a>
+                        <a class="flex items-center transition hover:text-white" href="mailto:hello@createx.com">
+                            <span>hello@createx.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sm:col-span-2 md:col-span-2 lg:col-span-1">
+
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="footerNewsletterTitle">
+                        Sign up to our newsletter
+                    </h3>
+
+                    <form class="mt-4 lg:mt-6 max-w-md lg:max-w-none">
+                        <div
+                            class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
+
+                            <input
+                                class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
+                                placeholder="Email address" data-key-placeholder="emailAddress" type="email" />
+
+                            <button class="px-3 text-lg text-gray-400 transition hover:text-white" type="submit">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                        </div>
+
+                        <p class="mt-3 lg:mt-4 text-[10px] leading-4 text-gray-500" data-key="newsletterDescription">
+                            *Subscribe to our newsletter to receive communications and upcoming events from Createx
+                            School.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="border-t border-white/10 bg-[#292c3a]">
+            <div
+                class="mx-auto flex flex-col sm:flex-row gap-3 text-center sm:text-left max-w-[1200px] items-center justify-between px-6 py-5 text-xs text-gray-400">
+
+                <p data-key="copyright">© All rights reserved. Made with by Createx Studio</p>
+
+                <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#" data-key="goToTop">
+                    Go to top
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
+
+    <script>
+        const teamSwiper = document.querySelector(".teamSwiper");
+
+        document.querySelector("#teamNext").onclick = () => {
+            teamSwiper.swiper.slideNext();
+        };
+
+        document.querySelector("#teamPrev").onclick = () => {
+            teamSwiper.swiper.slidePrev();
+        };
+    </script>
+
+    <script src="pages/js/course.js"></script>
+    <script src="pages/js/i18n.js"></script>
+</body>
+
+</html>
