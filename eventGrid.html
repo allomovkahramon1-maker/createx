@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Createx</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
+        <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
+            </a>
+
+            <!-- Desktop links -->
+            <div class="hidden lg:flex items-center gap-6 font-medium">
+                <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
+                <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
+                <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
+                <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
+                <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
+            </div>
+
+
+            <button>
+                <select name="select" id="languageSelect" class="outline-none cursor-pointer bg-[#FFDAD5] border-2">
+                    <option value="uz">Uzb</option>
+                    <option value="en">Eng</option>
+                    <option value="ru">Rus</option>
+                </select>
+            </button>
+
+            <!-- Desktop buttons -->
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]"
+                    data-key="getConsultation">
+                    Get consultation
+                </a>
+                <button id="btn" class="hover:text-[#ff3f22] font-bold">
+                    Log in / Register
+                </button>
+            </div>
+
+            <!-- Menu button -->
+            <button id="menuBtn" class="lg:hidden text-3xl">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+                    <path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z" />
+                </svg>
+            </button>
+
+            <!-- Close button -->
+            <button id="closeBtn" class="hidden lg:hidden text-3xl">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+                    <path
+                        d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z" />
+                </svg>
+            </button>
+
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
+            <div class="flex flex-col gap-5 font-medium">
+
+                <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
+                <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
+                <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
+                <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
+                <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
+
+                <a href="contact.html"
+                    class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]"
+                    data-key="getConsultation">
+                    Get consultation
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Events title and filters -->
+        <section class="max-w-6xl mx-auto bg-white px-4 sm:px-6 py-8 sm:py-10 font-sans text-[#252733] mt-16">
+
+            <!-- Title -->
+            <div class="text-center">
+                <p class="text-base sm:text-[20px] font-semibold uppercase tracking-wide">
+                    OUR EVENTS
+                </p>
+
+                <h1 class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight" data-key="eventsPageTitle">
+                    Lectures, workshops & master-classes
+                </h1>
+            </div>
+
+            <!-- Filters -->
+            <div class="mt-10 flex flex-col lg:flex-row items-center justify-between gap-6">
+
+                <div class="w-full flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 sm:gap-6">
+
+                    <!-- Event category -->
+                    <div class="w-full sm:w-auto flex items-center justify-between gap-2">
+                        <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4"
+                            data-key="eventCategory">
+                            Event category
+                        </label>
+
+                        <select
+                            class="h-7 w-[103px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
+                            <option data-key="allThemes">all themes</option>
+                            <option data-key="lectures">Lectures</option>
+                            <option data-key="workshops">Workshops</option>
+                            <option data-key="masterClasses">Master-classes</option>
+                        </select>
+                    </div>
+
+                    <!-- Sort by -->
+                    <div class="w-full sm:w-auto flex items-center justify-between gap-2">
+                        <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4" data-key="sortBy">
+                            Sort by
+                        </label>
+
+                        <select
+                            class="h-7 w-[103px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
+                            <option data-key="newest">newest</option>
+                            <option data-key="oldest">oldest</option>
+                        </select>
+                    </div>
+
+                    <!-- Show -->
+                    <div class="w-full sm:w-auto flex items-center justify-between gap-2">
+                        <label class="text-sm sm:text-base lg:text-[18px] font-semibold px-2 sm:px-4" data-key="show">
+                            Show
+                        </label>
+
+                        <select
+                            class="h-7 w-[46px] rounded-sm border border-gray-200 bg-white px-2 text-[10px] text-gray-600 outline-none">
+                            <option>9</option>
+                            <option>12</option>
+                            <option>18</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- Search and icons -->
+                <div class="w-full lg:w-auto flex items-center justify-between sm:justify-end gap-4">
+
+                    <!-- Search -->
+                    <div
+                        class="flex h-7 w-full sm:w-[180px] items-center justify-between rounded-sm border border-gray-200 px-2">
+                        <input type="text" placeholder="Search event..." data-key-placeholder="searchEvent"
+                            class="w-full min-w-0 bg-transparent text-[10px] outline-none placeholder:text-gray-400" />
+                    </div>
+
+                    <!-- List icon -->
+                    <a href="eventList.html">
+                        <button class="text-red-500" aria-label="List view">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
+                                fill="#1f1f1f">
+                                <path
+                                    d="M7,9V7H21V9H7Zm0,4V11H21v2H7Zm0,4V15H21v2H7ZM4,9Q3.58,9 3.29,8.71T3,8Q3,7.57 3.29,7.29T4,7T4.71,7.29T5,8Q5,8.42 4.71,8.71T4,9Zm0,4q-0.42,0-0.71-0.29Q3,12.43 3,12t0.29-0.71T4,11t0.71,0.29T5,12T4.71,12.71T4,13Zm0,4q-0.42,0-0.71-0.29Q3,16.43 3,16t0.29-0.71T4,15t0.71,0.29T5,16T4.71,16.71T4,17Z" />
+                            </svg>
+                        </button>
+                    </a>
+
+                    <!-- Grid icon -->
+                    <a href="eventGrid.html">
+                        <button class="text-gray-600" aria-label="Grid view">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
+                                fill="#1f1f1f">
+                                <path
+                                    d="M3,11V3h8v8H3ZM3,21V13h8v8H3ZM13,11V3h8v8H13Zm0,10V13h8v8H13ZM5,9H9V5H5V9ZM15,9h4V5H15V9Zm0,10h4V15H15v4ZM5,19H9V15H5v4ZM15,9Zm0,6ZM9,15ZM9,9Z" />
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Grid -->
+        <section class="bg-white py-16">
+            <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Event 1 -->
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center gap-3">
+                        <strong class="text-4xl text-[#ff3f22]">05</strong>
+                        <div>
+                            <p class="text-sm font-medium" data-key="august">August</p>
+                            <p class="text-xs text-gray-500">11:00 – 14:00</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 my-5">
+                        <h3 class="text-base font-semibold leading-6" data-key="event1Title">
+                            Formation of the organizational structure of the company in the face of uncertainty.
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-3" data-key="onlineMasterclass">Online master-class</p>
+                    </div>
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition"
+                        data-key="viewMore">
+                        View more
+                    </button>
+                </div>
+
+                <!-- Event 2 -->
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center gap-3">
+                        <strong class="text-4xl text-[#ff3f22]">24</strong>
+                        <div>
+                            <p class="text-sm font-medium" data-key="july">July</p>
+                            <p class="text-xs text-gray-500">11:00 – 12:30</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 my-5">
+                        <h3 class="text-base font-semibold leading-6" data-key="event2Title">
+                            Building a customer service department. Best Practices.
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-3" data-key="onlineLecture">Online lecture</p>
+                    </div>
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition"
+                        data-key="viewMore">
+                        View more
+                    </button>
+                </div>
+
+                <!-- Event 3 -->
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center gap-3">
+                        <strong class="text-4xl text-[#ff3f22]">16</strong>
+                        <div>
+                            <p class="text-sm font-medium" data-key="july">July</p>
+                            <p class="text-xs text-gray-500">10:00 – 13:00</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 my-5">
+                        <h3 class="text-base font-semibold leading-6" data-key="event3Title">
+                            How to apply methods of speculative design in practice. Worldbuilding prototyping.
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-3" data-key="onlineWorkshop">Online workshop</p>
+                    </div>
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition"
+                        data-key="viewMore">
+                        View more
+                    </button>
+                </div>
+
+                <!-- Event 4 -->
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center gap-3">
+                        <strong class="text-4xl text-[#ff3f22]">10</strong>
+                        <div>
+                            <p class="text-sm font-medium" data-key="july">July</p>
+                            <p class="text-xs text-gray-500">9:00 – 14:00</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 my-5">
+                        <h3 class="text-base font-semibold leading-6" data-key="event4Title">
+                            Find and evaluate: search and assessment tools for candidates.
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-3" data-key="onlineWorkshop">Online workshop</p>
+                    </div>
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition"
+                        data-key="viewMore">
+                        View more
+                    </button>
+                </div>
+
+                <!-- Event 5 -->
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center gap-3">
+                        <strong class="text-4xl text-[#ff3f22]">27</strong>
+                        <div>
+                            <p class="text-sm font-medium" data-key="june">June</p>
+                            <p class="text-xs text-gray-500">15:00 – 19:00</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 my-5">
+                        <h3 class="text-base font-semibold leading-6" data-key="event5Title">
+                            Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-3" data-key="onlineMasterclass">Online master-class</p>
+                    </div>
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition"
+                        data-key="viewMore">
+                        View more
+                    </button>
+                </div>
+
+                <!-- Event 6 -->
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center gap-3">
+                        <strong class="text-4xl text-[#ff3f22]">15</strong>
+                        <div>
+                            <p class="text-sm font-medium" data-key="june">June</p>
+                            <p class="text-xs text-gray-500">10:00 – 12:00</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 my-5">
+                        <h3 class="text-base font-semibold leading-6" data-key="event6Title">
+                            Marketing or growth hacking: main differences and what business needs.
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-3" data-key="onlineLecture">Online lecture</p>
+                    </div>
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition"
+                        data-key="viewMore">
+                        View more
+                    </button>
+                </div>
+
+                <!-- Event 7 -->
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center gap-3">
+                        <strong class="text-4xl text-[#ff3f22]">02</strong>
+                        <div>
+                            <p class="text-sm font-medium" data-key="june">June</p>
+                            <p class="text-xs text-gray-500">11:00 – 13:00</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 my-5">
+                        <h3 class="text-base font-semibold leading-6" data-key="event7Title">
+                            How to brief a client and present your design to approve it from the first show.
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-3" data-key="onlineLecture">Online lecture</p>
+                    </div>
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition"
+                        data-key="viewMore">
+                        View more
+                    </button>
+                </div>
+
+                <!-- Event 8 -->
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center gap-3">
+                        <strong class="text-4xl text-[#ff3f22]">29</strong>
+                        <div>
+                            <p class="text-sm font-medium" data-key="may">May</p>
+                            <p class="text-xs text-gray-500">11:00 – 12:00</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 my-5">
+                        <h3 class="text-base font-semibold leading-6" data-key="event8Title">
+                            Who is a project manager and do I want to be PM?
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-3" data-key="onlineLecture">Online lecture</p>
+                    </div>
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition"
+                        data-key="viewMore">
+                        View more
+                    </button>
+                </div>
+
+                <!-- Event 9 -->
+                <div
+                    class="flex flex-col bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center gap-3">
+                        <strong class="text-4xl text-[#ff3f22]">18</strong>
+                        <div>
+                            <p class="text-sm font-medium" data-key="may">May</p>
+                            <p class="text-xs text-gray-500">10:00 – 12:00</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 my-5">
+                        <h3 class="text-base font-semibold leading-6" data-key="event9Title">
+                            The company's business page as an additional tool to support the announcement of vacancies.
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-3" data-key="onlineLecture">Online lecture</p>
+                    </div>
+                    <button
+                        class="w-full border border-[#ff3f22] text-[#ff3f22] px-6 py-3 text-sm rounded hover:bg-[#ff3f22] hover:text-white transition"
+                        data-key="viewMore">
+                        View more
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="w-full py-20 bg-[#FEDBD3]">
+            <div class="mx-auto flex max-w-6xl flex-col items-center px-4 text-center">
+
+                <p class="mb-3 text-[18px] font-semibold uppercase tracking-wide text-gray-700"
+                    data-key="dontMissAnything">
+                    DON'T MISS ANYTHING
+                </p>
+
+                <h2 class="max-w-2xl text-2xl font-bold leading-tight text-gray-900 md:text-3xl"
+                    data-key="newsletterTitle">
+                    Subscribe to the Createx School
+                    <br>
+                    announcements
+                </h2>
+
+                <form class="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row">
+                    <input
+                        class="w-full sm:flex-1 h-12 rounded-sm border border-gray-200 px-4 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-orange-500 transition"
+                        placeholder="Your working email" data-key-placeholder="workingEmail" type="email" />
+
+                    <button
+                        class="h-12 rounded-sm bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600"
+                        data-key="subscribe">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1f2230] text-white">
+        <div class="mx-auto max-w-[1200px] px-6 py-14">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.5fr_0.7fr_0.7fr_0.9fr_1fr] gap-8">
+
+                <!-- Logo and social links -->
+                <div>
+                    <a class="text-2xl font-bold tracking-tight" href="#">
+                        <img alt="Createx" src="/pages/pages/image/logo.png">
+                    </a>
+
+                    <p class="mt-6 max-w-[230px] text-sm leading-6 text-gray-400" data-key="footerDescription">
+                        Createx Online School is a leader in online studying. We have lots of courses from different
+                        programs and experienced teachers.
+                    </p>
+
+                    <div class="mt-7 flex items-center gap-4">
+                        <a class="transition hover:scale-110" href="#">
+                            <img alt="Facebook" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/Facebook.svg">
+                        </a>
+                        <a class="transition hover:scale-110" href="#">
+                            <img alt="Twitter" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/Twitter.svg">
+                        </a>
+                        <a class="transition hover:scale-110" href="#">
+                            <img alt="YouTube" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/YouTube.svg">
+                        </a>
+                        <a class="transition hover:scale-110" href="#">
+                            <img alt="Telegram" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/telegram.svg">
+                        </a>
+                        <a class="transition hover:scale-110" href="#">
+                            <img alt="Instagram" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/Instagram.svg">
+                        </a>
+                        <a class="transition hover:scale-110" href="#">
+                            <img alt="LinkedIn" class="h-5 w-5 transition hover:opacity-70"
+                                src="/pages/pages/image/Linked-In.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Site Map -->
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="siteMap">Site Map</h3>
+                    <ul class="mt-6 space-y-3 text-sm text-gray-400">
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="about">About Us</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="courses">Courses</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="events">Events</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="blog">Blog</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="contacts">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Courses -->
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="courses">Courses</h3>
+                    <ul class="mt-6 space-y-3 text-sm text-gray-400">
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="marketing">Marketing</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="management">Management</a>
+                        </li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="hrRecruiting">HR &
+                                Recruiting</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="design">Design</a></li>
+                        <li><a class="transition hover:text-orange-500" href="#" data-key="development">Development</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="contactUs">Contact Us</h3>
+                    <div class="mt-6 space-y-4 text-sm text-gray-400">
+                        <a class="flex items-center transition hover:text-white" href="tel:+14055550128">
+                            (405) 555-0128
+                        </a>
+                        <a class="flex items-center transition hover:text-white" href="mailto:hello@createx.com">
+                            hello@createx.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer newsletter -->
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-wide" data-key="newsletterTitle">
+                        Sign up to our newsletter
+                    </h3>
+
+                    <form class="mt-6">
+                        <div
+                            class="flex h-11 overflow-hidden rounded-md border border-gray-600 bg-white/5 focus-within:border-orange-500">
+                            <input
+                                class="min-w-0 flex-1 bg-transparent px-3 text-sm text-white outline-none placeholder:text-gray-500"
+                                placeholder="Email address" data-key-placeholder="emailAddress" type="email">
+
+                            <button class="px-3 text-lg text-gray-400 transition hover:bg-orange-500 hover:text-white"
+                                type="submit">
+                                →
+                            </button>
+                        </div>
+
+                        <p class="mt-4 text-[10px] leading-4 text-gray-500" data-key="newsletterDescription">
+                            *Subscribe to our newsletter to receive communications and upcoming events from Createx
+                            School.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-white/10 bg-[#292c3a]">
+            <div
+                class="mx-auto flex max-w-[1200px] flex-col sm:flex-row items-center justify-between gap-4 px-6 py-5 text-xs text-gray-400">
+
+                <p data-key="copyright">© All rights reserved. Made with by Createx Studio</p>
+
+                <a class="font-medium uppercase tracking-wide transition hover:text-white" href="#" data-key="goToTop">
+                    Go to top
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="pages/js/eventGrid.js"></script>
+    <script src="pages/js/i18n.js"></script>
+</body>
+
+</html>
