@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,10 +14,14 @@
 </head>
 
 <body class="text-[#1e2532]">
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
   <header class="bg-[#ffc5b8] fixed top-0 left-0 w-full z-50">
     <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <a href="index.html">
-        <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="w-28 sm:w-32" />
+        <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="sm:w-32" />
       </a>
 
       <nav class="hidden lg:flex items-center gap-6 font-medium">
@@ -81,7 +84,7 @@
     </div>
   </header>
 
-  <section class="bg-[#ffddd5] mt-16">
+  <section class="bg-[#ffddd5] mt-10">
     <div class="max-w-6xl mx-auto px-5 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
       <div class="text-center lg:text-left">
         <div class="flex items-center justify-center lg:justify-start gap-3 mb-7">
@@ -174,7 +177,7 @@
           </li>
           <li class="flex gap-3">
             <span class="text-[#ff3f22] font-bold"><img alt="check" src="/pages/pages/image/check.png" /></span>
-            <span data-key="whyText4">Etiam duis lobortis in fames ultrices commodo nibh.</span>
+            <span data-key="whyText4">Etiam duis lobortis in fames commodo nibh.</span>
           </li>
           <li class="flex gap-3">
             <span class="text-[#ff3f22] font-bold"><img alt="check" src="/pages/pages/image/check.png" /></span>
@@ -214,7 +217,8 @@
               src="/pages/pages/image/image1.png" /></div>
           <div class="p-5">
             <span class="bg-emerald-400 text-white text-[10px] px-2 py-1" data-key="marketing">Marketing</span>
-            <h3 class="font-semibold text-sm mt-3" data-key="course1">The Ultimate Google Ads Training Course</h3>
+            <h3 class="font-semibold text-sm mt-3 hover:text-[red] hover:cursor-pointer" data-key="course1">The Ultimate
+              Google Ads Training Course</h3>
             <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$100</b><span class="mx-1">|</span>by Jerome
               Bell</p>
           </div>
@@ -225,7 +229,8 @@
               src="/pages/pages/image/image2.png" /></div>
           <div class="p-5">
             <span class="bg-blue-500 text-white text-[10px] px-2 py-1" data-key="management">Management</span>
-            <h3 class="font-semibold text-sm mt-3" data-key="course2">Product Management Fundamentals</h3>
+            <h3 class="font-semibold text-sm mt-3 hover:text-[red] hover:cursor-pointer" data-key="course2">Product
+              Management Fundamentals</h3>
             <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$480</b><span class="mx-1">|</span>by Marvin
               McKinney</p>
           </div>
@@ -237,7 +242,8 @@
           <div class="p-5">
             <span class="bg-orange-400 text-white text-[10px] px-2 py-1" data-key="hrRecruiting">HR &amp;
               Recruiting</span>
-            <h3 class="font-semibold text-sm mt-3" data-key="course3">HR Management and Analytics</h3>
+            <h3 class="font-semibold text-sm mt-3 hover:text-[red] hover:cursor-pointer" data-key="course3">HR
+              Management and Analytics</h3>
             <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$200</b><span class="mx-1">|</span>by Leslie
               Alexander Li</p>
           </div>
@@ -248,7 +254,8 @@
               src="/pages/pages/image/image4.png" /></div>
           <div class="p-5">
             <span class="bg-emerald-400 text-white text-[10px] px-2 py-1" data-key="marketing">Marketing</span>
-            <h3 class="font-semibold text-sm mt-3" data-key="course4">Brand Management &amp; PR Communications</h3>
+            <h3 class="font-semibold text-sm mt-3 hover:text-[red] hover:cursor-pointer" data-key="course4">Brand
+              Management ; PR Communications</h3>
             <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$530</b><span class="mx-1">|</span>by Kristin
               Watson</p>
           </div>
@@ -259,7 +266,8 @@
               src="/pages/pages/image/image5.png" /></div>
           <div class="p-5">
             <span class="bg-blue-500 text-white text-[10px] px-2 py-1" data-key="management">Management</span>
-            <h3 class="font-semibold text-sm mt-3" data-key="course5">Business Development Management</h3>
+            <h3 class="font-semibold text-sm mt-3 hover:text-[red] hover:cursor-pointer" data-key="course5">Business
+              Development Management</h3>
             <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$400</b><span class="mx-1">|</span>by Dianne
               Russell</p>
           </div>
@@ -270,7 +278,8 @@
               src="/pages/pages/image/image6.png" /></div>
           <div class="p-5">
             <span class="bg-pink-500 text-white text-[10px] px-2 py-1" data-key="design">Design</span>
-            <h3 class="font-semibold text-sm mt-3" data-key="course6">Graphic Design Basic</h3>
+            <h3 class="font-semibold text-sm mt-3 hover:text-[red] hover:cursor-pointer" data-key="course6">Graphic
+              Design Basic</h3>
             <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$500</b><span class="mx-1">|</span>by Guy
               Hawkins</p>
           </div>
@@ -281,42 +290,62 @@
 
   <section class="py-20 sm:py-24">
     <div class="max-w-6xl mx-auto px-4 sm:px-5">
+
       <div class="text-center">
-        <p class="text-xs font-bold tracking-wide mb-3" data-key="ourBenefits">OUR BENEFITS</p>
-        <h2 class="text-3xl sm:text-4xl font-bold" data-key="thatsHowWeDoIt">That’s how we do it</h2>
+        <p class="text-xs font-bold tracking-wide mb-3" data-key="ourBenefits">
+          OUR BENEFITS
+        </p>
+
+        <h2 class="text-3xl sm:text-4xl font-bold" data-key="thatsHowWeDoIt">
+          That’s how we do it
+        </h2>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-10 flex items-center">
-        <a href="blog.html"
-          class="border border-[#ff3f22] text-[#ff3f22] py-3 px-4 text-sm font-medium rounded hover:bg-[#ff3f22] hover:text-white transition">
-          <button data-key="experiencedTutors">Experienced Tutors</button>
-        </a>
-        <button class="text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
-          <img alt="like img" src="/pages/pages/image/like.svg" />
-          <p data-key="feedbackSupport">Feedback &amp; Support</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-10">
+
+        <button onclick="changeBenefit(0)"
+          class="benefit-btn text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
+          Experienced Tutors
         </button>
-        <button class="text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
-          <img alt="Layouts" src="/pages/pages/image/Layouts.png" />
-          <p data-key="benefitTwo">2</p>
+
+        <button onclick="changeBenefit(1)"
+          class="benefit-btn text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
+          <img alt="like img" src="/pages/pages/image/like.svg">
+          <p>Feedback Support</p>
         </button>
-        <button class="text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
-          <img alt="Chat" src="/pages/pages/image/Chat.png" />
-          <p data-key="community">Community</p>
+        
+        <button onclick="changeBenefit(2)"
+          class="benefit-btn text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
+          <img alt="Layouts" src="/pages/pages/image/Layouts.png">
+          <p>Practical learning</p>
         </button>
+
+        <button onclick="changeBenefit(3)"
+          class="benefit-btn text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
+          <img alt="Chat" src="/pages/pages/image/Chat.png">
+          <p>Community</p>
+        </button>
+
       </div>
 
       <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center mt-16">
+
         <div>
-          <h3 class="text-2xl sm:text-3xl font-bold mb-5" data-key="onlyPracticingTutors">Only practicing tutors</h3>
-          <p class="text-sm leading-7 text-#424551 max-w-lg" data-key="practicingTutorsText">
-            Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa
-            ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis
-            vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+          <h3 id="benefitTitle" class="text-2xl sm:text-3xl font-bold mb-5">
+            Only practicing tutors
+          </h3>
+
+          <p id="benefitText" class="text-sm leading-7 text-[#424551] max-w-lg">
+            Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse.
+            Morbi mauris cras massa ut dolor quis sociis mollis augue.
           </p>
         </div>
+
         <div class="flex justify-center">
-          <img alt="Experienced tutors" class="w-full max-w-lg" src="/pages/pages/image/illustration (1).png" />
+          <img id="benefitImage" alt="Experienced tutors" class="w-full max-w-lg"
+            src="/pages/pages/image/illustration (1).png">
         </div>
+
       </div>
     </div>
   </section>
@@ -325,7 +354,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-5">
       <div class="text-center mb-8 sm:mb-10">
         <p class="text-[10px] font-bold mb-2" data-key="ourEvents">OUR EVENTS</p>
-        <h2 class="text-2xl sm:text-3xl font-bold" data-key="lecturesWorkshops">Lectures &amp; workshops</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold" data-key="lecturesWorkshops">Lectures &; workshops</h2>
       </div>
 
       <div class="space-y-3">
@@ -745,8 +774,7 @@
           <div class="mt-4 lg:mt-6 space-y-3 lg:space-y-4 text-sm text-gray-400">
             <a class="flex items-center transition hover:text-white" href="tel:+14055550128"><span>(405)
                 555-0128</span></a>
-            <a class="flex items-center transition hover:text-white"
-              href="mailto:hello@createx.com"><span>hello@createx.com</span></a>
+            <a class="flex items-center transition hover:text-white" href="#"><span>hello@createx.com</span></a>
           </div>
         </div>
 
@@ -796,6 +824,8 @@
   </script>
 
   <script src="/pages/js/i18n.js"></script>
+  <script src="pages/js/index.js"></script>
+  <script src="/pages/js/loader.js"></script>
 </body>
 
 </html>

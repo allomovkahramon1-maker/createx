@@ -1229,14 +1229,6 @@ function translate(language) {
         }
     });
 
-    document.querySelectorAll("[data-key-placeholder]").forEach((element) => {
-        const key = element.dataset.keyPlaceholder;
-        const text = translations[language]?.[key];
-
-        if (text !== undefined) {
-            element.placeholder = text;
-        }
-    });
 
     document.documentElement.lang = language;
 }
