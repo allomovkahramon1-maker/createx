@@ -961,6 +961,8 @@ const translations = {
 		qualifiedTutors: 'Квалифицированных преподавателей',
 		yearsExperience: 'Лет опыта',
 
+		workingEmail:  
+
 		whoWeAre: 'КТО МЫ',
 		whyCreatex: 'Почему Createx?',
 		whyText1: 'Качественное образование и современные учебные программы.',
