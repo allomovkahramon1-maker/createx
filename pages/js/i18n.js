@@ -573,14 +573,14 @@ const translations = {
 
 		whoWeAre: 'WHO WE ARE',
 		whyCreatex: 'Why Createx?',
-		whyText1: 'A fermentum in morbi pretium aliquam adipiscing donec tempus.',
-		whyText2: 'Vulputate placerat amet pulvinar lorem nisl.',
+		whyText1: 'Quality education and modern curricula.',
+		whyText2: 'A comfortable and effective learning environment.',
 		whyText3:
-			'Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.',
-		whyText4: 'Etiam duis lobortis in fames ultrices commodo nibh.',
-		whyText5: 'Tincidunt sagittis neque sem ac eget.',
+			'An individual approach for every student.',
+		whyText4: 'Modern knowledge and practical training',
+		whyText5: 'Working with experienced specialists.',
 		whyText6:
-			'Ultricies amet justo et eget quisque purus vulputate dapibus tortor.',
+			'Skills needed for the professions of the future.',
 		moreAboutUs: 'More about us',
 
 		readyToLearn: 'READY TO LEARN?',
