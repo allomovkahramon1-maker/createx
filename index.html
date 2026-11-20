@@ -220,8 +220,10 @@
             <span class="bg-emerald-400 text-white text-[10px] px-2 py-1" data-key="marketing">Marketing</span>
             <h3 class="font-semibold text-sm mt-3 hover:text-[red] hover:cursor-pointer" data-key="course1">The Ultimate
               Google Ads Training Course</h3>
-            <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$100</b><span class="mx-1">|</span>by Jerome
-              Bell</p>
+            <div class="flex text-xs text-gray-500 mt-4"><b class="text-red-500">$100</b><span class="mx-1">|</span>
+              <p data-key="pjarome"> by Jerome
+                Bell</p>
+            </div>
           </div>
         </div>
 
@@ -232,8 +234,11 @@
             <span class="bg-blue-500 text-white text-[10px] px-2 py-1" data-key="management">Management</span>
             <h3 class="font-semibold text-sm mt-3 hover:text-[red] hover:cursor-pointer" data-key="course2">Product
               Management Fundamentals</h3>
-            <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$480</b><span class="mx-1">|</span>by Marvin
-              McKinney</p>
+            <div class="flex text-xs text-gray-500 mt-4">
+              <b class="text-red-500">$480</b><span class="mx-1">|</span>
+              <p data-key="pmarvin"> by Marvin
+                McKinney</p>
+            </div>
           </div>
         </div>
 
@@ -245,8 +250,10 @@
               Recruiting</span>
             <h3 class="font-semibold text-sm mt-3 hover:text-[red] hover:cursor-pointer" data-key="course3">HR
               Management and Analytics</h3>
-            <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$200</b><span class="mx-1">|</span>by Leslie
-              Alexander Li</p>
+            <div class=" flex text-xs text-gray-500 mt-4"><b class="text-red-500">$200</b><span class="mx-1">|</span>
+              <p data-key="pleslie">by Leslie
+                Alexander Li</p>
+            </div>
           </div>
         </div>
 
@@ -257,8 +264,10 @@
             <span class="bg-emerald-400 text-white text-[10px] px-2 py-1" data-key="marketing">Marketing</span>
             <h3 class="font-semibold text-sm mt-3 hover:text-[red] hover:cursor-pointer" data-key="course4">Brand
               Management ; PR Communications</h3>
-            <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$530</b><span class="mx-1">|</span>by Kristin
-              Watson</p>
+            <div class=" flex text-xs text-gray-500 mt-4"><b class="text-red-500">$530</b><span class="mx-1">|</span>
+              <p data-key="pkristin">by Kristin
+                Watson</p>
+            </div>
           </div>
         </div>
 
@@ -269,8 +278,12 @@
             <span class="bg-blue-500 text-white text-[10px] px-2 py-1" data-key="management">Management</span>
             <h3 class="font-semibold text-sm mt-3 hover:text-[red] hover:cursor-pointer" data-key="course5">Business
               Development Management</h3>
-            <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$400</b><span class="mx-1">|</span>by Dianne
-              Russell</p>
+            <div class="flex text-xs text-gray-500 mt-4">
+              <b class="text-red-500">$400</b>
+              <span class="mx-1">|</span>
+              <p data-key="pdianne"> by Dianne
+                Russell</p>
+            </div>
           </div>
         </div>
 
@@ -281,8 +294,13 @@
             <span class="bg-pink-500 text-white text-[10px] px-2 py-1" data-key="design">Design</span>
             <h3 class="font-semibold text-sm mt-3 hover:text-[red] hover:cursor-pointer" data-key="course6">Graphic
               Design Basic</h3>
-            <p class="text-xs text-gray-500 mt-4"><b class="text-red-500">$500</b><span class="mx-1">|</span>by Guy
-              Hawkins</p>
+            <div class=" flex text-xs text-gray-500 mt-4">
+              <b class="text-red-500">$500</b>
+              <span class="mx-1">|</span>
+              <p data-key="pguy"> by Guy
+                Hawkins
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -304,7 +322,7 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-10">
 
-        <button data-key="experienced" onclick="changeBenefit(0)"
+        <button onclick="changeBenefit(0)"
           class="benefit-btn text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
           Experienced Tutors
         </button>
@@ -312,19 +330,19 @@
         <button data-key="feedback" onclick="changeBenefit(1)"
           class="benefit-btn text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
           <img alt="like img" src="/pages/pages/image/like.svg">
-          <p>Feedback Support</p>
+          <p data-key="feedbackbtn">Feedback Support</p>
         </button>
         
         <button data-key="practical" onclick="changeBenefit(2)"
           class="benefit-btn text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
           <img alt="Layouts" src="/pages/pages/image/Layouts.png">
-          <p>Practical learning</p>
+          <p data-key="ppractical">Practical learning</p>
         </button>
 
         <button data-key="community" onclick="changeBenefit(3)"
           class="benefit-btn text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
           <img alt="Chat" src="/pages/pages/image/Chat.png">
-          <p>Community</p>
+          <p data-key="pcommunity">Community</p>
         </button>
 
       </div>
@@ -531,8 +549,8 @@
       </div>
 
       <div class="bg-white py-8 sm:py-12 lg:py-20">
-        <swiper-container class="mySwiper" pagination="false" autoplay-delay="2000" pagination-clickable="true"
-          navigation="true" space-between="30" centered-slides="true" loop="true"
+        <swiper-container class="mySwiper [--swiper-navigation-color:#ff3f22]" pagination="false" autoplay-delay="2000"
+          pagination-clickable="true" navigation="true" space-between="30" centered-slides="true" loop="true"
           breakpoints='{ "0":{ "slidesPerView":1 }, "600":{ "slidesPerView":1 }, "900":{ "slidesPerView":1 }, "1200":{ "slidesPerView":1 } }'>
           <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
             <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
@@ -814,12 +832,12 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
 
   <script>
-    const teamSwiper = document.querySelector(".teamSwiper");
+    const teamSwiper = document.querySelector(".teamSwiper")
     document.querySelector("#teamNext").onclick = () => {
-      teamSwiper.swiper.slideNext();
-    };
+      teamSwiper.swiper.slideNext()
+    }
     document.querySelector("#teamPrev").onclick = () => {
-      teamSwiper.swiper.slidePrev();
+      teamSwiper.swiper.slidePrev()
     };
   </script>
 
