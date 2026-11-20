@@ -241,7 +241,7 @@ const switchBtn = document.getElementById('switchBtn');
 const message = document.getElementById('message');
 
 
-// TARJIMA FUNKSIYASI
+// TARJIMA
 function translateAuthModal() {
 
     document.querySelectorAll('#authModal [data-key]').forEach(element => {
@@ -299,16 +299,6 @@ function closeAuthModal() {
 }
 
 closeModal.addEventListener('click', closeAuthModal);
-
-
-// MODAL TASHQARISIGA BOSILGANDA YOPISH
-modal.addEventListener('click', function (e) {
-
-    if (e.target === modal) {
-        closeAuthModal();
-    }
-
-});
 
 
 // SIGN IN / SIGN UP
@@ -392,42 +382,9 @@ if (languageSelect) {
 }
 
 
-// FORGOT PASSWORD
-document.addEventListener('click', function (e) {
-
-    if (e.target.id === 'forgotPassword') {
-
-        message.textContent = translations[language]?.forgotPasswordMessage || '';
-
-    }
-
-});
-
-
-
-authForm.addEventListener('submit', function (e) {
-
-    e.preventDefault();
-
-    message.textContent = '';
-
-    if (isSignUp && password.value !== confirmPassword.value) {
-
-        message.textContent =
-            translations[language]?.passwordMismatch || 'Passwords do not match';
-
-        message.classList.add('text-red-500');
-
-        return;
-
-    }
-
-
-});
-
-
-
 // registratsiya js
+
+
 
 // menu js
 

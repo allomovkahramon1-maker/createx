@@ -280,16 +280,6 @@ function closeAuthModal() {
 closeModal.addEventListener('click', closeAuthModal);
 
 
-// MODAL TASHQARISIGA BOSILGANDA YOPISH
-modal.addEventListener('click', function (e) {
-
-    if (e.target === modal) {
-        closeAuthModal();
-    }
-
-});
-
-
 // SIGN IN / SIGN UP
 let isSignUp = false;
 
@@ -369,37 +359,3 @@ if (languageSelect) {
     });
 
 }
-
-
-// FORGOT PASSWORD
-document.addEventListener('click', function (e) {
-
-    if (e.target.id === 'forgotPassword') {
-
-        message.textContent = translations[language]?.forgotPasswordMessage || '';
-
-    }
-
-});
-
-
-// FORM SUBMIT
-authForm.addEventListener('submit', function (e) {
-
-    e.preventDefault();
-
-    message.textContent = '';
-
-    if (isSignUp && password.value !== confirmPassword.value) {
-
-        message.textContent =
-            translations[language]?.passwordMismatch || 'Passwords do not match';
-
-        message.classList.add('text-red-500');
-
-        return;
-
-    }
-
-
-});
