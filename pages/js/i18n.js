@@ -85,7 +85,9 @@ const translations = {
 
         testimonials: "MIJOZLAR FIKRLARI",
         whatStudentsSay: "Talabalarimiz nima deydi?",
-        testimonialText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.",
+        testimonialText1: "Bizning maqsadimiz zamonaviy bilim va ko‘nikmalarnishakllantirish orqali har bir insonning rivojlanishiga yordam berishdir.Ta’lim jarayonida yangi imkoniyatlar yaratib, bilim olishni yanada qulay va samarali qilamiz. Har bir qadamda sifat, tajriba va innovatsiyalarga alohida e’tibor qaratamiz.",
+        testimonialText2: "Biz doimo rivojlanish va yangi imkoniyatlarni kashf etishga intilamiz.Zamonaviy yondashuvlar yordamida har bir insonning bilimini oshirish va tajribasini mustahkamlashga yordam beramiz.Biz uchun sifatli ta’lim, ishonch va doimiy o‘sish eng muhim qadriyatlardan biri hisoblanadi.",
+        testimonialText3: "Kelajak sari ishonch bilan qadam tashlash uchun mustahkam bilim va katta tajriba zarur.Biz har bir loyihada zamonaviy texnologiyalar va ijodiy yondashuvlardan foydalanamiz.Asosiy vazifamiz insonlarga foydali bilim berish va ularning maqsadlariga erishishiga ko‘maklashishdir.",
         positionCourse: "Lavozimi, kursi",
 
         ourBlog: "Bizning blog",
@@ -145,10 +147,13 @@ const translations = {
         eventDetailTitle: "Noaniqlik sharoitida kompaniyaning tashkiliy tuzilmasini shakllantirish",
         weWillTalkAbout: "Biz quyidagilar haqida gaplashamiz:",
         theme1: "1-mavzu.",
-        theme1Title: "Aliquet lectus urna viverra in odio.",
+        aliquet: "Biz zamonaviy bilim va imkoniyatlarni birlashtirib, har bir inson uchun qulay ta’lim muhitini yaratamiz. Maqsadimiz — sifatli bilim berish va yangi yutuqlarga erishish uchun yordam ko‘rsatish.",
+        aliquet2: "Biz har bir inson uchun sifatli ta’lim va qulay imkoniyatlar yaratishga intilamiz.Zamonaviy yondashuvlar orqali bilim va tajribani oshirib,yangi marralarni zabt etishga yordam beramiz.",
+        theme1Title: "Bilim va tajriba sari ishonchli qadam.",
+        themegTitle: "Qulay muhit va zamonaviy ta’lim imkoniyatlari.",
         theme1Description: "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris.",
         theme2: "2-mavzu.",
-        theme2Title: "Orci commodo, viverra orci mollis ut euismod.",
+        themegTitle: "Orci commodo, viverra orci mollis ut euismod.",
         theme3: "3-mavzu.",
         theme3Title: "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
         theme4: "4-mavzu.",
@@ -403,10 +408,23 @@ const translations = {
         registerForCourse: "Kursga ro‘yxatdan o‘tish",
 
         bestTutors: "Eng yaxshi ustozlar shu yerda",
-
+        themefTitle: "Har bir inson uchun qulay va ishonchli imkoniyatlar.",
+        aliquet3: "Bizning jamoamiz zamonaviy bilim va tajribaga asoslangan holda yangi imkoniyatlar yaratadi. Har bir insonning rivojlanishi uchun qulay sharoit va sifatli ta’limni taqdim etishga intilamiz.",
+        aliquet4: "Biz bilim olish va rivojlanish uchun yangi imkoniyatlar yaratamiz.Zamonaviy ta’lim usullari orqali har bir insonning salohiyatini oshirishga va kelajak sari ishonch bilan qadam tashlashiga yordam beramiz.",
+        themetTitle: "Har bir inson uchun yangi imkoniyatlar va rivojlanish sari ishonchli qadam.",
+        experienced: "Tajribali ustozlar",
+        feedback: "Fikr-mulohaza va yordam",
+        practical: "Amaliy ta’lim",
+        community: "Hamjamiyat",
+        only: "Faqat amaliyotchi ustozlar",
     },
 
     en: {
+        only: "Only Practicing Tutors",
+        practical: "Practical Learning",
+        experienced: "Experienced Tutors",
+        aliquet4: "We create new opportunities for learning and development.Through modern educational methods, we help everyone improve their potential and move confidently towards a brighter future.",
+        aliquet2: "We strive to create quality education and convenient opportunities for everyone.Through modern approaches, we help improve knowledge and experience while achieving new goals.",
         about: "About Us",
         courses: "Courses",
         events: "Events",
@@ -421,7 +439,7 @@ const translations = {
         heroLine3: "Online Courses",
         aboutUs: "About us",
         exploreCourses: "Explore courses",
-
+        aliquet: "We combine modern knowledge and opportunities to create a comfortable learning environment for everyone.Our goal is to provide quality education and support new achievements.",
         studentsGraduated: "Students graduated",
         completedCourses: "Completed courses",
         qualifiedTutors: "Qualified tutors",
@@ -491,7 +509,9 @@ const translations = {
 
         testimonials: "TESTIMONIALS",
         whatStudentsSay: "What our students say",
-        testimonialText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.",
+        testimonialText1: "Our goal is to support everyone's growth by developing modern knowledge and practical skills.We create new opportunities through education and make learning more accessible and effective.At every step, we focus on quality, experience, and innovation to achieve meaningful results.",
+        testimonialText2: "We always strive to grow and discover new opportunities.Through modern approaches, we help everyone improve their knowledge and strengthen their experience.Quality education, trust, and continuous development are among our most important values.",
+        testimonialText3: "Strong knowledge and valuable experience are essential for moving confidently toward the future. We use modern technologies and creative approaches in every project.Our main mission is to provide useful knowledge and help people achieve their personal goals.",
         positionCourse: "Position, Course",
 
         ourBlog: "Our Blog",
@@ -548,12 +568,13 @@ const translations = {
         event8Title: "Who is a project manager and do I want to be PM?",
         event9Title: "The company's business page as an additional tool to support the announcement of vacancies.",
         eventDetailTitle: "Formation of the organizational structure of the company in the face of uncertainty",
+        themefTitle: "Convenient and reliable opportunities for everyone.",
         weWillTalkAbout: "We will talk about:",
         theme1: "Theme 1.",
-        theme1Title: "Aliquet lectus urna viverra in odio.",
+        theme1Title: "A confident step towards knowledge and experience.",
+        themegTitle: "Comfortable environment and modern learning opportunities.",
         theme1Description: "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris.",
         theme2: "Theme 2.",
-        theme2Title: "Orci commodo, viverra orci mollis ut euismod.",
         theme3: "Theme 3.",
         theme3Title: "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
         theme4: "Theme 4.",
@@ -808,10 +829,23 @@ const translations = {
         registerForCourse: "Register for the course",
 
         bestTutors: "Best tutors are all here",
-
+        aliquet3: "Our team creates new opportunities based on modern knowledge and experience.We strive to provide a comfortable environment and quality education for everyone's development.",
+        themetTitle: "New opportunities and a confident step towards development for everyone.",
+        feedback: "Feedback Support", 
+        community: "Community",
     },
 
     ru: {
+        only: "Только практикующие преподаватели",
+        community: "Сообщество",
+        practical: "Практическое обучение",
+        feedback: "Поддержка и обратная связь",
+        experienced: "Опытные преподаватели",
+        themetTitle: "Новые возможности и уверенный шаг к развитию для каждого.",
+        aliquet4: "Мы создаём новые возможности для обучения и развития.Используя современные методы образования, помогаем каждому раскрыть свой потенциал и уверенно двигаться к успешному будущему.",
+        aliquet3: "Наша команда создаёт новые возможности, опираясь на современные знания и опыт. Мы стремимся обеспечить комфортные условия и качественное образование для развития каждого.",
+        themefTitle: "Удобные и надёжные возможности для каждого.",
+        aliquet2: "Мы стремимся создавать качественное образование и комфортные возможности для каждого.Благодаря современным подходам мы помогаем расширять знания, получать опыт и достигать новых целей.",
         about: "О нас",
         courses: "Курсы",
         events: "События",
@@ -819,7 +853,7 @@ const translations = {
         contacts: "Контакты",
         getConsultation: "Получить консультацию",
         loginRegister: "Войти / Регистрация",
-
+        aliquet: "Мы объединяем современные знания и возможности, создавая комфортную образовательную среду для каждого.Наша цель — предоставлять качественное образование и помогать достигать новых успехов.",
         playShowreel: "Смотреть видео",
         heroLine1: "Наслаждайтесь обучением",
         heroLine2: "вместе с Createx",
@@ -896,7 +930,9 @@ const translations = {
 
         testimonials: "ОТЗЫВЫ",
         whatStudentsSay: "Что говорят наши студенты",
-        testimonialText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.",
+        testimonialText1: "Наша цель — помогать каждому развиваться, приобретая современные знания и практические навыки.Мы создаём новые возможности благодаря образованию и делаем обучение более доступным и эффективным.На каждом этапе мы уделяем особое внимание качеству, опыту и инновациям.",
+        testimonialText2: "Мы всегда стремимся к развитию и открытию новых возможностей.Используя современные подходы, мы помогаем каждому расширять знания и укреплять свой опыт.Качественное образование, доверие и постоянное развитие являются нашими главными ценностями.",
+        testimonialText3: "Для уверенного движения к будущему необходимы крепкие знания и ценный опыт.В каждом проекте мы используем современные технологии и творческие подходы.Наша главная задача — делиться полезными знаниями и помогать людям достигать поставленных целей.",
         positionCourse: "Должность, курс",
 
         ourBlog: "Наш блог",
@@ -956,7 +992,8 @@ const translations = {
         eventDetailTitle: "Формирование организационной структуры компании в условиях неопределённости",
         weWillTalkAbout: "Мы поговорим о следующем:",
         theme1: "Тема 1.",
-        theme1Title: "Aliquet lectus urna viverra in odio.",
+        theme1Title: "Уверенный шаг к знаниям и опыту.",
+        theme2Title: "Комфортная среда и современные возможности для обучения.", 
         theme1Description: "Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi curabitur turpis varius mauris.",
         theme2: "Тема 2.",
         theme2Title: "Orci commodo, viverra orci mollis ut euismod.",
@@ -1216,7 +1253,7 @@ const translations = {
         bestTutors: "Здесь собраны лучшие преподаватели",
 
     }
-    
+
 };
 
 function translate(language) {
