@@ -1,5 +1,25 @@
 const translations = {
 	uz: {
+		workingEmail: "Ishchi emailingizni kiriting",
+		signIn: "Kirish",
+		signUp: "Ro‘yxatdan o‘tish",
+		fullNameLabel: "To‘liq ism",
+		emailLabel: "Email",
+		passwordLabel: "Parol",
+		confirmPasswordLabel: "Parolni tasdiqlash",
+		keepSignedIn: "Tizimda qolish",
+		forgotPassword: "Parolni unutdingizmi?",
+		noAccount: "Hisobingiz yo‘qmi?",
+		haveAccount: "Hisobingiz bormi?",
+		orSignInWith: "Yoki quyidagilar orqali kiring",
+
+		signInDescription: "Ro‘yxatdan o‘tishda foydalanilgan email va parol orqali hisobingizga kiring.",
+		signUpDescription: "Ro‘yxatdan o‘tish bir daqiqadan kam vaqt oladi va o‘qish jarayonini boshqarish imkonini beradi.",
+
+		yourFullName: "To‘liq ismingiz",
+		yourWorkingEmail: "Ishchi emailingiz",
+		passwordPlaceholder: "Parol",
+		confirmPasswordPlaceholder: "Parolni tasdiqlang",
 		about: 'Biz haqimizda',
 		courses: 'Kurslar',
 		events: 'Tadbirlar',
@@ -482,9 +502,49 @@ const translations = {
 			'Amaliy loyihalar ustida ishlang va real tajriba orttiring.',
 		scheduleDescription:
 			'Tajribali mentorlar ko‘magida o‘z maqsadlaringizga tezroq erishing.',
+		ourBenefits: "BIZNING AFZALLIKLARIMIZ",
+		thatsHowWeDoIt: "Biz qanday ishlaymiz",
+		experiencedTutors: "Tajribali ustozlar",
+		feedbackbtn: "Fikr-mulohaza va yordam",
+		ppractical: "Amaliy ta'lim",
+		pcommunity: "Hamjamiyat",
+		only: "Faqat amaliyotchi ustozlar",
+		benefitText: "Bizning ustozlarimiz katta tajribaga ega. Ular o‘quvchilarga bilim va ko‘nikmalarni samarali o‘zlashtirishga yordam beradi.",
+		feedbackTitle: "Fikr-mulohaza va qo‘llab-quvvatlash",
+		feedbackText: "O‘quvchilar ustozlardan muntazam fikr-mulohaza oladilar. Biz ularga xatolarini tushunish va bilimlarini yaxshilashda yordam beramiz.",
+		practicalTitle: "Amaliy ta'lim",
+		practicalText: "Biz amaliy mashg‘ulotlarga e'tibor qaratamiz. O‘quvchilar real loyihalar ustida ishlab, foydali tajriba orttiradilar.",
+		communityTitle: "Hamjamiyat",
+		communityText: "O‘quvchilar do‘stona hamjamiyatda muloqot qilishlari, fikr almashishlari va birgalikda o‘rganishlari mumkin.",
+		our: "Tadbirlarimiz",
+		aliquet: "Biz zamonaviy bilim va imkoniyatlarni birlashtirib, har bir inson uchun qulay ta’lim muhitini yaratamiz. Bizning maqsadimiz — sifatli ta’lim berish va yangi yutuqlarga erishishda qo‘llab-quvvatlash.",
+		themetTitle: "Har bir inson uchun yangi imkoniyatlar va rivojlanish sari ishonchli qadam.",
+		themefTitle: "Har bir inson uchun qulay va ishonchli imkoniyatlar.",
+		themegTitle: "Qulay muhit va zamonaviy ta’lim imkoniyatlari.",
+		theme1Title: "Bilim va tajriba sari yangi imkoniyatlar.",
 	},
 
 	en: {
+		theme1Title: "Aliquet lectus urna viverra in odio.",
+		themegTitle: "Comfortable environment and modern learning opportunities.",
+		themefTitle: "Convenient and reliable opportunities for everyone.",
+		themetTitle: "New opportunities and a confident step towards development for everyone.",
+		our: "our events",
+		workingEmail: "Your working email",
+		ourBenefits: "OUR BENEFITS",
+		thatsHowWeDoIt: "That’s how we do it",
+		experiencedTutors: "Experienced Tutors",
+		feedbackbtn: "Feedback Support",
+		ppractical: "Practical learning",
+		pcommunity: "Community",
+		only: "Only practicing tutors",
+		benefitText: "Our tutors have extensive experience. They help students effectively develop their knowledge and skills.",
+		feedbackTitle: "Feedback and support",
+		feedbackText: "Students receive regular feedback from teachers. We help them understand mistakes and improve their knowledge.",
+		practicalTitle: "Practical learning",
+		practicalText: "We focus on practical lessons. Students work on real projects and gain useful experience.",
+		communityTitle: "Community",
+		communityText: "Students can communicate, share ideas and learn together in a friendly community.",
 		about: 'About Us',
 		courses: 'Courses',
 		events: 'Events',
@@ -918,7 +978,7 @@ const translations = {
 		lesson5Label: 'Lesson 5.',
 		lesson5Title: 'Planning and managing the process.',
 		lesson5Description: 'Learn how to plan and manage projects effectively.',
-
+		aliquet: "We combine modern knowledge and opportunities to create a comfortable learning environment for everyone. Our goal is to provide quality education and support new achievements.",
 		lesson6Label: 'Lesson 6.',
 		lesson6Title: 'Understanding user needs.',
 		lesson6Description: 'Learn how to identify and analyze user needs.',
@@ -937,9 +997,48 @@ const translations = {
 		registerForCourse: 'Register for the course',
 
 		bestTutors: 'Best tutors are all here',
+		signIn: "Sign in",
+		signUp: "Sign up",
+		fullNameLabel: "Full Name",
+		emailLabel: "Email",
+		passwordLabel: "Password",
+		confirmPasswordLabel: "Confirm Password",
+		keepSignedIn: "Keep me signed in",
+		forgotPassword: "Forgot password?",
+		noAccount: "Don't have an account?",
+		haveAccount: "Already have an account?",
+		orSignInWith: "Or sign in with",
+
+		signInDescription: "Sign in to your account using email and password provided during registration.",
+		signUpDescription: "Registration takes less than a minute but gives you full control over your studying.",
+
+		yourFullName: "Your full name",
+		yourWorkingEmail: "Your working email",
+		passwordPlaceholder: "Password",
+		confirmPasswordPlaceholder: "Confirm password"
 	},
 
 	ru: {
+		theme1Title: "Новые возможности для получения знаний и опыта.",
+		themegTitle: "Комфортная среда и современные возможности для обучения.",
+		themefTitle: "Удобные и надёжные возможности для каждого.",
+		themetTitle: "Новые возможности и уверенный шаг на пути к развитию для каждого.",
+		aliquet: "Мы объединяем современные знания и возможности, чтобы создать комфортную образовательную среду для каждого. Наша цель — предоставлять качественное образование и поддерживать стремление к новым достижениям.",
+		workingEmail: "Введите вашу рабочую почту",
+		ourBenefits: "НАШИ ПРЕИМУЩЕСТВА",
+		thatsHowWeDoIt: "Как мы это делаем",
+		experiencedTutors: "Опытные преподаватели",
+		feedbackbtn: "Обратная связь и поддержка",
+		ppractical: "Практическое обучение",
+		pcommunity: "Сообщество",
+		only: "Только практикующие преподаватели",
+		benefitText: "Наши преподаватели обладают большим опытом. Они помогают студентам эффективно развивать знания и навыки.",
+		feedbackTitle: "Обратная связь и поддержка",
+		feedbackText: "Студенты регулярно получают отзывы от преподавателей. Мы помогаем им понимать ошибки и улучшать свои знания.",
+		practicalTitle: "Практическое обучение",
+		practicalText: "Мы уделяем особое внимание практическим занятиям. Студенты работают над реальными проектами и получают полезный опыт.",
+		communityTitle: "Сообщество",
+		communityText: "Студенты могут общаться, делиться идеями и учиться вместе в дружелюбном сообществе.",
 		about: 'О нас',
 		courses: 'Курсы',
 		events: 'События',
@@ -960,10 +1059,8 @@ const translations = {
 		qualifiedTutors: 'Квалифицированных преподавателей',
 		yearsExperience: 'Лет опыта',
 
-		workingEmail:  
+		workingEmail:  "",
 
-		whoWeAre: 'КТО МЫ',
-		whyCreatex: 'Почему Createx?',
 		whyText1: 'Качественное образование и современные учебные программы.',
 		whyText2: 'Удобная и эффективная среда обучения.',
 		whyText3: 'Индивидуальный подход к каждому студенту.',
@@ -1316,7 +1413,7 @@ const translations = {
 		coursePrice: '$120 в месяц',
 		priceDescription: 'Оплата производится ежемесячно.',
 		joinCourse: 'Записаться на курс',
-
+		our:"наши мероприятия",
 		courseCurator: 'Куратор курса',
 		curatorRole: 'Старший UX-дизайнер в IT-компании',
 		rating: 'Рейтинг 4.9',
@@ -1417,36 +1514,85 @@ const translations = {
 		scheduleDescription:
 			'Достигайте своих целей быстрее под руководством опытных наставников.',
 
-        directionDescription: "Изучайте современные технологии с нуля и создавайте своё портфолио на основе реальных проектов."
+		directionDescription: "Изучайте современные технологии с нуля и создавайте своё портфолио на основе реальных проектов.",
+		signIn: "Войти",
+		signUp: "Зарегистрироваться",
+		fullNameLabel: "Полное имя",
+		emailLabel: "Электронная почта",
+		passwordLabel: "Пароль",
+		confirmPasswordLabel: "Подтвердите пароль",
+		keepSignedIn: "Оставаться в системе",
+		forgotPassword: "Забыли пароль?",
+		noAccount: "Нет аккаунта?",
+		haveAccount: "Уже есть аккаунт?",
+		orSignInWith: "Или войдите через",
+
+		signInDescription: "Войдите в свой аккаунт, используя электронную почту и пароль, указанные при регистрации.",
+		signUpDescription: "Регистрация занимает меньше минуты и позволяет полностью контролировать процесс обучения.",
+
+		yourFullName: "Ваше полное имя",
+		yourWorkingEmail: "Ваша рабочая почта",
+		passwordPlaceholder: "Пароль",
+		confirmPasswordPlaceholder: "Подтвердите пароль"
 	},
 }
 
+
+
 function translate(language) {
+
 	document.querySelectorAll('[data-key]').forEach(element => {
-		const key = element.dataset.key
-		const text = translations[language]?.[key]
+
+		const key = element.dataset.key;
+		const text = translations[language]?.[key];
 
 		if (text !== undefined) {
-			element.textContent = text
+			element.textContent = text;
 		}
-	})
 
-	document.documentElement.lang = language
+	});
+
+
+	// Input placeholder tarjimasi
+	document.querySelectorAll('[data-placeholder], [data-key-placeholder]').forEach(element => {
+
+		const key = element.dataset.placeholder || element.dataset.keyPlaceholder;
+		const text = translations[language]?.[key];
+
+		if (text !== undefined) {
+			element.placeholder = text;
+		}
+
+	});
+
+	document.documentElement.lang = language;
+
 }
 
-const select = document.getElementById('languageSelect')
 
-const savedLanguage = localStorage.getItem('language') || 'en'
+const select = document.getElementById('languageSelect');
+
+const savedLanguage = localStorage.getItem('language') || 'en';
 
 if (select) {
-	select.value = savedLanguage
 
-	translate(savedLanguage)
+	select.value = savedLanguage;
+
+	translate(savedLanguage);
+
 
 	select.addEventListener('change', event => {
-		const language = event.target.value
 
-		localStorage.setItem('language', language)
-		translate(language)
-	})
+		const language = event.target.value;
+
+		localStorage.setItem('language', language);
+
+		translate(language);
+
+	});
+
+} else {
+
+	translate(savedLanguage);
+
 }

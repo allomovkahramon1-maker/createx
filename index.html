@@ -309,62 +309,63 @@
 
   <section class="py-20 sm:py-24">
     <div class="max-w-6xl mx-auto px-4 sm:px-5">
-
+  
       <div class="text-center">
         <p class="text-xs font-bold tracking-wide mb-3" data-key="ourBenefits">
           OUR BENEFITS
         </p>
-
+  
         <h2 class="text-3xl sm:text-4xl font-bold" data-key="thatsHowWeDoIt">
           That’s how we do it
         </h2>
       </div>
-
+  
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-10">
-
+  
         <button onclick="changeBenefit(0)"
-          class="benefit-btn text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
-          Experienced Tutors
+          class="benefit-btn bg-[#ff3f22] text-white py-3 px-4 text-sm rounded transition flex items-center gap-3">
+          <p data-key="experiencedTutors">Experienced Tutors</p>
         </button>
-
-        <button data-key="feedback" onclick="changeBenefit(1)"
+  
+        <button onclick="changeBenefit(1)"
           class="benefit-btn text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
           <img alt="like img" src="/pages/pages/image/like.svg">
           <p data-key="feedbackbtn">Feedback Support</p>
         </button>
-        
-        <button data-key="practical" onclick="changeBenefit(2)"
+  
+        <button onclick="changeBenefit(2)"
           class="benefit-btn text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
           <img alt="Layouts" src="/pages/pages/image/Layouts.png">
           <p data-key="ppractical">Practical learning</p>
         </button>
-
-        <button data-key="community" onclick="changeBenefit(3)"
+  
+        <button onclick="changeBenefit(3)"
           class="benefit-btn text-gray-400 py-3 px-4 text-sm hover:bg-[#ff3f22] rounded transition flex items-center gap-3">
           <img alt="Chat" src="/pages/pages/image/Chat.png">
           <p data-key="pcommunity">Community</p>
         </button>
-
+  
       </div>
-
+  
       <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center mt-16">
-
+  
         <div>
           <h3 data-key="only" id="benefitTitle" class="text-2xl sm:text-3xl font-bold mb-5">
             Only practicing tutors
           </h3>
-
-          <p id="benefitText" class="text-sm leading-7 text-[#424551] max-w-lg">
-            
+  
+          <p id="benefitText" data-key="benefitText" class="text-sm leading-7 text-[#424551] max-w-lg">
+            Our tutors have extensive experience. They help students effectively develop their knowledge and skills.
           </p>
         </div>
-
+  
         <div class="flex justify-center">
           <img id="benefitImage" alt="Experienced tutors" class="w-full max-w-lg"
             src="/pages/pages/image/illustration (1).png">
         </div>
-
+  
       </div>
+  
     </div>
   </section>
 
@@ -716,25 +717,37 @@
 
   <section class="w-full py-20 bg-[#FEDBD3]">
     <div class="mx-auto flex max-w-6xl flex-col items-center px-4 text-center">
-      <p class="mb-3 text-[18px] font-semibold uppercase tracking-wide text-gray-700" data-key="dontMissAnything">DON'T
-        MISS ANYTHING</p>
+  
+      <p class="mb-3 text-[18px] font-semibold uppercase tracking-wide text-gray-700" data-key="dontMissAnything">
+        DON'T MISS ANYTHING
+      </p>
+  
       <h2 class="max-w-2xl text-2xl font-bold leading-tight text-gray-900 md:text-3xl">
-        <span data-key="subscribeTitle1">Subscribe to the Createx School</span>
+        <span data-key="subscribeTitle1">
+          Subscribe to the Createx School
+        </span>
         <br>
-        <span data-key="subscribeTitle2">announcements</span>
+        <span data-key="subscribeTitle2">
+          announcements
+        </span>
       </h2>
+  
       <form class="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row">
+  
         <input
           class="w-full sm:flex-1 h-12 rounded-sm border border-gray-200 px-4 text-sm text-gray-700 outline-none placeholder:text-gray-400 focus:border-orange-500 transition"
           placeholder="Your working email" data-key-placeholder="workingEmail" type="email" />
-        <button
-          class="h-12 rounded-sm bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600"
+  
+        <button class="h-12 rounded-sm bg-orange-500 px-8 text-sm font-semibold text-white transition hover:bg-orange-600"
           data-key="subscribe">
           Subscribe
         </button>
+  
       </form>
+  
     </div>
   </section>
+
 
   <footer class="bg-[#1f2230] text-white">
     <div class="mx-auto max-w-[1200px] px-6 py-10 lg:py-14">
