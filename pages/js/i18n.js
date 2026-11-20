@@ -1,5 +1,8 @@
 const translations = {
 	uz: {
+		ourMissionText: "Mustahkam bilim va qimmatli tajriba kelajak sari ishonch bilan qadam tashlash uchun juda muhimdir. Biz har bir loyihada zamonaviy texnologiyalar va ijodiy yondashuvlardan foydalanamiz. Bizning asosiy vazifamiz foydali bilimlarni taqdim etish va insonlarga o‘z shaxsiy maqsadlariga erishishda yordam berishdir.",
+		ourValuesText: "Biz doimo rivojlanish va yangi imkoniyatlarni kashf etishga intilamiz. Zamonaviy yondashuvlar orqali har bir insonga bilimini oshirish va tajribasini mustahkamlashda yordam beramiz. Sifatli ta’lim, ishonch va uzluksiz rivojlanish bizning eng muhim qadriyatlarimizdan biridir.",
+		ourGoalText: "Bizning maqsadimiz zamonaviy bilim va amaliy ko‘nikmalarni rivojlantirish orqali har bir insonning o‘sishini qo‘llab-quvvatlashdir. Ta’lim orqali yangi imkoniyatlar yaratib, bilim olishni yanada qulay va samarali qilamiz. Har bir qadamda mazmunli natijalarga erishish uchun sifat, tajriba va innovatsiyalarga e’tibor qaratamiz.",
 		workingEmail: "Ishchi emailingizni kiriting",
 		signIn: "Kirish",
 		signUp: "Ro‘yxatdan o‘tish",
@@ -525,6 +528,9 @@ const translations = {
 	},
 
 	en: {
+		ourMissionText: "Strong knowledge and valuable experience are essential for moving confidently toward the future. We use modern technologies and creative approaches in every project. Our main mission is to provide useful knowledge and help people achieve their personal goals.",
+		ourValuesText: "We always strive to grow and discover new opportunities. Through modern approaches, we help everyone improve their knowledge and strengthen their experience. Quality education, trust, and continuous development are among our most important values.",
+		ourGoalText: "Our goal is to support everyone's growth by developing modern knowledge and practical skills. We create new opportunities through education and make learning more accessible and effective. At every step, we focus on quality, experience, and innovation to achieve meaningful results.",
 		theme1Title: "Aliquet lectus urna viverra in odio.",
 		themegTitle: "Comfortable environment and modern learning opportunities.",
 		themefTitle: "Convenient and reliable opportunities for everyone.",
@@ -1019,6 +1025,9 @@ const translations = {
 	},
 
 	ru: {
+		ourMissionText: "Прочные знания и ценный опыт необходимы для уверенного движения в будущее. В каждом проекте мы используем современные технологии и творческие подходы. Наша главная миссия — предоставлять полезные знания и помогать людям достигать личных целей.",
+		ourValuesText: "Мы всегда стремимся к развитию и открытию новых возможностей. Используя современные подходы, мы помогаем каждому расширять свои знания и укреплять опыт. Качественное образование, доверие и непрерывное развитие — одни из наших важнейших ценностей.",
+		ourGoalText: "Наша цель — поддерживать развитие каждого человека, развивая современные знания и практические навыки. Мы создаём новые возможности благодаря образованию, делая обучение более доступным и эффективным. На каждом этапе мы уделяем особое внимание качеству, опыту и инновациям для достижения значимых результатов.",
 		theme1Title: "Новые возможности для получения знаний и опыта.",
 		themegTitle: "Комфортная среда и современные возможности для обучения.",
 		themefTitle: "Удобные и надёжные возможности для каждого.",
