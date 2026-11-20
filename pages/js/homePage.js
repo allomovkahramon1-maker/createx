@@ -212,7 +212,7 @@ modal.innerHTML = `
                     class="hover:text-blue-700">
                     <img src="pages/pages/image/Linked-In.svg" alt="LinkedIn">
                 </a>
-
+                
             </div>
 
         </div>
