@@ -961,7 +961,7 @@ const translations = {
 		qualifiedTutors: 'Квалифицированных преподавателей',
 		yearsExperience: 'Лет опыта',
 
-		workingEmail:  
+		workingemmail: 'Ваш рабочий электронный адрес',
 
 		whoWeAre: 'КТО МЫ',
 		whyCreatex: 'Почему Createx?',
@@ -1418,36 +1418,52 @@ const translations = {
 		scheduleDescription:
 			'Достигайте своих целей быстрее под руководством опытных наставников.',
 
-        directionDescription: "Изучайте современные технологии с нуля и создавайте своё портфолио на основе реальных проектов."
+		directionDescription:
+			'Изучайте современные технологии с нуля и создавайте своё портфолио на основе реальных проектов.',
 	},
 }
 
-function translate(language) {
-	document.querySelectorAll('[data-key]').forEach(element => {
-		const key = element.dataset.key
-		const text = translations[language]?.[key]
+const LANGUAGE_KEY = 'preferredLanguage'
 
-		if (text !== undefined) {
-			element.textContent = text
+function translatePage(language) {
+	const elements = document.querySelectorAll('[data-key]')
+
+	elements.forEach(element => {
+		const key = element.getAttribute('data-key')
+		const translation = translations[language][key]
+		if (translation) {
+			element.textContent = translation
+		}
+		if (translation) {
+			if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+				element.placeholder = translation
+			} else {
+				element.textContent = translation
+			}
 		}
 	})
-
-	document.documentElement.lang = language
 }
 
-const select = document.getElementById('languageSelect')
+function changeLanguage(language) {
+	localStorage.setItem(LANGUAGE_KEY, language)
+	translatePage(language)
+}
 
-const savedLanguage = localStorage.getItem('language') || 'en'
+document.addEventListener('DOMContentLoaded', () => {
+	const savedLanguage = localStorage.getItem(LANGUAGE_KEY) || 'uz'
+	translatePage(savedLanguage)
+})
 
-if (select) {
-	select.value = savedLanguage
-
-	translate(savedLanguage)
-
-	select.addEventListener('change', event => {
-		const language = event.target.value
-
-		localStorage.setItem('language', language)
-		translate(language)
+document.querySelectorAll('button[data-lang]').forEach(button => {
+	button.addEventListener('click', () => {
+		const selectedLanguage = button.getAttribute('data-lang')
+		changeLanguage(selectedLanguage)
 	})
-}
+})
+
+let langBtn = document.querySelector('.lang-dropdown-button')
+let langDropdown = document.querySelector('.lang-dropdown')
+
+langBtn.addEventListener('click', function () {
+	langDropdown.classList.toggle('active')
+})
