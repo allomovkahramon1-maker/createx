@@ -45,6 +45,7 @@ closeBtn.addEventListener('click', function () {
 
 // registr js
 
+
 const modal = document.createElement('div');
 
 modal.id = 'authModal';
@@ -60,84 +61,86 @@ modal.innerHTML = `
         class="relative bg-white w-full max-w-[400px]
         rounded-sm shadow-xl overflow-hidden">
 
-        <!-- x button -->
         <button id="closeModal"
             class="absolute top-4 right-5 text-2xl
             text-gray-500 hover:text-red-500">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f"><path d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z"/></svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" height="24px"
+                width="24px" fill="#1f1f1f">
+                <path d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z"/>
+            </svg>
         </button>
 
-        <!-- matn -->
         <div class="px-7 sm:px-8 pt-8 pb-5">
 
             <h2 id="formTitle"
+                data-key="signIn"
                 class="text-2xl font-bold text-center text-[#1e212c]">
                 Sign in
             </h2>
 
             <p id="formDescription"
-                class="text-xs text-gray-400 text-center
-                mt-5 mb-6 leading-5">
-                Sign in to your account using email and password provided
-                during registration.
+                data-key="signInDescription"
+                class="text-xs text-gray-400 text-center mt-5 mb-6 leading-5">
+                Sign in to your account using email and password provided during registration.
             </p>
 
             <form id="authForm" class="flex flex-col gap-4">
 
                 <div id="nameBox" class="hidden">
-                    <label class="text-xs text-gray-700">
+                    <label class="text-xs text-gray-700"
+                        data-key="fullNameLabel">
                         Full Name
                     </label>
 
                     <input id="fullName"
                         type="text"
+                        data-placeholder="yourFullName"
                         placeholder="Your full name"
-                        class="w-full border border-gray-300
-                        px-3 py-3 mt-2 text-xs outline-none
-                        focus:border-orange-500">
+                        class="w-full border border-gray-300 px-3 py-3 mt-2 text-xs outline-none focus:border-orange-500">
                 </div>
 
                 <div>
-                    <label class="text-xs text-gray-700">
+                    <label class="text-xs text-gray-700"
+                        data-key="emailLabel">
                         Email
                     </label>
 
                     <input id="email"
                         type="email"
+                        data-placeholder="yourWorkingEmail"
                         placeholder="Your working email"
-                        class="w-full border border-gray-300
-                        px-3 py-3 mt-2 text-xs outline-none
-                        focus:border-orange-500">
+                        class="w-full border border-gray-300 px-3 py-3 mt-2 text-xs outline-none focus:border-orange-500">
                 </div>
 
                 <div>
-                    <label class="text-xs text-gray-700">
+                    <label class="text-xs text-gray-700"
+                        data-key="passwordLabel">
                         Password
                     </label>
 
                     <div class="relative mt-2">
                         <input id="password"
                             type="password"
+                            data-placeholder="passwordPlaceholder"
                             placeholder="Password"
-                            class="w-full border border-gray-300
-                            px-3 py-3 text-xs outline-none
-                            focus:border-orange-500 pr-10">
+                            class="w-full border border-gray-300 px-3 py-3 text-xs outline-none focus:border-orange-500 pr-10">
                     </div>
                 </div>
 
                 <div id="confirmBox" class="hidden">
-                    <label class="text-xs text-gray-700">
+                    <label class="text-xs text-gray-700"
+                        data-key="confirmPasswordLabel">
                         Confirm Password
                     </label>
 
                     <div class="relative mt-2">
                         <input id="confirmPassword"
                             type="password"
+                            data-placeholder="confirmPasswordPlaceholder"
                             placeholder="Confirm password"
-                            class="w-full border border-gray-300
-                            px-3 py-3 text-xs outline-none
-                            focus:border-orange-500 pr-10">
-
+                            class="w-full border border-gray-300 px-3 py-3 text-xs outline-none focus:border-orange-500 pr-10">
                     </div>
                 </div>
 
@@ -145,23 +148,21 @@ modal.innerHTML = `
                     class="flex items-center justify-between text-[11px]">
 
                     <label class="flex items-center gap-2">
-                        <input type="checkbox"
-                            class="accent-[#ff3f22]">
-                        Keep me signed in
+                        <input type="checkbox" class="accent-[#ff3f22]">
+                        <span data-key="keepSignedIn">Keep me signed in</span>
                     </label>
 
                     <button type="button" id="forgotPassword"
-                        class="text-[#ff3f22] hover:underline">
+                        class="text-[#ff3f22] hover:underline"
+                        data-key="forgotPassword">
                         Forgot password?
                     </button>
                 </div>
 
                 <button id="submitBtn"
                     type="submit"
-                    class="w-full py-3 mt-1 text-xs font-bold
-                    text-white bg-gradient-to-r
-                    from-[#ff3f22] to-[#ff5722]
-                    hover:opacity-90 transition">
+                    data-key="signIn"
+                    class="w-full py-3 mt-1 text-xs font-bold text-white bg-gradient-to-r from-[#ff3f22] to-[#ff5722] hover:opacity-90 transition">
                     Sign in
                 </button>
 
@@ -171,48 +172,49 @@ modal.innerHTML = `
                 class="text-xs text-center mt-3"></p>
 
             <p class="text-xs text-gray-700 mt-5">
-                <span id="switchText">
+
+                <span id="switchText" data-key="noAccount">
                     Don't have an account?
                 </span>
 
                 <button id="switchBtn"
-                    class="text-[#ff3f22] hover:underline">
+                    class="text-[#ff3f22] hover:underline"
+                    data-key="signUp">
                     Sign up
                 </button>
+
             </p>
 
         </div>
 
-
-
         <div class="border-t border-gray-100 py-5">
 
-            <p class="text-center text-xs text-gray-400 mb-4">
+            <p class="text-center text-xs text-gray-400 mb-4"
+                data-key="orSignInWith">
                 Or sign in with
             </p>
 
-            <div class="flex items-center justify-center gap-4
-                text-gray-500 font-bold text-sm">
+            <div class="flex items-center justify-center gap-4 text-gray-500 font-bold text-sm">
 
                 <a href="#" aria-label="Facebook"
                     class="hover:text-blue-600">
-                    <img src="pages/pages/image/Facebook.svg" alt="qeaf">
-                    </a>
+                    <img src="pages/pages/image/Facebook.svg" alt="Facebook">
+                </a>
 
                 <a href="#" aria-label="Google"
                     class="hover:text-red-500">
-                    <img src="pages/pages/image/Instagram.svg" alt="wesjkfn">
-                    </a>
+                    <img src="pages/pages/image/Instagram.svg" alt="Google">
+                </a>
 
                 <a href="#" aria-label="Twitter"
                     class="hover:text-blue-400">
-                    <img src="pages/pages/image/Twitter.svg" alt="wejv">
-                    </a>
+                    <img src="pages/pages/image/Twitter.svg" alt="Twitter">
+                </a>
 
                 <a href="#" aria-label="LinkedIn"
                     class="hover:text-blue-700">
-                    <img src="pages/pages/image/Linked-In.svg" alt="ebfwefacmsdn">
-                    </a>
+                    <img src="pages/pages/image/Linked-In.svg" alt="LinkedIn">
+                </a>
 
             </div>
 
@@ -224,50 +226,91 @@ modal.innerHTML = `
 document.body.appendChild(modal);
 
 
+// ELEMENTLAR
+const closeModal = document.getElementById('closeModal');
+const formTitle = document.getElementById('formTitle');
+const formDescription = document.getElementById('formDescription');
+const authForm = document.getElementById('authForm');
+const nameBox = document.getElementById('nameBox');
+const confirmBox = document.getElementById('confirmBox');
+const fullName = document.getElementById('fullName');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const confirmPassword = document.getElementById('confirmPassword');
+const rememberBox = document.getElementById('rememberBox');
+const submitBtn = document.getElementById('submitBtn');
+const switchText = document.getElementById('switchText');
+const switchBtn = document.getElementById('switchBtn');
+const message = document.getElementById('message');
 
 
-// Modal ochilishi
+// TARJIMA FUNKSIYASI
+function translateAuthModal() {
+
+    document.querySelectorAll('#authModal [data-key]').forEach(element => {
+
+        const key = element.dataset.key;
+
+        if (translations[language]?.[key]) {
+            element.textContent = translations[language][key];
+        }
+
+    });
+
+    document.querySelectorAll('#authModal [data-placeholder]').forEach(element => {
+
+        const key = element.dataset.placeholder;
+
+        if (translations[language]?.[key]) {
+            element.placeholder = translations[language][key];
+        }
+
+    });
+
+}
+
+
+// MODAL OCHILISHI
 const loginBtns = document.querySelectorAll('.loginBtn');
 
-loginBtns.forEach(function (button) {
+loginBtns.forEach(button => {
+
     button.addEventListener('click', function () {
+
         modal.classList.remove('hidden');
         modal.classList.add('flex');
 
-        //  yopish
         mobileMenu.classList.add('hidden');
         menuBtn.classList.remove('hidden');
         closeBtn.classList.add('hidden');
+
+        translateAuthModal();
+
     });
+
 });
 
 
-// Modal ni baklash
+// MODAL YOPILISHI
 function closeAuthModal() {
+
     modal.classList.add('hidden');
     modal.classList.remove('flex');
 
     message.textContent = '';
+
 }
 
 closeModal.addEventListener('click', closeAuthModal);
 
-// sign in 
-//  sign up
+// SIGN IN / SIGN UP
 let isSignUp = false;
 
-switchBtn.addEventListener('click', function () {
-
-    isSignUp = !isSignUp;
+function updateAuthMode() {
 
     message.textContent = '';
 
     if (isSignUp) {
-
-        formTitle.textContent = 'Sign up';
-
-        formDescription.textContent =
-            'Registration takes less than a minute but gives you full control over your studying.';
 
         nameBox.classList.remove('hidden');
         confirmBox.classList.remove('hidden');
@@ -278,21 +321,17 @@ switchBtn.addEventListener('click', function () {
         rememberBox.innerHTML = `
             <label class="flex items-center gap-2 text-xs">
                 <input type="checkbox" class="accent-[#ff3f22]">
-                Remember me
+                <span data-key="keepSignedIn"></span>
             </label>
         `;
 
-        submitBtn.textContent = 'Sign up';
-
-        switchText.textContent = 'Already have an account?';
-        switchBtn.textContent = 'Sign in';
+        formTitle.dataset.key = 'signUp';
+        formDescription.dataset.key = 'signUpDescription';
+        submitBtn.dataset.key = 'signUp';
+        switchText.dataset.key = 'haveAccount';
+        switchBtn.dataset.key = 'signIn';
 
     } else {
-
-        formTitle.textContent = 'Sign in';
-
-        formDescription.textContent =
-            'Sign in to your account using email and password provided during registration.';
 
         nameBox.classList.add('hidden');
         confirmBox.classList.add('hidden');
@@ -303,17 +342,43 @@ switchBtn.addEventListener('click', function () {
         rememberBox.innerHTML = `
             <label class="flex items-center gap-2 text-xs">
                 <input type="checkbox" class="accent-[#ff3f22]">
-                Keep me signed in
+                <span data-key="keepSignedIn"></span>
             </label>
 
             <button type="button" id="forgotPassword"
-                class="text-[#ff3f22] hover:underline text-xs">
-                Forgot password?
+                class="text-[#ff3f22] hover:underline text-xs"
+                data-key="forgotPassword">
             </button>
         `;
 
-        submitBtn.textContent = 'Sign in';
+        formTitle.dataset.key = 'signIn';
+        formDescription.dataset.key = 'signInDescription';
+        submitBtn.dataset.key = 'signIn';
+        switchText.dataset.key = 'noAccount';
+        switchBtn.dataset.key = 'signUp';
 
-        switchText.textContent = "Don't have an account?";
     }
+
+    translateAuthModal();
+
+}
+
+switchBtn.addEventListener('click', function () {
+
+    isSignUp = !isSignUp;
+
+    updateAuthMode();
+
 });
+
+
+// TIL O'ZGARGANDA MODALNI HAM TARJIMA QILISH
+const languageSelect = document.getElementById('language');
+
+if (languageSelect) {
+
+    languageSelect.addEventListener('change', function () {
+        translateAuthModal();
+    });
+
+}

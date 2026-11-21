@@ -22,7 +22,7 @@
             <a href="index.html">
                 <img src="/pages/pages/image/Navbar/logo.svg" alt="Createx logo" class="sm:w-32" />
             </a>
-    
+
             <nav class="hidden lg:flex items-center gap-6 font-medium">
                 <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
                 <a href="courses.html" class="hover:text-[#ff3f22]" data-key="courses">Courses</a>
@@ -30,7 +30,7 @@
                 <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
                 <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
             </nav>
-    
+
             <button>
                 <select name="select" id="languageSelect" class="outline-none cursor-pointer bg-[#FFDAD5] border-2">
                     <option value="en">Eng</option>
@@ -38,7 +38,7 @@
                     <option value="ru">Rus</option>
                 </select>
             </button>
-    
+
             <div class="hidden lg:flex items-center gap-4">
                 <a href="contact.html" class="bg-[#ff3f22] text-white px-6 py-3 font-bold rounded-md hover:bg-[#e9371d]"
                     data-key="getConsultation">
@@ -48,23 +48,24 @@
                     Log in / Register
                 </button>
             </div>
-    
+
             <button id="menuBtn" class="lg:hidden text-3xl">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
                     <path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z" />
                 </svg>
             </button>
-    
+
             <button id="closeBtn" class="hidden lg:hidden text-3xl">
                 <span class="font-medium hover:text-[#ff3f22]">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px"
+                        fill="#1f1f1f">
                         <path
                             d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z" />
                     </svg>
                 </span>
             </button>
         </nav>
-    
+
         <div id="mobileMenu" class="hidden lg:hidden bg-[#ffc5b8] border-t border-[#f4b5a8] px-5 py-5">
             <div class="flex flex-col gap-5 font-medium">
                 <a href="about.html" class="hover:text-[#ff3f22]" data-key="about">About Us</a>
@@ -72,7 +73,8 @@
                 <a href="eventList.html" class="hover:text-[#ff3f22]" data-key="events">Events</a>
                 <a href="blog.html" class="hover:text-[#ff3f22]" data-key="blog">Blog</a>
                 <a href="contact.html" class="hover:text-[#ff3f22]" data-key="contacts">Contacts</a>
-                <a href="contact.html" class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]"
+                <a href="contact.html"
+                    class="bg-[#ff3f22] text-white text-center px-5 py-3 rounded-md hover:bg-[#e9371d]"
                     data-key="getConsultation">
                     Get consultation
                 </a>
@@ -85,7 +87,6 @@
 
     <main>
 
-        <!--  -->
         <section class="py-[110px] bg-white">
             <div class="max-w-[1100px] mx-auto px-4">
 
@@ -152,142 +153,105 @@
 
         <section class="bg-[#F0F1F3] py-10 sm:py-[50px]">
             <div class="max-w-6xl mx-auto px-4 sm:px-6">
-
                 <div class="flex flex-col items-center gap-4 sm:gap-8 pb-8 sm:pb-[50px] text-center">
-                    <h6 class="font-bold text-[16px] sm:text-[20px]" data-key="testimonials">
-                        TESTIMONIALS
-                    </h6>
-
-                    <h1 class="font-bold text-[28px] sm:text-[36px] lg:text-[46px]" data-key="whatStudentsSay">
-                        What our students say
+                    <h6 class="font-bold text-[16px] sm:text-[20px]" data-key="testimonials">TESTIMONIALS</h6>
+                    <h1 class="font-bold text-[28px] sm:text-[36px] lg:text-[46px]" data-key="whatStudentsSay">What our
+                        students
+                        say
                     </h1>
                 </div>
 
                 <div class="bg-white py-8 sm:py-12 lg:py-20">
-
-                    <swiper-container class="mySwiper" pagination="false" pagination-clickable="true" navigation="true"
-                        space-between="30" centered-slides="true" loop="true">
-
-                        <!-- Swiper 1 -->
+                    <swiper-container class="mySwiper [--swiper-navigation-color:#ff3f22]" pagination="false"
+                        autoplay-delay="2000" pagination-clickable="true" navigation="true" space-between="30"
+                        centered-slides="true" loop="true"
+                        breakpoints='{ "0":{ "slidesPerView":1 }, "600":{ "slidesPerView":1 }, "900":{ "slidesPerView":1 }, "1200":{ "slidesPerView":1 } }'>
                         <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
                             <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
-
                                 <div class="w-full sm:w-auto flex justify-center sm:block">
                                     <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg"
                                         alt="braces image">
                                 </div>
-
                                 <div class="flex flex-col gap-6">
-
                                     <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed"
-                                        data-key="testimonialText">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
-                                        amet lectus quam viverra mus lobortis fermentum amet,
-                                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
-                                        ornare turpis quis non. Congue tortor in euismod vulputate
-                                        etiam eros. Pulvinar neque pharetra arcu diam maecenas
-                                        diam integer in.
+                                        data-key="ourGoalText">
+                                        Our goal is to support everyone's growth by developing
+                                        modern knowledge and practical skills. We create new
+                                        opportunities through education and make learning
+                                        more accessible and effective. At every step, we focus
+                                        on quality, experience, and innovation to achieve
+                                        meaningful results.
                                     </p>
-
                                     <div class="flex items-center gap-4">
                                         <img class="w-[45px] sm:w-[50px] rounded-full"
                                             src="/pages/pages/image/image (38).png" alt="student image">
-
                                         <div>
-                                            <h1 class="font-bold text-[16px] sm:text-[20px]">
-                                                Eleanor Pena
-                                            </h1>
-
-                                            <p class="text-sm sm:text-base" data-key="positionCourse">
-                                                Position, Course
+                                            <h1 class="font-bold text-[16px] sm:text-[20px]">Eleanor Pena</h1>
+                                            <p class="text-sm sm:text-base" data-key="positionCourse">Position, Course
                                             </p>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </swiper-slide>
 
-                        <!-- Swiper 2 -->
                         <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
                             <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
-
                                 <div class="w-full sm:w-auto flex justify-center sm:block">
                                     <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg"
                                         alt="braces image">
                                 </div>
-
                                 <div class="flex flex-col gap-6">
-
                                     <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed"
-                                        data-key="testimonialText">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
-                                        amet lectus quam viverra mus lobortis fermentum amet,
-                                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
-                                        ornare turpis quis non. Congue tortor in euismod vulputate
-                                        etiam eros. Pulvinar neque pharetra arcu diam maecenas
-                                        diam integer in.
+                                        data-key="ourValuesText">
+                                        We always strive to grow and discover new
+                                        opportunities. Through modern approaches, we help
+                                        everyone improve their knowledge and strengthen
+                                        their experience. Quality education, trust, and
+                                        continuous development are among our most
+                                        important values.
                                     </p>
-
                                     <div class="flex items-center gap-4">
                                         <img class="w-[45px] sm:w-[50px] rounded-full"
                                             src="/pages/pages/image/image (38).png" alt="student image">
-
                                         <div>
-                                            <h1 class="font-bold text-[16px] sm:text-[20px]">
-                                                Eleanor Pena
-                                            </h1>
-
-                                            <p class="text-sm sm:text-base" data-key="positionCourse">
-                                                Position, Course
+                                            <h1 class="font-bold text-[16px] sm:text-[20px]">Eleanor Pena</h1>
+                                            <p class="text-sm sm:text-base" data-key="positionCourse">Position, Course
                                             </p>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </swiper-slide>
 
-                        <!-- Swiper 3 -->
                         <swiper-slide class="flex flex-col items-start gap-8 px-5 sm:px-10 lg:px-[100px]">
                             <div class="flex flex-col sm:flex-row items-start gap-5 sm:gap-6">
-
                                 <div class="w-full sm:w-auto flex justify-center sm:block">
                                     <img class="w-[100px] sm:w-[140px] lg:w-[200px]" src="/pages/pages/image/braces.svg"
                                         alt="braces image">
                                 </div>
-
                                 <div class="flex flex-col gap-6">
-
                                     <p class="font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-relaxed"
-                                        data-key="testimonialText">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo,
-                                        amet lectus quam viverra mus lobortis fermentum amet,
-                                        eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus
-                                        ornare turpis quis non. Congue tortor in euismod vulputate
-                                        etiam eros. Pulvinar neque pharetra arcu diam maecenas
-                                        diam integer in.
+                                        data-key="ourMissionText">
+                                        Strong knowledge and valuable experience are
+                                        essential for moving confidently toward the future.
+                                        We use modern technologies and creative approaches
+                                        in every project. Our main mission is to provide
+                                        useful knowledge and help people achieve
+                                        their personal goals.
                                     </p>
-
                                     <div class="flex items-center gap-4">
                                         <img class="w-[45px] sm:w-[50px] rounded-full"
                                             src="/pages/pages/image/image (38).png" alt="student image">
-
                                         <div>
-                                            <h1 class="font-bold text-[16px] sm:text-[20px]">
-                                                Eleanor Pena
-                                            </h1>
-
-                                            <p class="text-sm sm:text-base" data-key="positionCourse">
-                                                Position, Course
+                                            <h1 class="font-bold text-[16px] sm:text-[20px]">Eleanor Pena</h1>
+                                            <p class="text-sm sm:text-base" data-key="positionCourse">Position, Course
                                             </p>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </swiper-slide>
-
                     </swiper-container>
                 </div>
             </div>

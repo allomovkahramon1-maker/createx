@@ -1,5 +1,33 @@
 const translations = {
 	uz: {
+		ourMissionText:
+			'Mustahkam bilim va qimmatli tajriba kelajak sari ishonch bilan qadam tashlash uchun juda muhimdir. Biz har bir loyihada zamonaviy texnologiyalar va ijodiy yondashuvlardan foydalanamiz. Bizning asosiy vazifamiz foydali bilimlarni taqdim etish va insonlarga o‘z shaxsiy maqsadlariga erishishda yordam berishdir.',
+		ourValuesText:
+			'Biz doimo rivojlanish va yangi imkoniyatlarni kashf etishga intilamiz. Zamonaviy yondashuvlar orqali har bir insonga bilimini oshirish va tajribasini mustahkamlashda yordam beramiz. Sifatli ta’lim, ishonch va uzluksiz rivojlanish bizning eng muhim qadriyatlarimizdan biridir.',
+		ourGoalText:
+			'Bizning maqsadimiz zamonaviy bilim va amaliy ko‘nikmalarni rivojlantirish orqali har bir insonning o‘sishini qo‘llab-quvvatlashdir. Ta’lim orqali yangi imkoniyatlar yaratib, bilim olishni yanada qulay va samarali qilamiz. Har bir qadamda mazmunli natijalarga erishish uchun sifat, tajriba va innovatsiyalarga e’tibor qaratamiz.',
+		workingEmail: 'Ishchi emailingizni kiriting',
+		signIn: 'Kirish',
+		signUp: 'Ro‘yxatdan o‘tish',
+		fullNameLabel: 'To‘liq ism',
+		emailLabel: 'Email',
+		passwordLabel: 'Parol',
+		confirmPasswordLabel: 'Parolni tasdiqlash',
+		keepSignedIn: 'Tizimda qolish',
+		forgotPassword: 'Parolni unutdingizmi?',
+		noAccount: 'Hisobingiz yo‘qmi?',
+		haveAccount: 'Hisobingiz bormi?',
+		orSignInWith: 'Yoki quyidagilar orqali kiring',
+
+		signInDescription:
+			'Ro‘yxatdan o‘tishda foydalanilgan email va parol orqali hisobingizga kiring.',
+		signUpDescription:
+			'Ro‘yxatdan o‘tish bir daqiqadan kam vaqt oladi va o‘qish jarayonini boshqarish imkonini beradi.',
+
+		yourFullName: 'To‘liq ismingiz',
+		yourWorkingEmail: 'Ishchi emailingiz',
+		passwordPlaceholder: 'Parol',
+		confirmPasswordPlaceholder: 'Parolni tasdiqlang',
 		about: 'Biz haqimizda',
 		courses: 'Kurslar',
 		events: 'Tadbirlar',
@@ -483,9 +511,66 @@ const translations = {
 			'Amaliy loyihalar ustida ishlang va real tajriba orttiring.',
 		scheduleDescription:
 			'Tajribali mentorlar ko‘magida o‘z maqsadlaringizga tezroq erishing.',
+		ourBenefits: 'BIZNING AFZALLIKLARIMIZ',
+		thatsHowWeDoIt: 'Biz qanday ishlaymiz',
+		experiencedTutors: 'Tajribali ustozlar',
+		feedbackbtn: 'Fikr-mulohaza va yordam',
+		ppractical: "Amaliy ta'lim",
+		pcommunity: 'Hamjamiyat',
+		only: 'Faqat amaliyotchi ustozlar',
+		benefitText:
+			'Bizning ustozlarimiz katta tajribaga ega. Ular o‘quvchilarga bilim va ko‘nikmalarni samarali o‘zlashtirishga yordam beradi.',
+		feedbackTitle: 'Fikr-mulohaza va qo‘llab-quvvatlash',
+		feedbackText:
+			'O‘quvchilar ustozlardan muntazam fikr-mulohaza oladilar. Biz ularga xatolarini tushunish va bilimlarini yaxshilashda yordam beramiz.',
+		practicalTitle: "Amaliy ta'lim",
+		practicalText:
+			"Biz amaliy mashg‘ulotlarga e'tibor qaratamiz. O‘quvchilar real loyihalar ustida ishlab, foydali tajriba orttiradilar.",
+		communityTitle: 'Hamjamiyat',
+		communityText:
+			'O‘quvchilar do‘stona hamjamiyatda muloqot qilishlari, fikr almashishlari va birgalikda o‘rganishlari mumkin.',
+		our: 'Tadbirlarimiz',
+		aliquet:
+			'Biz zamonaviy bilim va imkoniyatlarni birlashtirib, har bir inson uchun qulay ta’lim muhitini yaratamiz. Bizning maqsadimiz — sifatli ta’lim berish va yangi yutuqlarga erishishda qo‘llab-quvvatlash.',
+		themetTitle:
+			'Har bir inson uchun yangi imkoniyatlar va rivojlanish sari ishonchli qadam.',
+		themefTitle: 'Har bir inson uchun qulay va ishonchli imkoniyatlar.',
+		themegTitle: 'Qulay muhit va zamonaviy ta’lim imkoniyatlari.',
+		theme1Title: 'Bilim va tajriba sari yangi imkoniyatlar.',
 	},
 
 	en: {
+		ourMissionText:
+			'Strong knowledge and valuable experience are essential for moving confidently toward the future. We use modern technologies and creative approaches in every project. Our main mission is to provide useful knowledge and help people achieve their personal goals.',
+		ourValuesText:
+			'We always strive to grow and discover new opportunities. Through modern approaches, we help everyone improve their knowledge and strengthen their experience. Quality education, trust, and continuous development are among our most important values.',
+		ourGoalText:
+			"Our goal is to support everyone's growth by developing modern knowledge and practical skills. We create new opportunities through education and make learning more accessible and effective. At every step, we focus on quality, experience, and innovation to achieve meaningful results.",
+		theme1Title: 'Aliquet lectus urna viverra in odio.',
+		themegTitle: 'Comfortable environment and modern learning opportunities.',
+		themefTitle: 'Convenient and reliable opportunities for everyone.',
+		themetTitle:
+			'New opportunities and a confident step towards development for everyone.',
+		our: 'our events',
+		workingEmail: 'Your working email',
+		ourBenefits: 'OUR BENEFITS',
+		thatsHowWeDoIt: 'That’s how we do it',
+		experiencedTutors: 'Experienced Tutors',
+		feedbackbtn: 'Feedback Support',
+		ppractical: 'Practical learning',
+		pcommunity: 'Community',
+		only: 'Only practicing tutors',
+		benefitText:
+			'Our tutors have extensive experience. They help students effectively develop their knowledge and skills.',
+		feedbackTitle: 'Feedback and support',
+		feedbackText:
+			'Students receive regular feedback from teachers. We help them understand mistakes and improve their knowledge.',
+		practicalTitle: 'Practical learning',
+		practicalText:
+			'We focus on practical lessons. Students work on real projects and gain useful experience.',
+		communityTitle: 'Community',
+		communityText:
+			'Students can communicate, share ideas and learn together in a friendly community.',
 		about: 'About Us',
 		courses: 'Courses',
 		events: 'Events',
@@ -508,14 +593,12 @@ const translations = {
 
 		whoWeAre: 'WHO WE ARE',
 		whyCreatex: 'Why Createx?',
-		whyText1: 'A fermentum in morbi pretium aliquam adipiscing donec tempus.',
-		whyText2: 'Vulputate placerat amet pulvinar lorem nisl.',
-		whyText3:
-			'Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.',
-		whyText4: 'Etiam duis lobortis in fames ultrices commodo nibh.',
-		whyText5: 'Tincidunt sagittis neque sem ac eget.',
-		whyText6:
-			'Ultricies amet justo et eget quisque purus vulputate dapibus tortor.',
+		whyText1: 'Quality education and modern curricula.',
+		whyText2: 'A comfortable and effective learning environment.',
+		whyText3: 'An individual approach for every student.',
+		whyText4: 'Modern knowledge and practical training',
+		whyText5: 'Working with experienced specialists.',
+		whyText6: 'Skills needed for the professions of the future.',
 		moreAboutUs: 'More about us',
 
 		readyToLearn: 'READY TO LEARN?',
@@ -919,7 +1002,8 @@ const translations = {
 		lesson5Label: 'Lesson 5.',
 		lesson5Title: 'Planning and managing the process.',
 		lesson5Description: 'Learn how to plan and manage projects effectively.',
-
+		aliquet:
+			'We combine modern knowledge and opportunities to create a comfortable learning environment for everyone. Our goal is to provide quality education and support new achievements.',
 		lesson6Label: 'Lesson 6.',
 		lesson6Title: 'Understanding user needs.',
 		lesson6Description: 'Learn how to identify and analyze user needs.',
@@ -938,9 +1022,62 @@ const translations = {
 		registerForCourse: 'Register for the course',
 
 		bestTutors: 'Best tutors are all here',
+		signIn: 'Sign in',
+		signUp: 'Sign up',
+		fullNameLabel: 'Full Name',
+		emailLabel: 'Email',
+		passwordLabel: 'Password',
+		confirmPasswordLabel: 'Confirm Password',
+		keepSignedIn: 'Keep me signed in',
+		forgotPassword: 'Forgot password?',
+		noAccount: "Don't have an account?",
+		haveAccount: 'Already have an account?',
+		orSignInWith: 'Or sign in with',
+
+		signInDescription:
+			'Sign in to your account using email and password provided during registration.',
+		signUpDescription:
+			'Registration takes less than a minute but gives you full control over your studying.',
+
+		yourFullName: 'Your full name',
+		yourWorkingEmail: 'Your working email',
+		passwordPlaceholder: 'Password',
+		confirmPasswordPlaceholder: 'Confirm password',
 	},
 
 	ru: {
+		ourMissionText:
+			'Прочные знания и ценный опыт необходимы для уверенного движения в будущее. В каждом проекте мы используем современные технологии и творческие подходы. Наша главная миссия — предоставлять полезные знания и помогать людям достигать личных целей.',
+		ourValuesText:
+			'Мы всегда стремимся к развитию и открытию новых возможностей. Используя современные подходы, мы помогаем каждому расширять свои знания и укреплять опыт. Качественное образование, доверие и непрерывное развитие — одни из наших важнейших ценностей.',
+		ourGoalText:
+			'Наша цель — поддерживать развитие каждого человека, развивая современные знания и практические навыки. Мы создаём новые возможности благодаря образованию, делая обучение более доступным и эффективным. На каждом этапе мы уделяем особое внимание качеству, опыту и инновациям для достижения значимых результатов.',
+		theme1Title: 'Новые возможности для получения знаний и опыта.',
+		themegTitle: 'Комфортная среда и современные возможности для обучения.',
+		themefTitle: 'Удобные и надёжные возможности для каждого.',
+		themetTitle:
+			'Новые возможности и уверенный шаг на пути к развитию для каждого.',
+		aliquet:
+			'Мы объединяем современные знания и возможности, чтобы создать комфортную образовательную среду для каждого. Наша цель — предоставлять качественное образование и поддерживать стремление к новым достижениям.',
+		workingEmail: 'Введите вашу рабочую почту',
+		ourBenefits: 'НАШИ ПРЕИМУЩЕСТВА',
+		thatsHowWeDoIt: 'Как мы это делаем',
+		experiencedTutors: 'Опытные преподаватели',
+		feedbackbtn: 'Обратная связь и поддержка',
+		ppractical: 'Практическое обучение',
+		pcommunity: 'Сообщество',
+		only: 'Только практикующие преподаватели',
+		benefitText:
+			'Наши преподаватели обладают большим опытом. Они помогают студентам эффективно развивать знания и навыки.',
+		feedbackTitle: 'Обратная связь и поддержка',
+		feedbackText:
+			'Студенты регулярно получают отзывы от преподавателей. Мы помогаем им понимать ошибки и улучшать свои знания.',
+		practicalTitle: 'Практическое обучение',
+		practicalText:
+			'Мы уделяем особое внимание практическим занятиям. Студенты работают над реальными проектами и получают полезный опыт.',
+		communityTitle: 'Сообщество',
+		communityText:
+			'Студенты могут общаться, делиться идеями и учиться вместе в дружелюбном сообществе.',
 		about: 'О нас',
 		courses: 'Курсы',
 		events: 'События',
@@ -963,8 +1100,6 @@ const translations = {
 
 		workingemmail: 'Ваш рабочий электронный адрес',
 
-		whoWeAre: 'КТО МЫ',
-		whyCreatex: 'Почему Createx?',
 		whyText1: 'Качественное образование и современные учебные программы.',
 		whyText2: 'Удобная и эффективная среда обучения.',
 		whyText3: 'Индивидуальный подход к каждому студенту.',
@@ -1317,7 +1452,7 @@ const translations = {
 		coursePrice: '$120 в месяц',
 		priceDescription: 'Оплата производится ежемесячно.',
 		joinCourse: 'Записаться на курс',
-
+		our: 'наши мероприятия',
 		courseCurator: 'Куратор курса',
 		curatorRole: 'Старший UX-дизайнер в IT-компании',
 		rating: 'Рейтинг 4.9',
@@ -1420,50 +1555,144 @@ const translations = {
 
 		directionDescription:
 			'Изучайте современные технологии с нуля и создавайте своё портфолио на основе реальных проектов.',
+		signIn: 'Войти',
+		signUp: 'Зарегистрироваться',
+		fullNameLabel: 'Полное имя',
+		emailLabel: 'Электронная почта',
+		passwordLabel: 'Пароль',
+		confirmPasswordLabel: 'Подтвердите пароль',
+		keepSignedIn: 'Оставаться в системе',
+		forgotPassword: 'Забыли пароль?',
+		noAccount: 'Нет аккаунта?',
+		haveAccount: 'Уже есть аккаунт?',
+		orSignInWith: 'Или войдите через',
+
+		signInDescription:
+			'Войдите в свой аккаунт, используя электронную почту и пароль, указанные при регистрации.',
+		signUpDescription:
+			'Регистрация занимает меньше минуты и позволяет полностью контролировать процесс обучения.',
+
+		yourFullName: 'Ваше полное имя',
+		yourWorkingEmail: 'Ваша рабочая почта',
+		passwordPlaceholder: 'Пароль',
+		confirmPasswordPlaceholder: 'Подтвердите пароль',
+
+		contactInfo: 'КОНТАКТЫ',
+		getInTouch: 'Связаться с нами',
+		talkToUs: 'Напишите нам:',
+		callUs: 'Позвоните нам:',
+		address: 'Адрес:',
+		contactAddress: '2464 Royal Ln. Mesa, New Jersey 45463, США',
+		followUs: 'ПОДПИСЫВАЙТЕСЬ НА НАС:',
+		anyQuestions: 'ОСТАЛИСЬ ВОПРОСЫ?',
+		dropUsALine: 'Оставьте сообщение',
+		newsletterAgreement:
+			'Я согласен получать рассылку от Createx Online School',
+		sendMessage: 'Подписаться',
+
+		lastName: 'Ваша фамилия',
+		firstName: 'Ваше имя',
+		workingEmail: 'Ваш рабочий email',
+		phoneNumber: 'Ваш номер телефона',
+		yourMessage: 'Ваше сообщение',
+
+		readyToLearn: 'ПРИЯТНОГО ОБУЧЕНИЯ!',
+		featuredCourses: 'Наши онлайн-курсы',
+		createxCertificate: 'СЕРТИФИКАТ CREATEX',
+		expertiseConfirmed1: 'Ваша квалификация будет подтверждена',
+		expertiseConfirmed2: 'будет подтверждена',
+		accreditedText:
+			'Мы аккредитованы международными профессиональными организациями и институтами:',
+		testimonials: 'ОТЗЫВЫ',
+		whatStudentsSay: 'Что говорят наши студенты',
+		ourGoalText:
+			'Наша цель — поддерживать рост каждого, развивая современные знания и практические навыки. Мы открываем новые возможности через образование и делаем обучение более доступным и эффективным. На каждом этапе мы делаем ставку на качество, опыт и инновации для достижения значимых результатов.',
+		positionCourse: 'Должность, Курс',
+		ourValuesText:
+			'Мы всегда стремимся расти и открывать новые возможности. С помощью современных подходов мы помогаем каждому расширять свои знания и укреплять опыт. Качественное образование, доверие и постоянное развитие — одни из наших главных ценностей.',
+
+		cat_all: 'Все',
+		cat_marketing: 'Маркетинг',
+		cat_management: 'Менеджмент',
+		cat_hr: 'HR и рекрутинг',
+		cat_design: 'Дизайн',
+		cat_development: 'Разработка',
+
+		// Kurslar
+		course_1: 'Полный курс обучения Google Ads',
+		course_2: 'Основы продакт-менеджмента',
+		course_3: 'HR-менеджмент и аналитика',
+		course_4: 'Бренд-менеджмент и PR-коммуникации',
+		course_5: 'Основы графического дизайна',
+		course_6: 'Управление развитием бизнеса',
+		course_7: 'Архитектура высоконагруженных систем',
+		course_8: 'Управление персоналом — подбор и найм',
+		course_9: 'User Experience. Человекоориентированный дизайн',
+		byAuthor: 'от',
+
+		signIn: 'Войти',
+		signInDescription:
+			'Войдите в свой аккаунт, используя email и пароль, указанные при регистрации.',
+		signUp: 'Регистрация',
+		signUpDescription:
+			'Регистрация занимает меньше минуты, но открывает полный доступ к обучению.',
+		fullNameLabel: 'Полное имя',
+		yourFullName: 'Ваше полное имя',
+		emailLabel: 'Электронная почта',
+		yourWorkingEmail: 'Ваш рабочий email',
+		passwordLabel: 'Пароль',
+		passwordPlaceholder: 'Пароль',
+		confirmPasswordLabel: 'Подтвердите пароль',
+		confirmPasswordPlaceholder: 'Подтвердите пароль',
+		keepSignedIn: 'Запомнить меня',
+		forgotPassword: 'Забыли пароль?',
+		noAccount: 'Нет аккаунта?',
+		haveAccount: 'Уже есть аккаунт?',
+		orSignInWith: 'Или войти через',
 	},
 }
 
-const LANGUAGE_KEY = 'preferredLanguage'
+function translate(language) {
+	document.querySelectorAll('[data-key]').forEach(element => {
+		const key = element.dataset.key
+		const text = translations[language]?.[key]
 
-function translatePage(language) {
-	const elements = document.querySelectorAll('[data-key]')
-
-	elements.forEach(element => {
-		const key = element.getAttribute('data-key')
-		const translation = translations[language][key]
-		if (translation) {
-			element.textContent = translation
+		if (text !== undefined) {
+			element.textContent = text
 		}
-		if (translation) {
-			if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-				element.placeholder = translation
-			} else {
-				element.textContent = translation
+	})
+
+	// Input placeholder tarjimasi
+	document
+		.querySelectorAll('[data-placeholder], [data-key-placeholder]')
+		.forEach(element => {
+			const key = element.dataset.placeholder || element.dataset.keyPlaceholder
+			const text = translations[language]?.[key]
+
+			if (text !== undefined) {
+				element.placeholder = text
 			}
-		}
-	})
+		})
+
+	document.documentElement.lang = language
 }
 
-function changeLanguage(language) {
-	localStorage.setItem(LANGUAGE_KEY, language)
-	translatePage(language)
-}
+const select = document.getElementById('languageSelect')
 
-document.addEventListener('DOMContentLoaded', () => {
-	const savedLanguage = localStorage.getItem(LANGUAGE_KEY) || 'uz'
-	translatePage(savedLanguage)
-})
+const savedLanguage = localStorage.getItem('language') || 'en'
 
-document.querySelectorAll('button[data-lang]').forEach(button => {
-	button.addEventListener('click', () => {
-		const selectedLanguage = button.getAttribute('data-lang')
-		changeLanguage(selectedLanguage)
+if (select) {
+	select.value = savedLanguage
+
+	translate(savedLanguage)
+
+	select.addEventListener('change', event => {
+		const language = event.target.value
+
+		localStorage.setItem('language', language)
+
+		translate(language)
 	})
-})
-
-let langBtn = document.querySelector('.lang-dropdown-button')
-let langDropdown = document.querySelector('.lang-dropdown')
-
-langBtn.addEventListener('click', function () {
-	langDropdown.classList.toggle('active')
-})
+} else {
+	translate(savedLanguage)
+}
